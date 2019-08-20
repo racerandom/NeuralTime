@@ -4,10 +4,11 @@
 from tqdm import tqdm
 from collections import defaultdict
 import argparse
+import random
 from statistics import mean
 import numpy as np
 import torch
-from torch.utils.data import DataLoader, TensorDataset
+from torch.utils.data import DataLoader, TensorDataset, RandomSampler
 from pytorch_pretrained_bert.optimization import BertAdam, WarmupLinearSchedule
 from sklearn.metrics import accuracy_score
 
@@ -18,13 +19,14 @@ import utils
 import importlib
 
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
+n_gpu = torch.cuda.device_count()
 
 BERT_URL='/Users/fei-c/Resources/embed/L-12_H-768_A-12_E-30_BPE'
 if str(device) == 'cuda':
     BERT_URL='/larch/share/bert/Japanese_models/Wikipedia/L-12_H-768_A-12_E-30_BPE'
 
 logger = utils.init_logger('TLINK_Classifier', logging.INFO, logging.INFO)
-
+logger.info('device: %s, gpu num: %i' % (device, n_gpu))
 
 
 
@@ -48,19 +50,27 @@ parser.add_argument("-t", "--task", dest="task", default='ALL', type=str,
                     help="DCT, T2E, E2E, MAT or ALL")
 parser.add_argument("-l", "--lab", dest="lab_type", default='6c', type=str,
                     help="lab_type, i.g. 4c, 6c or None")
-parser.add_argument("-c", "--comp", dest="comp",
-                    action='store_true',
-                    help="complete match, True or False")
 parser.add_argument("-b", "--batch", dest="BATCH_SIZE", default=16, type=int,
                     help="BATCH SIZE")
 parser.add_argument("-e", "--epoch", dest="NUM_EPOCHS", default=7, type=int,
                     help="fine-tuning epoch number")
-parser.add_argument("-o", "--order", dest="order",
+parser.add_argument("--comp",
+                    action='store_true',
+                    help="complete match, True or False")
+parser.add_argument("--ordered",
                     action='store_true',
                     help="ordered training data by tasks")
 parser.add_argument('--fp16',
                     action='store_true',
                     help="Whether to use 16-bit float precision instead of 32-bit")
+parser.add_argument('--seed',
+                    type=int,
+                    default=1029,
+                    help="random seed for initialization")
+parser.add_argument("--cache_dir",
+                    default="cache",
+                    type=str,
+                    help="Where do you want to store the pre-trained models downloaded from s3")
 
 args = parser.parse_args()
 
@@ -68,11 +78,17 @@ logger.info('[args] Task: %s, label type: %s, complete agree: %s, ordered traini
     args.task,
     args.lab_type,
     str(args.comp),
-    str(args.order),
+    str(args.ordered),
     args.BATCH_SIZE,
     args.NUM_EPOCHS,
     str(args.fp16)
 ))
+
+random.seed(args.seed)
+np.random.seed(args.seed)
+torch.manual_seed(args.seed)
+if n_gpu > 0:
+        torch.cuda.manual_seed_all(args.seed)
 
 data_dir = 'data/merge/BCCWJ-TIMEX'
 
@@ -139,15 +155,29 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             lab2ix
         )
 
+        # full_data_dict[task]['train_dataloader'] = DataLoader(
+        #     train_tensors,
+        #     batch_size=args.BATCH_SIZE,
+        #     shuffle=True
+        # )
+        #
+        # full_data_dict[task]['test_dataloader'] = DataLoader(
+        #     test_tensors,
+        #     batch_size=args.BATCH_SIZE,
+        #     shuffle=False
+        # )
+
+
         full_data_dict[task]['train_dataloader'] = DataLoader(
             train_tensors,
             batch_size=args.BATCH_SIZE,
-            shuffle=True
+            sampler=RandomSampler(train_tensors)
         )
+
         full_data_dict[task]['test_dataloader'] = DataLoader(
             test_tensors,
             batch_size=args.BATCH_SIZE,
-            shuffle=False
+            sampler=RandomSampler(test_tensors)
         )
 
         logger.info('Task %s, Train batch num: %i, Test batch num: %i' % (
@@ -159,21 +189,28 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     train_batch_seq, test_batch_seq = [], []
 
     for task in task_list:
-        train_dataloader = full_data_dict[task]['train_dataloader']
-        test_dataloader = full_data_dict[task]['test_dataloader']
-        train_batch_seq += [task] * len(train_dataloader)
-        test_batch_seq += [task] * len(test_dataloader)
-        logger.info("Task %s, train batch %i, test batch %i" % (task, len(train_dataloader), len(test_dataloader)))
+        train_batch_num = len(full_data_dict[task]['train_dataloader'])
+        test_batch_num = len(full_data_dict[task]['test_dataloader'])
+        train_batch_seq += [task] * train_batch_num
+        test_batch_seq += [task] * test_batch_num
+        logger.info("Task %s, train batch %i, test batch %i" % (
+            task,
+            train_batch_num,
+            test_batch_num
+        ))
 
-    if not args.order:
-        import random
+    if not args.ordered:
         random.shuffle(train_batch_seq)
     logger.info(str(train_batch_seq[:10]))
 
     num_train_optimization_steps = args.NUM_EPOCHS * len(train_batch_seq)
-
+    """ model initialization """
     model = MultiTaskRelationClassifier.from_pretrained(BERT_URL, num_labels=6 if (args.lab_type == '6c') else 4)
     model.to(device)
+    if n_gpu > 1:
+        model = torch.nn.DataParallel(model)
+
+    """ optimizer initialization """
     param_optimizer = list(model.named_parameters())
     no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
     optimizer_grouped_parameters = [
@@ -208,39 +245,44 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     global_step = 0
     model.train()
     for epoch in range(1, args.NUM_EPOCHS + 1):
-        for task in task_list:
-            full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
-            full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
+        # for task in task_list:
+        #     full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
+        #     full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
 
-        for step, b_task in enumerate(tqdm(train_batch_seq)):
+        for step, b_task in enumerate(tqdm(train_batch_seq, desc="Iteration")):
 
-            b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_train_dataloader'])
-            loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
+            # b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_train_dataloader'])
+            for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['train_dataloader']:
 
-            if args.fp16:
-                optimizer.backward(loss)
-                # modify learning rate with special warm up BERT uses
-                # if args.fp16 is False, BertAdam is used that handles this automatically
-                lr_this_step = args.learning_rate * warmup_linear.get_lr(
-                    global_step / num_train_optimization_steps,
-                    0.1
-                )
-                for param_group in optimizer.param_groups:
-                    param_group['lr'] = lr_this_step
-            else:
-                loss.backward()
-            optimizer.zero_grad()
-            optimizer.step()
-            global_step += 1
+                loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
+
+                if n_gpu > 1:
+                    loss = loss.mean()
+                if args.fp16:
+                    optimizer.backward(loss)
+                    # modify learning rate with special warm up BERT uses
+                    # if args.fp16 is False, BertAdam is used that handles this automatically
+                    lr_this_step = args.learning_rate * warmup_linear.get_lr(
+                        global_step / num_train_optimization_steps,
+                        0.1
+                    )
+                    for param_group in optimizer.param_groups:
+                        param_group['lr'] = lr_this_step
+                else:
+                    loss.backward()
+                optimizer.step()
+                optimizer.zero_grad()
+                global_step += 1
 
     epoch_eval_dict = defaultdict(lambda: defaultdict(lambda: []))
 
     for b_task in test_batch_seq:
-        b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_test_dataloader'])
-        b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask)
-        b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)
-        epoch_eval_dict[b_task]['pred'] += b_pred.tolist()
-        epoch_eval_dict[b_task]['gold'] += b_lab.tolist()
+        # b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_test_dataloader'])
+        for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['test_dataloader']:
+            b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask)
+            b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)
+            epoch_eval_dict[b_task]['pred'] += b_pred.tolist()
+            epoch_eval_dict[b_task]['gold'] += b_lab.tolist()
 
     for task in task_list:
         acc = accuracy_score(epoch_eval_dict[task]['gold'], epoch_eval_dict[task]['pred'])
