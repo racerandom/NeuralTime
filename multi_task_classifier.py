@@ -56,16 +56,20 @@ parser.add_argument("-e", "--epoch", dest="NUM_EPOCHS", default=7, type=int,
                     help="fine-tuning epoch number")
 parser.add_argument("-o", "--order", dest="order", default=True, type=str2bool,
                     help="ordered training data by tasks")
+parser.add_argument('--fp16',
+                    action='store_true',
+                    help="Whether to use 16-bit float precision instead of 32-bit")
 
 args = parser.parse_args()
 
-logger.info('[args] Task: %s, label type: %s, complete agree: %s, ordered training:%s, batch_size: %i, epoch num: %i ' % (
+logger.info('[args] Task: %s, label type: %s, complete agree: %s, ordered training:%s, batch_size: %i, epoch num: %i, fp16: %s' % (
     args.task,
     args.lab_type,
     str(args.comp),
     str(args.order),
     args.BATCH_SIZE,
-    args.NUM_EPOCHS
+    args.NUM_EPOCHS,
+    str(args.fp16)
 ))
 
 data_dir = 'data/merge/BCCWJ-TIMEX'
@@ -164,6 +168,8 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         random.shuffle(train_batch_seq)
     logger.info(str(train_batch_seq[:10]))
 
+    num_train_optimization_steps = args.NUM_EPOCHS * len(train_batch_seq)
+
     model = MultiTaskRelationClassifier.from_pretrained(BERT_URL, num_labels=6 if (args.lab_type == '6c') else 4)
     model.to(device)
     param_optimizer = list(model.named_parameters())
@@ -172,26 +178,58 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.01},
         {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
     ]
-    optimizer= BertAdam(optimizer_grouped_parameters,
-                        lr=5e-5,
-                        warmup=0.1,
-                        t_total=args.NUM_EPOCHS * len(train_batch_seq))
+
+    if args.fp16:
+        try:
+            from apex.optimizers import FP16_Optimizer
+            from apex.optimizers import FusedAdam
+        except ImportError:
+            raise ImportError(
+                "Please install apex from https://www.github.com/nvidia/apex to use distributed and fp16 training.")
+
+        optimizer = FusedAdam(optimizer_grouped_parameters,
+                              lr=args.learning_rate,
+                              bias_correction=False,
+                              max_grad_norm=1.0,
+                              )
+        optimizer = FP16_Optimizer(optimizer, dynamic_loss_scale=True)
+
+        warmup_linear = WarmupLinearSchedule(warmup=0.1,
+                                             t_total=num_train_optimization_steps)
+    else:
+        optimizer= BertAdam(optimizer_grouped_parameters,
+                            lr=5e-5,
+                            warmup=0.1,
+                            t_total=num_train_optimization_steps)
 
     f1, acc = 0, 0
+    global_step = 0
+    model.train()
     for epoch in range(1, args.NUM_EPOCHS + 1):
         for task in task_list:
             full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
             full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
 
-        for b_task in tqdm(train_batch_seq):
+        for step, b_task in enumerate(tqdm(train_batch_seq)):
 
             b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_train_dataloader'])
-            model.train()
-            model.zero_grad()
             loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
 
-            loss.backward()
+            if args.fp16:
+                optimizer.backward(loss)
+                # modify learning rate with special warm up BERT uses
+                # if args.fp16 is False, BertAdam is used that handles this automatically
+                lr_this_step = args.learning_rate * warmup_linear.get_lr(
+                    global_step / num_train_optimization_steps,
+                    0.1
+                )
+                for param_group in optimizer.param_groups:
+                    param_group['lr'] = lr_this_step
+            else:
+                loss.backward()
+            optimizer.zero_grad()
             optimizer.step()
+            global_step += 1
 
     epoch_eval_dict = defaultdict(lambda: defaultdict(lambda: []))
 
