@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BCCWJ_TimeML SYSTEM "BCCWJ_TimeBank_PN.dtd">
+<BCCWJ_TimeML>
+<TEXT>
+<TIMEX3 definite="FALSE" value="2004-05-22" type="DATE" functionInDocument="CREATION_TIME" tid="t0"/>
+<mergedSample sampleID="PN4f_00001" version="1.0" type="BCCWJ-MorphXML">
+<article isWholeArticle="true" articleID="PN4f_00001_V001">
+<info arg="article/@isWholeArticle" value="完結-完全"/>
+<titleBlock>
+<title>
+<sentence type="quasi">医師宅に強盗　妻殺害</sentence>
+<br type="automatic_original"/>
+<sentence><EVENT class="NULL" eid="e1">外国人風</EVENT>４人組？</sentence>
+<sentence type="quasi">　テープで体<EVENT class="OCCURRENCE" eid="e2">縛り</EVENT></sentence>
+<br type="automatic_original"/>
+<sentence type="quasi">四日市</sentence>
+<br type="automatic_original"/>
+</title>
+</titleBlock>
+<figureBlock>
+<figure>
+</figure>
+<caption>
+<sentence type="quasi"><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さん</sentence>
+<br type="automatic_original"/>
+</caption>
+</figureBlock>
+<paragraph>
+<sentence>　<TIMEX3 definite="FALSE" value="2004-05-22T03" mod="APPROX" valueFromSurface="XXXX-XX-22T03" type="TIME" tid="t1">二十二日午前三時ごろ</TIMEX3>、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>、医師<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さん（<TIMEX3 definite="FALSE" value="P64Y" valueFromSurface="P64Y" type="DURATION" tid="t2">六四</TIMEX3>）方に外国人らしい男数人が<EVENT class="OCCURRENCE" eid="e3">押し入り</EVENT>、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんと妻の病院職員<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さん（<TIMEX3 definite="FALSE" value="P58Y" valueFromSurface="P58Y" type="DURATION" tid="t3">五八</TIMEX3>）の顔や手足を粘着テープで<EVENT class="OCCURRENCE" eid="e4">縛り</EVENT>、金品を<EVENT class="OCCURRENCE" eid="e5">奪っ</EVENT>て逃走。</sentence>
+<sentence><TIMEX3 definite="FALSE" value="PT1H" mod="APPROX" valueFromSurface="PT1H" type="DURATION" tid="t4">約一時間後</TIMEX3>、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんは自力でテープを<EVENT class="OCCURRENCE" eid="e6">ほどい</EVENT>て隣家に<EVENT class="OCCURRENCE" eid="e7">駆け込み</EVENT><EVENT class="OCCURRENCE" eid="e8">一一〇番通報した</EVENT>。</sentence>
+<sentence>四日市南署員が一階階段下で<EVENT class="OCCURRENCE" eid="e9">倒れている</EVENT><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんを<EVENT class="OCCURRENCE" eid="e10">見つけた</EVENT>が、間も<EVENT class="NULL" eid="e11">なく</EVENT>死亡が<EVENT class="I_ACTION" eid="e12">確認された</EVENT>。</sentence>
+<sentence>同県警捜査一課、同署などは特別捜査本部を<EVENT class="OCCURRENCE" eid="e13">設け</EVENT>、強盗殺人事件として<EVENT class="OCCURRENCE" eid="e14">捜査している</EVENT>。</sentence>
+<br type="automatic_original"/>
+</paragraph>
+<paragraph>
+<sentence>　調べでは、犯人グループは一階玄関西側の和室窓ガラスを<EVENT class="OCCURRENCE" eid="e15">破っ</EVENT>て侵入、二階寝室で<EVENT class="OCCURRENCE" eid="e16">寝ていた</EVENT><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さん夫妻を粘着テープで<EVENT class="OCCURRENCE" eid="e17">縛った</EVENT>後、一、二階を<EVENT class="OCCURRENCE" eid="e18">物色した</EVENT>と<EVENT class="I_STATE" eid="e19">みられる</EVENT>。</sentence>
+<sentence>被害品などは不明。</sentence>
+<sentence>犯人たちは外国語を<EVENT class="OCCURRENCE" eid="e20">話していた</EVENT>と<EVENT class="REPORTING" eid="e21">いい</EVENT>、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんは<quote>「四人ぐらいだ」</quote>と<EVENT class="REPORTING" eid="e22">話している</EVENT>。</sentence>
+<sentence><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんに<EVENT class="OCCURRENCE" eid="e23">目立っ</EVENT><sampling type="start"/>た外傷は<EVENT class="STATE" eid="e24">ない</EVENT>が、口と鼻を粘着テープで<EVENT class="OCCURRENCE" eid="e25">ふさがれており</EVENT>、<TIMEX3 definite="FALSE" value="2004-05-22TAF" valueFromSurface="XXXX-XX-XXTAF" type="TIME" tid="t5">同日午後</TIMEX3>から司法解剖を<EVENT class="I_ACTION" eid="e26">し</EVENT>て<EVENT class="NULL" eid="e27">詳しい</EVENT>死因を<EVENT class="OCCURRENCE" eid="e28">調べる</EVENT>。</sentence>
+<sentence><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんも<EVENT class="NULL" eid="e29">軽い</EVENT>けが。</sentence>
+<br type="automatic_original"/>
+</paragraph>
+<paragraph>
+<sentence>　<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さん夫妻は二人暮らし。</sentence>
+<sentence>いずれも自宅近くの山中胃腸科病院に<EVENT class="NULL" eid="e30">勤務しており</EVENT>、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんは総務部長、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんは小児部長を<EVENT class="NULL" eid="e31">していた</EVENT>。</sentence>
+<br type="automatic_original"/>
+</paragraph>
+<paragraph>
+<sentence>　現場は近鉄内部線内部駅から北東に約百五十メートル。</sentence>
+<sentence>国道１号近くで、人通りの<EVENT class="NULL" eid="e32">少ない</EVENT>住宅地。</sentence>
+<br type="automatic_original"/>
+</paragraph>
+<paragraph>
+<sentence>　同病院では<TIMEX3 definite="FALSE" value="2002-05" valueFromSurface="2002-05" type="DATE" tid="t6">二〇〇二年五月</TIMEX3>、看護師＝<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">当時</TIMEX3>（<TIMEX3 definite="FALSE" value="P53Y" valueFromSurface="P53Y" type="DURATION" tid="t7">五三</TIMEX3>）＝が、義兄＝当時（<TIMEX3 definite="FALSE" value="P65Y" valueFromSurface="P65Y" type="DURATION" tid="t8">六五</TIMEX3>）＝によって病院駐車場から車で<EVENT class="OCCURRENCE" eid="e33">連れ去られ</EVENT>、静岡県沼津市の山中で<EVENT class="OCCURRENCE" eid="e34">焼殺される</EVENT>事件も<EVENT class="I_ACTION" eid="e35">起きている</EVENT>。</sentence>
+<br type="automatic_original"/>
+</paragraph>
+</article>
+<div type="fixedLength"><sentence type="quasi">散弾銃で息子を殺害</sentence>
+<br type="automatic_original"/>
+<sentence type="quasi">千葉市職員逮捕</sentence>
+<br type="automatic_original"/>
+<sentence>　千葉北署は<TIMEX3 definite="FALSE" value="2004-05-22" valueFromSurface="XXXX-XX-22" type="DATE" tid="t9">二十二日</TIMEX3>、大学生の長男を散弾銃で<EVENT class="OCCURRENCE" eid="e36">撃っ</EVENT>て<EVENT class="OCCURRENCE" eid="e37">殺害した</EVENT>と<EVENT class="I_ACTION" eid="e38">し</EVENT>て殺人の現行犯で<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>、同市役所職員<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>容疑者（<TIMEX3 definite="FALSE" value="P50Y" valueFromSurface="P50Y" type="DURATION" tid="t10">五〇</TIMEX3>）を<EVENT class="OCCURRENCE" eid="e39">逮捕した</EVENT>。</sentence>
+<sentence><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>容疑者は<quote>「長男の就職や相続のことで口論に<EVENT class="I_ACTION" eid="e40">なり</EVENT><EVENT class="OCCURRENCE" eid="e41">撃った</EVENT>」</quote>と<EVENT class="REPORTING" eid="e42">供述している</EVENT>と<EVENT class="REPORTING" eid="e43">いう</EVENT>。</sentence>
+<br type="automatic_original"/>
+<sentence>　調べでは、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>容疑者は<TIMEX3 definite="FALSE" value="2004-05-22T01:30" mod="APPROX" valueFromSurface="XXXX-XX-22T01:30" type="TIME" tid="t11">二十二日午前一時半ごろ</TIMEX3>、自宅一階の和室で、長男の日本大歯学部<TIMEX3 definite="FALSE" value="P6Y" valueFromSurface="P6Y" type="DURATION" tid="t12">六年</TIMEX3><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さん（<TIMEX3 definite="FALSE" value="P24Y" valueFromSurface="P24Y" type="DURATION" tid="t13">二四</TIMEX3>）と口論に<EVENT class="I_ACTION" eid="e44">なり</EVENT>、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんの右胸を散弾銃で一発<EVENT class="OCCURRENCE" eid="e45">撃っ</EVENT>て<EVENT class="OCCURRENCE" eid="e46">殺害した</EVENT>疑い。</sentence>
+<sentence><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>さんは病院に<EVENT class="OCCURRENCE" eid="e47">運ばれた</EVENT>が間も<EVENT class="NULL" eid="e48">なく</EVENT><EVENT class="OCCURRENCE" eid="e49">死亡した</EVENT>。</sentence>
+<br type="automatic_original"/>
+<sentence>　自宅に<EVENT class="STATE" eid="e50">いた</EVENT>二男（<TIMEX3 definite="FALSE" value="P19Y" valueFromSurface="P19Y" type="DURATION" tid="t14">一九</TIMEX3>）が<quote>「兄が<EVENT class="OCCURRENCE" eid="e51">撃たれた</EVENT>」</quote>と近所の民家に<EVENT class="OCCURRENCE" eid="e52">駆け込み</EVENT>、その家の男性が<EVENT class="OCCURRENCE" eid="e53">一一九番した</EVENT>。</sentence>
+<br type="automatic_original"/>
+<sentence>　<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>容疑者は五人暮らし。</sentence>
+<sentence>病気療養のため<TIMEX3 definite="FALSE" value="2003-04" valueFromSurface="XXXX-04" type="DATE" tid="t15">昨年四月</TIMEX3>から休職中だった。</sentence>
+<br type="automatic_original"/>
+<sentence type="quasi"><quote>「安全牛」</quote>でも不正受給</sentence>
+<br type="automatic_original"/>
+<sentence type="quasi">全同食　全頭検査<EVENT class="I_ACTION" eid="e54">経た</EVENT>８．２トン分</sentence>
+<br type="automatic_original"/>
+<sentence>　政府の牛海綿状脳症（ＢＳＥ）対策事業をめぐる牛肉偽装事件で、助成金を<EVENT class="OCCURRENCE" eid="e55">不正受給した</EVENT>全国同和食肉事業協同組合連合会（全同食）が、全頭検査を<EVENT class="I_ACTION" eid="e56">経</EVENT>て<quote>「安全」</quote>と<EVENT class="I_ACTION" eid="e57">された</EVENT>国産牛肉についても、買い取り制度を<EVENT class="OCCURRENCE" eid="e58">悪用し</EVENT>助成金を<EVENT class="OCCURRENCE" eid="e59">受け取っていた</EVENT>ことが<EVENT class="I_STATE" eid="e60">分かった</EVENT>。</sentence>
+<br type="automatic_original"/>
+<sentence>　大阪府警捜査二課は、補助金適正化法違反の疑いで<EVENT class="OCCURRENCE" eid="e61">再逮捕した</EVENT>全同食専務理事で食肉大手<quote>「ハンナン」</quote>元会長、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>容疑者（<TIMEX3 definite="FALSE" value="P65Y" valueFromSurface="P65Y" type="DURATION" tid="t16">六五</TIMEX3>）らを同容疑で<EVENT class="NULL" eid="e62">新たに</EVENT><EVENT class="OCCURRENCE" eid="e63">立件する</EVENT>方針。</sentence>
+<br type="automatic_original"/>
+<sentence>　農水省は<TIMEX3 definite="FALSE" value="2001-10" valueFromSurface="2001-10" type="DATE" tid="t17">二〇〇一年十月</TIMEX3>から、すべての牛でＢＳＥ感染の有無を<EVENT class="I_ACTION" eid="e64">調べる</EVENT><quote>「全頭検査」</quote>を実施。</sentence>
+<sentence><TIMEX3 definite="FALSE" value="2004-05" mod="END" valueFromSurface="XXXX-XX" type="DATE" tid="t18">同月末</TIMEX3>に<EVENT class="REPORTING" eid="e65">発表された</EVENT>対策事業では<quote>「シロ」</quote>と<EVENT class="OCCURRENCE" eid="e66">された</EVENT>牛肉は助成制度の対象外だった。</sentence>
+<sentence><EVENT class="NULL" eid="e67">安全な</EVENT>国産牛まで市場に<EVENT class="OCCURRENCE" eid="e68">出さず</EVENT>、不正受給に<EVENT class="I_ACTION" eid="e69">利用した</EVENT>背景には<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">当時</TIMEX3>、ＢＳＥ騒動で牛肉が<EVENT class="OCCURRENCE" eid="e70">だぶついていたことがあった</EVENT>と<EVENT class="I_STATE" eid="e71">みられる</EVENT>。</sentence>
+<br type="automatic_original"/>
+<sentence>　調べなどによると、全同食は<TIMEX3 definite="FALSE" value="2004-FA" valueFromSurface="XXXX-FA" type="DATE" tid="t19">同年秋</TIMEX3>、全頭検査後の国産牛肉約八・二トンを買い上げ対象と<EVENT class="I_ACTION" eid="e72">偽っ</EVENT>て<EVENT class="OCCURRENCE" eid="e73">申請し</EVENT>、農畜産業振興事業団（現農畜産業振興機構）から、助成金を<EVENT class="NULL" eid="e74">不正に</EVENT><EVENT class="OCCURRENCE" eid="e75">受けた</EVENT>疑いが<EVENT class="I_ACTION" eid="e76">持たれている</EVENT>。</sentence>
+<br type="automatic_original"/>
+<sentence type="quasi">ビデオやＰＣ　６７０万円相当盗難</sentence>
+<br type="automatic_original"/>
+<sentence type="quasi">尾張旭の家電量販店</sentence>
+<br type="automatic_original"/>
+<sentence>　<TIMEX3 definite="FALSE" value="2004-05-22T04:10" mod="APPROX" valueFromSurface="XXXX-XX-22T04:10" type="TIME" tid="t20">二十二日午前四時十分ごろ</TIMEX3>、<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>、家電量販店「ギガス尾張旭店」（<delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete><delete type="copyright_note_by_author">■</delete>店長）で非常通報装置が作動。</sentence>
+<sentence><EVENT class="OCCURRENCE" eid="e77">駆けつけた</EVENT>店<sampling type="end"/>員が<EVENT class="OCCURRENCE" eid="e78">確認し</EVENT>たところ、商品のビデオカメラ六十台とノートパソコン四台（被害総額約六百七十万円）が<EVENT class="OCCURRENCE" eid="e79">盗まれていた</EVENT>。</sentence>
+</div></mergedSample>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei2"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei3"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei4"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei5"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei6"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei7"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei8"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei9"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei10"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei12"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei13"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="during" relTypeC="contains" timeID="t0" relatedToEventInstance="ei14"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei15"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei16"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei17"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei18"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei19"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei20"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei21"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei22"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei23"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei24"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei25"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t0" relatedToEventInstance="ei26"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t0" relatedToEventInstance="ei28"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei33"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei34"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei35"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei36"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei37"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei38"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei39"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei40"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei41"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei42"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei43"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei44"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei45"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei46"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei47"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei49"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei50"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei51"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei52"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei53"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei54"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei55"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei56"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei57"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei58"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei59"/>
+<TLINK task="DCT" relTypeA="vague" relTypeB="after" relTypeC="vague" timeID="t0" relatedToEventInstance="ei60"/>
+<TLINK task="DCT" relTypeA="vague" relTypeB="after" relTypeC="vague" timeID="t0" relatedToEventInstance="ei61"/>
+<TLINK task="DCT" relTypeA="before" relTypeB="before" relTypeC="before" timeID="t0" relatedToEventInstance="ei63"/>
+<TLINK task="DCT" relTypeA="vague" relTypeB="during" relTypeC="vague" timeID="t0" relatedToEventInstance="ei64"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei65"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei66"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei68"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei69"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei70"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="equal" relTypeC="contains" timeID="t0" relatedToEventInstance="ei71"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei72"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei73"/>
+<TLINK task="DCT" relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" relatedToEventInstance="ei75"/>
+<TLINK task="DCT" relTypeA="during" relTypeB="during" relTypeC="during" timeID="t0" relatedToEventInstance="ei76"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei77"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei78"/>
+<TLINK task="DCT" relTypeA="contains" relTypeB="after" relTypeC="contains" timeID="t0" relatedToEventInstance="ei79"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t1" relatedToEventInstance="ei3"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t1" relatedToEventInstance="ei4"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t1" relatedToEventInstance="ei5"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t2" relatedToEventInstance="ei3"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t2" relatedToEventInstance="ei4"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t2" relatedToEventInstance="ei5"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t3" relatedToEventInstance="ei3"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t3" relatedToEventInstance="ei4"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t3" relatedToEventInstance="ei5"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="meets" relTypeC="contains" timeID="t4" relatedToEventInstance="ei6"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="before" relTypeC="contains" timeID="t4" relatedToEventInstance="ei7"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="before" relTypeC="contains" timeID="t4" relatedToEventInstance="ei8"/>
+<TLINK task="T2E" relTypeA="during" relTypeB="after" relTypeC="during" timeID="t5" relatedToEventInstance="ei23"/>
+<TLINK task="T2E" relTypeA="during" relTypeB="after" relTypeC="during" timeID="t5" relatedToEventInstance="ei24"/>
+<TLINK task="T2E" relTypeA="after" relTypeB="after" relTypeC="overlapped-by" timeID="t5" relatedToEventInstance="ei25"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t5" relatedToEventInstance="ei26"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t5" relatedToEventInstance="ei28"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t6" relatedToEventInstance="ei33"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t6" relatedToEventInstance="ei34"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t6" relatedToEventInstance="ei35"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t7" relatedToEventInstance="ei33"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t7" relatedToEventInstance="ei34"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t7" relatedToEventInstance="ei35"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t8" relatedToEventInstance="ei33"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t8" relatedToEventInstance="ei34"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t8" relatedToEventInstance="ei35"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t9" relatedToEventInstance="ei36"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t9" relatedToEventInstance="ei37"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t9" relatedToEventInstance="ei38"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t9" relatedToEventInstance="ei39"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t10" relatedToEventInstance="ei36"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t10" relatedToEventInstance="ei37"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t10" relatedToEventInstance="ei38"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t10" relatedToEventInstance="ei39"/>
+<TLINK task="T2E" relTypeA="vague" relTypeB="contains" relTypeC="contains" timeID="t11" relatedToEventInstance="ei44"/>
+<TLINK task="T2E" relTypeA="vague" relTypeB="contains" relTypeC="contains" timeID="t11" relatedToEventInstance="ei45"/>
+<TLINK task="T2E" relTypeA="vague" relTypeB="contains" relTypeC="contains" timeID="t11" relatedToEventInstance="ei46"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t12" relatedToEventInstance="ei44"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t12" relatedToEventInstance="ei45"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t12" relatedToEventInstance="ei46"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t13" relatedToEventInstance="ei44"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t13" relatedToEventInstance="ei45"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t13" relatedToEventInstance="ei46"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t14" relatedToEventInstance="ei50"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t14" relatedToEventInstance="ei51"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t14" relatedToEventInstance="ei52"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t14" relatedToEventInstance="ei53"/>
+<TLINK task="T2E" relTypeA="vague" relTypeB="contains" relTypeC="contains" timeID="t16" relatedToEventInstance="ei61"/>
+<TLINK task="T2E" relTypeA="vague" relTypeB="contains" relTypeC="contains" timeID="t16" relatedToEventInstance="ei63"/>
+<TLINK task="T2E" relTypeA="overlaps" relTypeB="overlaps" relTypeC="overlaps" timeID="t17" relatedToEventInstance="ei64"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t18" relatedToEventInstance="ei65"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t18" relatedToEventInstance="ei66"/>
+<TLINK task="T2E" relTypeA="before" relTypeB="contains" relTypeC="contains" timeID="tnew1" relatedToEventInstance="ei68"/>
+<TLINK task="T2E" relTypeA="before" relTypeB="contains" relTypeC="contains" timeID="tnew1" relatedToEventInstance="ei69"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="tnew1" relatedToEventInstance="ei70"/>
+<TLINK task="T2E" relTypeA="before" relTypeB="before" relTypeC="before" timeID="tnew1" relatedToEventInstance="ei71"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t19" relatedToEventInstance="ei72"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t19" relatedToEventInstance="ei73"/>
+<TLINK task="T2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t19" relatedToEventInstance="ei75"/>
+<TLINK task="T2E" relTypeA="before" relTypeB="before" relTypeC="before" timeID="t19" relatedToEventInstance="ei76"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei2" relatedToEventInstance="ei3"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei3" relatedToEventInstance="ei4"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei4" relatedToEventInstance="ei5"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei5" relatedToEventInstance="ei6"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei6" relatedToEventInstance="ei7"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei7" relatedToEventInstance="ei8"/>
+<TLINK task="E2E" relTypeA="during" relTypeB="before" relTypeC="during" eventInstanceID="ei8" relatedToEventInstance="ei9"/>
+<TLINK task="E2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" eventInstanceID="ei9" relatedToEventInstance="ei10"/>
+<TLINK task="E2E" relTypeA="vague" relTypeB="before" relTypeC="before" eventInstanceID="ei12" relatedToEventInstance="ei13"/>
+<TLINK task="E2E" relTypeA="during" relTypeB="meets" relTypeC="before" eventInstanceID="ei13" relatedToEventInstance="ei14"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei14" relatedToEventInstance="ei15"/>
+<TLINK task="E2E" relTypeA="during" relTypeB="during" relTypeC="during" eventInstanceID="ei15" relatedToEventInstance="ei16"/>
+<TLINK task="E2E" relTypeA="meets" relTypeB="meets" relTypeC="meets" eventInstanceID="ei16" relatedToEventInstance="ei17"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei17" relatedToEventInstance="ei18"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei18" relatedToEventInstance="ei19"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei19" relatedToEventInstance="ei20"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei20" relatedToEventInstance="ei21"/>
+<TLINK task="E2E" relTypeA="vague" relTypeB="identity" relTypeC="equal" eventInstanceID="ei21" relatedToEventInstance="ei22"/>
+<TLINK task="E2E" relTypeA="during" relTypeB="vague" relTypeC="during" eventInstanceID="ei22" relatedToEventInstance="ei23"/>
+<TLINK task="E2E" relTypeA="equal" relTypeB="equal" relTypeC="identity" eventInstanceID="ei23" relatedToEventInstance="ei24"/>
+<TLINK task="E2E" relTypeA="contains" relTypeB="equal" relTypeC="contains" eventInstanceID="ei24" relatedToEventInstance="ei25"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei25" relatedToEventInstance="ei26"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei33" relatedToEventInstance="ei34"/>
+<TLINK task="E2E" relTypeA="is_included" relTypeB="equal" relTypeC="is_included" eventInstanceID="ei34" relatedToEventInstance="ei35"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei35" relatedToEventInstance="ei36"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei36" relatedToEventInstance="ei37"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei37" relatedToEventInstance="ei38"/>
+<TLINK task="E2E" relTypeA="met-by" relTypeB="equal" relTypeC="before" eventInstanceID="ei38" relatedToEventInstance="ei39"/>
+<TLINK task="E2E" relTypeA="meets" relTypeB="after" relTypeC="after" eventInstanceID="ei39" relatedToEventInstance="ei40"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei40" relatedToEventInstance="ei41"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei41" relatedToEventInstance="ei42"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei42" relatedToEventInstance="ei43"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei43" relatedToEventInstance="ei44"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei44" relatedToEventInstance="ei45"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei45" relatedToEventInstance="ei46"/>
+<TLINK task="E2E" relTypeA="contains" relTypeB="after" relTypeC="after" eventInstanceID="ei46" relatedToEventInstance="ei47"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei49" relatedToEventInstance="ei50"/>
+<TLINK task="E2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" eventInstanceID="ei50" relatedToEventInstance="ei51"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei51" relatedToEventInstance="ei52"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei52" relatedToEventInstance="ei53"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei53" relatedToEventInstance="ei54"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei54" relatedToEventInstance="ei55"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei55" relatedToEventInstance="ei56"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei56" relatedToEventInstance="ei57"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei57" relatedToEventInstance="ei58"/>
+<TLINK task="E2E" relTypeA="contains" relTypeB="before" relTypeC="before" eventInstanceID="ei58" relatedToEventInstance="ei59"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei59" relatedToEventInstance="ei60"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="after" relTypeC="after" eventInstanceID="ei60" relatedToEventInstance="ei61"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="during" relTypeC="after" eventInstanceID="ei63" relatedToEventInstance="ei64"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="contains" relTypeC="before" eventInstanceID="ei64" relatedToEventInstance="ei65"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="contains" relTypeC="contains" eventInstanceID="ei65" relatedToEventInstance="ei66"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="equal" relTypeC="before" eventInstanceID="ei68" relatedToEventInstance="ei69"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="before" relTypeC="during" eventInstanceID="ei69" relatedToEventInstance="ei70"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei70" relatedToEventInstance="ei71"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei71" relatedToEventInstance="ei72"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="equal" relTypeC="before" eventInstanceID="ei72" relatedToEventInstance="ei73"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei75" relatedToEventInstance="ei76"/>
+<TLINK task="E2E" relTypeA="contains" relTypeB="contains" relTypeC="contains" eventInstanceID="ei76" relatedToEventInstance="ei77"/>
+<TLINK task="E2E" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei77" relatedToEventInstance="ei78"/>
+<TLINK task="E2E" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei78" relatedToEventInstance="ei79"/>
+<TLINK task="MAT" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei5" relatedToEventInstance="ei8"/>
+<TLINK task="MAT" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei8" relatedToEventInstance="ei12"/>
+<TLINK task="MAT" relTypeA="during" relTypeB="before" relTypeC="before" eventInstanceID="ei12" relatedToEventInstance="ei14"/>
+<TLINK task="MAT" relTypeA="contains" relTypeB="contains" relTypeC="contains" eventInstanceID="ei14" relatedToEventInstance="ei19"/>
+<TLINK task="MAT" relTypeA="vague" relTypeB="before" relTypeC="before" eventInstanceID="ei22" relatedToEventInstance="ei28"/>
+<TLINK task="MAT" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei39" relatedToEventInstance="ei43"/>
+<TLINK task="MAT" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei43" relatedToEventInstance="ei46"/>
+<TLINK task="MAT" relTypeA="includes" relTypeB="before" relTypeC="identity" eventInstanceID="ei46" relatedToEventInstance="ei49"/>
+<TLINK task="MAT" relTypeA="after" relTypeB="after" relTypeC="after" eventInstanceID="ei49" relatedToEventInstance="ei53"/>
+<TLINK task="MAT" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei54" relatedToEventInstance="ei60"/>
+<TLINK task="MAT" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei60" relatedToEventInstance="ei63"/>
+<TLINK task="MAT" relTypeA="after" relTypeB="during" relTypeC="after" eventInstanceID="ei63" relatedToEventInstance="ei64"/>
+<TLINK task="MAT" relTypeA="before" relTypeB="contains" relTypeC="before" eventInstanceID="ei64" relatedToEventInstance="ei66"/>
+<TLINK task="MAT" relTypeA="before" relTypeB="before" relTypeC="before" eventInstanceID="ei66" relatedToEventInstance="ei71"/>
+<TLINK task="MAT" relTypeA="during" relTypeB="during" relTypeC="during" eventInstanceID="ei71" relatedToEventInstance="ei76"/>
+<MAKEINSTANCE eventID="e2" eiid="ei2" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e3" eiid="ei3" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e4" eiid="ei4" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e5" eiid="ei5" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e6" eiid="ei6" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e7" eiid="ei7" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e8" eiid="ei8" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e9" eiid="ei9" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e10" eiid="ei10" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e12" eiid="ei12" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e13" eiid="ei13" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e14" eiid="ei14" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e15" eiid="ei15" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e16" eiid="ei16" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e17" eiid="ei17" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e18" eiid="ei18" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e19" eiid="ei19" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e20" eiid="ei20" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e21" eiid="ei21" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e22" eiid="ei22" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e23" eiid="ei23" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e24" eiid="ei24" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e25" eiid="ei25" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e26" eiid="ei26" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e28" eiid="ei28" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e33" eiid="ei33" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e34" eiid="ei34" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e35" eiid="ei35" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e36" eiid="ei36" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e37" eiid="ei37" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e38" eiid="ei38" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e39" eiid="ei39" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e40" eiid="ei40" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e41" eiid="ei41" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e42" eiid="ei42" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e43" eiid="ei43" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e44" eiid="ei44" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e45" eiid="ei45" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e46" eiid="ei46" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e47" eiid="ei47" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e49" eiid="ei49" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e50" eiid="ei50" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e51" eiid="ei51" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e52" eiid="ei52" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e53" eiid="ei53" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e54" eiid="ei54" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e55" eiid="ei55" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e56" eiid="ei56" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e57" eiid="ei57" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e58" eiid="ei58" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e59" eiid="ei59" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e60" eiid="ei60" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e61" eiid="ei61" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e63" eiid="ei63" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e64" eiid="ei64" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e65" eiid="ei65" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e66" eiid="ei66" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e68" eiid="ei68" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e69" eiid="ei69" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e70" eiid="ei70" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e71" eiid="ei71" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e72" eiid="ei72" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e73" eiid="ei73" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e75" eiid="ei75" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e76" eiid="ei76" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e77" eiid="ei77" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e78" eiid="ei78" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+<MAKEINSTANCE eventID="e79" eiid="ei79" tense="UNDEF" aspect="UNDEF" nf_morph="UNDEF" polarity="UNDEF" modality="UNDEF" signalID="UNDEF" cardinality="UNDEF"/>
+</TEXT>
+</BCCWJ_TimeML>

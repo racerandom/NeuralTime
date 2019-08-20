@@ -1,0 +1,7 @@
+# coding: cp932
+# text = ‚Ó‚§‚Æ‚Õ‚ç‚´
+File.open(ARGV[0]).each_line do |line|
+  if line =~ /^# text = /
+    puts line.sub( /^# text = /,"")
+  end
+end

@@ -1,0 +1,912 @@
+# sent_id = A026n_PN3d_00002-1	
+# text = イラク大量破壊兵器	
+1	イラク	イラク	PROPN	名詞-固有名詞-地名-国	_	4	compound	_	BunsetuPosition=B|JPYomi=イラク|BunsetuPositionType=CONT|SpaceAfter=No	
+2	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	4	compound	_	BunsetuPosition=I|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	4	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	兵器	兵器	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=ROOT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-2	
+# text = 米政権、証拠発見に自信	
+1	米	米	NOUN	名詞-普通名詞-一般	_	2	compound	_	BunsetuPosition=B|JPYomi=ベイ|BunsetuPositionType=CONT|SpaceAfter=No	
+2	政権	政権	NOUN	名詞-普通名詞-一般	_	7	nmod	_	BunsetuPosition=I|JPYomi=セイケン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	、	、	PUNCT	補助記号-読点	_	2	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+4	証拠	証拠	NOUN	名詞-普通名詞-一般	_	5	compound	_	BunsetuPosition=B|JPYomi=ショウコ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	発見	発見	NOUN	名詞-普通名詞-サ変可能	_	7	obl	_	BunsetuPosition=I|JPYomi=ハッケン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	に	に	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	自信	自信	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=B|JPYomi=ジシン|BunsetuPositionType=ROOT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-3	
+# text = 情報疑惑報道を否定	
+1	情報	情報	NOUN	名詞-普通名詞-一般	_	3	compound	_	BunsetuPosition=B|JPYomi=ジョウホウ|BunsetuPositionType=CONT|SpaceAfter=No	
+2	疑惑	疑惑	NOUN	名詞-普通名詞-一般	_	3	compound	_	BunsetuPosition=I|JPYomi=ギワク|BunsetuPositionType=CONT|SpaceAfter=No	
+3	報道	報道	NOUN	名詞-普通名詞-サ変可能	_	5	obj	_	BunsetuPosition=I|JPYomi=ホウドウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	を	を	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	否定	否定	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=B|JPYomi=ヒテイ|BunsetuPositionType=ROOT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-4	
+# text = 【ワシントン＝近藤豊和】	
+1	【	【	PUNCT	補助記号-括弧開	_	5	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+2	ワシントン	ワシントン	PROPN	名詞-固有名詞-地名-一般	_	5	compound	_	BunsetuPosition=I|JPYomi=ワシントン|BunsetuPositionType=CONT|SpaceAfter=No	
+3	＝	＝	PUNCT	補助記号-一般	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+4	近藤	コンドウ	PROPN	名詞-固有名詞-人名-姓	_	5	compound	_	BunsetuPosition=I|JPYomi=コンドウ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	豊和	トヨカズ	PROPN	名詞-固有名詞-人名-名	_	0	root	_	BunsetuPosition=I|JPYomi=トヨカズ|BunsetuPositionType=ROOT|SpaceAfter=No	
+6	】	】	PUNCT	補助記号-括弧閉	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-5	
+# text = [JSP]イラク戦争に先立って公表された同国の大量破壊兵器に関する情報に疑問符が付いている問題で、ブッシュ米大統領は九日の閣議後に記者団に対し「大量破壊兵器開発計画があったことを突き止められるものと間違いなく確信している」と自信を表明した。	
+1	[JSP]	[JSP]	X	空白	_	3	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	イラク	イラク	PROPN	名詞-固有名詞-地名-国	_	3	compound	_	BunsetuPosition=I|JPYomi=イラク|BunsetuPositionType=CONT|SpaceAfter=No	
+3	戦争	戦争	NOUN	名詞-普通名詞-サ変可能	_	5	obl	_	BunsetuPosition=I|JPYomi=センソウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	に	に	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	先立っ	先立つ	VERB	動詞-一般	_	8	advcl	_	BunsetuPosition=B|JPYomi=サキダツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e1" class="OCCURRENCE"
+6	て	て	SCONJ	助詞-接続助詞	_	5	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	公表	公表	VERB	名詞-普通名詞-サ変可能	_	8	aux	_	BunsetuPosition=B|JPYomi=コウヒョウ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e2" class="OCCURRENCE"
+8	さ	為る	AUX	動詞-非自立可能	_	15	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	れ	れる	AUX	助動詞	_	8	aux	_	BunsetuPosition=I|JPYomi=レル|BunsetuPositionType=FUNC|SpaceAfter=No	
+10	た	た	AUX	助動詞	_	8	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	同国	同国	NOUN	名詞-普通名詞-一般	_	15	nmod	_	BunsetuPosition=B|JPYomi=ドウコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	の	の	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	15	compound	_	BunsetuPosition=B|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+14	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	15	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+15	兵器	兵器	NOUN	名詞-普通名詞-一般	_	18	obl	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	に	に	ADP	助詞-格助詞	_	15	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+17	関する	関する	VERB	動詞-一般	_	15	aux	_	BunsetuPosition=I|JPYomi=カンスル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+18	情報	情報	NOUN	名詞-普通名詞-一般	_	23	iobj	_	BunsetuPosition=B|JPYomi=ジョウホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	に	に	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	疑問	疑問	NOUN	名詞-普通名詞-一般	_	21	compound	_	BunsetuPosition=B|JPYomi=ギモン|BunsetuPositionType=CONT|SpaceAfter=No	
+21	符	符	PART	接尾辞-名詞的-一般	_	23	nsubj	_	BunsetuPosition=I|JPYomi=フ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	が	が	ADP	助詞-格助詞	_	21	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+23	付い	付く	VERB	動詞-非自立可能	_	26	acl	_	BunsetuPosition=B|JPYomi=ツク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e3" class="OCCURRENCE"
+24	て	て	SCONJ	助詞-接続助詞	_	23	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+25	いる	居る	AUX	動詞-非自立可能	_	23	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+26	問題	問題	NOUN	名詞-普通名詞-一般	_	31	nmod	_	BunsetuPosition=B|JPYomi=モンダイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+27	で	で	ADP	助詞-格助詞	_	26	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+28	、	、	PUNCT	補助記号-読点	_	26	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+29	ブッシュ	ブッシュ	PROPN	名詞-固有名詞-人名-一般	_	31	compound	_	BunsetuPosition=B|JPYomi=ブッシュ|BunsetuPositionType=CONT|SpaceAfter=No	
+30	米	米	NOUN	名詞-普通名詞-一般	_	31	compound	_	BunsetuPosition=I|JPYomi=ベイ|BunsetuPositionType=CONT|SpaceAfter=No	
+31	大統領	大統領	NOUN	名詞-普通名詞-一般	_	69	obl	_	BunsetuPosition=I|JPYomi=ダイトウリョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+32	は	は	ADP	助詞-係助詞	_	31	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+33	九	九	NUM	名詞-数詞	_	34	nummod	_	BunsetuPosition=B|JPYomi=ココノ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-XX-09" tid="t1" value="2003-06-09" definite="FALSE"
+34	日	日	PART	接尾辞-名詞的-助数詞	_	37	nmod	_	BunsetuPosition=I|JPYomi=カ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+35	の	の	ADP	助詞-格助詞	_	34	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+36	閣議	閣議	NOUN	名詞-普通名詞-一般	_	37	compound	_	BunsetuPosition=B|JPYomi=カクギ|BunsetuPositionType=CONT|SpaceAfter=No	
+37	後	後	PART	接尾辞-名詞的-副詞可能	_	69	obl	_	BunsetuPosition=I|JPYomi=ゴ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+38	に	に	ADP	助詞-格助詞	_	37	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+39	記者	記者	NOUN	名詞-普通名詞-一般	_	40	compound	_	BunsetuPosition=B|JPYomi=キシャ|BunsetuPositionType=CONT|SpaceAfter=No	
+40	団	団	PART	接尾辞-名詞的-一般	_	69	obl	_	BunsetuPosition=I|JPYomi=ダン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+41	に	に	ADP	助詞-格助詞	_	40	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+42	対し	対する	VERB	動詞-一般	_	40	aux	_	BunsetuPosition=I|JPYomi=タイスル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+43	「	「	PUNCT	補助記号-括弧開	_	48	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+44	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	48	compound	_	BunsetuPosition=I|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+45	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	48	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+46	兵器	兵器	NOUN	名詞-普通名詞-一般	_	48	compound	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=CONT|SpaceAfter=No	
+47	開発	開発	NOUN	名詞-普通名詞-サ変可能	_	48	compound	_	BunsetuPosition=I|JPYomi=カイハツ|BunsetuPositionType=CONT|SpaceAfter=No	
+48	計画	計画	NOUN	名詞-普通名詞-サ変可能	_	50	nsubj	_	BunsetuPosition=I|JPYomi=ケイカク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+49	が	が	ADP	助詞-格助詞	_	48	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+50	あっ	有る	VERB	動詞-非自立可能	_	52	acl	_	BunsetuPosition=B|JPYomi=アル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e4" class="STATE"
+51	た	た	AUX	助動詞	_	50	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+52	こと	事	NOUN	名詞-普通名詞-一般	_	54	obj	_	BunsetuPosition=B|JPYomi=コト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+53	を	を	ADP	助詞-格助詞	_	52	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+54	突き止め	突き止める	VERB	動詞-一般	_	56	acl	_	BunsetuPosition=B|JPYomi=ツキトメル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e5" class="I_ACTION"
+55	られる	られる	AUX	助動詞	_	54	aux	_	BunsetuPosition=I|JPYomi=ラレル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+56	もの	物	NOUN	名詞-普通名詞-サ変可能	_	61	nmod	_	BunsetuPosition=B|JPYomi=モノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+57	と	と	ADP	助詞-格助詞	_	56	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+58	間違い	間違い	NOUN	名詞-普通名詞-一般	_	59	compound	_	BunsetuPosition=B|JPYomi=マチガイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e6" class="NULL"
+59	なく	無い	ADJ	形容詞-非自立可能	Polarity=Neg	61	amod	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+60	確信	確信	VERB	名詞-普通名詞-サ変可能	_	61	aux	_	BunsetuPosition=B|JPYomi=カクシン|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e7" class="I_STATE"
+61	し	為る	AUX	動詞-非自立可能	_	69	advcl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+62	て	て	SCONJ	助詞-接続助詞	_	61	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+63	いる	居る	AUX	動詞-非自立可能	_	61	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+64	」	」	PUNCT	補助記号-括弧閉	_	61	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+65	と	と	ADP	助詞-格助詞	_	61	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+66	自信	自信	NOUN	名詞-普通名詞-サ変可能	_	69	obj	_	BunsetuPosition=B|JPYomi=ジシン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+67	を	を	ADP	助詞-格助詞	_	66	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+68	表明	表明	VERB	名詞-普通名詞-サ変可能	_	69	aux	_	BunsetuPosition=B|JPYomi=ヒョウメイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e8" class="I_ACTION"
+69	し	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	
+70	た	た	AUX	助動詞	_	69	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+71	。	。	PUNCT	補助記号-句点	_	69	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-6	
+# text = [JSP]パウエル米国務長官も、前日の八日に出演した米ＦＯＸニュースの番組で、戦争前の二月に、国連安全保障理事会でイラクの大量破壊兵器隠匿の機密情報を開示したことについて「四日間、夜通しで精査したＣＩＡ（中央情報局）の情報だ」と明かし「今後、隠匿の証拠が見つかることを確信している」と言明した。	
+1	[JSP]	[JSP]	X	空白	_	5	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	パウエル	パウエル	PROPN	名詞-固有名詞-人名-一般	_	5	compound	_	BunsetuPosition=I|JPYomi=パウエル|BunsetuPositionType=CONT|SpaceAfter=No	
+3	米	米	NOUN	名詞-普通名詞-一般	_	5	compound	_	BunsetuPosition=I|JPYomi=ベイ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	国務	国務	NOUN	名詞-普通名詞-一般	_	5	compound	_	BunsetuPosition=I|JPYomi=コクム|BunsetuPositionType=CONT|SpaceAfter=No	
+5	長官	長官	NOUN	名詞-普通名詞-一般	_	91	obl	_	BunsetuPosition=I|JPYomi=チョウカン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	も	も	ADP	助詞-係助詞	_	5	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	、	、	PUNCT	補助記号-読点	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+8	前日	前日	NOUN	名詞-普通名詞-副詞可能	_	11	nmod	_	BunsetuPosition=B|JPYomi=ゼンジツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-XX-XX" tid="t2" value="2003-06-08" definite="FALSE"
+9	の	の	ADP	助詞-格助詞	_	8	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	八	八	NUM	名詞-数詞	_	11	nummod	_	BunsetuPosition=B|JPYomi=ヤ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-XX-08" tid="t3" value="2003-06-08" definite="FALSE"
+11	日	日	PART	接尾辞-名詞的-助数詞	_	14	obl	_	BunsetuPosition=I|JPYomi=カ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	に	に	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	出演	出演	VERB	名詞-普通名詞-サ変可能	_	14	aux	_	BunsetuPosition=B|JPYomi=シュツエン|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e9" class="OCCURRENCE"
+14	し	為る	AUX	動詞-非自立可能	_	20	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+15	た	た	AUX	助動詞	_	14	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+16	米	米	NOUN	名詞-普通名詞-一般	_	18	compound	_	BunsetuPosition=B|JPYomi=ベイ|BunsetuPositionType=CONT|SpaceAfter=No	
+17	ＦＯＸ	フォックス	PROPN	名詞-固有名詞-一般	_	18	compound	_	BunsetuPosition=I|JPYomi=フォックス|BunsetuPositionType=CONT|SpaceAfter=No	
+18	ニュース	ニュース	NOUN	名詞-普通名詞-一般	_	20	nmod	_	BunsetuPosition=I|JPYomi=ニュース|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	の	の	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	番組	番組	NOUN	名詞-普通名詞-一般	_	91	nmod	_	BunsetuPosition=B|JPYomi=バングミ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+21	で	で	ADP	助詞-格助詞	_	20	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+22	、	、	PUNCT	補助記号-読点	_	20	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+23	戦争	戦争	NOUN	名詞-普通名詞-サ変可能	_	24	compound	_	BunsetuPosition=B|JPYomi=センソウ|BunsetuPositionType=CONT|SpaceAfter=No	
+24	前	前	NOUN	名詞-普通名詞-副詞可能	_	27	nmod	_	BunsetuPosition=I|JPYomi=マエ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+25	の	の	ADP	助詞-格助詞	_	24	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+26	二	二	NUM	名詞-数詞	_	27	nummod	_	BunsetuPosition=B|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-02" tid="t4" value="2003-02" definite="FALSE"
+27	月	月	NOUN	名詞-普通名詞-助数詞可能	_	47	obl	_	BunsetuPosition=I|JPYomi=ガツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+28	に	に	ADP	助詞-格助詞	_	27	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+29	、	、	PUNCT	補助記号-読点	_	27	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+30	国連	国連	PROPN	名詞-固有名詞-一般	_	34	compound	_	BunsetuPosition=B|JPYomi=コクレン|BunsetuPositionType=CONT|SpaceAfter=No	
+31	安全	安全	NOUN	名詞-普通名詞-形状詞可能	_	34	compound	_	BunsetuPosition=I|JPYomi=アンゼン|BunsetuPositionType=CONT|SpaceAfter=No	
+32	保障	保障	NOUN	名詞-普通名詞-サ変可能	_	34	compound	_	BunsetuPosition=I|JPYomi=ホショウ|BunsetuPositionType=CONT|SpaceAfter=No	
+33	理事	理事	NOUN	名詞-普通名詞-一般	_	34	compound	_	BunsetuPosition=I|JPYomi=リジ|BunsetuPositionType=CONT|SpaceAfter=No	
+34	会	会	NOUN	名詞-普通名詞-一般	_	47	nmod	_	BunsetuPosition=I|JPYomi=カイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+35	で	で	ADP	助詞-格助詞	_	34	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+36	イラク	イラク	PROPN	名詞-固有名詞-地名-国	_	41	nmod	_	BunsetuPosition=B|JPYomi=イラク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+37	の	の	ADP	助詞-格助詞	_	36	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+38	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	41	compound	_	BunsetuPosition=B|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+39	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	41	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+40	兵器	兵器	NOUN	名詞-普通名詞-一般	_	41	compound	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=CONT|SpaceAfter=No	
+41	隠匿	隠匿	NOUN	名詞-普通名詞-サ変可能	_	44	nmod	_	BunsetuPosition=I|JPYomi=イントク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+42	の	の	ADP	助詞-格助詞	_	41	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+43	機密	機密	NOUN	名詞-普通名詞-一般	_	44	compound	_	BunsetuPosition=B|JPYomi=キミツ|BunsetuPositionType=CONT|SpaceAfter=No	
+44	情報	情報	NOUN	名詞-普通名詞-一般	_	47	obj	_	BunsetuPosition=I|JPYomi=ジョウホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+45	を	を	ADP	助詞-格助詞	_	44	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+46	開示	開示	VERB	名詞-普通名詞-サ変可能	_	47	aux	_	BunsetuPosition=B|JPYomi=カイジ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e10" class="OCCURRENCE"
+47	し	為る	AUX	動詞-非自立可能	_	49	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+48	た	た	AUX	助動詞	_	47	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+49	こと	事	NOUN	名詞-普通名詞-一般	_	73	obl	_	BunsetuPosition=B|JPYomi=コト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+50	に	に	ADP	助詞-格助詞	_	49	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+51	つい	つく	VERB	動詞-一般	_	49	aux	_	BunsetuPosition=I|JPYomi=ツク|BunsetuPositionType=CONT|SpaceAfter=No	
+52	て	て	SCONJ	助詞-接続助詞	_	49	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+53	「	「	PUNCT	補助記号-括弧開	_	55	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+54	四	四	NUM	名詞-数詞	_	55	nummod	_	BunsetuPosition=I|JPYomi=ヨン|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DURATION" valueFromSurface="P4D" tid="t5" value="P4D" definite="FALSE"
+55	日間	日間	NOUN	名詞-普通名詞-助数詞可能	_	60	nmod	_	BunsetuPosition=I|JPYomi=カカン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+56	、	、	PUNCT	補助記号-読点	_	55	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+57	夜通し	夜通し	ADV	副詞	_	60	advmod	_	BunsetuPosition=B|JPYomi=ヨドオシ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+58	で	で	ADP	助詞-格助詞	_	57	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+59	精査	精査	VERB	名詞-普通名詞-サ変可能	_	60	aux	_	BunsetuPosition=B|JPYomi=セイサ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e11" class="OCCURRENCE"
+60	し	為る	AUX	動詞-非自立可能	_	69	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+61	た	た	AUX	助動詞	_	60	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+62	ＣＩＡ	ＣＩＡ	NOUN	名詞-普通名詞-一般	_	66	appos	_	BunsetuPosition=B|JPYomi=シーアイエー|BunsetuPositionType=CONT|SpaceAfter=No	
+63	（	（	PUNCT	補助記号-括弧開	_	66	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+64	中央	中央	NOUN	名詞-普通名詞-一般	_	66	compound	_	BunsetuPosition=I|JPYomi=チュウオウ|BunsetuPositionType=CONT|SpaceAfter=No	
+65	情報	情報	NOUN	名詞-普通名詞-一般	_	66	compound	_	BunsetuPosition=I|JPYomi=ジョウホウ|BunsetuPositionType=CONT|SpaceAfter=No	
+66	局	局	NOUN	名詞-普通名詞-助数詞可能	_	69	nmod	_	BunsetuPosition=I|JPYomi=キョク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+67	）	）	PUNCT	補助記号-括弧閉	_	66	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+68	の	の	ADP	助詞-格助詞	_	66	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+69	情報	情報	NOUN	名詞-普通名詞-一般	_	73	nmod	_	BunsetuPosition=B|JPYomi=ジョウホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+70	だ	だ	AUX	助動詞	_	69	cop	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+71	」	」	PUNCT	補助記号-括弧閉	_	69	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+72	と	と	ADP	助詞-格助詞	_	69	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+73	明かし	明かす	VERB	動詞-一般	_	91	advcl	_	BunsetuPosition=B|JPYomi=アカス|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e12" class="PERCEPTION"
+74	「	「	PUNCT	補助記号-括弧開	_	75	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+75	今後	今後	ADV	名詞-普通名詞-副詞可能	_	81	advmod	_	BunsetuPosition=I|JPYomi=コンゴ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="FUTURE_REF" tid="t6" value="FUTURE_REF" definite="TRUE"
+76	、	、	PUNCT	補助記号-読点	_	75	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+77	隠匿	隠匿	NOUN	名詞-普通名詞-サ変可能	_	79	nmod	_	BunsetuPosition=B|JPYomi=イントク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+78	の	の	ADP	助詞-格助詞	_	77	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+79	証拠	証拠	NOUN	名詞-普通名詞-一般	_	81	nsubj	_	BunsetuPosition=B|JPYomi=ショウコ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+80	が	が	ADP	助詞-格助詞	_	79	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+81	見つかる	見付かる	VERB	動詞-一般	_	82	acl	_	BunsetuPosition=B|JPYomi=ミツカル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e13" class="OCCURRENCE"
+82	こと	事	NOUN	名詞-普通名詞-一般	_	85	obj	_	BunsetuPosition=B|JPYomi=コト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+83	を	を	ADP	助詞-格助詞	_	82	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+84	確信	確信	VERB	名詞-普通名詞-サ変可能	_	85	aux	_	BunsetuPosition=B|JPYomi=カクシン|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e14" class="I_STATE"
+85	し	為る	AUX	動詞-非自立可能	_	91	advcl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+86	て	て	SCONJ	助詞-接続助詞	_	85	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+87	いる	居る	AUX	動詞-非自立可能	_	85	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+88	」	」	PUNCT	補助記号-括弧閉	_	85	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+89	と	と	ADP	助詞-格助詞	_	85	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+90	言明	言明	VERB	名詞-普通名詞-サ変可能	_	91	aux	_	BunsetuPosition=B|JPYomi=ゲンメイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e15" class="REPORTING"
+91	し	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	
+92	た	た	AUX	助動詞	_	91	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+93	。	。	PUNCT	補助記号-句点	_	91	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-7	
+# text = [JSP]長官は同日のＣＮＮの番組では「（イラクの）フセイン政権は、大量破壊兵器隠匿のような詐欺行為に熟達している。米国は隠匿や（同兵器）開発に疑いの余地はないと考えているが、証拠を見つけるにはもう少しの忍耐が必要」と述べた。	
+1	[JSP]	[JSP]	X	空白	_	2	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	長官	長官	NOUN	名詞-普通名詞-一般	_	69	iobj	_	BunsetuPosition=I|JPYomi=チョウカン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	は	は	ADP	助詞-係助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	同日	同日	NOUN	名詞-普通名詞-副詞可能	_	6	nmod	_	BunsetuPosition=B|JPYomi=ドウジツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-XX-XX" tid="t7" value="2003-06-08" definite="FALSE"
+5	の	の	ADP	助詞-格助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	ＣＮＮ	ＣＮＮ	PROPN	名詞-固有名詞-一般	_	8	nmod	_	BunsetuPosition=B|JPYomi=シーエヌエヌ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	の	の	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	番組	番組	NOUN	名詞-普通名詞-一般	_	69	obl	_	BunsetuPosition=B|JPYomi=バングミ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	で	で	ADP	助詞-格助詞	_	8	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+10	は	は	ADP	助詞-係助詞	_	8	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	「	「	PUNCT	補助記号-括弧開	_	13	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=NO_HEAD|SpaceAfter=No	
+12	（	（	PUNCT	補助記号-括弧開	_	13	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+13	イラク	イラク	PROPN	名詞-固有名詞-地名-国	_	17	nmod	_	BunsetuPosition=I|JPYomi=イラク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	の	の	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	）	）	PUNCT	補助記号-括弧閉	_	13	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+16	フセイン	フセイン	PROPN	名詞-固有名詞-人名-一般	_	17	compound	_	BunsetuPosition=B|JPYomi=フセイン|BunsetuPositionType=CONT|SpaceAfter=No	
+17	政権	政権	NOUN	名詞-普通名詞-一般	_	31	obl	_	BunsetuPosition=I|JPYomi=セイケン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	は	は	ADP	助詞-係助詞	_	17	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	、	、	PUNCT	補助記号-読点	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+20	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	23	compound	_	BunsetuPosition=B|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+21	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	23	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+22	兵器	兵器	NOUN	名詞-普通名詞-一般	_	23	compound	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=CONT|SpaceAfter=No	
+23	隠匿	隠匿	NOUN	名詞-普通名詞-サ変可能	_	25	nmod	_	BunsetuPosition=I|JPYomi=イントク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+24	の	の	ADP	助詞-格助詞	_	23	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	よう	様	AUX	形状詞-助動詞語幹	_	28	amod	_	BunsetuPosition=B|JPYomi=ヨウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+26	な	だ	AUX	助動詞	_	25	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+27	詐欺	詐欺	NOUN	名詞-普通名詞-一般	_	28	compound	_	BunsetuPosition=B|JPYomi=サギ|BunsetuPositionType=CONT|SpaceAfter=No	
+28	行為	行為	NOUN	名詞-普通名詞-一般	_	31	obl	_	BunsetuPosition=I|JPYomi=コウイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+29	に	に	ADP	助詞-格助詞	_	28	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+30	熟達	熟達	VERB	名詞-普通名詞-サ変可能	_	31	aux	_	BunsetuPosition=B|JPYomi=ジュクタツ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e16" class="OCCURRENCE"
+31	し	為る	AUX	動詞-非自立可能	_	66	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+32	て	て	SCONJ	助詞-接続助詞	_	31	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+33	いる	居る	AUX	動詞-非自立可能	_	31	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+34	。	。	PUNCT	補助記号-句点	_	31	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+35	米国	米国	PROPN	名詞-固有名詞-地名-国	_	51	iobj	_	BunsetuPosition=B|JPYomi=ベイコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+36	は	は	ADP	助詞-係助詞	_	35	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+37	隠匿	隠匿	NOUN	名詞-普通名詞-サ変可能	_	43	nmod	_	BunsetuPosition=B|JPYomi=イントク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+38	や	や	ADP	助詞-副助詞	_	37	case	_	BunsetuPosition=I|JPYomi=ヤ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+39	（	（	PUNCT	補助記号-括弧開	_	43	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+40	同	同	NOUN	名詞-普通名詞-一般	_	43	compound	_	BunsetuPosition=I|JPYomi=ドウ|BunsetuPositionType=CONT|SpaceAfter=No	
+41	兵器	兵器	NOUN	名詞-普通名詞-一般	_	43	compound	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=CONT|SpaceAfter=No	
+42	）	）	PUNCT	補助記号-括弧閉	_	43	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+43	開発	開発	NOUN	名詞-普通名詞-サ変可能	_	49	iobj	_	BunsetuPosition=I|JPYomi=カイハツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+44	に	に	ADP	助詞-格助詞	_	43	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+45	疑い	疑い	NOUN	名詞-普通名詞-一般	_	47	nmod	_	BunsetuPosition=B|JPYomi=ウタガイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+46	の	の	ADP	助詞-格助詞	_	45	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+47	余地	余地	NOUN	名詞-普通名詞-一般	_	49	iobj	_	BunsetuPosition=B|JPYomi=ヨチ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+48	は	は	ADP	助詞-係助詞	_	47	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+49	ない	無い	ADJ	形容詞-非自立可能	Polarity=Neg	51	amod	_	BunsetuPosition=B|JPYomi=ナイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e17" class="NULL"
+50	と	と	ADP	助詞-格助詞	_	49	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+51	考え	考える	VERB	動詞-一般	_	66	acl	_	BunsetuPosition=B|JPYomi=カンガエル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e18" class="I_STATE"
+52	て	て	SCONJ	助詞-接続助詞	_	51	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+53	いる	居る	AUX	動詞-非自立可能	_	51	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+54	が	が	CCONJ	助詞-接続助詞	_	51	cc	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+55	、	、	PUNCT	補助記号-読点	_	51	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+56	証拠	証拠	NOUN	名詞-普通名詞-一般	_	58	obj	_	BunsetuPosition=B|JPYomi=ショウコ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+57	を	を	ADP	助詞-格助詞	_	56	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+58	見つける	見付ける	VERB	動詞-一般	_	66	obl	_	BunsetuPosition=B|JPYomi=ミツケル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e19" class="OCCURRENCE"
+59	に	に	ADP	助詞-格助詞	_	58	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+60	は	は	ADP	助詞-係助詞	_	58	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+61	もう	もう	ADV	副詞	_	62	advmod	_	BunsetuPosition=B|JPYomi=モウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+62	少し	少し	ADV	副詞	_	64	nmod	_	BunsetuPosition=B|JPYomi=スコシ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+63	の	の	ADP	助詞-格助詞	_	62	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+64	忍耐	忍耐	NOUN	名詞-普通名詞-サ変可能	_	66	nsubj	_	BunsetuPosition=B|JPYomi=ニンタイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+65	が	が	ADP	助詞-格助詞	_	64	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+66	必要	必要	NOUN	名詞-普通名詞-形状詞可能	_	68	nmod	_	BunsetuPosition=B|JPYomi=ヒツヨウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+67	」	」	PUNCT	補助記号-括弧閉	_	66	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+68	と	と	ADP	助詞-格助詞	_	69	advmod	_	BunsetuPosition=B|JPYomi=ト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+69	述べ	述べる	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ノベル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e20" class="REPORTING"
+70	た	た	AUX	助動詞	_	69	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+71	。	。	PUNCT	補助記号-句点	_	69	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-8	
+# text = [JSP]ライス大統領補佐官（国家安全保障担当）は同日、ＮＢＣテレビで、隠匿の疑いが濃厚なため、捜索活動が必要だと主張。	
+1	[JSP]	[JSP]	X	空白	_	10	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	ライス	ライス	PROPN	名詞-固有名詞-人名-一般	_	10	appos	_	BunsetuPosition=I|JPYomi=ライス|BunsetuPositionType=CONT|SpaceAfter=No	
+3	大統領	大統領	NOUN	名詞-普通名詞-一般	_	10	appos	_	BunsetuPosition=I|JPYomi=ダイトウリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	補佐	補佐	NOUN	名詞-普通名詞-サ変可能	_	10	appos	_	BunsetuPosition=I|JPYomi=ホサ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	官	官	PART	接尾辞-名詞的-一般	_	10	appos	_	BunsetuPosition=I|JPYomi=カン|BunsetuPositionType=CONT|SpaceAfter=No	
+6	（	（	PUNCT	補助記号-括弧開	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+7	国家	国家	NOUN	名詞-普通名詞-一般	_	10	compound	_	BunsetuPosition=I|JPYomi=コッカ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	安全	安全	NOUN	名詞-普通名詞-形状詞可能	_	10	compound	_	BunsetuPosition=I|JPYomi=アンゼン|BunsetuPositionType=CONT|SpaceAfter=No	
+9	保障	保障	NOUN	名詞-普通名詞-サ変可能	_	10	compound	_	BunsetuPosition=I|JPYomi=ホショウ|BunsetuPositionType=CONT|SpaceAfter=No	
+10	担当	担当	NOUN	名詞-普通名詞-サ変可能	_	33	obl	_	BunsetuPosition=I|JPYomi=タントウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	）	）	PUNCT	補助記号-括弧閉	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+12	は	は	ADP	助詞-係助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	同日	同日	ADV	名詞-普通名詞-副詞可能	_	33	advmod	_	BunsetuPosition=B|JPYomi=ドウジツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-XX-XX" tid="t8" value="2003-06-08" definite="FALSE"
+14	、	、	PUNCT	補助記号-読点	_	13	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+15	ＮＢＣ	ＮＢＣ	PROPN	名詞-固有名詞-一般	_	16	compound	_	BunsetuPosition=B|JPYomi=エヌビーシー|BunsetuPositionType=CONT|SpaceAfter=No	
+16	テレビ	テレビ	NOUN	名詞-普通名詞-一般	_	33	nmod	_	BunsetuPosition=I|JPYomi=テレビ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+17	で	で	ADP	助詞-格助詞	_	16	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+18	、	、	PUNCT	補助記号-読点	_	16	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+19	隠匿	隠匿	NOUN	名詞-普通名詞-サ変可能	_	21	nmod	_	BunsetuPosition=B|JPYomi=イントク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+20	の	の	ADP	助詞-格助詞	_	19	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+21	疑い	疑い	NOUN	名詞-普通名詞-一般	_	23	nsubj	_	BunsetuPosition=B|JPYomi=ウタガイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	が	が	ADP	助詞-格助詞	_	21	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+23	濃厚	濃厚	ADJ	形状詞-一般	_	25	amod	_	BunsetuPosition=B|JPYomi=ノウコウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e21" class="NULL"
+24	な	だ	AUX	助動詞	_	23	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	ため	為	NOUN	名詞-普通名詞-副詞可能	_	30	nmod	_	BunsetuPosition=B|JPYomi=タメ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+26	、	、	PUNCT	補助記号-読点	_	25	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+27	捜索	捜索	NOUN	名詞-普通名詞-サ変可能	_	28	compound	_	BunsetuPosition=B|JPYomi=ソウサク|BunsetuPositionType=CONT|SpaceAfter=No	
+28	活動	活動	NOUN	名詞-普通名詞-サ変可能	_	30	nsubj	_	BunsetuPosition=I|JPYomi=カツドウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+29	が	が	ADP	助詞-格助詞	_	28	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+30	必要	必要	ADJ	名詞-普通名詞-形状詞可能	_	33	amod	_	BunsetuPosition=B|JPYomi=ヒツヨウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e22" class="NULL"
+31	だ	だ	AUX	助動詞	_	30	cop	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+32	と	と	ADP	助詞-格助詞	_	30	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+33	主張	主張	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=B|JPYomi=シュチョウ|BunsetuPositionType=ROOT|SpaceAfter=No	
+34	。	。	PUNCT	補助記号-句点	_	33	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-9	
+# text = ＣＢＳテレビでは「大量破壊兵器に関する多くの文書を入手しており、多くのフセイン政権関係者の取り調べも続けている」として、捜索予定の関連施設がまだ多数あることを明らかにした。	
+1	ＣＢＳ	ＣＢＳ	PROPN	名詞-固有名詞-一般	_	2	compound	_	BunsetuPosition=B|JPYomi=シービーエス|BunsetuPositionType=CONT|SpaceAfter=No	
+2	テレビ	テレビ	NOUN	名詞-普通名詞-一般	_	50	obl	_	BunsetuPosition=I|JPYomi=テレビ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	で	で	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+4	は	は	ADP	助詞-係助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	「	「	PUNCT	補助記号-括弧開	_	8	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+6	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	8	compound	_	BunsetuPosition=I|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+7	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	8	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	兵器	兵器	NOUN	名詞-普通名詞-一般	_	13	obl	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	に	に	ADP	助詞-格助詞	_	8	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+10	関する	関する	VERB	動詞-一般	_	8	aux	_	BunsetuPosition=I|JPYomi=カンスル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	多く	多く	NOUN	名詞-普通名詞-副詞可能	_	13	nmod	_	BunsetuPosition=B|JPYomi=オオク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	の	の	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	文書	文書	NOUN	名詞-普通名詞-一般	_	16	obj	_	BunsetuPosition=B|JPYomi=ブンショ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	を	を	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	入手	入手	VERB	名詞-普通名詞-サ変可能	_	16	aux	_	BunsetuPosition=B|JPYomi=ニュウシュ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e23" class="OCCURRENCE"
+16	し	為る	AUX	動詞-非自立可能	_	29	advcl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+17	て	て	SCONJ	助詞-接続助詞	_	16	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+18	おり	居る	AUX	動詞-非自立可能	_	16	aux	_	BunsetuPosition=I|JPYomi=オル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	、	、	PUNCT	補助記号-読点	_	16	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+20	多く	多く	NOUN	名詞-普通名詞-副詞可能	_	25	nmod	_	BunsetuPosition=B|JPYomi=オオク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+21	の	の	ADP	助詞-格助詞	_	20	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+22	フセイン	フセイン	PROPN	名詞-固有名詞-人名-一般	_	25	compound	_	BunsetuPosition=B|JPYomi=フセイン|BunsetuPositionType=CONT|SpaceAfter=No	
+23	政権	政権	NOUN	名詞-普通名詞-一般	_	25	compound	_	BunsetuPosition=I|JPYomi=セイケン|BunsetuPositionType=CONT|SpaceAfter=No	
+24	関係	関係	NOUN	名詞-普通名詞-サ変可能	_	25	compound	_	BunsetuPosition=I|JPYomi=カンケイ|BunsetuPositionType=CONT|SpaceAfter=No	
+25	者	者	PART	接尾辞-名詞的-一般	_	27	nmod	_	BunsetuPosition=I|JPYomi=シャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+26	の	の	ADP	助詞-格助詞	_	25	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+27	取り調べ	取り調べ	NOUN	名詞-普通名詞-一般	_	29	iobj	_	BunsetuPosition=B|JPYomi=トリシラベ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+28	も	も	ADP	助詞-係助詞	_	27	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+29	続け	続ける	VERB	動詞-非自立可能	_	34	advcl	_	BunsetuPosition=B|JPYomi=ツヅケル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e24" class="ASPECTUAL"
+30	て	て	SCONJ	助詞-接続助詞	_	29	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+31	いる	居る	AUX	動詞-非自立可能	_	29	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+32	」	」	PUNCT	補助記号-括弧閉	_	29	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+33	と	と	ADP	助詞-格助詞	_	29	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+34	し	為る	AUX	動詞-非自立可能	_	50	advcl	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e25" class="I_ACTION"
+35	て	て	SCONJ	助詞-接続助詞	_	34	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+36	、	、	PUNCT	補助記号-読点	_	34	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+37	捜索	捜索	NOUN	名詞-普通名詞-サ変可能	_	38	compound	_	BunsetuPosition=B|JPYomi=ソウサク|BunsetuPositionType=CONT|SpaceAfter=No	
+38	予定	予定	NOUN	名詞-普通名詞-サ変可能	_	41	nmod	_	BunsetuPosition=I|JPYomi=ヨテイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+39	の	の	ADP	助詞-格助詞	_	38	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+40	関連	関連	NOUN	名詞-普通名詞-サ変可能	_	41	compound	_	BunsetuPosition=B|JPYomi=カンレン|BunsetuPositionType=CONT|SpaceAfter=No	
+41	施設	施設	NOUN	名詞-普通名詞-サ変可能	_	45	nsubj	_	BunsetuPosition=I|JPYomi=シセツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+42	が	が	ADP	助詞-格助詞	_	41	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+43	まだ	未だ	ADV	副詞	_	45	advmod	_	BunsetuPosition=B|JPYomi=マダ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+44	多数	多数	ADV	名詞-普通名詞-副詞可能	_	45	advmod	_	BunsetuPosition=B|JPYomi=タスウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+45	ある	有る	VERB	動詞-非自立可能	_	46	acl	_	BunsetuPosition=B|JPYomi=アル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e26" class="STATE"
+46	こと	事	NOUN	名詞-普通名詞-一般	_	50	obj	_	BunsetuPosition=B|JPYomi=コト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+47	を	を	ADP	助詞-格助詞	_	46	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+48	明らか	明らか	ADJ	形状詞-一般	_	50	amod	_	BunsetuPosition=B|JPYomi=アキラカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e27" class="NULL"
+49	に	だ	AUX	助動詞	_	48	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+50	し	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e28" class="I_ACTION"
+51	た	た	AUX	助動詞	_	50	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+52	。	。	PUNCT	補助記号-句点	_	50	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-10	
+# text = [JSP]この問題では、米メディアが先週末に、国防情報局（ＤＩＡ）が作成した昨年九月の報告書に、「大量破壊兵器隠匿については、十分な情報はない」と記載されていたと報道。	
+1	[JSP]	[JSP]	X	空白	_	2	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	この	此の	DET	連体詞	_	3	det	_	BunsetuPosition=I|JPYomi=コノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	問題	問題	NOUN	名詞-普通名詞-一般	_	56	obl	_	BunsetuPosition=B|JPYomi=モンダイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	で	で	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+5	は	は	ADP	助詞-係助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	、	、	PUNCT	補助記号-読点	_	3	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+7	米	米	NOUN	名詞-普通名詞-一般	_	8	compound	_	BunsetuPosition=B|JPYomi=ベイ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	メディア	メディア	NOUN	名詞-普通名詞-一般	_	56	nsubj	_	BunsetuPosition=I|JPYomi=メディア|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	が	が	ADP	助詞-格助詞	_	8	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	先週	先週	NOUN	名詞-普通名詞-副詞可能	_	11	compound	_	BunsetuPosition=B|JPYomi=センシュウ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" value="2003-WXX-WE" valueFromSurface="XXXX-WXX-WE"
+11	末	末	PART	接尾辞-名詞的-副詞可能	_	56	obl	_	BunsetuPosition=I|JPYomi=マツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	に	に	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	、	、	PUNCT	補助記号-読点	_	11	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+14	国防	国防	NOUN	名詞-普通名詞-一般	_	18	appos	_	BunsetuPosition=B|JPYomi=コクボウ|BunsetuPositionType=CONT|SpaceAfter=No	
+15	情報	情報	NOUN	名詞-普通名詞-一般	_	18	appos	_	BunsetuPosition=I|JPYomi=ジョウホウ|BunsetuPositionType=CONT|SpaceAfter=No	
+16	局	局	NOUN	名詞-普通名詞-助数詞可能	_	18	appos	_	BunsetuPosition=I|JPYomi=キョク|BunsetuPositionType=CONT|SpaceAfter=No	
+17	（	（	PUNCT	補助記号-括弧開	_	18	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+18	ＤＩＡ	ＤＩＡ	NOUN	名詞-普通名詞-一般	_	22	nsubj	_	BunsetuPosition=I|JPYomi=ディーアイエー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	）	）	PUNCT	補助記号-括弧閉	_	18	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+20	が	が	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+21	作成	作成	VERB	名詞-普通名詞-サ変可能	_	22	aux	_	BunsetuPosition=B|JPYomi=サクセイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e29" class="OCCURRENCE"
+22	し	為る	AUX	動詞-非自立可能	_	29	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+23	た	た	AUX	助動詞	_	22	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+24	昨年	昨年	NOUN	名詞-普通名詞-副詞可能	_	26	compound	_	BunsetuPosition=B|JPYomi=サクネン|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-09" tid="t9" value="2002-09" definite="FALSE"
+25	九	九	NUM	名詞-数詞	_	26	nummod	_	BunsetuPosition=I|JPYomi=ク|BunsetuPositionType=CONT|SpaceAfter=No	
+26	月	月	NOUN	名詞-普通名詞-助数詞可能	_	29	nmod	_	BunsetuPosition=I|JPYomi=ガツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+27	の	の	ADP	助詞-格助詞	_	26	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+28	報告	報告	NOUN	名詞-普通名詞-サ変可能	_	29	compound	_	BunsetuPosition=B|JPYomi=ホウコク|BunsetuPositionType=CONT|SpaceAfter=No	
+29	書	書	PART	接尾辞-名詞的-一般	_	50	obl	_	BunsetuPosition=I|JPYomi=ショ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+30	に	に	ADP	助詞-格助詞	_	29	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+31	、	、	PUNCT	補助記号-読点	_	29	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+32	「	「	PUNCT	補助記号-括弧開	_	36	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+33	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	36	compound	_	BunsetuPosition=I|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+34	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	36	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+35	兵器	兵器	NOUN	名詞-普通名詞-一般	_	36	compound	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=CONT|SpaceAfter=No	
+36	隠匿	隠匿	NOUN	名詞-普通名詞-サ変可能	_	46	obl	_	BunsetuPosition=I|JPYomi=イントク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+37	に	に	ADP	助詞-格助詞	_	36	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+38	つい	つく	VERB	動詞-一般	_	36	aux	_	BunsetuPosition=I|JPYomi=ツク|BunsetuPositionType=CONT|SpaceAfter=No	
+39	て	て	SCONJ	助詞-接続助詞	_	36	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+40	は	は	ADP	助詞-係助詞	_	36	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+41	、	、	PUNCT	補助記号-読点	_	36	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+42	十分	十分	ADJ	形状詞-一般	_	44	amod	_	BunsetuPosition=B|JPYomi=ジュウブン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e30" class="NULL"
+43	な	だ	AUX	助動詞	_	42	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+44	情報	情報	NOUN	名詞-普通名詞-一般	_	46	iobj	_	BunsetuPosition=B|JPYomi=ジョウホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+45	は	は	ADP	助詞-係助詞	_	44	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+46	ない	無い	ADJ	形容詞-非自立可能	Polarity=Neg	50	amod	_	BunsetuPosition=B|JPYomi=ナイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e31" class="STATE"
+47	」	」	PUNCT	補助記号-括弧閉	_	46	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+48	と	と	ADP	助詞-格助詞	_	46	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+49	記載	記載	VERB	名詞-普通名詞-サ変可能	_	50	aux	_	BunsetuPosition=B|JPYomi=キサイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e32" class="OCCURRENCE"
+50	さ	為る	AUX	動詞-非自立可能	_	56	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+51	れ	れる	AUX	助動詞	_	50	aux	_	BunsetuPosition=I|JPYomi=レル|BunsetuPositionType=FUNC|SpaceAfter=No	
+52	て	て	SCONJ	助詞-接続助詞	_	50	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+53	い	居る	AUX	動詞-非自立可能	_	50	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+54	た	た	AUX	助動詞	_	50	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=FUNC|SpaceAfter=No	
+55	と	と	ADP	助詞-格助詞	_	50	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+56	報道	報道	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=B|JPYomi=ホウドウ|BunsetuPositionType=ROOT|SpaceAfter=No	
+57	。	。	PUNCT	補助記号-句点	_	56	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-11	
+# text = ジャコビーＤＩＡ局長が記者会見で、報告書の存在を認めたうえで「一文節を抽出して書いた報道。フセイン政権の化学兵器の隠匿や開発は確信していた」と反論した。	
+1	ジャコビー	ジャコビー	PROPN	名詞-固有名詞-人名-一般	_	3	compound	_	BunsetuPosition=B|JPYomi=ジャコビー|BunsetuPositionType=CONT|SpaceAfter=No	
+2	ＤＩＡ	ＤＩＡ	NOUN	名詞-普通名詞-一般	_	3	compound	_	BunsetuPosition=I|JPYomi=ディーアイエー|BunsetuPositionType=CONT|SpaceAfter=No	
+3	局長	局長	NOUN	名詞-普通名詞-一般	_	47	nsubj	_	BunsetuPosition=I|JPYomi=キョクチョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	が	が	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	記者	記者	NOUN	名詞-普通名詞-一般	_	6	compound	_	BunsetuPosition=B|JPYomi=キシャ|BunsetuPositionType=CONT|SpaceAfter=No	
+6	会見	会見	NOUN	名詞-普通名詞-サ変可能	_	47	nmod	_	BunsetuPosition=I|JPYomi=カイケン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	で	で	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	、	、	PUNCT	補助記号-読点	_	6	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+9	報告	報告	NOUN	名詞-普通名詞-サ変可能	_	10	compound	_	BunsetuPosition=B|JPYomi=ホウコク|BunsetuPositionType=CONT|SpaceAfter=No	
+10	書	書	PART	接尾辞-名詞的-一般	_	12	nmod	_	BunsetuPosition=I|JPYomi=ショ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	の	の	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	存在	存在	NOUN	名詞-普通名詞-サ変可能	_	14	obj	_	BunsetuPosition=B|JPYomi=ソンザイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	を	を	ADP	助詞-格助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	認め	認める	VERB	動詞-一般	_	47	advcl	_	BunsetuPosition=B|JPYomi=ミトメル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e33" class="OCCURRENCE"
+15	た	た	AUX	助動詞	_	14	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=FUNC|SpaceAfter=No	
+16	うえ	上	NOUN	名詞-普通名詞-副詞可能	_	14	compound	_	BunsetuPosition=I|JPYomi=ウエ|BunsetuPositionType=CONT|SpaceAfter=No	
+17	で	で	ADP	助詞-格助詞	_	14	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+18	「	「	PUNCT	補助記号-括弧開	_	20	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=NO_HEAD|SpaceAfter=No	
+19	一	一	NUM	名詞-数詞	_	20	nummod	_	BunsetuPosition=B|JPYomi=イチ|BunsetuPositionType=CONT|SpaceAfter=No	
+20	文節	文節	NOUN	名詞-普通名詞-一般	_	23	obj	_	BunsetuPosition=I|JPYomi=ブンセツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+21	を	を	ADP	助詞-格助詞	_	20	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+22	抽出	抽出	VERB	名詞-普通名詞-サ変可能	_	23	aux	_	BunsetuPosition=B|JPYomi=チュウシュツ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e34" class="OCCURRENCE"
+23	し	為る	AUX	動詞-非自立可能	_	25	advcl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+24	て	て	SCONJ	助詞-接続助詞	_	23	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	書い	書く	VERB	動詞-一般	_	27	acl	_	BunsetuPosition=B|JPYomi=カク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e35" class="OCCURRENCE"
+26	た	た	AUX	助動詞	_	25	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+27	報道	報道	NOUN	名詞-普通名詞-サ変可能	_	40	nmod	_	BunsetuPosition=B|JPYomi=ホウドウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+28	。	。	PUNCT	補助記号-句点	_	27	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+29	フセイン	フセイン	PROPN	名詞-固有名詞-人名-一般	_	30	compound	_	BunsetuPosition=B|JPYomi=フセイン|BunsetuPositionType=CONT|SpaceAfter=No	
+30	政権	政権	NOUN	名詞-普通名詞-一般	_	33	nmod	_	BunsetuPosition=I|JPYomi=セイケン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+31	の	の	ADP	助詞-格助詞	_	30	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+32	化学	化学	NOUN	名詞-普通名詞-一般	_	33	compound	_	BunsetuPosition=B|JPYomi=カガク|BunsetuPositionType=CONT|SpaceAfter=No	
+33	兵器	兵器	NOUN	名詞-普通名詞-一般	_	35	nmod	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+34	の	の	ADP	助詞-格助詞	_	33	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+35	隠匿	隠匿	NOUN	名詞-普通名詞-サ変可能	_	37	nmod	_	BunsetuPosition=B|JPYomi=イントク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+36	や	や	ADP	助詞-副助詞	_	35	case	_	BunsetuPosition=I|JPYomi=ヤ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+37	開発	開発	NOUN	名詞-普通名詞-サ変可能	_	40	iobj	_	BunsetuPosition=B|JPYomi=カイハツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+38	は	は	ADP	助詞-係助詞	_	37	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+39	確信	確信	VERB	名詞-普通名詞-サ変可能	_	40	aux	_	BunsetuPosition=B|JPYomi=カクシン|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e36" class="I_STATE"
+40	し	為る	AUX	動詞-非自立可能	_	45	dep	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+41	て	て	SCONJ	助詞-接続助詞	_	40	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+42	い	居る	AUX	動詞-非自立可能	_	40	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+43	た	た	AUX	助動詞	_	40	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+44	」	」	PUNCT	補助記号-括弧閉	_	40	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+45	と	と	ADP	助詞-格助詞	_	47	dep	_	BunsetuPosition=B|JPYomi=ト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+46	反論	反論	VERB	名詞-普通名詞-サ変可能	_	47	aux	_	BunsetuPosition=B|JPYomi=ハンロン|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e37" class="I_ACTION"
+47	し	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	
+48	た	た	AUX	助動詞	_	47	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+49	。	。	PUNCT	補助記号-句点	_	47	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-12	
+# text = [JSP]米紙ワシントン・ポストは、やはり先週、チェイニー副大統領がイラク戦争前に、ＣＩＡを頻繁に訪問、イラクの大量破壊兵器や国際テロ組織、アルカーイダの情報を収集していたと報じ「開戦と大量破壊兵器開発情報に整合性を持たせるようにという無言の圧力を感じた」とするＣＩＡ担当官の証言を伝えている。	
+1	[JSP]	[JSP]	X	空白	_	5	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	米紙	米紙	NOUN	名詞-普通名詞-一般	_	5	appos	_	BunsetuPosition=I|JPYomi=ベイシ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	ワシントン	ワシントン	PROPN	名詞-固有名詞-地名-一般	_	5	compound	_	BunsetuPosition=I|JPYomi=ワシントン|BunsetuPositionType=CONT|SpaceAfter=No	
+4	・	・	PUNCT	補助記号-一般	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+5	ポスト	ポスト	NOUN	名詞-普通名詞-一般	_	80	obl	_	BunsetuPosition=I|JPYomi=ポスト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	は	は	ADP	助詞-係助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	、	、	PUNCT	補助記号-読点	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+8	やはり	矢張り	ADV	副詞	_	24	advmod	_	BunsetuPosition=B|JPYomi=ヤハリ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	先週	先週	ADV	名詞-普通名詞-副詞可能	_	24	advmod	_	BunsetuPosition=B|JPYomi=センシュウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" value="XXXX-WXX" valueFromSurface="XXXX-WXX"
+10	、	、	PUNCT	補助記号-読点	_	9	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	チェイニー	チェイニー	PROPN	名詞-固有名詞-人名-一般	_	13	compound	_	BunsetuPosition=B|JPYomi=チェイニー|BunsetuPositionType=CONT|SpaceAfter=No	
+12	副	副	NOUN	接頭辞	_	13	compound	_	BunsetuPosition=I|JPYomi=フク|BunsetuPositionType=CONT|SpaceAfter=No	
+13	大統領	大統領	NOUN	名詞-普通名詞-一般	_	24	nsubj	_	BunsetuPosition=I|JPYomi=ダイトウリョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	が	が	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	イラク	イラク	PROPN	名詞-固有名詞-地名-国	_	17	compound	_	BunsetuPosition=B|JPYomi=イラク|BunsetuPositionType=CONT|SpaceAfter=No	
+16	戦争	戦争	NOUN	名詞-普通名詞-サ変可能	_	17	compound	_	BunsetuPosition=I|JPYomi=センソウ|BunsetuPositionType=CONT|SpaceAfter=No	
+17	前	前	NOUN	名詞-普通名詞-副詞可能	_	24	obl	_	BunsetuPosition=I|JPYomi=マエ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	に	に	ADP	助詞-格助詞	_	17	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	、	、	PUNCT	補助記号-読点	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+20	ＣＩＡ	ＣＩＡ	NOUN	名詞-普通名詞-一般	_	24	obj	_	BunsetuPosition=B|JPYomi=シーアイエー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+21	を	を	ADP	助詞-格助詞	_	20	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+22	頻繁	頻繁	ADJ	形状詞-一般	_	24	amod	_	BunsetuPosition=B|JPYomi=ヒンパン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e38" class="NULL"
+23	に	だ	AUX	助動詞	_	22	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+24	訪問	訪問	NOUN	名詞-普通名詞-サ変可能	_	41	nmod	_	BunsetuPosition=B|JPYomi=ホウモン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+25	、	、	PUNCT	補助記号-読点	_	24	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+26	イラク	イラク	PROPN	名詞-固有名詞-地名-国	_	30	nmod	_	BunsetuPosition=B|JPYomi=イラク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+27	の	の	ADP	助詞-格助詞	_	26	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+28	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	30	compound	_	BunsetuPosition=B|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+29	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	30	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+30	兵器	兵器	NOUN	名詞-普通名詞-一般	_	36	nmod	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+31	や	や	ADP	助詞-副助詞	_	30	case	_	BunsetuPosition=I|JPYomi=ヤ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+32	国際	国際	NOUN	名詞-普通名詞-一般	_	34	compound	_	BunsetuPosition=B|JPYomi=コクサイ|BunsetuPositionType=CONT|SpaceAfter=No	
+33	テロ	テロ	NOUN	名詞-普通名詞-一般	_	34	compound	_	BunsetuPosition=I|JPYomi=テロ|BunsetuPositionType=CONT|SpaceAfter=No	
+34	組織	組織	NOUN	名詞-普通名詞-サ変可能	_	36	appos	_	BunsetuPosition=I|JPYomi=ソシキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+35	、	、	PUNCT	補助記号-読点	_	34	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+36	アルカーイダ	アル・カイダ	PROPN	名詞-固有名詞-一般	_	38	nmod	_	BunsetuPosition=B|JPYomi=アルカイダ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+37	の	の	ADP	助詞-格助詞	_	36	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+38	情報	情報	NOUN	名詞-普通名詞-一般	_	41	obj	_	BunsetuPosition=B|JPYomi=ジョウホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+39	を	を	ADP	助詞-格助詞	_	38	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+40	収集	収集	VERB	名詞-普通名詞-サ変可能	_	41	aux	_	BunsetuPosition=B|JPYomi=シュウシュウ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e39" class="OCCURRENCE"
+41	し	為る	AUX	動詞-非自立可能	_	46	advcl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+42	て	て	SCONJ	助詞-接続助詞	_	41	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+43	い	居る	AUX	動詞-非自立可能	_	41	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+44	た	た	AUX	助動詞	_	41	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=FUNC|SpaceAfter=No	
+45	と	と	ADP	助詞-格助詞	_	41	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+46	報じ	報ずる	VERB	動詞-一般	_	80	advcl	_	BunsetuPosition=B|JPYomi=ホウズル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e40" class="REPORTING"
+47	「	「	PUNCT	補助記号-括弧開	_	48	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+48	開戦	開戦	NOUN	名詞-普通名詞-サ変可能	_	54	nmod	_	BunsetuPosition=I|JPYomi=カイセン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+49	と	と	ADP	助詞-格助詞	_	48	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+50	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	54	compound	_	BunsetuPosition=B|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+51	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	54	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+52	兵器	兵器	NOUN	名詞-普通名詞-一般	_	54	compound	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=CONT|SpaceAfter=No	
+53	開発	開発	NOUN	名詞-普通名詞-サ変可能	_	54	compound	_	BunsetuPosition=I|JPYomi=カイハツ|BunsetuPositionType=CONT|SpaceAfter=No	
+54	情報	情報	NOUN	名詞-普通名詞-一般	_	59	iobj	_	BunsetuPosition=I|JPYomi=ジョウホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+55	に	に	ADP	助詞-格助詞	_	54	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+56	整合	整合	NOUN	名詞-普通名詞-サ変可能	_	57	compound	_	BunsetuPosition=B|JPYomi=セイゴウ|BunsetuPositionType=CONT|SpaceAfter=No	
+57	性	性	PART	接尾辞-名詞的-一般	_	59	obj	_	BunsetuPosition=I|JPYomi=セイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+58	を	を	ADP	助詞-格助詞	_	57	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+59	持た	持つ	VERB	動詞-一般	_	67	acl	_	BunsetuPosition=B|JPYomi=モツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e41" class="OCCURRENCE"
+60	せる	せる	AUX	助動詞	_	59	aux	_	BunsetuPosition=I|JPYomi=セル|BunsetuPositionType=FUNC|SpaceAfter=No	
+61	よう	様	AUX	形状詞-助動詞語幹	_	59	aux	_	BunsetuPosition=I|JPYomi=ヨウ|BunsetuPositionType=CONT|SpaceAfter=No	
+62	に	だ	AUX	助動詞	_	59	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+63	と	と	ADP	助詞-格助詞	_	59	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+64	いう	言う	VERB	動詞-一般	_	59	aux	_	BunsetuPosition=I|JPYomi=イウ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+65	無言	無言	NOUN	名詞-普通名詞-一般	_	67	nmod	_	BunsetuPosition=B|JPYomi=ムゴン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+66	の	の	ADP	助詞-格助詞	_	65	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+67	圧力	圧力	NOUN	名詞-普通名詞-一般	_	69	obj	_	BunsetuPosition=B|JPYomi=アツリョク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+68	を	を	ADP	助詞-格助詞	_	67	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+69	感じ	感ずる	VERB	動詞-一般	_	73	advcl	_	BunsetuPosition=B|JPYomi=カンズル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e42" class="I_STATE"
+70	た	た	AUX	助動詞	_	69	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=FUNC|SpaceAfter=No	
+71	」	」	PUNCT	補助記号-括弧閉	_	69	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+72	と	と	ADP	助詞-格助詞	_	69	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+73	する	為る	AUX	動詞-非自立可能	_	76	acl	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e43" class="I_STATE"
+74	ＣＩＡ	ＣＩＡ	NOUN	名詞-普通名詞-一般	_	76	compound	_	BunsetuPosition=B|JPYomi=シーアイエー|BunsetuPositionType=CONT|SpaceAfter=No	
+75	担当	担当	NOUN	名詞-普通名詞-サ変可能	_	76	compound	_	BunsetuPosition=I|JPYomi=タントウ|BunsetuPositionType=CONT|SpaceAfter=No	
+76	官	官	PART	接尾辞-名詞的-一般	_	78	nmod	_	BunsetuPosition=I|JPYomi=カン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+77	の	の	ADP	助詞-格助詞	_	76	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+78	証言	証言	NOUN	名詞-普通名詞-サ変可能	_	80	obj	_	BunsetuPosition=B|JPYomi=ショウゲン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+79	を	を	ADP	助詞-格助詞	_	78	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+80	伝え	伝える	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ツタエル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e44" class="I_ACTION"
+81	て	て	SCONJ	助詞-接続助詞	_	80	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+82	いる	居る	AUX	動詞-非自立可能	_	80	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+83	。	。	PUNCT	補助記号-句点	_	80	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-13	
+# text = [JSP]米上院軍事委員会のレビン議員（民主党）は同日、ＮＢＣテレビで、米国の威信にかかわる問題だとし「テロとの戦いで各国を率いていくには、米国が表明することは事実であるという信頼が不可欠だ」として、議会での徹底究明を訴えた。	
+1	[JSP]	[JSP]	X	空白	_	2	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	米	米	NOUN	名詞-普通名詞-一般	_	3	nmod	_	BunsetuPosition=I|JPYomi=ベイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	上院	上院	NOUN	名詞-普通名詞-一般	_	6	nmod	_	BunsetuPosition=B|JPYomi=ジョウイン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	軍事	軍事	NOUN	名詞-普通名詞-一般	_	6	compound	_	BunsetuPosition=B|JPYomi=グンジ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	委員	委員	NOUN	名詞-普通名詞-一般	_	6	compound	_	BunsetuPosition=I|JPYomi=イイン|BunsetuPositionType=CONT|SpaceAfter=No	
+6	会	会	NOUN	名詞-普通名詞-一般	_	12	nmod	_	BunsetuPosition=I|JPYomi=カイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	の	の	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	レビン	レビン	PROPN	名詞-固有名詞-人名-一般	_	12	compound	_	BunsetuPosition=B|JPYomi=レビン|BunsetuPositionType=CONT|SpaceAfter=No	
+9	議員	議員	NOUN	名詞-普通名詞-一般	_	12	compound	_	BunsetuPosition=I|JPYomi=ギイン|BunsetuPositionType=CONT|SpaceAfter=No	
+10	（	（	PUNCT	補助記号-括弧開	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	民主	民主	NOUN	名詞-普通名詞-一般	_	12	compound	_	BunsetuPosition=I|JPYomi=ミンシュ|BunsetuPositionType=CONT|SpaceAfter=No	
+12	党	党	PART	接尾辞-名詞的-一般	_	70	obl	_	BunsetuPosition=I|JPYomi=トウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	）	）	PUNCT	補助記号-括弧閉	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+14	は	は	ADP	助詞-係助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	同日	同日	ADV	名詞-普通名詞-副詞可能	_	70	advmod	_	BunsetuPosition=B|JPYomi=ドウジツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-XX-XX" tid="t10" value="2003-06-08" definite="FALSE"
+16	、	、	PUNCT	補助記号-読点	_	15	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	ＮＢＣ	ＮＢＣ	PROPN	名詞-固有名詞-一般	_	18	compound	_	BunsetuPosition=B|JPYomi=エヌビーシー|BunsetuPositionType=CONT|SpaceAfter=No	
+18	テレビ	テレビ	NOUN	名詞-普通名詞-一般	_	70	nmod	_	BunsetuPosition=I|JPYomi=テレビ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	で	で	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	、	、	PUNCT	補助記号-読点	_	18	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+21	米国	米国	PROPN	名詞-固有名詞-地名-国	_	23	nmod	_	BunsetuPosition=B|JPYomi=ベイコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	の	の	ADP	助詞-格助詞	_	21	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+23	威信	威信	NOUN	名詞-普通名詞-一般	_	25	iobj	_	BunsetuPosition=B|JPYomi=イシン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+24	に	に	ADP	助詞-格助詞	_	23	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	かかわる	関わる	VERB	動詞-一般	_	26	acl	_	BunsetuPosition=B|JPYomi=カカワル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e45" class="OCCURRENCE"
+26	問題	問題	NOUN	名詞-普通名詞-一般	_	29	nmod	_	BunsetuPosition=B|JPYomi=モンダイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+27	だ	だ	AUX	助動詞	_	26	cop	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+28	と	と	ADP	助詞-格助詞	_	26	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+29	し	為る	AUX	動詞-非自立可能	_	61	advcl	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e46" class="I_ACTION"
+30	「	「	PUNCT	補助記号-括弧開	_	31	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+31	テロ	テロ	NOUN	名詞-普通名詞-一般	_	34	nmod	_	BunsetuPosition=I|JPYomi=テロ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+32	と	と	ADP	助詞-格助詞	_	31	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+33	の	の	ADP	助詞-格助詞	_	31	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+34	戦い	戦い	NOUN	名詞-普通名詞-一般	_	38	nmod	_	BunsetuPosition=B|JPYomi=タタカイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+35	で	で	ADP	助詞-格助詞	_	34	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+36	各国	各国	NOUN	名詞-普通名詞-一般	_	38	obj	_	BunsetuPosition=B|JPYomi=カッコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+37	を	を	ADP	助詞-格助詞	_	36	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+38	率い	率いる	VERB	動詞-一般	_	57	obl	_	BunsetuPosition=B|JPYomi=ヒキイル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e47" class="OCCURRENCE"
+39	て	て	SCONJ	助詞-接続助詞	_	38	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+40	いく	行く	AUX	動詞-非自立可能	_	38	aux	_	BunsetuPosition=I|JPYomi=イク|BunsetuPositionType=FUNC|SpaceAfter=No	
+41	に	に	ADP	助詞-格助詞	_	38	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+42	は	は	ADP	助詞-係助詞	_	38	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+43	、	、	PUNCT	補助記号-読点	_	38	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+44	米国	米国	PROPN	名詞-固有名詞-地名-国	_	47	nsubj	_	BunsetuPosition=B|JPYomi=ベイコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+45	が	が	ADP	助詞-格助詞	_	44	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+46	表明	表明	VERB	名詞-普通名詞-サ変可能	_	47	aux	_	BunsetuPosition=B|JPYomi=ヒョウメイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e48" class="OCCURRENCE"
+47	する	為る	AUX	動詞-非自立可能	_	48	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+48	こと	事	NOUN	名詞-普通名詞-一般	_	50	iobj	_	BunsetuPosition=B|JPYomi=コト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+49	は	は	ADP	助詞-係助詞	_	48	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+50	事実	事実	NOUN	名詞-普通名詞-副詞可能	_	55	nmod	_	BunsetuPosition=B|JPYomi=ジジツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+51	で	だ	AUX	助動詞	_	50	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+52	ある	有る	AUX	動詞-非自立可能	_	50	aux	_	BunsetuPosition=I|JPYomi=アル|BunsetuPositionType=FUNC|SpaceAfter=No	
+53	と	と	ADP	助詞-格助詞	_	50	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+54	いう	言う	VERB	動詞-一般	_	50	aux	_	BunsetuPosition=I|JPYomi=イウ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+55	信頼	信頼	NOUN	名詞-普通名詞-サ変可能	_	57	nsubj	_	BunsetuPosition=B|JPYomi=シンライ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+56	が	が	ADP	助詞-格助詞	_	55	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+57	不可欠	不可欠	ADJ	形状詞-一般	_	61	amod	_	BunsetuPosition=B|JPYomi=フカケツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e49" class="NULL"
+58	だ	だ	AUX	助動詞	_	57	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+59	」	」	PUNCT	補助記号-括弧閉	_	57	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+60	と	と	ADP	助詞-格助詞	_	57	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+61	し	為る	AUX	動詞-非自立可能	_	70	advcl	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e50" class="I_ACTION"
+62	て	て	SCONJ	助詞-接続助詞	_	61	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+63	、	、	PUNCT	補助記号-読点	_	61	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+64	議会	議会	NOUN	名詞-普通名詞-一般	_	68	nmod	_	BunsetuPosition=B|JPYomi=ギカイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+65	で	で	ADP	助詞-格助詞	_	64	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+66	の	の	ADP	助詞-格助詞	_	64	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+67	徹底	徹底	NOUN	名詞-普通名詞-サ変可能	_	68	compound	_	BunsetuPosition=B|JPYomi=テッテイ|BunsetuPositionType=CONT|SpaceAfter=No	
+68	究明	究明	NOUN	名詞-普通名詞-サ変可能	_	70	obj	_	BunsetuPosition=I|JPYomi=キュウメイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+69	を	を	ADP	助詞-格助詞	_	68	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+70	訴え	訴える	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ウッタエル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e51" class="I_ACTION"
+71	た	た	AUX	助動詞	_	70	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+72	。	。	PUNCT	補助記号-句点	_	70	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-14	
+# text = [JSP]民主党の大統領候補の一人、ゲッパート前下院院内総務は同日、大量破壊兵器開発の証拠発見はこれからだとの見解を示す一方、「ブッシュ大統領をはじめ、世界の指導者が偽情報を得ていたとしたら、驚くべきでっちあげだ」とも指摘した。	
+1	[JSP]	[JSP]	X	空白	_	3	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	民主	民主	NOUN	名詞-普通名詞-一般	_	3	compound	_	BunsetuPosition=I|JPYomi=ミンシュ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	党	党	PART	接尾辞-名詞的-一般	_	6	nmod	_	BunsetuPosition=I|JPYomi=トウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	の	の	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	大統領	大統領	NOUN	名詞-普通名詞-一般	_	6	compound	_	BunsetuPosition=B|JPYomi=ダイトウリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+6	候補	候補	NOUN	名詞-普通名詞-一般	_	8	nmod	_	BunsetuPosition=I|JPYomi=コウホ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	の	の	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	一人	一人	NOUN	名詞-普通名詞-副詞可能	_	14	nmod	_	BunsetuPosition=B|JPYomi=ヒトリ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	、	、	PUNCT	補助記号-読点	_	8	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+10	ゲッパート	ゲッパート	PROPN	名詞-固有名詞-人名-一般	_	14	compound	_	BunsetuPosition=B|JPYomi=ゲッパート|BunsetuPositionType=CONT|SpaceAfter=No	
+11	前	前	NOUN	名詞-普通名詞-副詞可能	_	14	compound	_	BunsetuPosition=I|JPYomi=ゼン|BunsetuPositionType=CONT|SpaceAfter=No	
+12	下院	下院	NOUN	名詞-普通名詞-一般	_	14	compound	_	BunsetuPosition=I|JPYomi=カイン|BunsetuPositionType=CONT|SpaceAfter=No	
+13	院内	院内	NOUN	名詞-普通名詞-一般	_	14	compound	_	BunsetuPosition=I|JPYomi=インナイ|BunsetuPositionType=CONT|SpaceAfter=No	
+14	総務	総務	NOUN	名詞-普通名詞-一般	_	66	obl	_	BunsetuPosition=I|JPYomi=ソウム|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+15	は	は	ADP	助詞-係助詞	_	14	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+16	同日	同日	ADV	名詞-普通名詞-副詞可能	_	66	advmod	_	BunsetuPosition=B|JPYomi=ドウジツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-XX-XX" tid="t11" value="2003-06-08" definite="FALSE"
+17	、	、	PUNCT	補助記号-読点	_	16	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+18	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	21	compound	_	BunsetuPosition=B|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+19	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	21	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+20	兵器	兵器	NOUN	名詞-普通名詞-一般	_	21	compound	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=CONT|SpaceAfter=No	
+21	開発	開発	NOUN	名詞-普通名詞-サ変可能	_	24	nmod	_	BunsetuPosition=I|JPYomi=カイハツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	の	の	ADP	助詞-格助詞	_	21	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+23	証拠	証拠	NOUN	名詞-普通名詞-一般	_	24	compound	_	BunsetuPosition=B|JPYomi=ショウコ|BunsetuPositionType=CONT|SpaceAfter=No	
+24	発見	発見	NOUN	名詞-普通名詞-サ変可能	_	26	iobj	_	BunsetuPosition=I|JPYomi=ハッケン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+25	は	は	ADP	助詞-係助詞	_	24	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+26	これ	此れ	PRON	代名詞	_	31	nmod	_	BunsetuPosition=B|JPYomi=コレ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+27	から	から	ADP	助詞-格助詞	_	26	case	_	BunsetuPosition=I|JPYomi=カラ|BunsetuPositionType=FUNC|SpaceAfter=No	
+28	だ	だ	AUX	助動詞	_	26	cop	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+29	と	と	ADP	助詞-格助詞	_	26	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+30	の	の	ADP	助詞-格助詞	_	26	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+31	見解	見解	NOUN	名詞-普通名詞-一般	_	33	obj	_	BunsetuPosition=B|JPYomi=ケンカイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+32	を	を	ADP	助詞-格助詞	_	31	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+33	示す	示す	VERB	動詞-一般	_	34	acl	_	BunsetuPosition=B|JPYomi=シメス|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e52" class="OCCURRENCE"
+34	一方	一方	NOUN	名詞-普通名詞-副詞可能	_	66	nmod	_	BunsetuPosition=B|JPYomi=イッポウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+35	、	、	PUNCT	補助記号-読点	_	34	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+36	「	「	PUNCT	補助記号-括弧開	_	38	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+37	ブッシュ	ブッシュ	PROPN	名詞-固有名詞-人名-一般	_	38	compound	_	BunsetuPosition=I|JPYomi=ブッシュ|BunsetuPositionType=CONT|SpaceAfter=No	
+38	大統領	大統領	NOUN	名詞-普通名詞-一般	_	45	obj	_	BunsetuPosition=I|JPYomi=ダイトウリョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+39	を	を	ADP	助詞-格助詞	_	38	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=FUNC|SpaceAfter=No	
+40	はじめ	始め	NOUN	名詞-普通名詞-副詞可能	_	38	aux	_	BunsetuPosition=I|JPYomi=ハジメ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+41	、	、	PUNCT	補助記号-読点	_	38	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+42	世界	世界	NOUN	名詞-普通名詞-一般	_	45	nmod	_	BunsetuPosition=B|JPYomi=セカイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+43	の	の	ADP	助詞-格助詞	_	42	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+44	指導	指導	NOUN	名詞-普通名詞-サ変可能	_	45	compound	_	BunsetuPosition=B|JPYomi=シドウ|BunsetuPositionType=CONT|SpaceAfter=No	
+45	者	者	PART	接尾辞-名詞的-一般	_	50	nsubj	_	BunsetuPosition=I|JPYomi=シャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+46	が	が	ADP	助詞-格助詞	_	45	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+47	偽	偽	NOUN	名詞-普通名詞-一般	_	48	compound	_	BunsetuPosition=B|JPYomi=ニセ|BunsetuPositionType=CONT|SpaceAfter=No	
+48	情報	情報	NOUN	名詞-普通名詞-一般	_	50	obj	_	BunsetuPosition=I|JPYomi=ジョウホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+49	を	を	ADP	助詞-格助詞	_	48	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+50	得	得る	VERB	動詞-非自立可能	_	60	acl	_	BunsetuPosition=B|JPYomi=エル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e53" class="OCCURRENCE"
+51	て	て	SCONJ	助詞-接続助詞	_	50	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+52	い	居る	AUX	動詞-非自立可能	_	50	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+53	た	た	AUX	助動詞	_	50	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=FUNC|SpaceAfter=No	
+54	と	と	ADP	助詞-格助詞	_	50	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+55	し	為る	AUX	動詞-非自立可能	_	50	aux	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=FUNC|SpaceAfter=No	
+56	たら	た	AUX	助動詞	_	50	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+57	、	、	PUNCT	補助記号-読点	_	50	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+58	驚く	驚く	VERB	動詞-一般	_	60	acl	_	BunsetuPosition=B|JPYomi=オドロク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e54" class="NULL"
+59	べき	べし	AUX	助動詞	_	58	aux	_	BunsetuPosition=I|JPYomi=ベシ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+60	でっちあげ	捏ち上げ	NOUN	名詞-普通名詞-一般	_	66	obl	_	BunsetuPosition=B|JPYomi=デッチアゲ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+61	だ	だ	AUX	助動詞	_	60	cop	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+62	」	」	PUNCT	補助記号-括弧閉	_	60	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+63	と	と	ADP	助詞-格助詞	_	60	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+64	も	も	ADP	助詞-係助詞	_	60	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+65	指摘	指摘	VERB	名詞-普通名詞-サ変可能	_	66	aux	_	BunsetuPosition=B|JPYomi=シテキ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e55" class="I_ACTION"
+66	し	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	
+67	た	た	AUX	助動詞	_	66	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+68	。	。	PUNCT	補助記号-句点	_	66	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-15	
+# text = [JSP]上院情報委員会のロバーツ委員長（共和党）は同日、ＣＮＮテレビで、「現段階で、情報がどのように扱われたか議会が調査するのは時期尚早」とし「問題が政治利用されるとすれば非生産的」と民主党を批判した。	
+1	[JSP]	[JSP]	X	空白	_	2	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	上院	上院	NOUN	名詞-普通名詞-一般	_	5	nmod	_	BunsetuPosition=I|JPYomi=ジョウイン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	情報	情報	NOUN	名詞-普通名詞-一般	_	5	compound	_	BunsetuPosition=B|JPYomi=ジョウホウ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	委員	委員	NOUN	名詞-普通名詞-一般	_	5	compound	_	BunsetuPosition=I|JPYomi=イイン|BunsetuPositionType=CONT|SpaceAfter=No	
+5	会	会	NOUN	名詞-普通名詞-一般	_	12	nmod	_	BunsetuPosition=I|JPYomi=カイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	の	の	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	ロバーツ	ロバーツ	PROPN	名詞-固有名詞-人名-一般	_	12	compound	_	BunsetuPosition=B|JPYomi=ロバーツ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	委員	委員	NOUN	名詞-普通名詞-一般	_	12	compound	_	BunsetuPosition=I|JPYomi=イイン|BunsetuPositionType=CONT|SpaceAfter=No	
+9	長	長	PART	接尾辞-名詞的-一般	_	12	nmod	_	BunsetuPosition=I|JPYomi=チョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+10	（	（	PUNCT	補助記号-括弧開	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	共和	共和	NOUN	名詞-普通名詞-一般	_	12	compound	_	BunsetuPosition=I|JPYomi=キョウワ|BunsetuPositionType=CONT|SpaceAfter=No	
+12	党	党	PART	接尾辞-名詞的-一般	_	65	obl	_	BunsetuPosition=I|JPYomi=トウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	）	）	PUNCT	補助記号-括弧閉	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+14	は	は	ADP	助詞-係助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	同日	同日	ADV	名詞-普通名詞-副詞可能	_	65	advmod	_	BunsetuPosition=B|JPYomi=ドウジツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-XX-XX" tid="t12" value="2003-06-08" definite="FALSE"
+16	、	、	PUNCT	補助記号-読点	_	15	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	ＣＮＮ	ＣＮＮ	PROPN	名詞-固有名詞-一般	_	18	compound	_	BunsetuPosition=B|JPYomi=シーエヌエヌ|BunsetuPositionType=CONT|SpaceAfter=No	
+18	テレビ	テレビ	NOUN	名詞-普通名詞-一般	_	65	nmod	_	BunsetuPosition=I|JPYomi=テレビ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	で	で	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	、	、	PUNCT	補助記号-読点	_	18	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+21	「	「	PUNCT	補助記号-括弧開	_	23	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+22	現	現	NOUN	接頭辞	_	23	compound	_	BunsetuPosition=I|JPYomi=ゲン|BunsetuPositionType=CONT|SpaceAfter=No	
+23	段階	段階	NOUN	名詞-普通名詞-一般	_	38	nmod	_	BunsetuPosition=I|JPYomi=ダンカイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+24	で	で	ADP	助詞-格助詞	_	23	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	、	、	PUNCT	補助記号-読点	_	23	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+26	情報	情報	NOUN	名詞-普通名詞-一般	_	31	nsubj	_	BunsetuPosition=B|JPYomi=ジョウホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+27	が	が	ADP	助詞-格助詞	_	26	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+28	どの	何の	ADJ	連体詞	_	29	amod	_	BunsetuPosition=B|JPYomi=ドノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+29	よう	様	AUX	形状詞-助動詞語幹	_	31	advmod	_	BunsetuPosition=B|JPYomi=ヨウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+30	に	だ	AUX	助動詞	_	29	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+31	扱わ	扱う	VERB	動詞-一般	_	38	advcl	_	BunsetuPosition=B|JPYomi=アツカウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e56" class="OCCURRENCE"
+32	れ	れる	AUX	助動詞	_	31	aux	_	BunsetuPosition=I|JPYomi=レル|BunsetuPositionType=FUNC|SpaceAfter=No	
+33	た	た	AUX	助動詞	_	31	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=FUNC|SpaceAfter=No	
+34	か	か	ADP	助詞-副助詞	_	31	case	_	BunsetuPosition=I|JPYomi=カ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+35	議会	議会	NOUN	名詞-普通名詞-一般	_	38	nsubj	_	BunsetuPosition=B|JPYomi=ギカイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+36	が	が	ADP	助詞-格助詞	_	35	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+37	調査	調査	VERB	名詞-普通名詞-サ変可能	_	38	aux	_	BunsetuPosition=B|JPYomi=チョウサ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e57" class="I_ACTION"
+38	する	為る	AUX	動詞-非自立可能	_	42	obl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+39	の	の	SCONJ	助詞-準体助詞	_	38	mark	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=FUNC|SpaceAfter=No	
+40	は	は	ADP	助詞-係助詞	_	38	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+41	時期	時期	NOUN	名詞-普通名詞-副詞可能	_	42	compound	_	BunsetuPosition=B|JPYomi=ジキ|BunsetuPositionType=CONT|SpaceAfter=No	
+42	尚早	尚早	NOUN	名詞-普通名詞-一般	_	45	nmod	_	BunsetuPosition=I|JPYomi=ショウソウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+43	」	」	PUNCT	補助記号-括弧閉	_	42	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+44	と	と	ADP	助詞-格助詞	_	42	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+45	し	為る	AUX	動詞-非自立可能	_	65	advcl	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e58" class="I_ACTION"
+46	「	「	PUNCT	補助記号-括弧開	_	47	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+47	問題	問題	NOUN	名詞-普通名詞-一般	_	51	nsubj	_	BunsetuPosition=I|JPYomi=モンダイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+48	が	が	ADP	助詞-格助詞	_	47	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+49	政治	政治	NOUN	名詞-普通名詞-一般	_	51	compound	_	BunsetuPosition=B|JPYomi=セイジ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e59" class="OCCURRENCE"
+50	利用	利用	VERB	名詞-普通名詞-サ変可能	_	51	aux	_	BunsetuPosition=I|JPYomi=リヨウ|BunsetuPositionType=CONT|SpaceAfter=No	
+51	さ	為る	AUX	動詞-非自立可能	_	58	dep	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+52	れる	れる	AUX	助動詞	_	51	aux	_	BunsetuPosition=I|JPYomi=レル|BunsetuPositionType=FUNC|SpaceAfter=No	
+53	と	と	ADP	助詞-格助詞	_	51	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+54	すれ	為る	AUX	動詞-非自立可能	_	51	aux	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=FUNC|SpaceAfter=No	
+55	ば	ば	CCONJ	助詞-接続助詞	_	51	cc	_	BunsetuPosition=I|JPYomi=バ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+56	非	非	NOUN	接頭辞	Polarity=Neg	58	compound	_	BunsetuPosition=B|JPYomi=ヒ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e60" class="NULL"
+57	生産	生産	NOUN	名詞-普通名詞-サ変可能	_	58	compound	_	BunsetuPosition=I|JPYomi=セイサン|BunsetuPositionType=CONT|SpaceAfter=No	
+58	的	的	PART	接尾辞-形状詞的	_	65	advmod	_	BunsetuPosition=I|JPYomi=テキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+59	」	」	PUNCT	補助記号-括弧閉	_	58	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+60	と	と	ADP	助詞-格助詞	_	58	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+61	民主	民主	NOUN	名詞-普通名詞-一般	_	62	compound	_	BunsetuPosition=B|JPYomi=ミンシュ|BunsetuPositionType=CONT|SpaceAfter=No	
+62	党	党	PART	接尾辞-名詞的-一般	_	65	obj	_	BunsetuPosition=I|JPYomi=トウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+63	を	を	ADP	助詞-格助詞	_	62	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+64	批判	批判	VERB	名詞-普通名詞-サ変可能	_	65	aux	_	BunsetuPosition=B|JPYomi=ヒハン|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e61" class="I_ACTION"
+65	し	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	
+66	た	た	AUX	助動詞	_	65	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+67	。	。	PUNCT	補助記号-句点	_	65	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-16	
+# text = [JSP]こうした米国内の動きに対し、先週末に訪米したポルトガルのバロゾ首相は、ブッシュ大統領との会談後の記者会見で、「イラク戦争の根拠は道義上の問題。フセイン政権が崩壊したことが重要で、大量破壊兵器開発の有無の確認も重要だが、根本的な問題ではない」との見解を示している。	
+1	[JSP]	[JSP]	X	空白	_	2	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	こう	こう	ADV	副詞	_	3	advmod	_	BunsetuPosition=I|JPYomi=コウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	し	為る	AUX	動詞-非自立可能	_	6	acl	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e62" class="NULL"
+4	た	た	AUX	助動詞	_	3	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	米国	米国	PROPN	名詞-固有名詞-地名-国	_	6	compound	_	BunsetuPosition=B|JPYomi=ベイコク|BunsetuPositionType=CONT|SpaceAfter=No	
+6	内	内	PART	接尾辞-名詞的-一般	_	8	nmod	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	の	の	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	動き	動き	NOUN	名詞-普通名詞-一般	_	82	obl	_	BunsetuPosition=B|JPYomi=ウゴキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	に	に	ADP	助詞-格助詞	_	8	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+10	対し	対する	VERB	動詞-一般	_	8	aux	_	BunsetuPosition=I|JPYomi=タイスル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	、	、	PUNCT	補助記号-読点	_	8	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+12	先週	先週	NOUN	名詞-普通名詞-副詞可能	_	13	compound	_	BunsetuPosition=B|JPYomi=センシュウ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" value="2003-WXX-WE" valueFromSurface="XXXX-WXX-WE"
+13	末	末	PART	接尾辞-名詞的-副詞可能	_	16	obl	_	BunsetuPosition=I|JPYomi=マツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	に	に	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	訪米	訪米	VERB	名詞-普通名詞-サ変可能	_	16	aux	_	BunsetuPosition=B|JPYomi=ホウベイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e63" class="OCCURRENCE"
+16	し	為る	AUX	動詞-非自立可能	_	18	dep	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+17	た	た	AUX	助動詞	_	16	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+18	ポルトガル	ポルトガル	PROPN	名詞-固有名詞-地名-国	_	21	nmod	_	BunsetuPosition=B|JPYomi=ポルトガル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	の	の	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	バロゾ	バロゾ	PROPN	名詞-固有名詞-人名-一般	_	21	compound	_	BunsetuPosition=B|JPYomi=バロゾ|BunsetuPositionType=CONT|SpaceAfter=No	
+21	首相	首相	NOUN	名詞-普通名詞-一般	_	82	obl	_	BunsetuPosition=I|JPYomi=シュショウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	は	は	ADP	助詞-係助詞	_	21	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+23	、	、	PUNCT	補助記号-読点	_	21	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+24	ブッシュ	ブッシュ	PROPN	名詞-固有名詞-人名-一般	_	25	compound	_	BunsetuPosition=B|JPYomi=ブッシュ|BunsetuPositionType=CONT|SpaceAfter=No	
+25	大統領	大統領	NOUN	名詞-普通名詞-一般	_	29	nmod	_	BunsetuPosition=I|JPYomi=ダイトウリョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+26	と	と	ADP	助詞-格助詞	_	25	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+27	の	の	ADP	助詞-格助詞	_	25	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+28	会談	会談	NOUN	名詞-普通名詞-サ変可能	_	29	compound	_	BunsetuPosition=B|JPYomi=カイダン|BunsetuPositionType=CONT|SpaceAfter=No	
+29	後	後	PART	接尾辞-名詞的-副詞可能	_	32	nmod	_	BunsetuPosition=I|JPYomi=ゴ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+30	の	の	ADP	助詞-格助詞	_	29	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+31	記者	記者	NOUN	名詞-普通名詞-一般	_	32	compound	_	BunsetuPosition=B|JPYomi=キシャ|BunsetuPositionType=CONT|SpaceAfter=No	
+32	会見	会見	NOUN	名詞-普通名詞-サ変可能	_	82	nmod	_	BunsetuPosition=I|JPYomi=カイケン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+33	で	で	ADP	助詞-格助詞	_	32	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+34	、	、	PUNCT	補助記号-読点	_	32	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+35	「	「	PUNCT	補助記号-括弧開	_	37	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=NO_HEAD|SpaceAfter=No	
+36	イラク	イラク	PROPN	名詞-固有名詞-地名-国	_	37	compound	_	BunsetuPosition=B|JPYomi=イラク|BunsetuPositionType=CONT|SpaceAfter=No	
+37	戦争	戦争	NOUN	名詞-普通名詞-サ変可能	_	39	nmod	_	BunsetuPosition=I|JPYomi=センソウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+38	の	の	ADP	助詞-格助詞	_	37	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+39	根拠	根拠	NOUN	名詞-普通名詞-一般	_	44	iobj	_	BunsetuPosition=B|JPYomi=コンキョ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+40	は	は	ADP	助詞-係助詞	_	39	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+41	道義	道義	NOUN	名詞-普通名詞-一般	_	42	compound	_	BunsetuPosition=B|JPYomi=ドウギ|BunsetuPositionType=CONT|SpaceAfter=No	
+42	上	上	PART	接尾辞-名詞的-副詞可能	_	44	nmod	_	BunsetuPosition=I|JPYomi=ジョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+43	の	の	ADP	助詞-格助詞	_	42	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+44	問題	問題	NOUN	名詞-普通名詞-一般	_	73	nmod	_	BunsetuPosition=B|JPYomi=モンダイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+45	。	。	PUNCT	補助記号-句点	_	44	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+46	フセイン	フセイン	PROPN	名詞-固有名詞-人名-一般	_	47	compound	_	BunsetuPosition=B|JPYomi=フセイン|BunsetuPositionType=CONT|SpaceAfter=No	
+47	政権	政権	NOUN	名詞-普通名詞-一般	_	50	nsubj	_	BunsetuPosition=I|JPYomi=セイケン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+48	が	が	ADP	助詞-格助詞	_	47	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+49	崩壊	崩壊	VERB	名詞-普通名詞-サ変可能	_	50	aux	_	BunsetuPosition=B|JPYomi=ホウカイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e64" class="OCCURRENCE"
+50	し	為る	AUX	動詞-非自立可能	_	52	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+51	た	た	AUX	助動詞	_	50	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+52	こと	事	NOUN	名詞-普通名詞-一般	_	54	nsubj	_	BunsetuPosition=B|JPYomi=コト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+53	が	が	ADP	助詞-格助詞	_	52	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+54	重要	重要	ADJ	形状詞-一般	_	66	amod	_	BunsetuPosition=B|JPYomi=ジュウヨウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e65" class="NULL"
+55	で	だ	AUX	助動詞	_	54	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+56	、	、	PUNCT	補助記号-読点	_	54	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+57	大量	大量	NOUN	名詞-普通名詞-形状詞可能	_	60	compound	_	BunsetuPosition=B|JPYomi=タイリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+58	破壊	破壊	NOUN	名詞-普通名詞-サ変可能	_	60	compound	_	BunsetuPosition=I|JPYomi=ハカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+59	兵器	兵器	NOUN	名詞-普通名詞-一般	_	60	compound	_	BunsetuPosition=I|JPYomi=ヘイキ|BunsetuPositionType=CONT|SpaceAfter=No	
+60	開発	開発	NOUN	名詞-普通名詞-サ変可能	_	62	nmod	_	BunsetuPosition=I|JPYomi=カイハツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+61	の	の	ADP	助詞-格助詞	_	60	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+62	有無	有無	NOUN	名詞-普通名詞-一般	_	64	nmod	_	BunsetuPosition=B|JPYomi=ウム|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+63	の	の	ADP	助詞-格助詞	_	62	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+64	確認	確認	NOUN	名詞-普通名詞-サ変可能	_	66	iobj	_	BunsetuPosition=B|JPYomi=カクニン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+65	も	も	ADP	助詞-係助詞	_	64	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+66	重要	重要	ADJ	形状詞-一般	_	73	amod	_	BunsetuPosition=B|JPYomi=ジュウヨウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e66" class="NULL"
+67	だ	だ	AUX	助動詞	_	66	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+68	が	が	CCONJ	助詞-接続助詞	_	66	cc	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+69	、	、	PUNCT	補助記号-読点	_	66	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+70	根本	根本	NOUN	名詞-普通名詞-一般	_	71	compound	_	BunsetuPosition=B|JPYomi=コンポン|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e67" class="NULL"
+71	的	的	PART	接尾辞-形状詞的	_	73	amod	_	BunsetuPosition=I|JPYomi=テキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+72	な	だ	AUX	助動詞	_	71	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+73	問題	問題	NOUN	名詞-普通名詞-一般	_	78	obl	_	BunsetuPosition=B|JPYomi=モンダイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+74	で	だ	AUX	助動詞	_	73	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+75	は	は	ADP	助詞-係助詞	_	73	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=FUNC|SpaceAfter=No	
+76	ない	無い	AUX	形容詞-非自立可能	Polarity=Neg	73	aux	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+77	」	」	PUNCT	補助記号-括弧閉	_	73	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+78	と	と	ADP	助詞-格助詞	_	80	nmod	_	BunsetuPosition=B|JPYomi=ト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+79	の	の	ADP	助詞-格助詞	_	78	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+80	見解	見解	NOUN	名詞-普通名詞-一般	_	82	obj	_	BunsetuPosition=B|JPYomi=ケンカイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+81	を	を	ADP	助詞-格助詞	_	80	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+82	示し	示す	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=シメス|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e68" class="I_ACTION"
+83	て	て	SCONJ	助詞-接続助詞	_	82	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+84	いる	居る	AUX	動詞-非自立可能	_	82	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+85	。	。	PUNCT	補助記号-句点	_	82	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A026n_PN3d_00002-17	
+# text = 金泳三元韓国大統領に聞く	
+1	金	キン	PROPN	名詞-固有名詞-人名-姓	_	5	compound	_	BunsetuPosition=B|JPYomi=キン|BunsetuPositionType=CONT|SpaceAfter=No	
+2	泳三	ヨンサム	PROPN	名詞-固有名詞-人名-名	_	5	compound	_	BunsetuPosition=I|JPYomi=ヨンサム|BunsetuPositionType=CONT|SpaceAfter=No	
+3	元	元	NOUN	名詞-普通名詞-一般	_	5	compound	_	BunsetuPosition=I|JPYomi=モト|BunsetuPositionType=CONT|SpaceAfter=No	
+4	韓国	韓国	PROPN	名詞-固有名詞-地名-国	_	5	compound	_	BunsetuPosition=I|JPYomi=カンコク|BunsetuPositionType=CONT|SpaceAfter=No	
+5	大統領	大統領	NOUN	名詞-普通名詞-一般	_	7	obl	_	BunsetuPosition=I|JPYomi=ダイトウリョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	に	に	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	聞く	聞く	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=キク|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e69" class="PERCEPTION"
+	
+# sent_id = A026n_PN3d_00002-18	
+# text = [JSP]韓国の金泳三元大統領＝写真＝が九日、東京都内で産経新聞とのインタビューに応じた。	
+1	[JSP]	[JSP]	X	空白	_	2	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	韓国	韓国	PROPN	名詞-固有名詞-地名-国	_	9	nmod	_	BunsetuPosition=I|JPYomi=カンコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	の	の	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	金	キン	PROPN	名詞-固有名詞-人名-姓	_	9	compound	_	BunsetuPosition=B|JPYomi=キン|BunsetuPositionType=CONT|SpaceAfter=No	
+5	泳三	ヨンサム	PROPN	名詞-固有名詞-人名-名	_	9	compound	_	BunsetuPosition=I|JPYomi=ヨンサム|BunsetuPositionType=CONT|SpaceAfter=No	
+6	元	元	NOUN	名詞-普通名詞-一般	_	9	compound	_	BunsetuPosition=I|JPYomi=モト|BunsetuPositionType=CONT|SpaceAfter=No	
+7	大統領	大統領	NOUN	名詞-普通名詞-一般	_	9	compound	_	BunsetuPosition=I|JPYomi=ダイトウリョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	＝	＝	PUNCT	補助記号-一般	_	9	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+9	写真	写真	NOUN	名詞-普通名詞-一般	_	25	nsubj	_	BunsetuPosition=I|JPYomi=シャシン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	＝	＝	PUNCT	補助記号-一般	_	9	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	が	が	ADP	助詞-格助詞	_	9	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	九	九	NUM	名詞-数詞	_	13	nummod	_	BunsetuPosition=B|JPYomi=ココノ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" valueFromSurface="XXXX-XX-XX" tid="t13" value="2003-06-09" definite="FALSE"
+13	日	日	PART	接尾辞-名詞的-助数詞	_	25	nmod	_	BunsetuPosition=I|JPYomi=カ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	、	、	PUNCT	補助記号-読点	_	13	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+15	東京	トウキョウ	PROPN	名詞-固有名詞-地名-一般	_	17	compound	_	BunsetuPosition=B|JPYomi=トウキョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+16	都	都	NOUN	名詞-普通名詞-一般	_	17	compound	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=CONT|SpaceAfter=No	
+17	内	内	PART	接尾辞-名詞的-一般	_	25	nmod	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	で	で	ADP	助詞-格助詞	_	17	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	産経	産経	PROPN	名詞-固有名詞-一般	_	20	compound	_	BunsetuPosition=B|JPYomi=サンケイ|BunsetuPositionType=CONT|SpaceAfter=No	
+20	新聞	新聞	NOUN	名詞-普通名詞-一般	_	23	nmod	_	BunsetuPosition=I|JPYomi=シンブン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+21	と	と	ADP	助詞-格助詞	_	20	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+22	の	の	ADP	助詞-格助詞	_	20	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+23	インタビュー	インタビュー	NOUN	名詞-普通名詞-サ変可能	_	25	iobj	_	BunsetuPosition=B|JPYomi=インタビュー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+24	に	に	ADP	助詞-格助詞	_	23	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	応じ	応ずる	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=オウズル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e70" class="I_ACTION"
+26	た	た	AUX	助動詞	_	25	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+27	。	。	PUNCT	補助記号-句点	_	25	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	

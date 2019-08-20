@@ -1,0 +1,1175 @@
+# sent_id = A029n_PN4g_00002-1	
+# text = 都市探究	
+1	都市	都市	NOUN	名詞-普通名詞-一般	_	2	compound	_	BunsetuPosition=B|JPYomi=トシ|BunsetuPositionType=CONT|SpaceAfter=No	
+2	探究	探究	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=I|JPYomi=タンキュウ|BunsetuPositionType=ROOT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-2	
+# text = 今週のテーマ＝「音楽の街」３	
+1	今週	今週	NOUN	名詞-普通名詞-副詞可能	_	3	nmod	_	BunsetuPosition=B|JPYomi=コンシュウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" definite="TRUE" tid="t1" valueFromSurface="XXXX-WXX" value="2004-WXX" comment="&quot;PRESENT_REF, 2004-05-27 week&quot;"
+2	の	の	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	テーマ	テーマ	NOUN	名詞-普通名詞-一般	_	10	nmod	_	BunsetuPosition=B|JPYomi=テーマ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	＝	＝	PUNCT	補助記号-一般	_	3	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+5	「	「	PUNCT	補助記号-括弧開	_	6	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+6	音楽	音楽	NOUN	名詞-普通名詞-一般	_	10	nmod	_	BunsetuPosition=I|JPYomi=オンガク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	の	の	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	街	街	NOUN	名詞-普通名詞-一般	_	10	compound	_	BunsetuPosition=B|JPYomi=マチ|BunsetuPositionType=CONT|SpaceAfter=No	
+9	」	」	PUNCT	補助記号-括弧閉	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+10	３	三	NUM	名詞-数詞	_	0	root	_	BunsetuPosition=I|JPYomi=サン|BunsetuPositionType=ROOT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-3	
+# text = アジアで福岡発ヒットを	
+1	アジア	アジア	PROPN	名詞-固有名詞-地名-一般	_	5	compound	_	BunsetuPosition=B|JPYomi=アジア|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	で	で	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	5	compound	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	発	発	PART	接尾辞-名詞的-一般	_	5	nmod	_	BunsetuPosition=I|JPYomi=ハツ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	ヒット	ヒット	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=I|JPYomi=ヒット|BunsetuPositionType=ROOT|SpaceAfter=No	
+6	を	を	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-4	
+# text = [JSP]「福岡」と「音楽」をキーワードにインターネットで検索していて、面白いホームページ（ＨＰ）を見つけた。	
+1	[JSP]	[JSP]	X	空白	_	3	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	「	「	PUNCT	補助記号-括弧開	_	3	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+3	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	7	compound	_	BunsetuPosition=I|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	」	」	PUNCT	補助記号-括弧閉	_	3	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+5	と	と	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	「	「	PUNCT	補助記号-括弧開	_	7	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+7	音楽	音楽	NOUN	名詞-普通名詞-一般	_	11	obj	_	BunsetuPosition=I|JPYomi=オンガク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	」	」	PUNCT	補助記号-括弧閉	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+9	を	を	ADP	助詞-格助詞	_	7	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	キー	キー	NOUN	名詞-普通名詞-一般	_	11	compound	_	BunsetuPosition=B|JPYomi=キー|BunsetuPositionType=CONT|SpaceAfter=No	
+11	ワード	ワード	NOUN	名詞-普通名詞-一般	_	16	obl	_	BunsetuPosition=I|JPYomi=ワード|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	に	に	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	インターネット	インターネット	NOUN	名詞-普通名詞-一般	_	16	nmod	_	BunsetuPosition=B|JPYomi=インターネット|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	で	で	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	検索	検索	VERB	名詞-普通名詞-サ変可能	_	16	aux	_	BunsetuPosition=B|JPYomi=ケンサク|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e1" class="OCCURRENCE"
+16	し	為る	AUX	動詞-非自立可能	_	28	advcl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+17	て	て	SCONJ	助詞-接続助詞	_	16	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+18	い	居る	AUX	動詞-非自立可能	_	16	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+19	て	て	SCONJ	助詞-接続助詞	_	16	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	、	、	PUNCT	補助記号-読点	_	16	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+21	面白い	面白い	ADJ	形容詞-一般	_	25	amod	_	BunsetuPosition=B|JPYomi=オモシロイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e2" class="NULL"
+22	ホーム	ホーム	NOUN	名詞-普通名詞-一般	_	25	appos	_	BunsetuPosition=B|JPYomi=ホーム|BunsetuPositionType=CONT|SpaceAfter=No	
+23	ページ	ページ	NOUN	名詞-普通名詞-助数詞可能	_	25	appos	_	BunsetuPosition=I|JPYomi=ページ|BunsetuPositionType=CONT|SpaceAfter=No	
+24	（	（	PUNCT	補助記号-括弧開	_	25	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+25	ＨＰ	ＨＰ	NOUN	名詞-普通名詞-一般	_	28	obj	_	BunsetuPosition=I|JPYomi=エイチピー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+26	）	）	PUNCT	補助記号-括弧閉	_	25	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+27	を	を	ADP	助詞-格助詞	_	25	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+28	見つけ	見付ける	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ミツケル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e3" class="OCCURRENCE"
+29	た	た	AUX	助動詞	_	28	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+30	。	。	PUNCT	補助記号-句点	_	28	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-5	
+# text = メーンは福岡の音楽情報。	
+1	メーン	メーン	NOUN	名詞-普通名詞-一般	_	6	nmod	_	BunsetuPosition=B|JPYomi=メーン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	は	は	ADP	助詞-係助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	6	nmod	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	の	の	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	音楽	音楽	NOUN	名詞-普通名詞-一般	_	6	compound	_	BunsetuPosition=B|JPYomi=オンガク|BunsetuPositionType=CONT|SpaceAfter=No	
+6	情報	情報	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=I|JPYomi=ジョウホウ|BunsetuPositionType=ROOT|SpaceAfter=No	
+7	。	。	PUNCT	補助記号-句点	_	6	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-6	
+# text = だが、その一方、若者でにぎわう福岡市の大名や親富孝通りのショップやクラブがハングルで紹介されている。	
+1	だ	だ	AUX	助動詞	_	2	aux	_	BunsetuPosition=B|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+2	が	が	CCONJ	助詞-接続助詞	_	26	cc	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	、	、	PUNCT	補助記号-読点	_	2	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+4	その	其の	DET	連体詞	_	5	det	_	BunsetuPosition=B|JPYomi=ソノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	一方	一方	NOUN	名詞-普通名詞-副詞可能	_	26	nmod	_	BunsetuPosition=B|JPYomi=イッポウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	、	、	PUNCT	補助記号-読点	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+7	若者	若者	NOUN	名詞-普通名詞-一般	_	9	nmod	_	BunsetuPosition=B|JPYomi=ワカモノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	で	で	ADP	助詞-格助詞	_	7	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	にぎわう	賑わう	VERB	動詞-一般	_	11	acl	_	BunsetuPosition=B|JPYomi=ニギワウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e4" class="OCCURRENCE"
+10	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	11	compound	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=CONT|SpaceAfter=No	
+11	市	市	NOUN	名詞-普通名詞-一般	_	13	nmod	_	BunsetuPosition=I|JPYomi=シ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	の	の	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	大名	ダイミョウ	PROPN	名詞-固有名詞-地名-一般	_	17	compound	_	BunsetuPosition=B|JPYomi=ダイミョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	や	や	ADP	助詞-副助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ヤ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	親	親	NOUN	名詞-普通名詞-一般	_	17	compound	_	BunsetuPosition=B|JPYomi=オヤ|BunsetuPositionType=CONT|SpaceAfter=No	
+16	富孝	不孝	NOUN	名詞-普通名詞-形状詞可能	_	17	compound	_	BunsetuPosition=I|JPYomi=フコウ|BunsetuPositionType=CONT|SpaceAfter=No	
+17	通り	通り	NOUN	名詞-普通名詞-助数詞可能	_	19	nmod	_	BunsetuPosition=I|JPYomi=トオリ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	の	の	ADP	助詞-格助詞	_	17	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	ショップ	ショップ	NOUN	名詞-普通名詞-一般	_	21	nmod	_	BunsetuPosition=B|JPYomi=ショップ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+20	や	や	ADP	助詞-副助詞	_	19	case	_	BunsetuPosition=I|JPYomi=ヤ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+21	クラブ	クラブ	NOUN	名詞-普通名詞-一般	_	26	nsubj	_	BunsetuPosition=B|JPYomi=クラブ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	が	が	ADP	助詞-格助詞	_	21	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+23	ハングル	ハングル	NOUN	名詞-普通名詞-一般	_	26	nmod	_	BunsetuPosition=B|JPYomi=ハングル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+24	で	で	ADP	助詞-格助詞	_	23	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	紹介	紹介	VERB	名詞-普通名詞-サ変可能	_	26	aux	_	BunsetuPosition=B|JPYomi=ショウカイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e5" class="OCCURRENCE"
+26	さ	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	
+27	れ	れる	AUX	助動詞	_	26	aux	_	BunsetuPosition=I|JPYomi=レル|BunsetuPositionType=FUNC|SpaceAfter=No	
+28	て	て	SCONJ	助詞-接続助詞	_	26	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+29	いる	居る	AUX	動詞-非自立可能	_	26	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+30	。	。	PUNCT	補助記号-句点	_	26	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-7	
+# text = 福岡→音楽→韓国…そのつながりとは？	
+1	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	5	compound	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=CONT|SpaceAfter=No	
+2	→	→	PUNCT	補助記号-一般	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+3	音楽	音楽	NOUN	名詞-普通名詞-一般	_	5	compound	_	BunsetuPosition=I|JPYomi=オンガク|BunsetuPositionType=CONT|SpaceAfter=No	
+4	→	→	PUNCT	補助記号-一般	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+5	韓国	韓国	PROPN	名詞-固有名詞-地名-国	_	8	compound	_	BunsetuPosition=I|JPYomi=カンコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	…	…	PUNCT	補助記号-一般	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+7	その	其の	DET	連体詞	_	8	det	_	BunsetuPosition=B|JPYomi=ソノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	つながり	繋がり	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ツナガリ|BunsetuPositionType=ROOT|SpaceAfter=No	
+9	と	と	ADP	助詞-格助詞	_	8	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+10	は	は	ADP	助詞-係助詞	_	8	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	？	？	PUNCT	補助記号-句点	_	8	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-8	
+# text = [JSP]早速、ＨＰを開設している「インディペンデント[JSP]ファクトリー[JSP]フクオカ」（中央区）へ。	
+1	[JSP]	[JSP]	X	空白	_	2	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	早速	早速	ADV	副詞	_	11	advmod	_	BunsetuPosition=I|JPYomi=サッソク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	、	、	PUNCT	補助記号-読点	_	2	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+4	ＨＰ	ＨＰ	NOUN	名詞-普通名詞-一般	_	7	obj	_	BunsetuPosition=B|JPYomi=エイチピー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	を	を	ADP	助詞-格助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	開設	開設	VERB	名詞-普通名詞-サ変可能	_	7	aux	_	BunsetuPosition=B|JPYomi=カイセツ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e6" class="OCCURRENCE"
+7	し	為る	AUX	動詞-非自立可能	_	11	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	て	て	SCONJ	助詞-接続助詞	_	7	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+9	いる	居る	AUX	動詞-非自立可能	_	7	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	「	「	PUNCT	補助記号-括弧開	_	11	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	インディペンデント	インディペンデント	NOUN	名詞-普通名詞-一般	_	13	nmod	_	BunsetuPosition=I|JPYomi=インディペンデント|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	[JSP]	[JSP]	X	空白	_	11	dep	_	BunsetuPosition=I|BunsetuPositionType=CONT|SpaceAfter=No	
+13	ファクトリー	ファクトリー	NOUN	名詞-普通名詞-一般	_	19	nmod	_	BunsetuPosition=B|JPYomi=ファクトリー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	[JSP]	[JSP]	X	空白	_	13	dep	_	BunsetuPosition=I|BunsetuPositionType=CONT|SpaceAfter=No	
+15	フクオカ	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	19	compound	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=CONT|SpaceAfter=No	
+16	」	」	PUNCT	補助記号-括弧閉	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	（	（	PUNCT	補助記号-括弧開	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+18	中央	チュウオウ	PROPN	名詞-固有名詞-地名-一般	_	19	compound	_	BunsetuPosition=I|JPYomi=チュウオウ|BunsetuPositionType=CONT|SpaceAfter=No	
+19	区	区	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=I|JPYomi=ク|BunsetuPositionType=ROOT|SpaceAfter=No	
+20	）	）	PUNCT	補助記号-括弧閉	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+21	へ	へ	ADP	助詞-格助詞	_	19	case	_	BunsetuPosition=I|JPYomi=ヘ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+22	。	。	PUNCT	補助記号-句点	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-9	
+# text = 現場責任者の大木聡美（三二）は「予想以上に、韓国の若者の目は福岡に向いている」と語る。	
+1	現場	現場	NOUN	名詞-普通名詞-一般	_	3	compound	_	BunsetuPosition=B|JPYomi=ゲンバ|BunsetuPositionType=CONT|SpaceAfter=No	
+2	責任	責任	NOUN	名詞-普通名詞-一般	_	3	compound	_	BunsetuPosition=I|JPYomi=セキニン|BunsetuPositionType=CONT|SpaceAfter=No	
+3	者	者	PART	接尾辞-名詞的-一般	_	9	nmod	_	BunsetuPosition=I|JPYomi=シャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	の	の	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	大木	オオキ	PROPN	名詞-固有名詞-人名-姓	_	9	compound	_	BunsetuPosition=B|JPYomi=オオキ|BunsetuPositionType=CONT|SpaceAfter=No	
+6	聡美	サトミ	PROPN	名詞-固有名詞-人名-名	_	9	compound	_	BunsetuPosition=I|JPYomi=サトミ|BunsetuPositionType=CONT|SpaceAfter=No	
+7	（	（	PUNCT	補助記号-括弧開	_	9	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+8	三	三	NUM	名詞-数詞	_	9	nummod	_	BunsetuPosition=I|JPYomi=サン|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DURATION" definite="FALSE" tid="t2" valueFromSurface="P32Y" value="P32Y"
+9	二	二	NUM	名詞-数詞	_	30	obl	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	）	）	PUNCT	補助記号-括弧閉	_	9	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	は	は	ADP	助詞-係助詞	_	9	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	「	「	PUNCT	補助記号-括弧開	_	14	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+13	予想	予想	NOUN	名詞-普通名詞-サ変可能	_	14	compound	_	BunsetuPosition=I|JPYomi=ヨソウ|BunsetuPositionType=CONT|SpaceAfter=No	
+14	以上	以上	NOUN	名詞-普通名詞-副詞可能	_	25	obl	_	BunsetuPosition=I|JPYomi=イジョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+15	に	に	ADP	助詞-格助詞	_	14	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+16	、	、	PUNCT	補助記号-読点	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	韓国	韓国	PROPN	名詞-固有名詞-地名-国	_	19	nmod	_	BunsetuPosition=B|JPYomi=カンコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	の	の	ADP	助詞-格助詞	_	17	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	若者	若者	NOUN	名詞-普通名詞-一般	_	21	nmod	_	BunsetuPosition=B|JPYomi=ワカモノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+20	の	の	ADP	助詞-格助詞	_	19	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+21	目	目	NOUN	名詞-普通名詞-一般	_	25	iobj	_	BunsetuPosition=B|JPYomi=メ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	は	は	ADP	助詞-係助詞	_	21	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+23	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	25	iobj	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+24	に	に	ADP	助詞-格助詞	_	23	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	向い	向く	VERB	動詞-一般	_	30	advcl	_	BunsetuPosition=B|JPYomi=ムク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e7" class="OCCURRENCE"
+26	て	て	SCONJ	助詞-接続助詞	_	25	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+27	いる	居る	AUX	動詞-非自立可能	_	25	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+28	」	」	PUNCT	補助記号-括弧閉	_	25	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+29	と	と	ADP	助詞-格助詞	_	25	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+30	語る	語る	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=カタル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e8" class="REPORTING"
+31	。	。	PUNCT	補助記号-句点	_	30	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-10	
+# text = 福岡の音楽を紹介するためにＨＰを開いたが、ファッション情報などへの反響が大きく、文化全般を紹介する動画を増やしたという。	
+1	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	3	compound	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	の	の	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	音楽	音楽	NOUN	名詞-普通名詞-一般	_	6	obj	_	BunsetuPosition=B|JPYomi=オンガク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	を	を	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	紹介	紹介	VERB	名詞-普通名詞-サ変可能	_	6	aux	_	BunsetuPosition=B|JPYomi=ショウカイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e9" class="OCCURRENCE"
+6	する	為る	AUX	動詞-非自立可能	_	11	obl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	ため	為	NOUN	名詞-普通名詞-副詞可能	_	6	compound	_	BunsetuPosition=I|JPYomi=タメ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	に	に	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	ＨＰ	ＨＰ	NOUN	名詞-普通名詞-一般	_	11	obj	_	BunsetuPosition=B|JPYomi=エイチピー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	を	を	ADP	助詞-格助詞	_	9	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	開い	開く	VERB	動詞-一般	_	31	advcl	_	BunsetuPosition=B|JPYomi=ヒラク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e10" class="OCCURRENCE"
+12	た	た	AUX	助動詞	_	11	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=FUNC|SpaceAfter=No	
+13	が	が	CCONJ	助詞-接続助詞	_	11	cc	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	、	、	PUNCT	補助記号-読点	_	11	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+15	ファッション	ファッション	NOUN	名詞-普通名詞-一般	_	16	compound	_	BunsetuPosition=B|JPYomi=ファッション|BunsetuPositionType=CONT|SpaceAfter=No	
+16	情報	情報	NOUN	名詞-普通名詞-一般	_	20	nmod	_	BunsetuPosition=I|JPYomi=ジョウホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+17	など	など	ADP	助詞-副助詞	_	16	case	_	BunsetuPosition=I|JPYomi=ナド|BunsetuPositionType=FUNC|SpaceAfter=No	
+18	へ	へ	ADP	助詞-格助詞	_	16	case	_	BunsetuPosition=I|JPYomi=ヘ|BunsetuPositionType=FUNC|SpaceAfter=No	
+19	の	の	ADP	助詞-格助詞	_	16	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	反響	反響	NOUN	名詞-普通名詞-サ変可能	_	22	nsubj	_	BunsetuPosition=B|JPYomi=ハンキョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+21	が	が	ADP	助詞-格助詞	_	20	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+22	大きく	大きい	ADJ	形容詞-一般	_	31	amod	_	BunsetuPosition=B|JPYomi=オオキイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e11" class="NULL"
+23	、	、	PUNCT	補助記号-読点	_	22	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+24	文化	文化	NOUN	名詞-普通名詞-一般	_	25	compound	_	BunsetuPosition=B|JPYomi=ブンカ|BunsetuPositionType=CONT|SpaceAfter=No	
+25	全般	全般	NOUN	名詞-普通名詞-一般	_	28	obj	_	BunsetuPosition=I|JPYomi=ゼンパン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+26	を	を	ADP	助詞-格助詞	_	25	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+27	紹介	紹介	VERB	名詞-普通名詞-サ変可能	_	28	aux	_	BunsetuPosition=B|JPYomi=ショウカイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e12" class="OCCURRENCE"
+28	する	為る	AUX	動詞-非自立可能	_	29	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+29	動画	動画	NOUN	名詞-普通名詞-一般	_	31	obj	_	BunsetuPosition=B|JPYomi=ドウガ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+30	を	を	ADP	助詞-格助詞	_	29	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+31	増やし	増やす	VERB	動詞-一般	_	34	advcl	_	BunsetuPosition=B|JPYomi=フヤス|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e13" class="OCCURRENCE"
+32	た	た	AUX	助動詞	_	31	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=FUNC|SpaceAfter=No	
+33	と	と	ADP	助詞-格助詞	_	31	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+34	いう	言う	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=イウ|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e14" class="REPORTING"
+35	。	。	PUNCT	補助記号-句点	_	34	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-11	
+# text = [JSP]「音楽を聴いてもらうのが一番。	
+1	[JSP]	[JSP]	X	空白	_	3	dep	_	BunsetuPosition=B|BunsetuPositionType=NO_HEAD|SpaceAfter=No	
+2	「	「	PUNCT	補助記号-括弧開	_	3	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=NO_HEAD|SpaceAfter=No	
+3	音楽	音楽	NOUN	名詞-普通名詞-一般	_	5	obj	_	BunsetuPosition=B|JPYomi=オンガク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	を	を	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	聴い	聞く	VERB	動詞-一般	_	10	nsubj	_	BunsetuPosition=B|JPYomi=キク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e15" class="OCCURRENCE"
+6	て	て	SCONJ	助詞-接続助詞	_	5	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+7	もらう	貰う	AUX	動詞-非自立可能	_	5	aux	_	BunsetuPosition=I|JPYomi=モラウ|BunsetuPositionType=FUNC|SpaceAfter=No	
+8	の	の	SCONJ	助詞-準体助詞	_	5	mark	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=FUNC|SpaceAfter=No	
+9	が	が	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	一番	一番	ADV	副詞	_	0	root	_	BunsetuPosition=B|JPYomi=イチバン|BunsetuPositionType=ROOT|SpaceAfter=No	
+11	。	。	PUNCT	補助記号-句点	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-12	
+# text = でも、文化を通じて交流を深めることが入り口になる」。	
+1	で	で	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=B|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+2	も	も	ADP	助詞-係助詞	_	15	dep	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=ROOT|SpaceAfter=No	
+3	、	、	PUNCT	補助記号-読点	_	2	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+4	文化	文化	NOUN	名詞-普通名詞-一般	_	10	obj	_	BunsetuPosition=B|JPYomi=ブンカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	を	を	ADP	助詞-格助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=FUNC|SpaceAfter=No	
+6	通じ	通ずる	VERB	動詞-一般	_	4	aux	_	BunsetuPosition=I|JPYomi=ツウズル|BunsetuPositionType=CONT|SpaceAfter=No	
+7	て	て	SCONJ	助詞-接続助詞	_	4	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	交流	交流	NOUN	名詞-普通名詞-サ変可能	_	10	obj	_	BunsetuPosition=B|JPYomi=コウリュウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	を	を	ADP	助詞-格助詞	_	8	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	深める	深める	VERB	動詞-一般	_	11	acl	_	BunsetuPosition=B|JPYomi=フカメル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e16" class="I_ACTION"
+11	こと	事	NOUN	名詞-普通名詞-一般	_	15	nsubj	_	BunsetuPosition=B|JPYomi=コト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	が	が	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	入り口	入り口	NOUN	名詞-普通名詞-一般	_	15	iobj	_	BunsetuPosition=B|JPYomi=イリグチ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	に	に	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	なる	成る	VERB	動詞-非自立可能	_	0	root	_	BunsetuPosition=B|JPYomi=ナル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e17" class="OCCURRENCE"
+16	」	」	PUNCT	補助記号-括弧閉	_	15	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	。	。	PUNCT	補助記号-句点	_	15	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-13	
+# text = ＨＰを見て福岡を訪れた韓国の若者と一緒に買い物を楽しみ、ライブに出かけることもある。	
+1	ＨＰ	ＨＰ	NOUN	名詞-普通名詞-一般	_	3	iobj	_	BunsetuPosition=B|JPYomi=エイチピー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	を	を	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	見	見る	VERB	動詞-非自立可能	_	7	advcl	_	BunsetuPosition=B|JPYomi=ミル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e18" class="OCCURRENCE"
+4	て	て	SCONJ	助詞-接続助詞	_	3	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	7	obj	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	を	を	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	訪れ	訪れる	VERB	動詞-一般	_	9	dep	_	BunsetuPosition=B|JPYomi=オトズレル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e19" class="OCCURRENCE"
+8	た	た	AUX	助動詞	_	7	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	韓国	韓国	PROPN	名詞-固有名詞-地名-国	_	11	nmod	_	BunsetuPosition=B|JPYomi=カンコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	の	の	ADP	助詞-格助詞	_	9	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	若者	若者	NOUN	名詞-普通名詞-一般	_	17	nmod	_	BunsetuPosition=B|JPYomi=ワカモノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	と	と	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	一緒	一緒	NOUN	名詞-普通名詞-サ変可能	_	17	obl	_	BunsetuPosition=B|JPYomi=イッショ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	に	に	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	買い物	買い物	NOUN	名詞-普通名詞-サ変可能	_	17	obj	_	BunsetuPosition=B|JPYomi=カイモノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	を	を	ADP	助詞-格助詞	_	15	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+17	楽しみ	楽しむ	VERB	動詞-一般	_	19	acl	_	BunsetuPosition=B|JPYomi=タノシム|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e20" class="OCCURRENCE"
+18	、	、	PUNCT	補助記号-読点	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+19	ライブ	ライブ	NOUN	名詞-普通名詞-一般	_	21	iobj	_	BunsetuPosition=B|JPYomi=ライブ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+20	に	に	ADP	助詞-格助詞	_	19	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+21	出かける	出掛ける	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=デカケル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e21" class="OCCURRENCE"
+22	こと	事	NOUN	名詞-普通名詞-一般	_	21	compound	_	BunsetuPosition=I|JPYomi=コト|BunsetuPositionType=CONT|SpaceAfter=No	
+23	も	も	ADP	助詞-係助詞	_	21	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=FUNC|SpaceAfter=No	
+24	ある	有る	AUX	動詞-非自立可能	_	21	aux	_	BunsetuPosition=I|JPYomi=アル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	。	。	PUNCT	補助記号-句点	_	21	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-14	
+# text = ネットの世界にとどまらず「気軽に顔を合わせられる近さがある」のだ。	
+1	ネット	ネット	NOUN	名詞-普通名詞-一般	_	3	nmod	_	BunsetuPosition=B|JPYomi=ネット|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	の	の	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	世界	世界	NOUN	名詞-普通名詞-一般	_	5	iobj	_	BunsetuPosition=B|JPYomi=セカイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	に	に	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	とどまら	留まる	VERB	動詞-一般	_	17	advcl	_	BunsetuPosition=B|JPYomi=トドマル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e22" class="OCCURRENCE"
+6	ず	ず	AUX	助動詞	Polarity=Neg	5	aux	_	BunsetuPosition=I|JPYomi=ズ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	「	「	PUNCT	補助記号-括弧開	_	8	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+8	気軽	気軽	ADJ	形状詞-一般	_	12	amod	_	BunsetuPosition=I|JPYomi=キガル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e23" class="NULL"
+9	に	だ	AUX	助動詞	_	8	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	顔	顔	NOUN	名詞-普通名詞-一般	_	12	obj	_	BunsetuPosition=B|JPYomi=カオ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	を	を	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	合わせ	合わせる	VERB	動詞-一般	_	15	acl	_	BunsetuPosition=B|JPYomi=アワセル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e24" class="OCCURRENCE"
+13	られる	られる	AUX	助動詞	_	12	aux	_	BunsetuPosition=I|JPYomi=ラレル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	近	近い	ADJ	形容詞-一般	_	15	amod	_	BunsetuPosition=B|JPYomi=チカイ|BunsetuPositionType=CONT|SpaceAfter=No	
+15	さ	さ	PART	接尾辞-名詞的-一般	_	17	nsubj	_	BunsetuPosition=I|JPYomi=サ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	が	が	ADP	助詞-格助詞	_	15	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+17	ある	有る	VERB	動詞-非自立可能	_	0	root	_	BunsetuPosition=B|JPYomi=アル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e25" class="STATE"
+18	」	」	PUNCT	補助記号-括弧閉	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+19	の	の	SCONJ	助詞-準体助詞	_	17	mark	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=FUNC|SpaceAfter=No	
+20	だ	だ	AUX	助動詞	_	17	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+21	。	。	PUNCT	補助記号-句点	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-15	
+# text = [JSP]天神のラジオ局「Ｌｏｖｅ[JSP]ＦＭ」でアジアを紹介する番組を作っている営業制作部長、坂田隆史（四四）も、同意見だ。	
+1	[JSP]	[JSP]	X	空白	_	2	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	天神	テンジン	PROPN	名詞-固有名詞-地名-一般	_	5	nmod	_	BunsetuPosition=I|JPYomi=テンジン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	の	の	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	ラジオ	ラジオ	NOUN	名詞-普通名詞-一般	_	5	compound	_	BunsetuPosition=B|JPYomi=ラジオ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	局	局	NOUN	名詞-普通名詞-助数詞可能	_	7	appos	_	BunsetuPosition=I|JPYomi=キョク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	「	「	PUNCT	補助記号-括弧開	_	7	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+7	Ｌｏｖｅ	ラブ	NOUN	名詞-普通名詞-一般	_	9	nmod	_	BunsetuPosition=I|JPYomi=ラブ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	[JSP]	[JSP]	X	空白	_	7	dep	_	BunsetuPosition=I|BunsetuPositionType=CONT|SpaceAfter=No	
+9	ＦＭ	ＦＭ	NOUN	名詞-普通名詞-一般	_	18	nmod	_	BunsetuPosition=B|JPYomi=エフエム|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	」	」	PUNCT	補助記号-括弧閉	_	9	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	で	で	ADP	助詞-格助詞	_	9	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	アジア	アジア	PROPN	名詞-固有名詞-地名-一般	_	15	obj	_	BunsetuPosition=B|JPYomi=アジア|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	を	を	ADP	助詞-格助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	紹介	紹介	VERB	名詞-普通名詞-サ変可能	_	15	aux	_	BunsetuPosition=B|JPYomi=ショウカイ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e26" class="OCCURRENCE"
+15	する	為る	AUX	動詞-非自立可能	_	16	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	番組	番組	NOUN	名詞-普通名詞-一般	_	18	obj	_	BunsetuPosition=B|JPYomi=バングミ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+17	を	を	ADP	助詞-格助詞	_	16	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+18	作っ	作る	VERB	動詞-一般	_	24	acl	_	BunsetuPosition=B|JPYomi=ツクル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e27" class="OCCURRENCE"
+19	て	て	SCONJ	助詞-接続助詞	_	18	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+20	いる	居る	AUX	動詞-非自立可能	_	18	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+21	営業	営業	NOUN	名詞-普通名詞-サ変可能	_	24	compound	_	BunsetuPosition=B|JPYomi=エイギョウ|BunsetuPositionType=CONT|SpaceAfter=No	
+22	制作	制作	NOUN	名詞-普通名詞-サ変可能	_	24	compound	_	BunsetuPosition=I|JPYomi=セイサク|BunsetuPositionType=CONT|SpaceAfter=No	
+23	部	部	NOUN	名詞-普通名詞-助数詞可能	_	24	compound	_	BunsetuPosition=I|JPYomi=ブ|BunsetuPositionType=CONT|SpaceAfter=No	
+24	長	長	PART	接尾辞-名詞的-一般	_	30	nmod	_	BunsetuPosition=I|JPYomi=チョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+25	、	、	PUNCT	補助記号-読点	_	24	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+26	坂田	サカタ	PROPN	名詞-固有名詞-人名-姓	_	30	compound	_	BunsetuPosition=B|JPYomi=サカタ|BunsetuPositionType=CONT|SpaceAfter=No	
+27	隆史	タカシ	PROPN	名詞-固有名詞-人名-名	_	30	compound	_	BunsetuPosition=I|JPYomi=タカシ|BunsetuPositionType=CONT|SpaceAfter=No	
+28	（	（	PUNCT	補助記号-括弧開	_	30	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+29	四	四	NUM	名詞-数詞	_	30	nummod	_	BunsetuPosition=I|JPYomi=ヨン|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DURATION" definite="FALSE" tid="t3" valueFromSurface="P44Y" value="P44Y"
+30	四	四	NUM	名詞-数詞	_	35	obl	_	BunsetuPosition=I|JPYomi=ヨン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+31	）	）	PUNCT	補助記号-括弧閉	_	30	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+32	も	も	ADP	助詞-係助詞	_	30	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+33	、	、	PUNCT	補助記号-読点	_	30	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+34	同	同	NOUN	名詞-普通名詞-一般	_	35	compound	_	BunsetuPosition=B|JPYomi=ドウ|BunsetuPositionType=CONT|SpaceAfter=No	
+35	意見	意見	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=I|JPYomi=イケン|BunsetuPositionType=ROOT|SpaceAfter=No	
+36	だ	だ	AUX	助動詞	_	35	cop	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+37	。	。	PUNCT	補助記号-句点	_	35	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-16	
+# text = 「耳にしたことがない言葉の歌には違和感が残る。	
+1	「	「	PUNCT	補助記号-括弧開	_	2	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=NO_HEAD|SpaceAfter=No	
+2	耳	耳	NOUN	名詞-普通名詞-一般	_	4	iobj	_	BunsetuPosition=B|JPYomi=ミミ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	に	に	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	し	為る	AUX	動詞-非自立可能	_	6	acl	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e28" class="OCCURRENCE"
+5	た	た	AUX	助動詞	_	4	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	こと	事	NOUN	名詞-普通名詞-一般	_	8	nsubj	_	BunsetuPosition=B|JPYomi=コト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	が	が	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	ない	無い	ADJ	形容詞-非自立可能	Polarity=Neg	9	amod	_	BunsetuPosition=B|JPYomi=ナイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e29" class="STATE"
+9	言葉	言葉	NOUN	名詞-普通名詞-一般	_	11	nmod	_	BunsetuPosition=B|JPYomi=コトバ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	の	の	ADP	助詞-格助詞	_	9	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	歌	歌	NOUN	名詞-普通名詞-一般	_	17	iobj	_	BunsetuPosition=B|JPYomi=ウタ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	に	に	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+13	は	は	ADP	助詞-係助詞	_	11	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	違和	違和	NOUN	名詞-普通名詞-一般	_	15	compound	_	BunsetuPosition=B|JPYomi=イワ|BunsetuPositionType=CONT|SpaceAfter=No	
+15	感	感	NOUN	名詞-普通名詞-一般	_	17	nsubj	_	BunsetuPosition=I|JPYomi=カン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	が	が	ADP	助詞-格助詞	_	15	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+17	残る	残る	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ノコル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e30" class="OCCURRENCE"
+18	。	。	PUNCT	補助記号-句点	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-17	
+# text = でも、福岡はアジアの留学生や旅行者が多く、心理的にも近い」	
+1	で	で	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=B|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+2	も	も	ADP	助詞-係助詞	_	20	advmod	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	、	、	PUNCT	補助記号-読点	_	2	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+4	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	20	obl	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	は	は	ADP	助詞-係助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	アジア	アジア	PROPN	名詞-固有名詞-地名-一般	_	9	nmod	_	BunsetuPosition=B|JPYomi=アジア|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	の	の	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	留学	留学	NOUN	名詞-普通名詞-サ変可能	_	9	compound	_	BunsetuPosition=B|JPYomi=リュウガク|BunsetuPositionType=CONT|SpaceAfter=No	
+9	生	生	PART	接尾辞-名詞的-一般	_	12	nmod	_	BunsetuPosition=I|JPYomi=セイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	や	や	ADP	助詞-副助詞	_	9	case	_	BunsetuPosition=I|JPYomi=ヤ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	旅行	旅行	NOUN	名詞-普通名詞-サ変可能	_	12	compound	_	BunsetuPosition=B|JPYomi=リョコウ|BunsetuPositionType=CONT|SpaceAfter=No	
+12	者	者	PART	接尾辞-名詞的-一般	_	14	nsubj	_	BunsetuPosition=I|JPYomi=シャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	が	が	ADP	助詞-格助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	多く	多い	ADJ	形容詞-一般	_	20	amod	_	BunsetuPosition=B|JPYomi=オオイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e31" class="NULL"
+15	、	、	PUNCT	補助記号-読点	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+16	心理	心理	NOUN	名詞-普通名詞-一般	_	17	compound	_	BunsetuPosition=B|JPYomi=シンリ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e32" class="NULL"
+17	的	的	PART	接尾辞-形状詞的	_	20	obl	_	BunsetuPosition=I|JPYomi=テキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	に	だ	AUX	助動詞	_	17	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+19	も	も	ADP	助詞-係助詞	_	17	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	近い	近い	ADJ	形容詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=チカイ|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e33" class="NULL"
+21	」	」	PUNCT	補助記号-括弧閉	_	20	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-18	
+# text = [JSP]坂田は、音楽市場としての可能性をアジアに感じている。	
+1	[JSP]	[JSP]	X	空白	_	2	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	坂田	サカタ	PROPN	名詞-固有名詞-人名-姓	_	16	iobj	_	BunsetuPosition=I|JPYomi=サカタ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	は	は	ADP	助詞-係助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	、	、	PUNCT	補助記号-読点	_	2	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+5	音楽	音楽	NOUN	名詞-普通名詞-一般	_	6	compound	_	BunsetuPosition=B|JPYomi=オンガク|BunsetuPositionType=CONT|SpaceAfter=No	
+6	市場	市場	NOUN	名詞-普通名詞-一般	_	12	nmod	_	BunsetuPosition=I|JPYomi=シジョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	と	と	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+8	し	為る	AUX	動詞-非自立可能	_	6	aux	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=FUNC|SpaceAfter=No	
+9	て	て	SCONJ	助詞-接続助詞	_	6	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+10	の	の	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	可能	可能	ADJ	形状詞-一般	_	12	amod	_	BunsetuPosition=B|JPYomi=カノウ|BunsetuPositionType=CONT|SpaceAfter=No	
+12	性	性	PART	接尾辞-名詞的-一般	_	16	obj	_	BunsetuPosition=I|JPYomi=セイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	を	を	ADP	助詞-格助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	アジア	アジア	PROPN	名詞-固有名詞-地名-一般	_	16	iobj	_	BunsetuPosition=B|JPYomi=アジア|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+15	に	に	ADP	助詞-格助詞	_	14	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+16	感じ	感ずる	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=カンズル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e34" class="OCCURRENCE"
+17	て	て	SCONJ	助詞-接続助詞	_	16	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+18	いる	居る	AUX	動詞-非自立可能	_	16	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	。	。	PUNCT	補助記号-句点	_	16	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-19	
+# text = 昨年十月から二カ月間、アジア六カ国・地域を回り、中国で出会った無名の日本人ミュージシャンの話に驚いた。	
+1	昨年	昨年	NOUN	名詞-普通名詞-副詞可能	_	3	compound	_	BunsetuPosition=B|JPYomi=サクネン|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" definite="FALSE" tid="t4" valueFromSurface="XXXX-10" value="2003-10"
+2	十	十	NUM	名詞-数詞	_	3	nummod	_	BunsetuPosition=I|JPYomi=ジュウ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	月	月	NOUN	名詞-普通名詞-助数詞可能	_	15	nmod	_	BunsetuPosition=I|JPYomi=ガツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	から	から	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=カラ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	二	二	NUM	名詞-数詞	_	7	nummod	_	BunsetuPosition=B|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DURATION" definite="FALSE" tid="t5" valueFromSurface="P2M" value="P2M"
+6	カ月	箇月	NOUN	名詞-普通名詞-助数詞可能	_	7	compound	_	BunsetuPosition=I|JPYomi=カゲツ|BunsetuPositionType=CONT|SpaceAfter=No	
+7	間	間	PART	接尾辞-名詞的-副詞可能	_	15	nmod	_	BunsetuPosition=I|JPYomi=カン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	、	、	PUNCT	補助記号-読点	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+9	アジア	アジア	PROPN	名詞-固有名詞-地名-一般	_	13	compound	_	BunsetuPosition=B|JPYomi=アジア|BunsetuPositionType=CONT|SpaceAfter=No	
+10	六	六	NUM	名詞-数詞	_	13	nummod	_	BunsetuPosition=I|JPYomi=ロク|BunsetuPositionType=CONT|SpaceAfter=No	
+11	カ国	箇国	NOUN	名詞-普通名詞-助数詞可能	_	13	compound	_	BunsetuPosition=I|JPYomi=カコク|BunsetuPositionType=CONT|SpaceAfter=No	
+12	・	・	PUNCT	補助記号-一般	_	13	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+13	地域	地域	NOUN	名詞-普通名詞-一般	_	15	obj	_	BunsetuPosition=I|JPYomi=チイキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	を	を	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	回り	回る	VERB	動詞-非自立可能	_	29	advcl	_	BunsetuPosition=B|JPYomi=マワル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e35" class="OCCURRENCE"
+16	、	、	PUNCT	補助記号-読点	_	15	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	中国	中国	PROPN	名詞-固有名詞-地名-国	_	19	compound	_	BunsetuPosition=B|JPYomi=チュウゴク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	で	で	ADP	助詞-格助詞	_	17	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	出会っ	出会う	VERB	動詞-一般	_	21	acl	_	BunsetuPosition=B|JPYomi=デアウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e36" class="OCCURRENCE"
+20	た	た	AUX	助動詞	_	19	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+21	無名	無名	NOUN	名詞-普通名詞-一般	_	25	nmod	_	BunsetuPosition=B|JPYomi=ムメイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	の	の	ADP	助詞-格助詞	_	21	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+23	日本	日本	PROPN	名詞-固有名詞-地名-国	_	25	compound	_	BunsetuPosition=B|JPYomi=ニッポン|BunsetuPositionType=CONT|SpaceAfter=No	
+24	人	人	PART	接尾辞-名詞的-一般	_	25	nmod	_	BunsetuPosition=I|JPYomi=ジン|BunsetuPositionType=CONT|SpaceAfter=No	
+25	ミュージシャン	ミュージシャン	NOUN	名詞-普通名詞-一般	_	27	nmod	_	BunsetuPosition=I|JPYomi=ミュージシャン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+26	の	の	ADP	助詞-格助詞	_	25	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+27	話	話	NOUN	名詞-普通名詞-サ変可能	_	29	iobj	_	BunsetuPosition=B|JPYomi=ハナシ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+28	に	に	ADP	助詞-格助詞	_	27	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+29	驚い	驚く	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=オドロク|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e37" class="I_STATE"
+30	た	た	AUX	助動詞	_	29	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+31	。	。	PUNCT	補助記号-句点	_	29	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-20	
+# text = 「これまでのライブで、四億人が歌を聴いてくれた」。	
+1	「	「	PUNCT	補助記号-括弧開	_	2	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+2	これ	此れ	PRON	代名詞	_	5	nmod	_	BunsetuPosition=I|JPYomi=コレ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	まで	まで	ADP	助詞-副助詞	_	2	case	_	BunsetuPosition=I|JPYomi=マデ|BunsetuPositionType=FUNC|SpaceAfter=No	
+4	の	の	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	ライブ	ライブ	NOUN	名詞-普通名詞-一般	_	14	nmod	_	BunsetuPosition=B|JPYomi=ライブ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	で	で	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	、	、	PUNCT	補助記号-読点	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+8	四	四	NUM	名詞-数詞	_	10	nummod	_	BunsetuPosition=B|JPYomi=ヨン|BunsetuPositionType=CONT|SpaceAfter=No	
+9	億	億	NUM	名詞-数詞	_	10	nummod	_	BunsetuPosition=I|JPYomi=オク|BunsetuPositionType=CONT|SpaceAfter=No	
+10	人	人	PART	接尾辞-名詞的-一般	_	14	nsubj	_	BunsetuPosition=I|JPYomi=ニン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	が	が	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	歌	歌	NOUN	名詞-普通名詞-一般	_	14	obj	_	BunsetuPosition=B|JPYomi=ウタ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	を	を	ADP	助詞-格助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	聴い	聞く	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=キク|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e38" class="OCCURRENCE"
+15	て	て	SCONJ	助詞-接続助詞	_	14	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+16	くれ	呉れる	AUX	動詞-非自立可能	_	14	aux	_	BunsetuPosition=I|JPYomi=クレル|BunsetuPositionType=FUNC|SpaceAfter=No	
+17	た	た	AUX	助動詞	_	14	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+18	」	」	PUNCT	補助記号-括弧閉	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+19	。	。	PUNCT	補助記号-句点	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-21	
+# text = 中国の音楽関係者は言った。	
+1	中国	中国	PROPN	名詞-固有名詞-地名-国	_	5	compound	_	BunsetuPosition=B|JPYomi=チュウゴク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	の	の	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	音楽	音楽	NOUN	名詞-普通名詞-一般	_	5	compound	_	BunsetuPosition=B|JPYomi=オンガク|BunsetuPositionType=CONT|SpaceAfter=No	
+4	関係	関係	NOUN	名詞-普通名詞-サ変可能	_	5	compound	_	BunsetuPosition=I|JPYomi=カンケイ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	者	者	PART	接尾辞-名詞的-一般	_	7	obl	_	BunsetuPosition=I|JPYomi=シャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	は	は	ADP	助詞-係助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	言っ	言う	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=イウ|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e39" class="OCCURRENCE"
+8	た	た	AUX	助動詞	_	7	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	。	。	PUNCT	補助記号-句点	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-22	
+# text = 「新人のＣＤは二千万枚売れた」。	
+1	「	「	PUNCT	補助記号-括弧開	_	2	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+2	新人	新人	NOUN	名詞-普通名詞-一般	_	4	nmod	_	BunsetuPosition=I|JPYomi=シンジン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	の	の	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	ＣＤ	ＣＤ	NOUN	名詞-普通名詞-一般	_	9	iobj	_	BunsetuPosition=B|JPYomi=シーディー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	は	は	ADP	助詞-係助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	二千	二千	NUM	名詞-数詞	_	8	nummod	_	BunsetuPosition=B|JPYomi=ニセン|BunsetuPositionType=CONT|SpaceAfter=No	
+7	万	万	NUM	名詞-数詞	_	8	nummod	_	BunsetuPosition=I|JPYomi=マン|BunsetuPositionType=CONT|SpaceAfter=No	
+8	枚	枚	PART	接尾辞-名詞的-助数詞	_	9	nmod	_	BunsetuPosition=I|JPYomi=マイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	売れ	売れる	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ウレル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e40" class="OCCURRENCE"
+10	た	た	AUX	助動詞	_	9	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	」	」	PUNCT	補助記号-括弧閉	_	9	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+12	。	。	PUNCT	補助記号-句点	_	9	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-23	
+# text = 日本では百万枚以上で大ヒット。	
+1	日本	日本	PROPN	名詞-固有名詞-地名-国	_	10	compound	_	BunsetuPosition=B|JPYomi=ニッポン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	で	で	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+3	は	は	ADP	助詞-係助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	百	百	NUM	名詞-数詞	_	7	nummod	_	BunsetuPosition=B|JPYomi=ヒャク|BunsetuPositionType=CONT|SpaceAfter=No	
+5	万	万	NUM	名詞-数詞	_	7	nummod	_	BunsetuPosition=I|JPYomi=マン|BunsetuPositionType=CONT|SpaceAfter=No	
+6	枚	枚	PART	接尾辞-名詞的-助数詞	_	7	nmod	_	BunsetuPosition=I|JPYomi=マイ|BunsetuPositionType=CONT|SpaceAfter=No	
+7	以上	以上	NOUN	名詞-普通名詞-副詞可能	_	10	nmod	_	BunsetuPosition=I|JPYomi=イジョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	で	で	ADP	助詞-格助詞	_	7	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	大	大	NOUN	接頭辞	_	10	compound	_	BunsetuPosition=B|JPYomi=ダイ|BunsetuPositionType=CONT|SpaceAfter=No	
+10	ヒット	ヒット	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=I|JPYomi=ヒット|BunsetuPositionType=ROOT|SpaceAfter=No	
+11	。	。	PUNCT	補助記号-句点	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-24	
+# text = けた違いだ。	
+1	けた違い	桁違い	ADJ	形状詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ケタチガイ|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e41" class="NULL"
+2	だ	だ	AUX	助動詞	_	1	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	。	。	PUNCT	補助記号-句点	_	1	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-25	
+# text = [JSP]タイ・バンコクではチャンスも手にした。	
+1	[JSP]	[JSP]	X	空白	_	4	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	タイ	タイ	PROPN	名詞-固有名詞-地名-国	_	4	compound	_	BunsetuPosition=I|JPYomi=タイ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	・	・	PUNCT	補助記号-一般	_	4	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+4	バンコク	バンコク	PROPN	名詞-固有名詞-地名-一般	_	11	obl	_	BunsetuPosition=I|JPYomi=バンコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	で	で	ADP	助詞-格助詞	_	4	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+6	は	は	ADP	助詞-係助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	チャンス	チャンス	NOUN	名詞-普通名詞-一般	_	11	iobj	_	BunsetuPosition=B|JPYomi=チャンス|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	も	も	ADP	助詞-係助詞	_	7	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	手	手	NOUN	名詞-普通名詞-助数詞可能	_	11	iobj	_	BunsetuPosition=B|JPYomi=テ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	に	に	ADP	助詞-格助詞	_	9	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	し	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e42" class="I_ACTION"
+12	た	た	AUX	助動詞	_	11	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+13	。	。	PUNCT	補助記号-句点	_	11	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-26	
+# text = ラジオ局社員と会話が弾み、その場で福岡のミュージシャンの現地イベント出演が決定。	
+1	ラジオ	ラジオ	NOUN	名詞-普通名詞-一般	_	3	compound	_	BunsetuPosition=B|JPYomi=ラジオ|BunsetuPositionType=CONT|SpaceAfter=No	
+2	局	局	NOUN	名詞-普通名詞-助数詞可能	_	3	compound	_	BunsetuPosition=I|JPYomi=キョク|BunsetuPositionType=CONT|SpaceAfter=No	
+3	社員	社員	NOUN	名詞-普通名詞-一般	_	7	nmod	_	BunsetuPosition=I|JPYomi=シャイン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	と	と	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	会話	会話	NOUN	名詞-普通名詞-サ変可能	_	7	nsubj	_	BunsetuPosition=B|JPYomi=カイワ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	が	が	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	弾み	弾む	VERB	動詞-一般	_	20	acl	_	BunsetuPosition=B|JPYomi=ハズム|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e43" class="I_ACTION"
+8	、	、	PUNCT	補助記号-読点	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+9	その	其の	DET	連体詞	_	10	det	_	BunsetuPosition=B|JPYomi=ソノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	場	場	NOUN	名詞-普通名詞-一般	_	20	nmod	_	BunsetuPosition=B|JPYomi=バ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	で	で	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	14	nmod	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	の	の	ADP	助詞-格助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	ミュージシャン	ミュージシャン	NOUN	名詞-普通名詞-一般	_	18	nmod	_	BunsetuPosition=B|JPYomi=ミュージシャン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+15	の	の	ADP	助詞-格助詞	_	14	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+16	現地	現地	NOUN	名詞-普通名詞-一般	_	18	compound	_	BunsetuPosition=B|JPYomi=ゲンチ|BunsetuPositionType=CONT|SpaceAfter=No	
+17	イベント	イベント	NOUN	名詞-普通名詞-一般	_	18	compound	_	BunsetuPosition=I|JPYomi=イベント|BunsetuPositionType=CONT|SpaceAfter=No	
+18	出演	出演	NOUN	名詞-普通名詞-サ変可能	_	20	nsubj	_	BunsetuPosition=I|JPYomi=シュツエン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	が	が	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	決定	決定	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=B|JPYomi=ケッテイ|BunsetuPositionType=ROOT|SpaceAfter=No	
+21	。	。	PUNCT	補助記号-句点	_	20	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-27	
+# text = 「巨額の宣伝費に頼るメジャー（大手レコード会社）の手法でなくても福岡の音楽を広める道はある」。	
+1	「	「	PUNCT	補助記号-括弧開	_	2	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+2	巨額	巨額	ADJ	形状詞-一般	_	5	nmod	_	BunsetuPosition=I|JPYomi=キョガク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e44" class="NULL"
+3	の	の	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	宣伝	宣伝	NOUN	名詞-普通名詞-サ変可能	_	5	compound	_	BunsetuPosition=B|JPYomi=センデン|BunsetuPositionType=CONT|SpaceAfter=No	
+5	費	費	PART	接尾辞-名詞的-一般	_	7	obl	_	BunsetuPosition=I|JPYomi=ヒ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	に	に	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	頼る	頼る	VERB	動詞-一般	_	12	acl	_	BunsetuPosition=B|JPYomi=タヨル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e45" class="OCCURRENCE"
+8	メジャー	メジャー	NOUN	名詞-普通名詞-形状詞可能	_	12	appos	_	BunsetuPosition=B|JPYomi=メジャー|BunsetuPositionType=CONT|SpaceAfter=No	
+9	（	（	PUNCT	補助記号-括弧開	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+10	大手	大手	NOUN	名詞-普通名詞-一般	_	12	compound	_	BunsetuPosition=I|JPYomi=オオテ|BunsetuPositionType=CONT|SpaceAfter=No	
+11	レコード	レコード	NOUN	名詞-普通名詞-一般	_	12	compound	_	BunsetuPosition=I|JPYomi=レコード|BunsetuPositionType=CONT|SpaceAfter=No	
+12	会社	会社	NOUN	名詞-普通名詞-一般	_	15	nmod	_	BunsetuPosition=I|JPYomi=カイシャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	）	）	PUNCT	補助記号-括弧閉	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+14	の	の	ADP	助詞-格助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	手法	手法	NOUN	名詞-普通名詞-一般	_	27	obl	_	BunsetuPosition=B|JPYomi=シュホウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	で	だ	AUX	助動詞	_	15	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+17	なく	無い	AUX	形容詞-非自立可能	Polarity=Neg	15	aux	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=FUNC|SpaceAfter=No	
+18	て	て	SCONJ	助詞-接続助詞	_	15	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+19	も	も	ADP	助詞-係助詞	_	15	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	22	nmod	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+21	の	の	ADP	助詞-格助詞	_	20	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+22	音楽	音楽	NOUN	名詞-普通名詞-一般	_	24	obj	_	BunsetuPosition=B|JPYomi=オンガク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+23	を	を	ADP	助詞-格助詞	_	22	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+24	広める	広める	VERB	動詞-一般	_	25	acl	_	BunsetuPosition=B|JPYomi=ヒロメル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e46" class="OCCURRENCE"
+25	道	道	NOUN	名詞-普通名詞-一般	_	27	iobj	_	BunsetuPosition=B|JPYomi=ミチ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+26	は	は	ADP	助詞-係助詞	_	25	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+27	ある	有る	VERB	動詞-非自立可能	_	0	root	_	BunsetuPosition=B|JPYomi=アル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e47" class="OCCURRENCE"
+28	」	」	PUNCT	補助記号-括弧閉	_	27	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+29	。	。	PUNCT	補助記号-句点	_	27	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-28	
+# text = そんな思いを坂田は強くする。	
+1	そんな	そんな	PRON	連体詞	_	2	nmod	_	BunsetuPosition=B|JPYomi=ソンナ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	思い	思い	NOUN	名詞-普通名詞-一般	_	7	obj	_	BunsetuPosition=B|JPYomi=オモイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	を	を	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	坂田	サカタ	PROPN	名詞-固有名詞-人名-姓	_	7	iobj	_	BunsetuPosition=B|JPYomi=サカタ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	は	は	ADP	助詞-係助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	強く	強い	ADJ	形容詞-一般	_	7	amod	_	BunsetuPosition=B|JPYomi=ツヨイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e48" class="NULL"
+7	する	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=B|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e49" class="OCCURRENCE"
+8	。	。	PUNCT	補助記号-句点	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-29	
+# text = [JSP]アジア戦略という意味では、地元レコード会社「センテニアルレコード」（中央区）社長、本上陽（二七）は明確だ。	
+1	[JSP]	[JSP]	X	空白	_	3	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	アジア	アジア	PROPN	名詞-固有名詞-地名-一般	_	3	compound	_	BunsetuPosition=I|JPYomi=アジア|BunsetuPositionType=CONT|SpaceAfter=No	
+3	戦略	戦略	NOUN	名詞-普通名詞-一般	_	6	nmod	_	BunsetuPosition=I|JPYomi=センリャク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	と	と	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+5	いう	言う	VERB	動詞-一般	_	3	aux	_	BunsetuPosition=I|JPYomi=イウ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	意味	意味	NOUN	名詞-普通名詞-サ変可能	_	30	obl	_	BunsetuPosition=B|JPYomi=イミ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	で	で	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+8	は	は	ADP	助詞-係助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	、	、	PUNCT	補助記号-読点	_	6	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+10	地元	地元	NOUN	名詞-普通名詞-一般	_	19	compound	_	BunsetuPosition=B|JPYomi=ジモト|BunsetuPositionType=CONT|SpaceAfter=No	
+11	レコード	レコード	NOUN	名詞-普通名詞-一般	_	19	compound	_	BunsetuPosition=I|JPYomi=レコード|BunsetuPositionType=CONT|SpaceAfter=No	
+12	会社	会社	NOUN	名詞-普通名詞-一般	_	19	compound	_	BunsetuPosition=I|JPYomi=カイシャ|BunsetuPositionType=CONT|SpaceAfter=No	
+13	「	「	PUNCT	補助記号-括弧開	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+14	センテニアル	センテニアル	NOUN	名詞-普通名詞-一般	_	19	compound	_	BunsetuPosition=I|JPYomi=センテニアル|BunsetuPositionType=CONT|SpaceAfter=No	
+15	レコード	レコード	NOUN	名詞-普通名詞-一般	_	19	compound	_	BunsetuPosition=I|JPYomi=レコード|BunsetuPositionType=CONT|SpaceAfter=No	
+16	」	」	PUNCT	補助記号-括弧閉	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	（	（	PUNCT	補助記号-括弧開	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+18	中央	チュウオウ	PROPN	名詞-固有名詞-地名-一般	_	19	compound	_	BunsetuPosition=I|JPYomi=チュウオウ|BunsetuPositionType=CONT|SpaceAfter=No	
+19	区	区	NOUN	名詞-普通名詞-一般	_	21	nmod	_	BunsetuPosition=I|JPYomi=ク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+20	）	）	PUNCT	補助記号-括弧閉	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+21	社長	社長	NOUN	名詞-普通名詞-一般	_	27	nmod	_	BunsetuPosition=B|JPYomi=シャチョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	、	、	PUNCT	補助記号-読点	_	21	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+23	本上	モトガミ	PROPN	名詞-固有名詞-人名-姓	_	27	compound	_	BunsetuPosition=B|JPYomi=モトガミ|BunsetuPositionType=CONT|SpaceAfter=No	
+24	陽	アキラ	PROPN	名詞-固有名詞-人名-名	_	27	compound	_	BunsetuPosition=I|JPYomi=アキラ|BunsetuPositionType=CONT|SpaceAfter=No	
+25	（	（	PUNCT	補助記号-括弧開	_	27	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+26	二	二	NUM	名詞-数詞	_	27	nummod	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DURATION" definite="FALSE" tid="t6" valueFromSurface="P27Y" value="P27Y"
+27	七	七	NUM	名詞-数詞	_	30	obl	_	BunsetuPosition=I|JPYomi=ナナ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+28	）	）	PUNCT	補助記号-括弧閉	_	27	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+29	は	は	ADP	助詞-係助詞	_	27	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+30	明確	明確	ADJ	形状詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=メイカク|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e50" class="NULL"
+31	だ	だ	AUX	助動詞	_	30	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+32	。	。	PUNCT	補助記号-句点	_	30	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-30	
+# text = 「アジアに目を向けなければ、福岡に本社を置く意味がない」。	
+1	「	「	PUNCT	補助記号-括弧開	_	2	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+2	アジア	アジア	PROPN	名詞-固有名詞-地名-一般	_	6	iobj	_	BunsetuPosition=I|JPYomi=アジア|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	に	に	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	目	目	NOUN	名詞-普通名詞-一般	_	6	obj	_	BunsetuPosition=B|JPYomi=メ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	を	を	ADP	助詞-格助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	向け	向ける	VERB	動詞-一般	_	17	advcl	_	BunsetuPosition=B|JPYomi=ムケル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e51" class="OCCURRENCE"
+7	なけれ	ない	AUX	助動詞	Polarity=Neg	6	aux	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=FUNC|SpaceAfter=No	
+8	ば	ば	CCONJ	助詞-接続助詞	_	6	cc	_	BunsetuPosition=I|JPYomi=バ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	、	、	PUNCT	補助記号-読点	_	6	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+10	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	14	iobj	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	に	に	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	本社	本社	NOUN	名詞-普通名詞-一般	_	14	obj	_	BunsetuPosition=B|JPYomi=ホンシャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	を	を	ADP	助詞-格助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	置く	置く	VERB	動詞-非自立可能	_	15	acl	_	BunsetuPosition=B|JPYomi=オク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e52" class="OCCURRENCE"
+15	意味	意味	NOUN	名詞-普通名詞-サ変可能	_	17	nsubj	_	BunsetuPosition=B|JPYomi=イミ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	が	が	ADP	助詞-格助詞	_	15	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+17	ない	無い	ADJ	形容詞-非自立可能	Polarity=Neg	0	root	_	BunsetuPosition=B|JPYomi=ナイ|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e53" class="NULL"
+18	」	」	PUNCT	補助記号-括弧閉	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+19	。	。	PUNCT	補助記号-句点	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-31	
+# text = アーティスト発掘、売り込みの拠点として年内に中国・上海にライブハウスを開設する。	
+1	アーティスト	アーチスト	NOUN	名詞-普通名詞-一般	_	2	compound	_	BunsetuPosition=B|JPYomi=アーチスト|BunsetuPositionType=CONT|SpaceAfter=No	
+2	発掘	発掘	NOUN	名詞-普通名詞-サ変可能	_	4	nmod	_	BunsetuPosition=I|JPYomi=ハックツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	、	、	PUNCT	補助記号-読点	_	2	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+4	売り込み	売り込み	NOUN	名詞-普通名詞-一般	_	6	nmod	_	BunsetuPosition=B|JPYomi=ウリコミ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	の	の	ADP	助詞-格助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	拠点	拠点	NOUN	名詞-普通名詞-一般	_	20	nmod	_	BunsetuPosition=B|JPYomi=キョテン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	と	と	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+8	し	為る	AUX	動詞-非自立可能	_	6	aux	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=FUNC|SpaceAfter=No	
+9	て	て	SCONJ	助詞-接続助詞	_	6	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	年内	年内	NOUN	名詞-普通名詞-一般	_	20	obl	_	BunsetuPosition=B|JPYomi=ネンナイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	TIMEX3 type="DATE" definite="FALSE" mod="END" tid="t7" valueFromSurface="XXXX" value="2004"
+11	に	に	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	中国	中国	PROPN	名詞-固有名詞-地名-国	_	14	compound	_	BunsetuPosition=B|JPYomi=チュウゴク|BunsetuPositionType=CONT|SpaceAfter=No	
+13	・	・	PUNCT	補助記号-一般	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+14	上海	シャンハイ	PROPN	名詞-固有名詞-地名-一般	_	20	iobj	_	BunsetuPosition=I|JPYomi=シャンハイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+15	に	に	ADP	助詞-格助詞	_	14	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+16	ライブ	ライブ	NOUN	名詞-普通名詞-一般	_	17	compound	_	BunsetuPosition=B|JPYomi=ライブ|BunsetuPositionType=CONT|SpaceAfter=No	
+17	ハウス	ハウス	NOUN	名詞-普通名詞-一般	_	20	obj	_	BunsetuPosition=I|JPYomi=ハウス|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	を	を	ADP	助詞-格助詞	_	17	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	開設	開設	VERB	名詞-普通名詞-サ変可能	_	20	aux	_	BunsetuPosition=B|JPYomi=カイセツ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e54" class="OCCURRENCE"
+20	する	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	
+21	。	。	PUNCT	補助記号-句点	_	20	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-32	
+# text = [JSP]所属歌手のＭＥＬＡ（二二）＝福岡出身＝は「東京よりアジアでヒットしたい」と、自作曲を韓国語にアレンジ。	
+1	[JSP]	[JSP]	X	空白	_	3	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	所属	所属	NOUN	名詞-普通名詞-サ変可能	_	3	compound	_	BunsetuPosition=I|JPYomi=ショゾク|BunsetuPositionType=CONT|SpaceAfter=No	
+3	歌手	歌手	NOUN	名詞-普通名詞-一般	_	12	nmod	_	BunsetuPosition=I|JPYomi=カシュ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	の	の	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	ＭＥＬＡ	メーラ	PROPN	名詞-固有名詞-人名-一般	_	12	compound	_	BunsetuPosition=B|JPYomi=メーラ|BunsetuPositionType=CONT|SpaceAfter=No	
+6	（	（	PUNCT	補助記号-括弧開	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+7	二	二	NUM	名詞-数詞	_	12	nummod	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DURATION" definite="FALSE" tid="t8" valueFromSurface="P22Y" value="P22Y"
+8	二	二	NUM	名詞-数詞	_	12	nummod	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	
+9	）	）	PUNCT	補助記号-括弧閉	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+10	＝	＝	PUNCT	補助記号-一般	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	12	compound	_	BunsetuPosition=I|JPYomi=フクオカ|BunsetuPositionType=CONT|SpaceAfter=No	
+12	出身	出身	NOUN	名詞-普通名詞-一般	_	32	obl	_	BunsetuPosition=I|JPYomi=シュッシン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	＝	＝	PUNCT	補助記号-一般	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+14	は	は	ADP	助詞-係助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	「	「	PUNCT	補助記号-括弧開	_	16	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+16	東京	トウキョウ	PROPN	名詞-固有名詞-地名-一般	_	21	compound	_	BunsetuPosition=I|JPYomi=トウキョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+17	より	より	ADP	助詞-格助詞	_	16	case	_	BunsetuPosition=I|JPYomi=ヨリ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+18	アジア	アジア	PROPN	名詞-固有名詞-地名-一般	_	21	compound	_	BunsetuPosition=B|JPYomi=アジア|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	で	で	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	ヒット	ヒット	VERB	名詞-普通名詞-サ変可能	_	21	aux	_	BunsetuPosition=B|JPYomi=ヒット|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e55" class="OCCURRENCE"
+21	し	為る	AUX	動詞-非自立可能	_	32	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+22	たい	たい	AUX	助動詞	_	21	aux	_	BunsetuPosition=I|JPYomi=タイ|BunsetuPositionType=FUNC|SpaceAfter=No	
+23	」	」	PUNCT	補助記号-括弧閉	_	21	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+24	と	と	ADP	助詞-格助詞	_	21	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	、	、	PUNCT	補助記号-読点	_	21	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+26	自作	自作	NOUN	名詞-普通名詞-サ変可能	_	27	compound	_	BunsetuPosition=B|JPYomi=ジサク|BunsetuPositionType=CONT|SpaceAfter=No	
+27	曲	曲	NOUN	名詞-普通名詞-一般	_	32	obj	_	BunsetuPosition=I|JPYomi=キョク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+28	を	を	ADP	助詞-格助詞	_	27	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+29	韓国	韓国	PROPN	名詞-固有名詞-地名-国	_	30	compound	_	BunsetuPosition=B|JPYomi=カンコク|BunsetuPositionType=CONT|SpaceAfter=No	
+30	語	語	NOUN	名詞-普通名詞-一般	_	32	obl	_	BunsetuPosition=I|JPYomi=ゴ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+31	に	に	ADP	助詞-格助詞	_	30	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+32	アレンジ	アレンジ	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=B|JPYomi=アレンジ|BunsetuPositionType=ROOT|SpaceAfter=No	
+33	。	。	PUNCT	補助記号-句点	_	32	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-33	
+# text = 九月発売予定のミニアルバムにも収録、十月には韓国のライブで歌う。	
+1	九	九	NUM	名詞-数詞	_	4	nummod	_	BunsetuPosition=B|JPYomi=ク|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" definite="FALSE" tid="t9" valueFromSurface="XXXX-09" value="2004-09"
+2	月	月	NOUN	名詞-普通名詞-助数詞可能	_	4	compound	_	BunsetuPosition=I|JPYomi=ガツ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	発売	発売	NOUN	名詞-普通名詞-サ変可能	_	4	compound	_	BunsetuPosition=I|JPYomi=ハツバイ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	予定	予定	NOUN	名詞-普通名詞-サ変可能	_	7	nmod	_	BunsetuPosition=I|JPYomi=ヨテイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	の	の	ADP	助詞-格助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	ミニ	ミニ	NOUN	名詞-普通名詞-一般	_	7	compound	_	BunsetuPosition=B|JPYomi=ミニ|BunsetuPositionType=CONT|SpaceAfter=No	
+7	アルバム	アルバム	NOUN	名詞-普通名詞-一般	_	10	obl	_	BunsetuPosition=I|JPYomi=アルバム|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	に	に	ADP	助詞-格助詞	_	7	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+9	も	も	ADP	助詞-係助詞	_	7	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	収録	収録	NOUN	名詞-普通名詞-サ変可能	_	20	nmod	_	BunsetuPosition=B|JPYomi=シュウロク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	、	、	PUNCT	補助記号-読点	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+12	十	十	NUM	名詞-数詞	_	13	nummod	_	BunsetuPosition=B|JPYomi=ジュウ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" definite="FALSE" tid="t10" valueFromSurface="XXXX-10" value="2004-10"
+13	月	月	NOUN	名詞-普通名詞-助数詞可能	_	20	obl	_	BunsetuPosition=I|JPYomi=ガツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	に	に	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+15	は	は	ADP	助詞-係助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+16	韓国	韓国	PROPN	名詞-固有名詞-地名-国	_	18	nmod	_	BunsetuPosition=B|JPYomi=カンコク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+17	の	の	ADP	助詞-格助詞	_	16	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+18	ライブ	ライブ	NOUN	名詞-普通名詞-一般	_	20	nmod	_	BunsetuPosition=B|JPYomi=ライブ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	で	で	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	歌う	歌う	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ウタウ|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e56" class="OCCURRENCE"
+21	。	。	PUNCT	補助記号-句点	_	20	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-34	
+# text = [JSP]今や、自宅のパソコンでもレコーディングできる時代。	
+1	[JSP]	[JSP]	X	空白	_	3	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	今	今	ADV	名詞-普通名詞-副詞可能	_	3	advmod	_	BunsetuPosition=I|JPYomi=イマ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	や	や	ADP	助詞-副助詞	_	12	nmod	_	BunsetuPosition=I|JPYomi=ヤ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	、	、	PUNCT	補助記号-読点	_	3	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+5	自宅	自宅	NOUN	名詞-普通名詞-一般	_	7	nmod	_	BunsetuPosition=B|JPYomi=ジタク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	の	の	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	パソコン	パソコン	NOUN	名詞-普通名詞-一般	_	11	obl	_	BunsetuPosition=B|JPYomi=パソコン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	で	で	ADP	助詞-格助詞	_	7	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=FUNC|SpaceAfter=No	
+9	も	も	ADP	助詞-係助詞	_	7	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	レコーディング	レコーディング	VERB	名詞-普通名詞-サ変可能	_	11	aux	_	BunsetuPosition=B|JPYomi=レコーディング|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e57" class="OCCURRENCE"
+11	できる	出来る	VERB	動詞-非自立可能	_	12	acl	_	BunsetuPosition=I|JPYomi=デキル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	時代	時代	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ジダイ|BunsetuPositionType=ROOT|SpaceAfter=No	
+13	。	。	PUNCT	補助記号-句点	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-35	
+# text = 「東京で認められなくてもアジアで売れるアーティストが誕生すると思う。	
+1	「	「	PUNCT	補助記号-括弧開	_	2	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=NO_HEAD|SpaceAfter=No	
+2	東京	トウキョウ	PROPN	名詞-固有名詞-地名-一般	_	4	compound	_	BunsetuPosition=B|JPYomi=トウキョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	で	で	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	認め	認める	VERB	動詞-一般	_	11	obl	_	BunsetuPosition=B|JPYomi=ミトメル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e58" class="OCCURRENCE"
+5	られ	られる	AUX	助動詞	_	4	aux	_	BunsetuPosition=I|JPYomi=ラレル|BunsetuPositionType=FUNC|SpaceAfter=No	
+6	なく	ない	AUX	助動詞	Polarity=Neg	4	aux	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=FUNC|SpaceAfter=No	
+7	て	て	SCONJ	助詞-接続助詞	_	4	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+8	も	も	ADP	助詞-係助詞	_	4	case	_	BunsetuPosition=I|JPYomi=モ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	アジア	アジア	PROPN	名詞-固有名詞-地名-一般	_	11	compound	_	BunsetuPosition=B|JPYomi=アジア|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	で	で	ADP	助詞-格助詞	_	9	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	売れる	売れる	VERB	動詞-一般	_	12	acl	_	BunsetuPosition=B|JPYomi=ウレル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e59" class="OCCURRENCE"
+12	アーティスト	アーチスト	NOUN	名詞-普通名詞-一般	_	15	nsubj	_	BunsetuPosition=B|JPYomi=アーチスト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	が	が	ADP	助詞-格助詞	_	12	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	誕生	誕生	VERB	名詞-普通名詞-サ変可能	_	15	aux	_	BunsetuPosition=B|JPYomi=タンジョウ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e60" class="OCCURRENCE"
+15	する	為る	AUX	動詞-非自立可能	_	17	advcl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	と	と	ADP	助詞-格助詞	_	15	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+17	思う	思う	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=オモウ|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e61" class="I_STATE"
+18	。	。	PUNCT	補助記号-句点	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-36	
+# text = 東京を経由する必要はない」。	
+1	東京	トウキョウ	PROPN	名詞-固有名詞-地名-一般	_	4	iobj	_	BunsetuPosition=B|JPYomi=トウキョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	を	を	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	経由	経由	VERB	名詞-普通名詞-サ変可能	_	4	aux	_	BunsetuPosition=B|JPYomi=ケイユ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e62" class="OCCURRENCE"
+4	する	為る	AUX	動詞-非自立可能	_	5	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	必要	必要	NOUN	名詞-普通名詞-形状詞可能	_	7	iobj	_	BunsetuPosition=B|JPYomi=ヒツヨウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	は	は	ADP	助詞-係助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	ない	無い	ADJ	形容詞-非自立可能	Polarity=Neg	0	root	_	BunsetuPosition=B|JPYomi=ナイ|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e63" class="STATE"
+8	」	」	PUNCT	補助記号-括弧閉	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+9	。	。	PUNCT	補助記号-句点	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-37	
+# text = 本上は所属のアーティストに一度は問いかける。	
+1	本上	モトガミ	PROPN	名詞-固有名詞-人名-姓	_	10	iobj	_	BunsetuPosition=B|JPYomi=モトガミ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	は	は	ADP	助詞-係助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	所属	所属	NOUN	名詞-普通名詞-サ変可能	_	5	nmod	_	BunsetuPosition=B|JPYomi=ショゾク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	の	の	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	アーティスト	アーチスト	NOUN	名詞-普通名詞-一般	_	10	iobj	_	BunsetuPosition=B|JPYomi=アーチスト|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	に	に	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	一	一	NUM	名詞-数詞	_	8	nummod	_	BunsetuPosition=B|JPYomi=イチ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	度	度	NOUN	名詞-普通名詞-助数詞可能	_	10	obl	_	BunsetuPosition=I|JPYomi=ド|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	は	は	ADP	助詞-係助詞	_	8	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	問いかける	問い掛ける	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=トイカケル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e64" class="OCCURRENCE"
+11	。	。	PUNCT	補助記号-句点	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-38	
+# text = 「東京だけが主流じゃない。	
+1	「	「	PUNCT	補助記号-括弧開	_	2	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=NO_HEAD|SpaceAfter=No	
+2	東京	トウキョウ	PROPN	名詞-固有名詞-地名-一般	_	5	nsubj	_	BunsetuPosition=B|JPYomi=トウキョウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	だけ	だけ	ADP	助詞-副助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ダケ|BunsetuPositionType=FUNC|SpaceAfter=No	
+4	が	が	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	主流	主流	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=シュリュウ|BunsetuPositionType=ROOT|SpaceAfter=No	
+6	じゃ	だ	AUX	助動詞	_	5	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+7	ない	無い	AUX	形容詞-非自立可能	Polarity=Neg	5	aux	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	。	。	PUNCT	補助記号-句点	_	5	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-39	
+# text = 韓国語か中国語で歌ってみないか？」	
+1	韓国	韓国	PROPN	名詞-固有名詞-地名-国	_	2	compound	_	BunsetuPosition=B|JPYomi=カンコク|BunsetuPositionType=CONT|SpaceAfter=No	
+2	語	語	NOUN	名詞-普通名詞-一般	_	5	nmod	_	BunsetuPosition=I|JPYomi=ゴ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	か	か	ADP	助詞-副助詞	_	2	case	_	BunsetuPosition=I|JPYomi=カ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	中国	中国	PROPN	名詞-固有名詞-地名-国	_	5	compound	_	BunsetuPosition=B|JPYomi=チュウゴク|BunsetuPositionType=CONT|SpaceAfter=No	
+5	語	語	NOUN	名詞-普通名詞-一般	_	7	nmod	_	BunsetuPosition=I|JPYomi=ゴ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	で	で	ADP	助詞-格助詞	_	5	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	歌っ	歌う	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ウタウ|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e65" class="OCCURRENCE"
+8	て	て	SCONJ	助詞-接続助詞	_	7	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+9	み	見る	AUX	動詞-非自立可能	_	7	aux	_	BunsetuPosition=I|JPYomi=ミル|BunsetuPositionType=FUNC|SpaceAfter=No	
+10	ない	ない	AUX	助動詞	Polarity=Neg	7	aux	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=FUNC|SpaceAfter=No	
+11	か	か	PART	助詞-終助詞	_	7	aux	_	BunsetuPosition=I|JPYomi=カ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	？	？	PUNCT	補助記号-句点	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+13	」	」	PUNCT	補助記号-括弧閉	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-40	
+# text = ＝敬称略	
+1	＝	＝	PUNCT	補助記号-一般	_	3	dep	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=NO_HEAD|SpaceAfter=No	
+2	敬称	敬称	NOUN	名詞-普通名詞-一般	_	3	compound	_	BunsetuPosition=B|JPYomi=ケイショウ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	略	略	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=I|JPYomi=リャク|BunsetuPositionType=ROOT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-41	
+# text = （入江剛史）	
+1	（	（	PUNCT	補助記号-括弧開	_	3	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+2	入江	イリエ	PROPN	名詞-固有名詞-人名-姓	_	3	compound	_	BunsetuPosition=I|JPYomi=イリエ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	剛史	タケシ	PROPN	名詞-固有名詞-人名-名	_	0	root	_	BunsetuPosition=I|JPYomi=タケシ|BunsetuPositionType=ROOT|SpaceAfter=No	
+4	）	）	PUNCT	補助記号-括弧閉	_	3	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-42	
+# text = ミュージシャンの動画制作をチェックする「インディペンデント[JSP]ファクトリー[JSP]フクオカ」の大木さん（奥）	
+1	ミュージシャン	ミュージシャン	NOUN	名詞-普通名詞-一般	_	4	iobj	_	BunsetuPosition=B|JPYomi=ミュージシャン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	の	の	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	動画	動画	NOUN	名詞-普通名詞-一般	_	4	compound	_	BunsetuPosition=B|JPYomi=ドウガ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	制作	制作	NOUN	名詞-普通名詞-サ変可能	_	7	obj	_	BunsetuPosition=I|JPYomi=セイサク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	を	を	ADP	助詞-格助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	チェック	チェック	VERB	名詞-普通名詞-サ変可能	_	7	aux	_	BunsetuPosition=B|JPYomi=チェック|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e66" class="I_ACTION"
+7	する	為る	AUX	動詞-非自立可能	_	19	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	「	「	PUNCT	補助記号-括弧開	_	9	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+9	インディペンデント	インディペンデント	NOUN	名詞-普通名詞-一般	_	11	nmod	_	BunsetuPosition=I|JPYomi=インディペンデント|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+10	[JSP]	[JSP]	X	空白	_	9	dep	_	BunsetuPosition=I|BunsetuPositionType=CONT|SpaceAfter=No	
+11	ファクトリー	ファクトリー	NOUN	名詞-普通名詞-一般	_	13	nmod	_	BunsetuPosition=B|JPYomi=ファクトリー|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	[JSP]	[JSP]	X	空白	_	11	dep	_	BunsetuPosition=I|BunsetuPositionType=CONT|SpaceAfter=No	
+13	フクオカ	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	19	nmod	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	」	」	PUNCT	補助記号-括弧閉	_	13	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+15	の	の	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+16	大木	オオキ	PROPN	名詞-固有名詞-人名-姓	_	19	compound	_	BunsetuPosition=B|JPYomi=オオキ|BunsetuPositionType=CONT|SpaceAfter=No	
+17	さん	さん	PART	接尾辞-名詞的-一般	_	19	nmod	_	BunsetuPosition=I|JPYomi=サン|BunsetuPositionType=CONT|SpaceAfter=No	
+18	（	（	PUNCT	補助記号-括弧開	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+19	奥	奥	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=I|JPYomi=オク|BunsetuPositionType=ROOT|SpaceAfter=No	
+20	）	）	PUNCT	補助記号-括弧閉	_	19	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-43	
+# text = 韓国語にアレンジした歌詞を見ながら歌うＭＥＬＡ	
+1	韓国	韓国	PROPN	名詞-固有名詞-地名-国	_	2	compound	_	BunsetuPosition=B|JPYomi=カンコク|BunsetuPositionType=CONT|SpaceAfter=No	
+2	語	語	NOUN	名詞-普通名詞-一般	_	5	obl	_	BunsetuPosition=I|JPYomi=ゴ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	に	に	ADP	助詞-格助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	アレンジ	アレンジ	VERB	名詞-普通名詞-サ変可能	_	5	aux	_	BunsetuPosition=B|JPYomi=アレンジ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e67" class="OCCURRENCE"
+5	し	為る	AUX	動詞-非自立可能	_	7	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+6	た	た	AUX	助動詞	_	5	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	歌詞	歌詞	NOUN	名詞-普通名詞-一般	_	9	obj	_	BunsetuPosition=B|JPYomi=カシ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+8	を	を	ADP	助詞-格助詞	_	7	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+9	見	見る	VERB	動詞-非自立可能	_	11	advcl	_	BunsetuPosition=B|JPYomi=ミル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e68" class="OCCURRENCE"
+10	ながら	ながら	CCONJ	助詞-接続助詞	_	9	cc	_	BunsetuPosition=I|JPYomi=ナガラ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+11	歌う	歌う	VERB	動詞-一般	_	12	dep	_	BunsetuPosition=B|JPYomi=ウタウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e69" class="OCCURRENCE"
+12	ＭＥＬＡ	メーラ	PROPN	名詞-固有名詞-人名-一般	_	0	root	_	BunsetuPosition=B|JPYomi=メーラ|BunsetuPositionType=ROOT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-44	
+# text = [JSP]「都市探究」シリーズ（週５回）へのご意見、ご感想をお待ちしています。	
+1	[JSP]	[JSP]	X	空白	_	10	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	「	「	PUNCT	補助記号-括弧開	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+3	都市	都市	NOUN	名詞-普通名詞-一般	_	10	compound	_	BunsetuPosition=I|JPYomi=トシ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	探究	探究	NOUN	名詞-普通名詞-サ変可能	_	10	compound	_	BunsetuPosition=I|JPYomi=タンキュウ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	」	」	PUNCT	補助記号-括弧閉	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+6	シリーズ	シリーズ	NOUN	名詞-普通名詞-一般	_	10	compound	_	BunsetuPosition=I|JPYomi=シリーズ|BunsetuPositionType=CONT|SpaceAfter=No	
+7	（	（	PUNCT	補助記号-括弧開	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+8	週	週	NOUN	名詞-普通名詞-助数詞可能	_	10	compound	_	BunsetuPosition=I|JPYomi=シュウ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="SET" definite="FALSE" freq="5X" tid="t11" valueFromSurface="P1W" value="P1W"
+9	５	五	NUM	名詞-数詞	_	10	nummod	_	BunsetuPosition=I|JPYomi=ゴ|BunsetuPositionType=CONT|SpaceAfter=No	
+10	回	回	NOUN	名詞-普通名詞-助数詞可能	_	15	nmod	_	BunsetuPosition=I|JPYomi=カイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	）	）	PUNCT	補助記号-括弧閉	_	10	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+12	へ	へ	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ヘ|BunsetuPositionType=FUNC|SpaceAfter=No	
+13	の	の	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	ご	御	NOUN	接頭辞	_	15	compound	_	BunsetuPosition=B|JPYomi=ゴ|BunsetuPositionType=CONT|SpaceAfter=No	
+15	意見	意見	NOUN	名詞-普通名詞-サ変可能	_	18	nmod	_	BunsetuPosition=I|JPYomi=イケン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	、	、	PUNCT	補助記号-読点	_	15	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	ご	御	NOUN	接頭辞	_	18	compound	_	BunsetuPosition=B|JPYomi=ゴ|BunsetuPositionType=CONT|SpaceAfter=No	
+18	感想	感想	NOUN	名詞-普通名詞-一般	_	22	obj	_	BunsetuPosition=I|JPYomi=カンソウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+19	を	を	ADP	助詞-格助詞	_	18	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+20	お	御	NOUN	接頭辞	_	22	compound	_	BunsetuPosition=B|JPYomi=オ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e70" class="I_ACTION"
+21	待ち	待つ	VERB	動詞-一般	_	22	aux	_	BunsetuPosition=I|JPYomi=マツ|BunsetuPositionType=CONT|SpaceAfter=No	
+22	し	為る	AUX	動詞-非自立可能	_	0	root	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=ROOT|SpaceAfter=No	
+23	て	て	SCONJ	助詞-接続助詞	_	22	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+24	い	居る	AUX	動詞-非自立可能	_	22	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+25	ます	ます	AUX	助動詞	_	22	aux	_	BunsetuPosition=I|JPYomi=マス|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+26	。	。	PUNCT	補助記号-句点	_	22	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-45	
+# text = 〒８１０‐８７２１（住所不要）西日本新聞社地域報道センター「都市探究」係。	
+1	〒	〒	PUNCT	補助記号-一般	_	12	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+2	８	八	NUM	名詞-数詞	_	12	nummod	_	BunsetuPosition=I|JPYomi=ハチ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	１	一	NUM	名詞-数詞	_	12	nummod	_	BunsetuPosition=I|JPYomi=イチ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	０	零	NUM	名詞-数詞	_	12	nummod	_	BunsetuPosition=I|JPYomi=レイ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	‐	‐	PUNCT	補助記号-一般	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+6	８	八	NUM	名詞-数詞	_	12	nummod	_	BunsetuPosition=I|JPYomi=ハチ|BunsetuPositionType=CONT|SpaceAfter=No	
+7	７	七	NUM	名詞-数詞	_	12	nummod	_	BunsetuPosition=I|JPYomi=ナナ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	２	二	NUM	名詞-数詞	_	12	nummod	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	
+9	１	一	NUM	名詞-数詞	_	12	nummod	_	BunsetuPosition=I|JPYomi=イチ|BunsetuPositionType=CONT|SpaceAfter=No	
+10	（	（	PUNCT	補助記号-括弧開	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	住所	住所	NOUN	名詞-普通名詞-一般	_	12	compound	_	BunsetuPosition=I|JPYomi=ジュウショ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e71" class="NULL"
+12	不要	不要	ADJ	形状詞-一般	_	17	amod	_	BunsetuPosition=I|JPYomi=フヨウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	）	）	PUNCT	補助記号-括弧閉	_	12	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+14	西	西	NOUN	名詞-普通名詞-一般	_	17	compound	_	BunsetuPosition=B|JPYomi=ニシ|BunsetuPositionType=CONT|SpaceAfter=No	
+15	日本	日本	PROPN	名詞-固有名詞-地名-国	_	17	compound	_	BunsetuPosition=I|JPYomi=ニッポン|BunsetuPositionType=CONT|SpaceAfter=No	
+16	新聞	新聞	NOUN	名詞-普通名詞-一般	_	17	compound	_	BunsetuPosition=I|JPYomi=シンブン|BunsetuPositionType=CONT|SpaceAfter=No	
+17	社	社	NOUN	名詞-普通名詞-助数詞可能	_	20	nmod	_	BunsetuPosition=I|JPYomi=シャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	地域	地域	NOUN	名詞-普通名詞-一般	_	20	compound	_	BunsetuPosition=B|JPYomi=チイキ|BunsetuPositionType=CONT|SpaceAfter=No	
+19	報道	報道	NOUN	名詞-普通名詞-サ変可能	_	20	compound	_	BunsetuPosition=I|JPYomi=ホウドウ|BunsetuPositionType=CONT|SpaceAfter=No	
+20	センター	センター	NOUN	名詞-普通名詞-一般	_	25	nmod	_	BunsetuPosition=I|JPYomi=センター|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+21	「	「	PUNCT	補助記号-括弧開	_	25	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+22	都市	都市	NOUN	名詞-普通名詞-一般	_	25	compound	_	BunsetuPosition=I|JPYomi=トシ|BunsetuPositionType=CONT|SpaceAfter=No	
+23	探究	探究	NOUN	名詞-普通名詞-サ変可能	_	25	compound	_	BunsetuPosition=I|JPYomi=タンキュウ|BunsetuPositionType=CONT|SpaceAfter=No	
+24	」	」	PUNCT	補助記号-括弧閉	_	25	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+25	係	係	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=I|JPYomi=カカリ|BunsetuPositionType=ROOT|SpaceAfter=No	
+26	。	。	PUNCT	補助記号-句点	_	25	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-46	
+# text = ファクス＝０９２（７１１）６２４２。	
+1	ファクス	ファックス	NOUN	名詞-普通名詞-サ変可能	_	14	compound	_	BunsetuPosition=B|JPYomi=ファックス|BunsetuPositionType=CONT|SpaceAfter=No	
+2	＝	＝	PUNCT	補助記号-一般	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+3	０	零	NUM	名詞-数詞	_	14	nummod	_	BunsetuPosition=I|JPYomi=レイ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	９	九	NUM	名詞-数詞	_	14	nummod	_	BunsetuPosition=I|JPYomi=キュウ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	２	二	NUM	名詞-数詞	_	14	nummod	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	
+6	（	（	PUNCT	補助記号-括弧開	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+7	７	七	NUM	名詞-数詞	_	14	nummod	_	BunsetuPosition=I|JPYomi=ナナ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	１	一	NUM	名詞-数詞	_	14	nummod	_	BunsetuPosition=I|JPYomi=イチ|BunsetuPositionType=CONT|SpaceAfter=No	
+9	１	一	NUM	名詞-数詞	_	14	nummod	_	BunsetuPosition=I|JPYomi=イチ|BunsetuPositionType=CONT|SpaceAfter=No	
+10	）	）	PUNCT	補助記号-括弧閉	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+11	６	六	NUM	名詞-数詞	_	14	nummod	_	BunsetuPosition=I|JPYomi=ロク|BunsetuPositionType=CONT|SpaceAfter=No	
+12	２	二	NUM	名詞-数詞	_	14	nummod	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	
+13	４	四	NUM	名詞-数詞	_	14	nummod	_	BunsetuPosition=I|JPYomi=ヨン|BunsetuPositionType=CONT|SpaceAfter=No	
+14	２	二	NUM	名詞-数詞	_	0	root	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=ROOT|SpaceAfter=No	
+15	。	。	PUNCT	補助記号-句点	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-47	
+# text = メール＝ｔｉｉｋｉ＠ｎｉｓｈｉｎｉｐｐｏｎ．ｃｏ．ｊｐ	
+1	メール	メール	NOUN	名詞-普通名詞-サ変可能	_	0	root	_	BunsetuPosition=B|JPYomi=メール|BunsetuPositionType=ROOT|SpaceAfter=No	
+2	＝	＝	PUNCT	補助記号-一般	_	1	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+3	ｔｉｉｋｉ＠ｎｉｓｈｉｎｉｐｐｏｎ．ｃｏ．ｊｐ	_	X	URL	_	1	dep	_	BunsetuPosition=I|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-48	
+# text = 長崎の画家ら「骰展」	
+1	長崎	ナガサキ	PROPN	名詞-固有名詞-地名-一般	_	4	compound	_	BunsetuPosition=B|JPYomi=ナガサキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	の	の	ADP	助詞-格助詞	_	1	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	画家	画家	NOUN	名詞-普通名詞-一般	_	4	compound	_	BunsetuPosition=B|JPYomi=ガカ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	ら	等	PART	接尾辞-名詞的-一般	_	7	nmod	_	BunsetuPosition=I|JPYomi=ラ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	「	「	PUNCT	補助記号-括弧開	_	7	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+6	骰	賽	NOUN	名詞-普通名詞-一般	_	7	compound	_	BunsetuPosition=I|JPYomi=サイ|BunsetuPositionType=CONT|SpaceAfter=No	
+7	展	展	PART	接尾辞-名詞的-一般	_	0	root	_	BunsetuPosition=I|JPYomi=テン|BunsetuPositionType=ROOT|SpaceAfter=No	
+8	」	」	PUNCT	補助記号-括弧閉	_	7	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-49	
+# text = 洋画、陶芸…[JSP]多彩なアート	
+1	洋画	洋画	NOUN	名詞-普通名詞-一般	_	3	nmod	_	BunsetuPosition=B|JPYomi=ヨウガ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+2	、	、	PUNCT	補助記号-読点	_	1	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+3	陶芸	陶芸	NOUN	名詞-普通名詞-一般	_	8	nmod	_	BunsetuPosition=B|JPYomi=トウゲイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	…	…	PUNCT	補助記号-一般	_	3	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+5	[JSP]	[JSP]	X	空白	_	3	dep	_	BunsetuPosition=I|BunsetuPositionType=CONT|SpaceAfter=No	
+6	多彩	多彩	ADJ	形状詞-一般	_	8	amod	_	BunsetuPosition=B|JPYomi=タサイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e72" class="NULL"
+7	な	だ	AUX	助動詞	_	6	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	アート	アート	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=アート|BunsetuPositionType=ROOT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-50	
+# text = 福岡市美術館	
+1	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	4	compound	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=CONT|SpaceAfter=No	
+2	市	市	NOUN	名詞-普通名詞-一般	_	4	compound	_	BunsetuPosition=I|JPYomi=シ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	美術	美術	NOUN	名詞-普通名詞-一般	_	4	compound	_	BunsetuPosition=I|JPYomi=ビジュツ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	館	館	PART	接尾辞-名詞的-一般	_	0	root	_	BunsetuPosition=I|JPYomi=カン|BunsetuPositionType=ROOT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-51	
+# text = [JSP]長崎県内の画家や陶芸家ら十二人による「２００４骰展」が福岡市中央区大濠公園の市美術館で開かれている。	
+1	[JSP]	[JSP]	X	空白	_	4	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	長崎	ナガサキ	PROPN	名詞-固有名詞-地名-一般	_	4	compound	_	BunsetuPosition=I|JPYomi=ナガサキ|BunsetuPositionType=CONT|SpaceAfter=No	
+3	県	県	NOUN	名詞-普通名詞-一般	_	4	compound	_	BunsetuPosition=I|JPYomi=ケン|BunsetuPositionType=CONT|SpaceAfter=No	
+4	内	内	PART	接尾辞-名詞的-一般	_	6	nmod	_	BunsetuPosition=I|JPYomi=ナイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+5	の	の	ADP	助詞-格助詞	_	4	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+6	画家	画家	NOUN	名詞-普通名詞-一般	_	13	nmod	_	BunsetuPosition=B|JPYomi=ガカ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	や	や	ADP	助詞-副助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ヤ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	陶芸	陶芸	NOUN	名詞-普通名詞-一般	_	13	compound	_	BunsetuPosition=B|JPYomi=トウゲイ|BunsetuPositionType=CONT|SpaceAfter=No	
+9	家	家	PART	接尾辞-名詞的-一般	_	13	nmod	_	BunsetuPosition=I|JPYomi=カ|BunsetuPositionType=CONT|SpaceAfter=No	
+10	ら	等	PART	接尾辞-名詞的-一般	_	13	nmod	_	BunsetuPosition=I|JPYomi=ラ|BunsetuPositionType=CONT|SpaceAfter=No	
+11	十	十	NUM	名詞-数詞	_	13	nummod	_	BunsetuPosition=I|JPYomi=ジュウ|BunsetuPositionType=CONT|SpaceAfter=No	
+12	二	二	NUM	名詞-数詞	_	13	nummod	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	
+13	人	人	PART	接尾辞-名詞的-一般	_	22	obl	_	BunsetuPosition=I|JPYomi=ニン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	に	に	ADP	助詞-格助詞	_	13	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=FUNC|SpaceAfter=No	
+15	よる	因る	VERB	動詞-一般	_	13	aux	_	BunsetuPosition=I|JPYomi=ヨル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+16	「	「	PUNCT	補助記号-括弧開	_	22	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	２	二	NUM	名詞-数詞	_	22	nummod	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" definite="FALSE" tid="t12" valueFromSurface="XXXX" value="2004"
+18	０	零	NUM	名詞-数詞	_	22	nummod	_	BunsetuPosition=I|JPYomi=レイ|BunsetuPositionType=CONT|SpaceAfter=No	
+19	０	零	NUM	名詞-数詞	_	22	nummod	_	BunsetuPosition=I|JPYomi=レイ|BunsetuPositionType=CONT|SpaceAfter=No	
+20	４	四	NUM	名詞-数詞	_	22	nummod	_	BunsetuPosition=I|JPYomi=ヨン|BunsetuPositionType=CONT|SpaceAfter=No	
+21	骰	賽	NOUN	名詞-普通名詞-一般	_	22	compound	_	BunsetuPosition=I|JPYomi=サイ|BunsetuPositionType=CONT|SpaceAfter=No	
+22	展	展	PART	接尾辞-名詞的-一般	_	36	nsubj	_	BunsetuPosition=I|JPYomi=テン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+23	」	」	PUNCT	補助記号-括弧閉	_	22	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+24	が	が	ADP	助詞-格助詞	_	22	case	_	BunsetuPosition=I|JPYomi=ガ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+25	福岡	フクオカ	PROPN	名詞-固有名詞-地名-一般	_	26	compound	_	BunsetuPosition=B|JPYomi=フクオカ|BunsetuPositionType=CONT|SpaceAfter=No	
+26	市	市	NOUN	名詞-普通名詞-一般	_	28	nmod	_	BunsetuPosition=I|JPYomi=シ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+27	中央	チュウオウ	PROPN	名詞-固有名詞-地名-一般	_	28	compound	_	BunsetuPosition=B|JPYomi=チュウオウ|BunsetuPositionType=CONT|SpaceAfter=No	
+28	区	区	NOUN	名詞-普通名詞-一般	_	30	nmod	_	BunsetuPosition=I|JPYomi=ク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+29	大濠	大濠	NOUN	名詞-普通名詞-一般	_	30	compound	_	BunsetuPosition=B|JPYomi=オオホリ|BunsetuPositionType=CONT|SpaceAfter=No	
+30	公園	公園	NOUN	名詞-普通名詞-一般	_	32	nmod	_	BunsetuPosition=I|JPYomi=コウエン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+31	の	の	ADP	助詞-格助詞	_	30	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+32	市	市	NOUN	名詞-普通名詞-一般	_	34	nmod	_	BunsetuPosition=B|JPYomi=シ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+33	美術	美術	NOUN	名詞-普通名詞-一般	_	34	compound	_	BunsetuPosition=B|JPYomi=ビジュツ|BunsetuPositionType=CONT|SpaceAfter=No	
+34	館	館	PART	接尾辞-名詞的-一般	_	36	nmod	_	BunsetuPosition=I|JPYomi=カン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+35	で	で	ADP	助詞-格助詞	_	34	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+36	開か	開く	VERB	動詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=ヒラク|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e73" class="I_ACTION"
+37	れ	れる	AUX	助動詞	_	36	aux	_	BunsetuPosition=I|JPYomi=レル|BunsetuPositionType=FUNC|SpaceAfter=No	
+38	て	て	SCONJ	助詞-接続助詞	_	36	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+39	いる	居る	AUX	動詞-非自立可能	_	36	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+40	。	。	PUNCT	補助記号-句点	_	36	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-52	
+# text = カラフルな布を使ったインスタレーション（空間設置美術）から洋画、陶芸まで意欲的なアート空間になっている。	
+1	カラフル	カラフル	ADJ	形状詞-一般	_	3	amod	_	BunsetuPosition=B|JPYomi=カラフル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e74" class="NULL"
+2	な	だ	AUX	助動詞	_	1	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+3	布	布	NOUN	名詞-普通名詞-一般	_	5	obj	_	BunsetuPosition=B|JPYomi=ヌノ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+4	を	を	ADP	助詞-格助詞	_	3	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+5	使っ	使う	VERB	動詞-一般	_	11	acl	_	BunsetuPosition=B|JPYomi=ツカウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e75" class="OCCURRENCE"
+6	た	た	AUX	助動詞	_	5	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+7	インスタレーション	インスタレーション	NOUN	名詞-普通名詞-一般	_	11	appos	_	BunsetuPosition=B|JPYomi=インスタレーション|BunsetuPositionType=CONT|SpaceAfter=No	
+8	（	（	PUNCT	補助記号-括弧開	_	11	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+9	空間	空間	NOUN	名詞-普通名詞-一般	_	11	compound	_	BunsetuPosition=I|JPYomi=クウカン|BunsetuPositionType=CONT|SpaceAfter=No	
+10	設置	設置	NOUN	名詞-普通名詞-サ変可能	_	11	compound	_	BunsetuPosition=I|JPYomi=セッチ|BunsetuPositionType=CONT|SpaceAfter=No	
+11	美術	美術	NOUN	名詞-普通名詞-一般	_	16	nmod	_	BunsetuPosition=I|JPYomi=ビジュツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+12	）	）	PUNCT	補助記号-括弧閉	_	11	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+13	から	から	ADP	助詞-格助詞	_	11	case	_	BunsetuPosition=I|JPYomi=カラ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	洋画	洋画	NOUN	名詞-普通名詞-一般	_	16	nmod	_	BunsetuPosition=B|JPYomi=ヨウガ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+15	、	、	PUNCT	補助記号-読点	_	14	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+16	陶芸	陶芸	NOUN	名詞-普通名詞-一般	_	24	nmod	_	BunsetuPosition=B|JPYomi=トウゲイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+17	まで	まで	ADP	助詞-副助詞	_	16	case	_	BunsetuPosition=I|JPYomi=マデ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+18	意欲	意欲	NOUN	名詞-普通名詞-一般	_	19	compound	_	BunsetuPosition=B|JPYomi=イヨク|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e76" class="NULL"
+19	的	的	PART	接尾辞-形状詞的	_	22	amod	_	BunsetuPosition=I|JPYomi=テキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+20	な	だ	AUX	助動詞	_	19	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+21	アート	アート	NOUN	名詞-普通名詞-一般	_	22	compound	_	BunsetuPosition=B|JPYomi=アート|BunsetuPositionType=CONT|SpaceAfter=No	
+22	空間	空間	NOUN	名詞-普通名詞-一般	_	24	obl	_	BunsetuPosition=I|JPYomi=クウカン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+23	に	に	ADP	助詞-格助詞	_	22	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+24	なっ	成る	VERB	動詞-非自立可能	_	0	root	_	BunsetuPosition=B|JPYomi=ナル|BunsetuPositionType=ROOT|SpaceAfter=No	EVENT eid="e77" class="OCCURRENCE"
+25	て	て	SCONJ	助詞-接続助詞	_	24	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+26	いる	居る	AUX	動詞-非自立可能	_	24	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+27	。	。	PUNCT	補助記号-句点	_	24	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-53	
+# text = 三十日まで。	
+1	三十	三十	NUM	名詞-数詞	_	2	nummod	_	BunsetuPosition=B|JPYomi=サンジュウ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" definite="FALSE" tid="t13" valueFromSurface="XXXX-XX-30" value="2004-05-30"
+2	日	日	NOUN	名詞-普通名詞-助数詞可能	_	0	root	_	BunsetuPosition=I|JPYomi=ニチ|BunsetuPositionType=ROOT|SpaceAfter=No	
+3	まで	まで	ADP	助詞-副助詞	_	2	case	_	BunsetuPosition=I|JPYomi=マデ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	。	。	PUNCT	補助記号-句点	_	2	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-54	
+# text = [JSP]一九九七年に「六つの目しかない骰子を振りながら、七つ目を求めているような表現者でありたい」との願いを込めて発足したグループ。	
+1	[JSP]	[JSP]	X	空白	_	6	dep	_	BunsetuPosition=B|BunsetuPositionType=CONT|SpaceAfter=No	
+2	一	一	NUM	名詞-数詞	_	6	nummod	_	BunsetuPosition=I|JPYomi=イチ|BunsetuPositionType=CONT|SpaceAfter=No	TIMEX3 type="DATE" definite="FALSE" tid="t14" valueFromSurface="1997" value="1997"
+3	九	九	NUM	名詞-数詞	_	6	nummod	_	BunsetuPosition=I|JPYomi=キュウ|BunsetuPositionType=CONT|SpaceAfter=No	
+4	九	九	NUM	名詞-数詞	_	6	nummod	_	BunsetuPosition=I|JPYomi=キュウ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	七	七	NUM	名詞-数詞	_	6	nummod	_	BunsetuPosition=I|JPYomi=ナナ|BunsetuPositionType=CONT|SpaceAfter=No	
+6	年	年	NOUN	名詞-普通名詞-助数詞可能	_	42	obl	_	BunsetuPosition=I|JPYomi=ネン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+7	に	に	ADP	助詞-格助詞	_	6	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+8	「	「	PUNCT	補助記号-括弧開	_	10	punct	_	BunsetuPosition=B|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+9	六	六	NUM	名詞-数詞	_	10	nummod	_	BunsetuPosition=I|JPYomi=ム|BunsetuPositionType=CONT|SpaceAfter=No	
+10	つ	つ	PART	接尾辞-名詞的-助数詞	_	12	nmod	_	BunsetuPosition=I|JPYomi=ツ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	の	の	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	目	目	NOUN	名詞-普通名詞-一般	_	14	iobj	_	BunsetuPosition=B|JPYomi=メ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+13	しか	しか	ADP	助詞-副助詞	_	12	case	_	BunsetuPosition=I|JPYomi=シカ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+14	ない	無い	ADJ	形容詞-非自立可能	Polarity=Neg	15	amod	_	BunsetuPosition=B|JPYomi=ナイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e78" class="NULL"
+15	骰子	賽子	NOUN	名詞-普通名詞-一般	_	17	obj	_	BunsetuPosition=B|JPYomi=サイコロ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	を	を	ADP	助詞-格助詞	_	15	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+17	振り	振る	VERB	動詞-一般	_	24	advcl	_	BunsetuPosition=B|JPYomi=フル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e79" class="OCCURRENCE"
+18	ながら	ながら	CCONJ	助詞-接続助詞	_	17	cc	_	BunsetuPosition=I|JPYomi=ナガラ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	、	、	PUNCT	補助記号-読点	_	17	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+20	七	七	NUM	名詞-数詞	_	22	nummod	_	BunsetuPosition=B|JPYomi=ナナ|BunsetuPositionType=CONT|SpaceAfter=No	
+21	つ	つ	PART	接尾辞-名詞的-助数詞	_	22	nmod	_	BunsetuPosition=I|JPYomi=ツ|BunsetuPositionType=CONT|SpaceAfter=No	
+22	目	目	PART	接尾辞-名詞的-一般	_	24	obj	_	BunsetuPosition=I|JPYomi=メ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+23	を	を	ADP	助詞-格助詞	_	22	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+24	求め	求める	VERB	動詞-一般	_	30	acl	_	BunsetuPosition=B|JPYomi=モトメル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e80" class="OCCURRENCE"
+25	て	て	SCONJ	助詞-接続助詞	_	24	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+26	いる	居る	AUX	動詞-非自立可能	_	24	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=FUNC|SpaceAfter=No	
+27	よう	様	AUX	形状詞-助動詞語幹	_	24	aux	_	BunsetuPosition=I|JPYomi=ヨウ|BunsetuPositionType=CONT|SpaceAfter=No	
+28	な	だ	AUX	助動詞	_	24	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+29	表現	表現	NOUN	名詞-普通名詞-サ変可能	_	30	compound	_	BunsetuPosition=B|JPYomi=ヒョウゲン|BunsetuPositionType=CONT|SpaceAfter=No	
+30	者	者	PART	接尾辞-名詞的-一般	_	37	nmod	_	BunsetuPosition=I|JPYomi=シャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+31	で	だ	AUX	助動詞	_	30	aux	_	BunsetuPosition=I|JPYomi=ダ|BunsetuPositionType=FUNC|SpaceAfter=No	
+32	あり	有る	AUX	動詞-非自立可能	_	30	aux	_	BunsetuPosition=I|JPYomi=アル|BunsetuPositionType=FUNC|SpaceAfter=No	
+33	たい	たい	AUX	助動詞	_	30	aux	_	BunsetuPosition=I|JPYomi=タイ|BunsetuPositionType=FUNC|SpaceAfter=No	
+34	」	」	PUNCT	補助記号-括弧閉	_	30	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+35	と	と	ADP	助詞-格助詞	_	30	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=FUNC|SpaceAfter=No	
+36	の	の	ADP	助詞-格助詞	_	30	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+37	願い	願い	NOUN	名詞-普通名詞-一般	_	39	obj	_	BunsetuPosition=B|JPYomi=ネガイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+38	を	を	ADP	助詞-格助詞	_	37	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+39	込め	込める	VERB	動詞-一般	_	42	advcl	_	BunsetuPosition=B|JPYomi=コメル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e81" class="OCCURRENCE"
+40	て	て	SCONJ	助詞-接続助詞	_	39	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+41	発足	発足	VERB	名詞-普通名詞-サ変可能	_	42	aux	_	BunsetuPosition=B|JPYomi=ホッソク|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e82" class="OCCURRENCE"
+42	し	為る	AUX	動詞-非自立可能	_	44	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+43	た	た	AUX	助動詞	_	42	aux	_	BunsetuPosition=I|JPYomi=タ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+44	グループ	グループ	NOUN	名詞-普通名詞-一般	_	0	root	_	BunsetuPosition=B|JPYomi=グループ|BunsetuPositionType=ROOT|SpaceAfter=No	
+45	。	。	PUNCT	補助記号-句点	_	44	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
+# sent_id = A029n_PN4g_00002-55	
+# text = 出品者は西日本女流美術展で大賞を受賞して以来、樹木の生命感を追求している長崎市の今道信子さんや、淡い抽象絵画と取り組む小無田泉さん、陶器に花をあしらい平和への願いを込める中村伸子さんら。	
+1	出品	出品	NOUN	名詞-普通名詞-サ変可能	_	2	compound	_	BunsetuPosition=B|JPYomi=シュッピン|BunsetuPositionType=CONT|SpaceAfter=No	
+2	者	者	PART	接尾辞-名詞的-一般	_	57	obl	_	BunsetuPosition=I|JPYomi=シャ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+3	は	は	ADP	助詞-係助詞	_	2	case	_	BunsetuPosition=I|JPYomi=ハ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+4	西	西	NOUN	名詞-普通名詞-一般	_	8	compound	_	BunsetuPosition=B|JPYomi=ニシ|BunsetuPositionType=CONT|SpaceAfter=No	
+5	日本	日本	PROPN	名詞-固有名詞-地名-国	_	8	compound	_	BunsetuPosition=I|JPYomi=ニッポン|BunsetuPositionType=CONT|SpaceAfter=No	
+6	女流	女流	NOUN	名詞-普通名詞-一般	_	8	compound	_	BunsetuPosition=I|JPYomi=ジョリュウ|BunsetuPositionType=CONT|SpaceAfter=No	
+7	美術	美術	NOUN	名詞-普通名詞-一般	_	8	compound	_	BunsetuPosition=I|JPYomi=ビジュツ|BunsetuPositionType=CONT|SpaceAfter=No	
+8	展	展	PART	接尾辞-名詞的-一般	_	13	nmod	_	BunsetuPosition=I|JPYomi=テン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+9	で	で	ADP	助詞-格助詞	_	8	case	_	BunsetuPosition=I|JPYomi=デ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+10	大賞	大賞	NOUN	名詞-普通名詞-一般	_	13	obj	_	BunsetuPosition=B|JPYomi=タイショウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+11	を	を	ADP	助詞-格助詞	_	10	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+12	受賞	受賞	VERB	名詞-普通名詞-サ変可能	_	13	aux	_	BunsetuPosition=B|JPYomi=ジュショウ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e83" class="OCCURRENCE"
+13	し	為る	AUX	動詞-非自立可能	_	15	dep	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+14	て	て	SCONJ	助詞-接続助詞	_	13	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+15	以来	以来	ADV	名詞-普通名詞-副詞可能	_	23	advmod	_	BunsetuPosition=B|JPYomi=イライ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+16	、	、	PUNCT	補助記号-読点	_	15	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+17	樹木	樹木	NOUN	名詞-普通名詞-一般	_	20	nmod	_	BunsetuPosition=B|JPYomi=ジュモク|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+18	の	の	ADP	助詞-格助詞	_	17	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+19	生命	生命	NOUN	名詞-普通名詞-一般	_	20	compound	_	BunsetuPosition=B|JPYomi=セイメイ|BunsetuPositionType=CONT|SpaceAfter=No	
+20	感	感	NOUN	名詞-普通名詞-一般	_	23	obj	_	BunsetuPosition=I|JPYomi=カン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+21	を	を	ADP	助詞-格助詞	_	20	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+22	追求	追求	VERB	名詞-普通名詞-サ変可能	_	23	aux	_	BunsetuPosition=B|JPYomi=ツイキュウ|BunsetuPositionType=CONT|SpaceAfter=No	EVENT eid="e84" class="OCCURRENCE"
+23	し	為る	AUX	動詞-非自立可能	_	27	acl	_	BunsetuPosition=I|JPYomi=スル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+24	て	て	SCONJ	助詞-接続助詞	_	23	mark	_	BunsetuPosition=I|JPYomi=テ|BunsetuPositionType=FUNC|SpaceAfter=No	
+25	いる	居る	AUX	動詞-非自立可能	_	23	aux	_	BunsetuPosition=I|JPYomi=イル|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+26	長崎	ナガサキ	PROPN	名詞-固有名詞-地名-一般	_	27	compound	_	BunsetuPosition=B|JPYomi=ナガサキ|BunsetuPositionType=CONT|SpaceAfter=No	
+27	市	市	NOUN	名詞-普通名詞-一般	_	31	nmod	_	BunsetuPosition=I|JPYomi=シ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+28	の	の	ADP	助詞-格助詞	_	27	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+29	今道	イマミチ	PROPN	名詞-固有名詞-人名-姓	_	31	compound	_	BunsetuPosition=B|JPYomi=イマミチ|BunsetuPositionType=CONT|SpaceAfter=No	
+30	信子	ノブコ	PROPN	名詞-固有名詞-人名-名	_	31	compound	_	BunsetuPosition=I|JPYomi=ノブコ|BunsetuPositionType=CONT|SpaceAfter=No	
+31	さん	さん	PART	接尾辞-名詞的-一般	_	41	nmod	_	BunsetuPosition=I|JPYomi=サン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+32	や	や	ADP	助詞-副助詞	_	31	case	_	BunsetuPosition=I|JPYomi=ヤ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+33	、	、	PUNCT	補助記号-読点	_	31	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+34	淡い	淡い	ADJ	形容詞-一般	_	36	amod	_	BunsetuPosition=B|JPYomi=アワイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e85" class="NULL"
+35	抽象	抽象	NOUN	名詞-普通名詞-サ変可能	_	36	compound	_	BunsetuPosition=B|JPYomi=チュウショウ|BunsetuPositionType=CONT|SpaceAfter=No	
+36	絵画	絵画	NOUN	名詞-普通名詞-一般	_	38	nmod	_	BunsetuPosition=I|JPYomi=カイガ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+37	と	と	ADP	助詞-格助詞	_	36	case	_	BunsetuPosition=I|JPYomi=ト|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+38	取り組む	取り組む	VERB	動詞-一般	_	41	acl	_	BunsetuPosition=B|JPYomi=トリクム|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e86" class="OCCURRENCE"
+39	小無田	コムタ	PROPN	名詞-固有名詞-人名-姓	_	41	compound	_	BunsetuPosition=B|JPYomi=コムタ|BunsetuPositionType=CONT|SpaceAfter=No	
+40	泉	イズミ	PROPN	名詞-固有名詞-人名-名	_	41	compound	_	BunsetuPosition=I|JPYomi=イズミ|BunsetuPositionType=CONT|SpaceAfter=No	
+41	さん	さん	PART	接尾辞-名詞的-一般	_	57	nmod	_	BunsetuPosition=I|JPYomi=サン|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+42	、	、	PUNCT	補助記号-読点	_	41	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+43	陶器	陶器	NOUN	名詞-普通名詞-一般	_	53	obl	_	BunsetuPosition=B|JPYomi=トウキ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+44	に	に	ADP	助詞-格助詞	_	43	case	_	BunsetuPosition=I|JPYomi=ニ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+45	花	花	NOUN	名詞-普通名詞-一般	_	47	obj	_	BunsetuPosition=B|JPYomi=ハナ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+46	を	を	ADP	助詞-格助詞	_	45	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+47	あしらい	あしらう	VERB	動詞-一般	_	53	advcl	_	BunsetuPosition=B|JPYomi=アシラウ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e87" class="OCCURRENCE"
+48	平和	平和	NOUN	名詞-普通名詞-形状詞可能	_	51	nmod	_	BunsetuPosition=B|JPYomi=ヘイワ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+49	へ	へ	ADP	助詞-格助詞	_	48	case	_	BunsetuPosition=I|JPYomi=ヘ|BunsetuPositionType=FUNC|SpaceAfter=No	
+50	の	の	ADP	助詞-格助詞	_	48	case	_	BunsetuPosition=I|JPYomi=ノ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+51	願い	願い	NOUN	名詞-普通名詞-一般	_	53	obj	_	BunsetuPosition=B|JPYomi=ネガイ|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	
+52	を	を	ADP	助詞-格助詞	_	51	case	_	BunsetuPosition=I|JPYomi=ヲ|BunsetuPositionType=SYN_HEAD|SpaceAfter=No	
+53	込める	込める	VERB	動詞-一般	_	57	acl	_	BunsetuPosition=B|JPYomi=コメル|BunsetuPositionType=SEM_HEAD|SpaceAfter=No	EVENT eid="e88" class="OCCURRENCE"
+54	中村	ナカムラ	PROPN	名詞-固有名詞-人名-姓	_	57	compound	_	BunsetuPosition=B|JPYomi=ナカムラ|BunsetuPositionType=CONT|SpaceAfter=No	
+55	伸子	ノブコ	PROPN	名詞-固有名詞-人名-名	_	57	compound	_	BunsetuPosition=I|JPYomi=ノブコ|BunsetuPositionType=CONT|SpaceAfter=No	
+56	さん	さん	PART	接尾辞-名詞的-一般	_	57	nmod	_	BunsetuPosition=I|JPYomi=サン|BunsetuPositionType=CONT|SpaceAfter=No	
+57	ら	等	PART	接尾辞-名詞的-一般	_	0	root	_	BunsetuPosition=I|JPYomi=ラ|BunsetuPositionType=ROOT|SpaceAfter=No	
+58	。	。	PUNCT	補助記号-句点	_	57	punct	_	BunsetuPosition=I|JPYomi=_|BunsetuPositionType=CONT|SpaceAfter=No	
+	
