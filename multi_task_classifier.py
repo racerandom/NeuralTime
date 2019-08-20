@@ -16,7 +16,6 @@ import logging
 from model import MultiTaskRelationClassifier
 import preprocess
 import utils
-import importlib
 
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
 n_gpu = torch.cuda.device_count()
@@ -34,15 +33,6 @@ logger.info('device: %s, gpu num: %i' % (device, n_gpu))
 main function
 """
 
-# def str2bool(v):
-#     if isinstance(v, bool):
-#        return v
-#     if v.lower() in ('yes', 'true', 't', 'y', '1'):
-#         return True
-#     elif v.lower() in ('no', 'false', 'f', 'n', '0'):
-#         return False
-#     else:
-#         raise argparse.ArgumentTypeError('Boolean value expected.')
 
 parser = argparse.ArgumentParser(description='Multi-task Bert-based Temporal Relation Classifier')
 
@@ -63,6 +53,9 @@ parser.add_argument("--ordered",
 parser.add_argument('--fp16',
                     action='store_true',
                     help="Whether to use 16-bit float precision instead of 32-bit")
+parser.add_argument('--multi_gpu',
+                    action='store_true',
+                    help="wheter to use multiple gpus")
 parser.add_argument('--seed',
                     type=int,
                     default=1029,
@@ -74,13 +67,14 @@ parser.add_argument("--cache_dir",
 
 args = parser.parse_args()
 
-logger.info('[args] Task: %s, label type: %s, complete agree: %s, ordered training:%s, batch_size: %i, epoch num: %i, fp16: %s' % (
+logger.info('[args] Task: %s, label type: %s, complete agree: %s, ordered training:%s, batch_size: %i, epoch num: %i, multi-gpu:%s, fp16: %s' % (
     args.task,
     args.lab_type,
     str(args.comp),
     str(args.ordered),
     args.BATCH_SIZE,
     args.NUM_EPOCHS,
+    str(args.multi_gpu),
     str(args.fp16)
 ))
 
@@ -88,7 +82,7 @@ random.seed(args.seed)
 np.random.seed(args.seed)
 torch.manual_seed(args.seed)
 if n_gpu > 0:
-        torch.cuda.manual_seed_all(args.seed)
+    torch.cuda.manual_seed_all(args.seed)
 
 data_dir = 'data/merge/BCCWJ-TIMEX'
 
@@ -155,30 +149,30 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             lab2ix
         )
 
-        full_data_dict[task]['train_dataloader'] = DataLoader(
-            train_tensors,
-            batch_size=args.BATCH_SIZE,
-            shuffle=True
-        )
+        if args.multi_gpu and n_gpu > 1:
+            full_data_dict[task]['train_dataloader'] = DataLoader(
+                train_tensors,
+                batch_size=args.BATCH_SIZE,
+                sampler=RandomSampler(train_tensors)
+            )
 
-        full_data_dict[task]['test_dataloader'] = DataLoader(
-            test_tensors,
-            batch_size=args.BATCH_SIZE,
-            shuffle=False
-        )
+            full_data_dict[task]['test_dataloader'] = DataLoader(
+                test_tensors,
+                batch_size=args.BATCH_SIZE,
+                sampler=RandomSampler(test_tensors)
+            )
+        else:
+            full_data_dict[task]['train_dataloader'] = DataLoader(
+                train_tensors,
+                batch_size=args.BATCH_SIZE,
+                shuffle=True
+            )
 
-
-        # full_data_dict[task]['train_dataloader'] = DataLoader(
-        #     train_tensors,
-        #     batch_size=args.BATCH_SIZE,
-        #     sampler=RandomSampler(train_tensors)
-        # )
-        #
-        # full_data_dict[task]['test_dataloader'] = DataLoader(
-        #     test_tensors,
-        #     batch_size=args.BATCH_SIZE,
-        #     sampler=RandomSampler(test_tensors)
-        # )
+            full_data_dict[task]['test_dataloader'] = DataLoader(
+                test_tensors,
+                batch_size=args.BATCH_SIZE,
+                shuffle=False
+            )
 
         logger.info('Task %s, Train batch num: %i, Test batch num: %i' % (
             task,
@@ -245,44 +239,45 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     global_step = 0
     model.train()
     for epoch in range(1, args.NUM_EPOCHS + 1):
-        for task in task_list:
-            full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
-            full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
+        if not args.multi_gpu or n_gpu <= 1:
+            for task in task_list:
+                full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
+                full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
 
         for step, b_task in enumerate(tqdm(train_batch_seq, desc="Iteration")):
 
-            b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_train_dataloader'])
-            # for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['train_dataloader']:
+            # b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_train_dataloader'])
+            for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['train_dataloader']:
 
-            loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
+                loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
 
-            if n_gpu > 1:
-                loss = loss.mean()
-            if args.fp16:
-                optimizer.backward(loss)
-                # modify learning rate with special warm up BERT uses
-                # if args.fp16 is False, BertAdam is used that handles this automatically
-                lr_this_step = args.learning_rate * warmup_linear.get_lr(
-                    global_step / num_train_optimization_steps,
-                    0.1
-                )
-                for param_group in optimizer.param_groups:
-                    param_group['lr'] = lr_this_step
-            else:
-                loss.backward()
-            optimizer.step()
-            optimizer.zero_grad()
-            global_step += 1
+                if n_gpu > 1:
+                    loss = loss.mean()
+                if args.fp16:
+                    optimizer.backward(loss)
+                    # modify learning rate with special warm up BERT uses
+                    # if args.fp16 is False, BertAdam is used that handles this automatically
+                    lr_this_step = args.learning_rate * warmup_linear.get_lr(
+                        global_step / num_train_optimization_steps,
+                        0.1
+                    )
+                    for param_group in optimizer.param_groups:
+                        param_group['lr'] = lr_this_step
+                else:
+                    loss.backward()
+                optimizer.step()
+                optimizer.zero_grad()
+                global_step += 1
 
     epoch_eval_dict = defaultdict(lambda: defaultdict(lambda: []))
 
     for b_task in test_batch_seq:
-        b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_test_dataloader'])
-        # for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['test_dataloader']:
-        b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask)
-        b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)
-        epoch_eval_dict[b_task]['pred'] += b_pred.tolist()
-        epoch_eval_dict[b_task]['gold'] += b_lab.tolist()
+        # b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_test_dataloader'])
+        for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['test_dataloader']:
+            b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask)
+            b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)
+            epoch_eval_dict[b_task]['pred'] += b_pred.tolist()
+            epoch_eval_dict[b_task]['gold'] += b_lab.tolist()
 
     for task in task_list:
         acc = accuracy_score(epoch_eval_dict[task]['gold'], epoch_eval_dict[task]['pred'])
