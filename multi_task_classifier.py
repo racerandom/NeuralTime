@@ -32,15 +32,15 @@ logger = utils.init_logger('TLINK_Classifier', logging.INFO, logging.INFO)
 main function
 """
 
-def str2bool(v):
-    if isinstance(v, bool):
-       return v
-    if v.lower() in ('yes', 'true', 't', 'y', '1'):
-        return True
-    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
-        return False
-    else:
-        raise argparse.ArgumentTypeError('Boolean value expected.')
+# def str2bool(v):
+#     if isinstance(v, bool):
+#        return v
+#     if v.lower() in ('yes', 'true', 't', 'y', '1'):
+#         return True
+#     elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+#         return False
+#     else:
+#         raise argparse.ArgumentTypeError('Boolean value expected.')
 
 parser = argparse.ArgumentParser(description='Multi-task Bert-based Temporal Relation Classifier')
 
@@ -48,13 +48,15 @@ parser.add_argument("-t", "--task", dest="task", default='ALL', type=str,
                     help="DCT, T2E, E2E, MAT or ALL")
 parser.add_argument("-l", "--lab", dest="lab_type", default='6c', type=str,
                     help="lab_type, i.g. 4c, 6c or None")
-parser.add_argument("-c", "--comp", dest="comp", default=True, type=str2bool,
+parser.add_argument("-c", "--comp", dest="comp",
+                    action='store_true',
                     help="complete match, True or False")
 parser.add_argument("-b", "--batch", dest="BATCH_SIZE", default=16, type=int,
                     help="BATCH SIZE")
 parser.add_argument("-e", "--epoch", dest="NUM_EPOCHS", default=7, type=int,
                     help="fine-tuning epoch number")
-parser.add_argument("-o", "--order", dest="order", default=True, type=str2bool,
+parser.add_argument("-o", "--order", dest="order",
+                    action='store_true',
                     help="ordered training data by tasks")
 parser.add_argument('--fp16',
                     action='store_true',
