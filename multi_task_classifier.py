@@ -248,7 +248,6 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             if not args.multi_gpu or n_gpu <= 1:
                 for task in task_list:
                     full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
-                    full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
 
             for step, b_task in enumerate(tqdm(train_batch_seq, desc="Iteration")):
 
@@ -285,6 +284,10 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     """ Evaluation at NUM_EPOCHS"""
     epoch_eval_dict = defaultdict(lambda: defaultdict(lambda: []))
+
+    if not args.multi_gpu or n_gpu <= 1:
+        for task in task_list:
+            full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
 
     for b_task in test_batch_seq:
         b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_test_dataloader'])
