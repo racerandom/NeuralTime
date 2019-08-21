@@ -44,6 +44,9 @@ parser.add_argument("-b", "--batch", dest="BATCH_SIZE", default=16, type=int,
                     help="BATCH SIZE")
 parser.add_argument("-e", "--epoch", dest="NUM_EPOCHS", default=7, type=int,
                     help="fine-tuning epoch number")
+parser.add_argument("--do_train",
+                    action='store_true',
+                    help="Whether to run training.")
 parser.add_argument("--comp",
                     action='store_true',
                     help="complete match, True or False")
@@ -67,9 +70,10 @@ parser.add_argument("--cache_dir",
 
 args = parser.parse_args()
 
-logger.info('[args] Task: %s, label type: %s, complete agree: %s, ordered training:%s, batch_size: %i, epoch num: %i, multi-gpu:%s, fp16: %s' % (
+logger.info('[args] Task: %s, label type: %s, do_train: %s, complete agree: %s, ordered training:%s, batch_size: %i, epoch num: %i, multi-gpu:%s, fp16: %s' % (
     args.task,
     args.lab_type,
+    str(args.do_train),
     str(args.comp),
     str(args.ordered),
     args.BATCH_SIZE,
@@ -198,77 +202,88 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     logger.info(str(train_batch_seq[:10]))
 
     num_train_optimization_steps = args.NUM_EPOCHS * len(train_batch_seq)
-    """ model initialization """
-    model = MultiTaskRelationClassifier.from_pretrained(BERT_URL, num_labels=6 if (args.lab_type == '6c') else 4)
-    model.to(device)
-    if n_gpu > 1:
-        model = torch.nn.DataParallel(model)
 
-    """ optimizer initialization """
-    param_optimizer = list(model.named_parameters())
-    no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
-    optimizer_grouped_parameters = [
-        {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.01},
-        {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
-    ]
+    if args.do_train:
+        """ model initialization """
+        model = MultiTaskRelationClassifier.from_pretrained(BERT_URL, num_labels=6 if (args.lab_type == '6c') else 4)
+        model.to(device)
+        if args.multi_gpu and n_gpu > 1:
+            model = torch.nn.DataParallel(model)
 
-    if args.fp16:
-        try:
-            from apex.optimizers import FP16_Optimizer
-            from apex.optimizers import FusedAdam
-        except ImportError:
-            raise ImportError(
-                "Please install apex from https://www.github.com/nvidia/apex to use distributed and fp16 training.")
+        """ optimizer initialization """
+        param_optimizer = list(model.named_parameters())
+        no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
+        optimizer_grouped_parameters = [
+            {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.01},
+            {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
+        ]
 
-        optimizer = FusedAdam(optimizer_grouped_parameters,
-                              lr=args.learning_rate,
-                              bias_correction=False,
-                              max_grad_norm=1.0,
-                              )
-        optimizer = FP16_Optimizer(optimizer, dynamic_loss_scale=True)
+        if args.fp16:
+            try:
+                from apex.optimizers import FP16_Optimizer
+                from apex.optimizers import FusedAdam
+            except ImportError:
+                raise ImportError(
+                    "Please install apex from https://www.github.com/nvidia/apex to use distributed and fp16 training.")
 
-        warmup_linear = WarmupLinearSchedule(warmup=0.1,
-                                             t_total=num_train_optimization_steps)
+            optimizer = FusedAdam(optimizer_grouped_parameters,
+                                  lr=args.learning_rate,
+                                  bias_correction=False,
+                                  max_grad_norm=1.0,
+                                  )
+            optimizer = FP16_Optimizer(optimizer, dynamic_loss_scale=True)
+
+            warmup_linear = WarmupLinearSchedule(warmup=0.1,
+                                                 t_total=num_train_optimization_steps)
+        else:
+            optimizer= BertAdam(optimizer_grouped_parameters,
+                                lr=5e-5,
+                                warmup=0.1,
+                                t_total=num_train_optimization_steps)
+
+        f1, acc = 0, 0
+        global_step = 0
+        model.train()
+        for epoch in range(1, args.NUM_EPOCHS + 1):
+            if not args.multi_gpu or n_gpu <= 1:
+                for task in task_list:
+                    full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
+                    full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
+
+            for step, b_task in enumerate(tqdm(train_batch_seq, desc="Iteration")):
+
+                b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_train_dataloader'])
+                # for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['train_dataloader']:
+
+                loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
+
+                if args.multi_gpu and n_gpu > 1:
+                    loss = loss.mean()
+                if args.fp16:
+                    optimizer.backward(loss)
+                    # modify learning rate with special warm up BERT uses
+                    # if args.fp16 is False, BertAdam is used that handles this automatically
+                    lr_this_step = args.learning_rate * warmup_linear.get_lr(
+                        global_step / num_train_optimization_steps,
+                        0.1
+                    )
+                    for param_group in optimizer.param_groups:
+                        param_group['lr'] = lr_this_step
+                else:
+                    loss.backward()
+                optimizer.step()
+                optimizer.zero_grad()
+                global_step += 1
+
+        utils.save_checkpoint(model, checkpoint_dir='checkpoints/%s_cv%i' % (args.task, cv_id))
+
     else:
-        optimizer= BertAdam(optimizer_grouped_parameters,
-                            lr=5e-5,
-                            warmup=0.1,
-                            t_total=num_train_optimization_steps)
+        model = MultiTaskRelationClassifier.from_pretrained(
+            'checkpoints/%s_cv%i' % (args.task, cv_id),
+            num_labels=6 if (args.lab_type == '6c') else 4
+        )
 
-    f1, acc = 0, 0
-    global_step = 0
-    model.train()
-    for epoch in range(1, args.NUM_EPOCHS + 1):
-        if not args.multi_gpu or n_gpu <= 1:
-            for task in task_list:
-                full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
-                full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
-
-        for step, b_task in enumerate(tqdm(train_batch_seq, desc="Iteration")):
-
-            b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_train_dataloader'])
-            # for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['train_dataloader']:
-
-            loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
-
-            if n_gpu > 1:
-                loss = loss.mean()
-            if args.fp16:
-                optimizer.backward(loss)
-                # modify learning rate with special warm up BERT uses
-                # if args.fp16 is False, BertAdam is used that handles this automatically
-                lr_this_step = args.learning_rate * warmup_linear.get_lr(
-                    global_step / num_train_optimization_steps,
-                    0.1
-                )
-                for param_group in optimizer.param_groups:
-                    param_group['lr'] = lr_this_step
-            else:
-                loss.backward()
-            optimizer.step()
-            optimizer.zero_grad()
-            global_step += 1
-
+    """ Evaluation at NUM_EPOCHS"""
     epoch_eval_dict = defaultdict(lambda: defaultdict(lambda: []))
 
     for b_task in test_batch_seq:

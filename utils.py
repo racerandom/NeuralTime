@@ -391,6 +391,11 @@ def save_checkpoint(model, checkpoint_dir):
 
     # If we have a distributed model, save only the encapsulated model
     # (it was wrapped in PyTorch DistributedDataParallel or DataParallel)
+    if os.path.exists(checkpoint_dir):
+        raise ValueError("Output directory ({}) already exists and is not empty.".format(checkpoint_dir))
+    if not os.path.exists(checkpoint_dir):
+        os.makedirs(checkpoint_dir)
+
     model_to_save = model.module if hasattr(model, 'module') else model
 
     # If we save using the predefined names, we can load using `from_pretrained`
