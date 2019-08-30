@@ -244,25 +244,25 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
                 optimizer.step()
                 global_step += 1
 
-        if os.path.exists(CV_MODEL_DIR):
-            raise ValueError("Output directory ({}) already exists and is not empty.".format(CV_MODEL_DIR))
-        if not os.path.exists(CV_MODEL_DIR):
-            os.makedirs(CV_MODEL_DIR)
-
-        # utils.save_checkpoint(model, tokenizer, checkpoint_dir=CV_MODEL_DIR)
-        model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
-
-        # If we save using the predefined names, we can load using `from_pretrained`
-        output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
-        output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
-
-        torch.save(model_to_save.state_dict(), output_model_file)
-        model_to_save.config.to_json_file(output_config_file)
-        tokenizer.save_vocabulary(CV_MODEL_DIR)
-
-        tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
-        model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
-        model.to(device)
+        # if os.path.exists(CV_MODEL_DIR):
+        #     raise ValueError("Output directory ({}) already exists and is not empty.".format(CV_MODEL_DIR))
+        # if not os.path.exists(CV_MODEL_DIR):
+        #     os.makedirs(CV_MODEL_DIR)
+        #
+        # # utils.save_checkpoint(model, tokenizer, checkpoint_dir=CV_MODEL_DIR)
+        # model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
+        #
+        # # If we save using the predefined names, we can load using `from_pretrained`
+        # output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
+        # output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
+        #
+        # torch.save(model_to_save.state_dict(), output_model_file)
+        # model_to_save.config.to_json_file(output_config_file)
+        # tokenizer.save_vocabulary(CV_MODEL_DIR)
+        #
+        # tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
+        # model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
+        # model.to(device)
 
     else:
         """ eval mode 
