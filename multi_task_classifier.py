@@ -34,11 +34,9 @@ logger = utils.init_logger('TLINK_Classifier', logging.INFO, logging.INFO)
 logger.info('device: %s, gpu num: %i' % (device, n_gpu))
 
 
-
 """
 main function
 """
-
 
 parser = argparse.ArgumentParser(description='Multi-task Bert-based Temporal Relation Classifier')
 
@@ -61,9 +59,6 @@ parser.add_argument("--comp",
 parser.add_argument("--ordered",
                     action='store_true',
                     help="ordered training data by tasks")
-parser.add_argument('--fp16',
-                    action='store_true',
-                    help="Whether to use 16-bit float precision instead of 32-bit")
 parser.add_argument('--multi_gpu',
                     action='store_true',
                     help="wheter to use multiple gpus")
@@ -79,7 +74,7 @@ parser.add_argument("--cache_dir",
 args = parser.parse_args()
 
 logger.info("""[args] Task: %s, label type: %s, do_train: %s, complete agree: %s, ordered training:%s, 
-                      batch_size: %i, epoch num: %i, multi-gpu:%s, fp16: %s""" % (
+                      batch_size: %i, epoch num: %i, multi-gpu:%s""" % (
     args.task,
     args.lab_type,
     str(args.do_train),
@@ -87,8 +82,7 @@ logger.info("""[args] Task: %s, label type: %s, do_train: %s, complete agree: %s
     str(args.ordered),
     args.BATCH_SIZE,
     args.NUM_EPOCHS,
-    str(args.multi_gpu),
-    str(args.fp16)
+    str(args.multi_gpu)
 ))
 
 random.seed(1029)
@@ -122,7 +116,7 @@ logger.info(str(lab2ix))
 
 logger.info('Pretrained BERT dir: %s ' % PRETRAIN_BERT_DIR)
 
-eval_dict = defaultdict(lambda: defaultdict(lambda: []))
+eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
 
 for cv_id, (train_files, test_files) in enumerate(data_splits):
 
@@ -278,15 +272,13 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
         model.to(device)
 
-
-
     """ Load the saved cv model """
     # tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
     # model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
     # model.to(device)
 
     """ Evaluation at NUM_EPOCHS"""
-    epoch_eval_dict = defaultdict(lambda: defaultdict(lambda: []))
+    cv_eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
 
     """ Prepare test data """
     test_batch_seq = []
@@ -330,18 +322,19 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         batch = next(full_data_dict[b_task]['iter_test_dataloader'])
         b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = tuple(t.to(device) for t in batch)
         with torch.no_grad():
-            b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask)
+            b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=None)
         b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)
-        epoch_eval_dict[b_task]['pred'] += b_pred.tolist()
-        epoch_eval_dict[b_task]['gold'] += b_lab.tolist()
+
+        cv_eval_dict[b_task]['pred'] = np.append(cv_eval_dict[b_task]['pred'], b_pred.cpu().detach().numpy(), axis=0)
+        cv_eval_dict[b_task]['gold'] = np.append(cv_eval_dict[b_task]['gold'], b_lab.cpu().detach().numpy(), axis=0)
 
     for task in task_list:
-        acc = accuracy_score(epoch_eval_dict[task]['gold'], epoch_eval_dict[task]['pred'])
+        acc = accuracy_score(cv_eval_dict[task]['gold'], cv_eval_dict[task]['pred'])
         logger.info('[Epoch %i] Task: %s, Accuracy: %.4f' % (args.NUM_EPOCHS, task, acc))
 
     for task in task_list:
-        eval_dict[task]['pred'] += epoch_eval_dict[task]['pred']
-        eval_dict[task]['gold'] += epoch_eval_dict[task]['gold']
+        eval_dict[task]['pred'] = np.append(eval_dict[task]['pred'], cv_eval_dict[task]['pred'], axis=0)
+        eval_dict[task]['gold'] = np.append(eval_dict[task]['gold'], cv_eval_dict[task]['gold'], axis=0)
 
 for task in task_list:
     logger.info('Final Cross Validation Evaluation, Task: %s,  instance num: %i, ACC : %.4f' % (

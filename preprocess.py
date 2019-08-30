@@ -16,7 +16,7 @@ import utils
 juman = Juman()
 
 import logging
-logger = utils.init_logger('Data_Preprocess', logging.INFO, logging.INFO)
+logger = utils.init_logger('Data__Preprocess', logging.INFO, logging.INFO)
 
 merge_map_6c = {
     'after': 'AFTER',
