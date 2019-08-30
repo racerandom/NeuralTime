@@ -1,15 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+import os
 from tqdm import tqdm
 from collections import defaultdict
 import argparse
 import random
+from datetime import datetime
 from statistics import mean
 import numpy as np
 import torch
 from torch.utils.data import DataLoader, TensorDataset, RandomSampler
+from pytorch_pretrained_bert import BertTokenizer
 from pytorch_pretrained_bert.optimization import BertAdam, WarmupLinearSchedule
+from pytorch_pretrained_bert import WEIGHTS_NAME, CONFIG_NAME
 from sklearn.metrics import accuracy_score
 
 import logging
@@ -17,12 +20,15 @@ from model import MultiTaskRelationClassifier
 import preprocess
 import utils
 
+from typing import Dict
+
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
 n_gpu = torch.cuda.device_count()
 
-BERT_URL='/Users/fei-c/Resources/embed/L-12_H-768_A-12_E-30_BPE'
 if str(device) == 'cuda':
-    BERT_URL='/larch/share/bert/Japanese_models/Wikipedia/L-12_H-768_A-12_E-30_BPE'
+    PRETRAIN_BERT_DIR='/larch/share/bert/Japanese_models/Wikipedia/L-12_H-768_A-12_E-30_BPE'
+else:
+    PRETRAIN_BERT_DIR = '/Users/fei-c/Resources/embed/L-12_H-768_A-12_E-30_BPE'
 
 logger = utils.init_logger('TLINK_Classifier', logging.INFO, logging.INFO)
 logger.info('device: %s, gpu num: %i' % (device, n_gpu))
@@ -47,6 +53,8 @@ parser.add_argument("-e", "--epoch", dest="NUM_EPOCHS", default=7, type=int,
 parser.add_argument("--do_train",
                     action='store_true',
                     help="Whether to run training.")
+parser.add_argument("--model_dir", default='checkpoints', type=str,
+                    help="saved model dir for evaluation")
 parser.add_argument("--comp",
                     action='store_true',
                     help="complete match, True or False")
@@ -70,7 +78,8 @@ parser.add_argument("--cache_dir",
 
 args = parser.parse_args()
 
-logger.info('[args] Task: %s, label type: %s, do_train: %s, complete agree: %s, ordered training:%s, batch_size: %i, epoch num: %i, multi-gpu:%s, fp16: %s' % (
+logger.info("""[args] Task: %s, label type: %s, do_train: %s, complete agree: %s, ordered training:%s, 
+                      batch_size: %i, epoch num: %i, multi-gpu:%s, fp16: %s""" % (
     args.task,
     args.lab_type,
     str(args.do_train),
@@ -82,7 +91,7 @@ logger.info('[args] Task: %s, label type: %s, do_train: %s, complete agree: %s, 
     str(args.fp16)
 ))
 
-random.seed(args.seed)
+random.seed(1029)
 np.random.seed(args.seed)
 torch.manual_seed(args.seed)
 if n_gpu > 0:
@@ -105,6 +114,8 @@ cv_acc = defaultdict(lambda: [])
 
 lab2ix = preprocess.get_lab2ix_from_type(args.lab_type)
 
+NUM_LABEL = len(lab2ix)
+
 logger.info(str(lab2ix))
 
 eval_dict = defaultdict(lambda: defaultdict(lambda: []))
@@ -113,99 +124,89 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     logger.info('[Cross Validation %i] train files %i, test files %i .' % (cv_id, len(train_files), len(test_files)))
 
-    full_data_dict = defaultdict(lambda: {})
+    full_data_dict = defaultdict(dict)
 
-    for task in task_list:
+    CV_MODEL_DIR = '%s/%s_%s/cv%i' % (
+        args.model_dir,
+        args.task,
+        datetime.now().strftime('%Y%m%d%H%M%S'),
+        cv_id
+    )
 
-        train_features, train_labs = preprocess.batch_make_tlink_instances_v2(
-            train_files,
-            task=task,
-            lab_type=args.lab_type,
-            comp=args.comp
-        )
+    BERT_DIR = PRETRAIN_BERT_DIR if args.do_train else CV_MODEL_DIR
 
-        test_features, test_labs = preprocess.batch_make_tlink_instances_v2(
-            test_files,
-            task=task,
-            lab_type=args.lab_type,
-            comp=args.comp
-        )
+    logger.info('Tmp BERT dir: %s ' % BERT_DIR)
 
-        labs = train_labs + test_labs
+    train_batch_seq = []
 
-        # lab2ix = utils.get_label2ix(labs)
+    if args.do_train:
 
-        lab2count, major_lab, major_ratio = preprocess.count_major(labs)
+        tokenizer = BertTokenizer.from_pretrained(BERT_DIR, do_lower_case=False, do_basic_tokenize=False)
 
-        logger.info(str(lab2count))
-        logger.info('major label: %s (%.2f%%) ' % (major_lab, major_ratio))
-        full_data_dict[task]['lab2ix'] = lab2ix
+        for task in task_list:
 
-        train_tensors = preprocess.instance_to_tensors(
-            *train_features,
-            train_labs,
-            lab2ix
-        )
-
-        test_tensors = preprocess.instance_to_tensors(
-            *test_features,
-            test_labs,
-            lab2ix
-        )
-
-        if args.multi_gpu and n_gpu > 1:
-            full_data_dict[task]['train_dataloader'] = DataLoader(
-                train_tensors,
-                batch_size=args.BATCH_SIZE,
-                sampler=RandomSampler(train_tensors)
+            train_features, train_labs = preprocess.batch_make_tlink_instances_v2(
+                train_files,
+                tokenizer,
+                task=task,
+                lab_type=args.lab_type,
+                comp=args.comp
             )
 
-            full_data_dict[task]['test_dataloader'] = DataLoader(
-                test_tensors,
-                batch_size=args.BATCH_SIZE,
-                sampler=RandomSampler(test_tensors)
+            # lab2ix = utils.get_label2ix(labs)
+
+            """ train labels distribution """
+            lab2count, major_lab, major_ratio = preprocess.count_major(train_labs)
+
+            logger.info(str(lab2count))
+            logger.info('major label: %s (%.2f%%) ' % (major_lab, major_ratio))
+            # full_data_dict[task]['lab2ix'] = lab2ix
+
+            train_tensors = preprocess.instance_to_tensors(
+                *train_features,
+                train_labs,
+                tokenizer,
+                lab2ix,
+                device
             )
-        else:
+
+            # if args.multi_gpu and n_gpu > 1:
+            #     full_data_dict[task]['train_dataloader'] = DataLoader(
+            #         train_tensors,
+            #         batch_size=args.BATCH_SIZE,
+            #         sampler=RandomSampler(train_tensors)
+            #     )
+            #
+            #     full_data_dict[task]['test_dataloader'] = DataLoader(
+            #         test_tensors,
+            #         batch_size=args.BATCH_SIZE,
+            #         sampler=RandomSampler(test_tensors)
+            #     )
+            # else:
+
             full_data_dict[task]['train_dataloader'] = DataLoader(
                 train_tensors,
                 batch_size=args.BATCH_SIZE,
                 shuffle=True
             )
 
-            full_data_dict[task]['test_dataloader'] = DataLoader(
-                test_tensors,
-                batch_size=args.BATCH_SIZE,
-                shuffle=False
-            )
+            logger.info('Task %s, Train batch num: %i' % (
+                task,
+                len(full_data_dict[task]['train_dataloader'])
+            ))
 
-        logger.info('Task %s, Train batch num: %i, Test batch num: %i' % (
-            task,
-            len(full_data_dict[task]['train_dataloader']),
-            len(full_data_dict[task]['test_dataloader'])
-        ))
+            train_batch_num = len(full_data_dict[task]['train_dataloader'])
+            train_batch_seq += [task] * train_batch_num
 
-    train_batch_seq, test_batch_seq = [], []
+        if not args.ordered:
+            random.shuffle(train_batch_seq)
+        logger.info(str(train_batch_seq[:10]))
 
-    for task in task_list:
-        train_batch_num = len(full_data_dict[task]['train_dataloader'])
-        test_batch_num = len(full_data_dict[task]['test_dataloader'])
-        train_batch_seq += [task] * train_batch_num
-        test_batch_seq += [task] * test_batch_num
-        logger.info("Task %s, train batch %i, test batch %i" % (
-            task,
-            train_batch_num,
-            test_batch_num
-        ))
+        num_train_optimization_steps = args.NUM_EPOCHS * len(train_batch_seq)
 
-    if not args.ordered:
-        random.shuffle(train_batch_seq)
-    logger.info(str(train_batch_seq[:10]))
-
-    num_train_optimization_steps = args.NUM_EPOCHS * len(train_batch_seq)
-
-    if args.do_train:
+        """ training """
         """ model initialization """
-        model = MultiTaskRelationClassifier.from_pretrained(BERT_URL, num_labels=6 if (args.lab_type == '6c') else 4)
+        model = MultiTaskRelationClassifier.from_pretrained(BERT_DIR, num_labels=NUM_LABEL)
         model.to(device)
         if args.multi_gpu and n_gpu > 1:
             model = torch.nn.DataParallel(model)
@@ -218,28 +219,10 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
         ]
 
-        if args.fp16:
-            try:
-                from apex.optimizers import FP16_Optimizer
-                from apex.optimizers import FusedAdam
-            except ImportError:
-                raise ImportError(
-                    "Please install apex from https://www.github.com/nvidia/apex to use distributed and fp16 training.")
-
-            optimizer = FusedAdam(optimizer_grouped_parameters,
-                                  lr=args.learning_rate,
-                                  bias_correction=False,
-                                  max_grad_norm=1.0,
-                                  )
-            optimizer = FP16_Optimizer(optimizer, dynamic_loss_scale=True)
-
-            warmup_linear = WarmupLinearSchedule(warmup=0.1,
-                                                 t_total=num_train_optimization_steps)
-        else:
-            optimizer= BertAdam(optimizer_grouped_parameters,
-                                lr=5e-5,
-                                warmup=0.1,
-                                t_total=num_train_optimization_steps)
+        optimizer= BertAdam(optimizer_grouped_parameters,
+                            lr=5e-5,
+                            warmup=0.1,
+                            t_total=num_train_optimization_steps)
 
         f1, acc = 0, 0
         global_step = 0
@@ -251,55 +234,92 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
             for step, b_task in enumerate(tqdm(train_batch_seq, desc="Iteration")):
 
+                optimizer.zero_grad()
+
                 b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_train_dataloader'])
-                # for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['train_dataloader']:
 
                 loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
 
                 if args.multi_gpu and n_gpu > 1:
                     loss = loss.mean()
-                if args.fp16:
-                    optimizer.backward(loss)
-                    # modify learning rate with special warm up BERT uses
-                    # if args.fp16 is False, BertAdam is used that handles this automatically
-                    lr_this_step = args.learning_rate * warmup_linear.get_lr(
-                        global_step / num_train_optimization_steps,
-                        0.1
-                    )
-                    for param_group in optimizer.param_groups:
-                        param_group['lr'] = lr_this_step
-                else:
-                    loss.backward()
+                loss.backward()
                 optimizer.step()
-                optimizer.zero_grad()
                 global_step += 1
 
-        utils.save_checkpoint(model, checkpoint_dir='checkpoints/%s_cv%i' % (args.task, cv_id))
+        # if os.path.exists(CV_MODEL_DIR):
+        #     raise ValueError("Output directory ({}) already exists and is not empty.".format(CV_MODEL_DIR))
+        # if not os.path.exists(CV_MODEL_DIR):
+        #     os.makedirs(CV_MODEL_DIR)
+        #
+        # # utils.save_checkpoint(model, tokenizer, checkpoint_dir=CV_MODEL_DIR)
+        # model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
+        #
+        # # If we save using the predefined names, we can load using `from_pretrained`
+        # output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
+        # output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
+        #
+        # torch.save(model_to_save.state_dict(), output_model_file)
+        # model_to_save.config.to_json_file(output_config_file)
+        # tokenizer.save_vocabulary(CV_MODEL_DIR)
 
-    else:
-        model = MultiTaskRelationClassifier.from_pretrained(
-            'checkpoints/%s_cv%i' % (args.task, cv_id),
-            num_labels=6 if (args.lab_type == '6c') else 4
-        )
+    """ Load the saved cv model """
+    # tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
+    # model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
+    # model.to(device)
 
     """ Evaluation at NUM_EPOCHS"""
     epoch_eval_dict = defaultdict(lambda: defaultdict(lambda: []))
 
-    if not args.multi_gpu or n_gpu <= 1:
-        for task in task_list:
-            full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
+    """ Prepare test data """
+    test_batch_seq = []
 
-    for b_task in test_batch_seq:
-        b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_test_dataloader'])
-        # for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in full_data_dict[b_task]['test_dataloader']:
-        b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask)
-        b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)
-        epoch_eval_dict[b_task]['pred'] += b_pred.tolist()
-        epoch_eval_dict[b_task]['gold'] += b_lab.tolist()
+    for task in task_list:
+
+        test_features, test_labs = preprocess.batch_make_tlink_instances_v2(
+            test_files,
+            tokenizer,
+            task=task,
+            lab_type=args.lab_type,
+            comp=args.comp
+        )
+
+        test_tensors = preprocess.instance_to_tensors(
+            *test_features,
+            test_labs,
+            tokenizer,
+            lab2ix,
+            device
+        )
+
+        full_data_dict[task]['test_dataloader'] = DataLoader(
+            test_tensors,
+            batch_size=args.BATCH_SIZE,
+            shuffle=False
+        )
+
+        test_batch_num = len(full_data_dict[task]['test_dataloader'])
+        test_batch_seq += [task] * test_batch_num
+
+        logger.info("Task %s, test batch %i" % (
+            task,
+            test_batch_num
+        ))
+
+        full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
+
+    """ Inference"""
+    model.eval()
+    with torch.no_grad():
+        for b_task in test_batch_seq:
+            b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_test_dataloader'])
+            b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask)
+            b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)
+            epoch_eval_dict[b_task]['pred'] += b_pred.tolist()
+            epoch_eval_dict[b_task]['gold'] += b_lab.tolist()
 
     for task in task_list:
         acc = accuracy_score(epoch_eval_dict[task]['gold'], epoch_eval_dict[task]['pred'])
-        print('[Epoch %i] Task: %s, Accuracy: %.4f' % (args.NUM_EPOCHS, task, acc))
+        logger.info('[Epoch %i] Task: %s, Accuracy: %.4f' % (args.NUM_EPOCHS, task, acc))
 
     for task in task_list:
         eval_dict[task]['pred'] += epoch_eval_dict[task]['pred']

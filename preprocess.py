@@ -18,11 +18,11 @@ juman = Juman()
 import logging
 logger = utils.init_logger('Data_Preprocess', logging.INFO, logging.INFO)
 
-device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
-BERT_URL='/Users/fei-c/Resources/embed/L-12_H-768_A-12_E-30_BPE'
-if str(device) == 'cuda':
-    BERT_URL='/larch/share/bert/Japanese_models/Wikipedia/L-12_H-768_A-12_E-30_BPE'
-tokenizer = BertTokenizer.from_pretrained(BERT_URL, do_lower_case=False, do_basic_tokenize=False)
+# device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
+# BERT_URL='/Users/fei-c/Resources/embed/L-12_H-768_A-12_E-30_BPE'
+# if str(device) == 'cuda':
+#     BERT_URL='/larch/share/bert/Japanese_models/Wikipedia/L-12_H-768_A-12_E-30_BPE'
+# tokenizer = BertTokenizer.from_pretrained(BERT_URL, do_lower_case=False, do_basic_tokenize=False)
 
 merge_map_6c = {
     'after': 'AFTER',
@@ -199,7 +199,7 @@ def retrieve_mention(sent_toks, ment_mask):
     return [[t] for t, m in zip(sent_toks, ment_mask) if m == 1]
 
 
-def extract_sents_from_xml_v2(xml_file, lab_type=None, comp=None):
+def extract_sents_from_xml_v2(xml_file, tokenizer, lab_type=None, comp=None):
     doc_deunk_toks, doc_toks = [], []
     eiid2eid = {}
     doc_mid2smask = {}
@@ -289,7 +289,7 @@ def extract_sents_from_xml_v2(xml_file, lab_type=None, comp=None):
 
 
 def make_tlink_instances_v2(doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks, task=None):
-    deunk_toks, toks, sour_masks, targ_masks, sent_masks, rels = [], [], [], [], [], []
+    deunk_toks, toks, sour_masks, targ_masks, sent_masks, mids, rels = [], [], [], [], [], [], []
     for sour_mid, targ_mid, rel in doc_tlinks[task]:
         logger.debug('%s\t%s\t%s' % (sour_mid, targ_mid, rel))
         targ_sid = doc_mid2smask[targ_mid][0]
@@ -332,12 +332,13 @@ def make_tlink_instances_v2(doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks,
     return deunk_toks, toks, sour_masks, targ_masks, sent_masks, rels
 
 
-def batch_make_tlink_instances_v2(file_list, task=None, lab_type=None, comp=None):
+def batch_make_tlink_instances_v2(file_list, tokenizer, task=None, lab_type=None, comp=None):
     deunk_toks, toks, sour_masks, targ_masks, sent_masks, rels = [], [], [], [], [], []
     for dir_file in file_list:
         logger.debug('[Done] processing %s' % dir_file)
         doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks = extract_sents_from_xml_v2(
             dir_file,
+            tokenizer,
             lab_type=lab_type,
             comp=comp
         )
@@ -357,7 +358,7 @@ def batch_make_tlink_instances_v2(file_list, task=None, lab_type=None, comp=None
     return (deunk_toks, toks, sour_masks, targ_masks, sent_masks), rels
 
 
-def convert_to_np_v2(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs, lab2ix):
+def convert_to_np_v2(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs, tokenizer, lab2ix):
     max_len = max([len(t) for t in toks])
     logger.info('max seq length %i' % (max_len))
     pad_tok_ids, pad_masks, pad_sm, pad_tm, pad_sent_m = [], [], [], [], []
@@ -379,7 +380,7 @@ def convert_to_np_v2(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs,
         pad_sent_m), np.array(lab_ids)
 
 
-def instance_to_tensors(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs, lab2ix):
+def instance_to_tensors(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs, tokenizer, lab2ix, device):
 
     toks_ids_np, tok_masks_np, sour_masks_np, targ_masks_np, sent_masks_np, lab_ids_np = convert_to_np_v2(
         deunk_toks,
@@ -388,6 +389,7 @@ def instance_to_tensors(deunk_toks, toks, sour_masks, targ_masks, sent_masks, la
         targ_masks,
         sent_masks,
         labs,
+        tokenizer,
         lab2ix
     )
 

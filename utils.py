@@ -14,11 +14,6 @@ from pytorch_pretrained_bert import WEIGHTS_NAME, CONFIG_NAME
 
 juman = Juman()
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
-if str(device) == 'cpu':
-    BERT_URL='/Users/fei-c/Resources/embed/L-12_H-768_A-12_E-30_BPE'
-elif str(device) == 'cuda':
-    BERT_URL='/larch/share/bert/Japanese_models/Wikipedia/L-12_H-768_A-12_E-30_BPE'
-tokenizer = BertTokenizer.from_pretrained(BERT_URL, do_lower_case=False, do_basic_tokenize=False)
 
 
 def flatten_list(l):
@@ -135,7 +130,7 @@ def out_xml(orig_tok, pred_ix, ix2label):
     return lines
 
 
-def convert_clinical_data_to_conll(clinical_file, fo,  sent_tag=True, skip_empty=False, defaut_cert='_', is_raw=False):
+def convert_clinical_data_to_conll(clinical_file, tokenizer, fo,  sent_tag=True, skip_empty=False, defaut_cert='_', is_raw=False):
     x_data, y_data = [], []
     with open(clinical_file, 'r') as fi:
         for index, line in enumerate(fi):
@@ -386,7 +381,7 @@ def init_logger(logger_name, level, stream_level):
     return logger
 
 
-def save_checkpoint(model, checkpoint_dir):
+def save_checkpoint(model, tokenizer, checkpoint_dir):
     # Goal: Save a model, configuration and vocabulary that you have fine-tuned
 
     # If we have a distributed model, save only the encapsulated model
@@ -396,14 +391,24 @@ def save_checkpoint(model, checkpoint_dir):
     if not os.path.exists(checkpoint_dir):
         os.makedirs(checkpoint_dir)
 
-    model_to_save = model.module if hasattr(model, 'module') else model
+    # model_to_save = model.module if hasattr(model, 'module') else model
+    #
+    # # If we save using the predefined names, we can load using `from_pretrained`
+    # checkpoint_model_file = os.path.join(checkpoint_dir, WEIGHTS_NAME)
+    # checkpoint_config_file = os.path.join(checkpoint_dir, CONFIG_NAME)
+    #
+    # torch.save(model_to_save.state_dict(), checkpoint_model_file)
+    # model_to_save.config.to_json_file(checkpoint_config_file)
+    # tokenizer.save_vocabulary(checkpoint_dir)
+
+    model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
 
     # If we save using the predefined names, we can load using `from_pretrained`
-    checkpoint_model_file = os.path.join(checkpoint_dir, WEIGHTS_NAME)
-    checkpoint_config_file = os.path.join(checkpoint_dir, CONFIG_NAME)
+    output_model_file = os.path.join(checkpoint_dir, WEIGHTS_NAME)
+    output_config_file = os.path.join(checkpoint_dir, CONFIG_NAME)
 
-    torch.save(model_to_save.state_dict(), checkpoint_model_file)
-    model_to_save.config.to_json_file(checkpoint_config_file)
+    torch.save(model_to_save.state_dict(), output_model_file)
+    model_to_save.config.to_json_file(output_config_file)
     tokenizer.save_vocabulary(checkpoint_dir)
 
             
@@ -433,16 +438,21 @@ def eval_pid_seq(model, tokenizer, test_data, orig_token, label2ix, epoch):
                 fo.write('EOR\tO\tO\n')
 
 
-def eval_lab(model, test_dataloader):
-    
+def pred_test(model, test_dataloader):
     pred_np, lab_np = [], []
     model.eval()
-    with torch.no_grad():
-        for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in test_dataloader:
+    for b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab in tqdm(test_dataloader, desc="Evaluating"):
+        with torch.no_grad():
             b_pred_prob = model(b_tok, b_sour_mask, b_targ_mask, token_type_ids=b_sent_mask, attention_mask=b_mask)
-            b_pred = torch.argmax(b_pred_prob, dim=-1).squeeze(1)
-            pred_np += b_pred.tolist()
-            lab_np += b_lab.tolist()
+        b_pred = torch.argmax(b_pred_prob, dim=-1).squeeze(1)
+        pred_np += b_pred.tolist()
+        lab_np += b_lab.tolist()
+    return lab_np, pred_np
+
+
+def eval_lab(model, test_dataloader):
+    
+    pred_np, lab_np = pred_test(model, test_dataloader)
     p, r, f1, _ = precision_recall_fscore_support(lab_np, pred_np, average='weighted')
     acc = accuracy_score(lab_np, pred_np)
     return p, r, f1, acc

@@ -4,3 +4,5 @@ preprocess_bccwjtb.ipynb
 .idea/*
 .ipynb_checkpoints/*
 __pycache__/*
+checkpoints/*
+!checkpoints/
