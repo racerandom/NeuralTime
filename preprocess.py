@@ -18,12 +18,6 @@ juman = Juman()
 import logging
 logger = utils.init_logger('Data_Preprocess', logging.INFO, logging.INFO)
 
-# device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
-# BERT_URL='/Users/fei-c/Resources/embed/L-12_H-768_A-12_E-30_BPE'
-# if str(device) == 'cuda':
-#     BERT_URL='/larch/share/bert/Japanese_models/Wikipedia/L-12_H-768_A-12_E-30_BPE'
-# tokenizer = BertTokenizer.from_pretrained(BERT_URL, do_lower_case=False, do_basic_tokenize=False)
-
 merge_map_6c = {
     'after': 'AFTER',
     'met-by': 'AFTER',
@@ -315,7 +309,8 @@ def make_tlink_instances_v2(doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks,
                 sour_mask = doc_mid2smask[sour_mid][1] + [0] * len(doc_mid2smask[targ_mid][1])
                 targ_mask = [0] * len(doc_mid2smask[sour_mid][1]) + doc_mid2smask[targ_mid][1]
                 sent_mask = [0] * len(doc_mid2smask[sour_mid][1]) + [1] * len(doc_mid2smask[targ_mid][1])
-
+        else:
+            raise Exception('[ERROR] Unknow task arg: %s ...' % task)
 
         logger.debug(' '.join(deunk_tok))
         logger.debug(' '.join(tok))
@@ -380,7 +375,7 @@ def convert_to_np_v2(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs,
         pad_sent_m), np.array(lab_ids)
 
 
-def instance_to_tensors(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs, tokenizer, lab2ix, device):
+def instance_to_tensors(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs, tokenizer, lab2ix):
 
     toks_ids_np, tok_masks_np, sour_masks_np, targ_masks_np, sent_masks_np, lab_ids_np = convert_to_np_v2(
         deunk_toks,
@@ -394,12 +389,12 @@ def instance_to_tensors(deunk_toks, toks, sour_masks, targ_masks, sent_masks, la
     )
 
     tensors = TensorDataset(
-        torch.from_numpy(toks_ids_np).to(device),
-        torch.from_numpy(tok_masks_np).to(device),
-        torch.from_numpy(sour_masks_np).to(device),
-        torch.from_numpy(targ_masks_np).to(device),
-        torch.from_numpy(sent_masks_np).to(device),
-        torch.from_numpy(lab_ids_np).to(device),
+        torch.from_numpy(toks_ids_np),
+        torch.from_numpy(tok_masks_np),
+        torch.from_numpy(sour_masks_np),
+        torch.from_numpy(targ_masks_np),
+        torch.from_numpy(sent_masks_np),
+        torch.from_numpy(lab_ids_np)
     )
 
     return tensors

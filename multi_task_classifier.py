@@ -135,7 +135,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     BERT_DIR = PRETRAIN_BERT_DIR if args.do_train else CV_MODEL_DIR
 
-    logger.info('Tmp BERT dir: %s ' % BERT_DIR)
+    logger.info('BERT dir: %s ' % BERT_DIR)
 
     train_batch_seq = []
 
@@ -166,8 +166,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
                 *train_features,
                 train_labs,
                 tokenizer,
-                lab2ix,
-                device
+                lab2ix
             )
 
             # if args.multi_gpu and n_gpu > 1:
@@ -232,11 +231,13 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
                 for task in task_list:
                     full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
 
-            for step, b_task in enumerate(tqdm(train_batch_seq, desc="Iteration")):
+            for step, b_task in enumerate(tqdm(train_batch_seq, desc="Training")):
 
                 optimizer.zero_grad()
 
-                b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_train_dataloader'])
+                batch = next(full_data_dict[b_task]['iter_train_dataloader'])
+
+                b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = tuple(t.to(device) for t in batch)
 
                 loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
 
@@ -245,6 +246,13 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
                 loss.backward()
                 optimizer.step()
                 global_step += 1
+    else:
+        """ eval mode 
+        reload the saved model
+        """
+        tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
+        model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
+        model.to(device)
 
         # if os.path.exists(CV_MODEL_DIR):
         #     raise ValueError("Output directory ({}) already exists and is not empty.".format(CV_MODEL_DIR))
@@ -287,8 +295,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             *test_features,
             test_labs,
             tokenizer,
-            lab2ix,
-            device
+            lab2ix
         )
 
         full_data_dict[task]['test_dataloader'] = DataLoader(
@@ -309,13 +316,14 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     """ Inference"""
     model.eval()
-    with torch.no_grad():
-        for b_task in test_batch_seq:
-            b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = next(full_data_dict[b_task]['iter_test_dataloader'])
+    for b_task in test_batch_seq:
+        batch = next(full_data_dict[b_task]['iter_test_dataloader'])
+        b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = tuple(t.to(device) for t in batch)
+        with torch.no_grad():
             b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask)
-            b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)
-            epoch_eval_dict[b_task]['pred'] += b_pred.tolist()
-            epoch_eval_dict[b_task]['gold'] += b_lab.tolist()
+        b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)
+        epoch_eval_dict[b_task]['pred'] += b_pred.tolist()
+        epoch_eval_dict[b_task]['gold'] += b_lab.tolist()
 
     for task in task_list:
         acc = accuracy_score(epoch_eval_dict[task]['gold'], epoch_eval_dict[task]['pred'])

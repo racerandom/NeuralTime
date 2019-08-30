@@ -141,7 +141,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
 p, r, f1, _ = precision_recall_fscore_support(gold_all, pred_all, average='weighted')
 acc = accuracy_score(gold_all, pred_all)
-logger.info('Final Cross Validation Evaluation: F1 : %.2f, ACC : %.2f%%' % (f1, acc))
+logger.info('Final Cross Validation Evaluation: F1 : %.4f, ACC : %.4f%%' % (f1, acc))
 
 
 
