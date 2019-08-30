@@ -116,7 +116,11 @@ lab2ix = preprocess.get_lab2ix_from_type(args.lab_type)
 
 NUM_LABEL = len(lab2ix)
 
+timestamp_str = datetime.now().strftime('%Y%m%d%H%M%S')
+
 logger.info(str(lab2ix))
+
+logger.info('Pretrained BERT dir: %s ' % PRETRAIN_BERT_DIR)
 
 eval_dict = defaultdict(lambda: defaultdict(lambda: []))
 
@@ -129,19 +133,15 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     CV_MODEL_DIR = '%s/%s_%s/cv%i' % (
         args.model_dir,
         args.task,
-        datetime.now().strftime('%Y%m%d%H%M%S'),
+        timestamp_str,
         cv_id
     )
-
-    BERT_DIR = PRETRAIN_BERT_DIR if args.do_train else CV_MODEL_DIR
-
-    logger.info('BERT dir: %s ' % BERT_DIR)
 
     train_batch_seq = []
 
     if args.do_train:
 
-        tokenizer = BertTokenizer.from_pretrained(BERT_DIR, do_lower_case=False, do_basic_tokenize=False)
+        tokenizer = BertTokenizer.from_pretrained(PRETRAIN_BERT_DIR, do_lower_case=False, do_basic_tokenize=False)
 
         for task in task_list:
 
@@ -208,7 +208,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
         """ training """
         """ model initialization """
-        model = MultiTaskRelationClassifier.from_pretrained(BERT_DIR, num_labels=NUM_LABEL)
+        model = MultiTaskRelationClassifier.from_pretrained(PRETRAIN_BERT_DIR, num_labels=NUM_LABEL)
         model.to(device)
         if args.multi_gpu and n_gpu > 1:
             model = torch.nn.DataParallel(model)
