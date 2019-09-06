@@ -79,6 +79,32 @@ class MultiTaskRelationClassifier(BertPreTrainedModel):
         else:
             return logits
 
+
+class DocEmbMultiTaskTRC(BertPreTrainedModel):
+
+    def __init__(self, config, num_emb, num_labels):
+        super(DocEmbMultiTaskTRC, self).__init__(config)
+        self.num_labels = num_labels
+        self.bert = BertModel(config)
+        self.dropout = nn.Dropout(config.hidden_dropout_prob)
+        self.MentEmb = nn.Embedding(num_emb, config.hidden_size)
+        self.classifiers = {task:nn.Linear(config.hidden_size * 2, num_labels).to(device) for task in ['DCT', 'T2E', 'E2E', 'MAT']}
+        self.apply(self.init_bert_weights)
+
+    def forward(self, input_ids, sour_mask, targ_mask, task, token_type_ids=None, attention_mask=None, labels=None):
+        last_layer_out, _ = self.bert(input_ids, token_type_ids, attention_mask, output_all_encoded_layers=False)
+        sour_rep = torch.bmm(sour_mask.unsqueeze(1).float(), last_layer_out)
+        targ_rep = torch.bmm(targ_mask.unsqueeze(1).float(), last_layer_out)
+        pooled_output = self.dropout(torch.cat((sour_rep, targ_rep), dim=-1))
+        logits = self.classifiers[task](pooled_output)
+
+        if labels is not None:
+            loss_fct = CrossEntropyLoss()
+            loss = loss_fct(logits.view(-1, self.num_labels), labels.view(-1))
+            return loss
+        else:
+            return logits
+
         
 class SeqCertClassifier(BertPreTrainedModel):
     

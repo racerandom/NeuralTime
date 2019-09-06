@@ -16,7 +16,7 @@ from pytorch_pretrained_bert import WEIGHTS_NAME, CONFIG_NAME
 from sklearn.metrics import accuracy_score
 
 import logging
-from model import MultiTaskRelationClassifier
+from model import MultiTaskRelationClassifier, DocEmbMultiTaskTRC
 import preprocess
 import utils
 
@@ -124,6 +124,8 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     full_data_dict = defaultdict(dict)
 
+    mid2ix = {}
+
     CV_MODEL_DIR = '%s/%s_%s/cv%i' % (
         args.model_dir,
         args.task,
@@ -156,26 +158,26 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             logger.info('major label: %s (%.2f%%) ' % (major_lab, major_ratio))
             # full_data_dict[task]['lab2ix'] = lab2ix
 
+            sour_mids, targ_mids = train_features[4], train_features[5]
+
+            logger.debug(str(sour_mids[:5]))
+            logger.debug(str(targ_mids[:5]))
+
+            for mid in sour_mids:
+                if mid not in mid2ix:
+                    mid2ix[mid] = len(mid2ix)
+
+            for mid in targ_mids:
+                if mid not in mid2ix:
+                    mid2ix[mid] = len(mid2ix)
+
             train_tensors = preprocess.instance_to_tensors(
                 *train_features,
                 train_labs,
                 tokenizer,
+                mid2ix,
                 lab2ix
             )
-
-            # if args.multi_gpu and n_gpu > 1:
-            #     full_data_dict[task]['train_dataloader'] = DataLoader(
-            #         train_tensors,
-            #         batch_size=args.BATCH_SIZE,
-            #         sampler=RandomSampler(train_tensors)
-            #     )
-            #
-            #     full_data_dict[task]['test_dataloader'] = DataLoader(
-            #         test_tensors,
-            #         batch_size=args.BATCH_SIZE,
-            #         sampler=RandomSampler(test_tensors)
-            #     )
-            # else:
 
             full_data_dict[task]['train_dataloader'] = DataLoader(
                 train_tensors,
@@ -191,6 +193,8 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             train_batch_num = len(full_data_dict[task]['train_dataloader'])
             train_batch_seq += [task] * train_batch_num
 
+        logger.info("mention ids num: %i" % len(mid2ix))
+
         if not args.ordered:
             random.shuffle(train_batch_seq)
         logger.info("Total batch num: %i, first 10 batch example: %s" % (
@@ -202,7 +206,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
         """ training """
         """ model initialization """
-        model = MultiTaskRelationClassifier.from_pretrained(PRETRAIN_BERT_DIR, num_labels=NUM_LABEL)
+        model = DocEmbMultiTaskTRC.from_pretrained(PRETRAIN_BERT_DIR, num_emb=len(mid2ix), num_labels=NUM_LABEL)
         model.to(device)
         if args.multi_gpu and n_gpu > 1:
             model = torch.nn.DataParallel(model)
@@ -224,17 +228,20 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         global_step = 0
         model.train()
         for epoch in range(1, args.NUM_EPOCHS + 1):
-            if not args.multi_gpu or n_gpu <= 1:
-                for task in task_list:
-                    full_data_dict[task]['iter_train_dataloader'] = iter(full_data_dict[task]['train_dataloader'])
 
+            """ build a iterator of the dataloader, pop one batch every time """
+            train_dataloader_iterator = {}
+            for task in task_list:
+                train_dataloader_iterator[task] = iter(full_data_dict[task]['train_dataloader'])
+
+            """ train steps """
             for step, b_task in enumerate(tqdm(train_batch_seq, desc="Training")):
 
                 optimizer.zero_grad()
 
-                batch = next(full_data_dict[b_task]['iter_train_dataloader'])
+                batch = next(train_dataloader_iterator[b_task])
 
-                b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = tuple(t.to(device) for t in batch)
+                b_tok, b_mask, b_sour_mask, b_targ_mask, b_sour_mid, b_targ_mid, b_sent_mask, b_lab = tuple(t.to(device) for t in batch)
 
                 loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=b_lab)
 
@@ -244,38 +251,35 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
                 optimizer.step()
                 global_step += 1
 
-        # if os.path.exists(CV_MODEL_DIR):
-        #     raise ValueError("Output directory ({}) already exists and is not empty.".format(CV_MODEL_DIR))
-        # if not os.path.exists(CV_MODEL_DIR):
-        #     os.makedirs(CV_MODEL_DIR)
-        #
-        # # utils.save_checkpoint(model, tokenizer, checkpoint_dir=CV_MODEL_DIR)
-        # model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
-        #
-        # # If we save using the predefined names, we can load using `from_pretrained`
-        # output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
-        # output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
-        #
-        # torch.save(model_to_save.state_dict(), output_model_file)
-        # model_to_save.config.to_json_file(output_config_file)
-        # tokenizer.save_vocabulary(CV_MODEL_DIR)
-        #
-        # tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
-        # model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
-        # model.to(device)
+            if epoch == args.NUM_EPOCHS:
+                if os.path.exists(CV_MODEL_DIR):
+                    raise ValueError("Output directory ({}) already exists and is not empty.".format(CV_MODEL_DIR))
+                if not os.path.exists(CV_MODEL_DIR):
+                    os.makedirs(CV_MODEL_DIR)
 
-    else:
-        """ eval mode 
-        reload the saved model
-        """
-        tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
-        model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
-        model.to(device)
+                # utils.save_checkpoint(model, tokenizer, checkpoint_dir=CV_MODEL_DIR)
+                model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
+
+                # If we save using the predefined names, we can load using `from_pretrained`
+                output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
+                output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
+
+                torch.save(model_to_save.state_dict(), output_model_file)
+                model_to_save.config.to_json_file(output_config_file)
+                tokenizer.save_vocabulary(CV_MODEL_DIR)
+
+    # else:
+    #     """ eval mode
+    #     reload the saved model
+    #     """
+    #     tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
+    #     model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
+    #     model.to(device)
 
     """ Load the saved cv model """
-    # tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
-    # model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
-    # model.to(device)
+    tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
+    model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
+    model.to(device)
 
     """ Evaluation at NUM_EPOCHS"""
     cv_eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
@@ -320,7 +324,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     model.eval()
     for b_task in test_batch_seq:
         batch = next(full_data_dict[b_task]['iter_test_dataloader'])
-        b_tok, b_mask, b_sour_mask, b_targ_mask, b_sent_mask, b_lab = tuple(t.to(device) for t in batch)
+        b_tok, b_mask, b_sour_mask, b_targ_mask, b_sour_mid, b_targ_mid, b_sent_mask, b_lab = tuple(t.to(device) for t in batch)
         with torch.no_grad():
             b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=None)
         b_pred = torch.argmax(b_pred_logits, dim=-1).squeeze(1)

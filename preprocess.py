@@ -283,7 +283,7 @@ def extract_sents_from_xml_v2(xml_file, tokenizer, lab_type=None, comp=None):
 
 
 def make_tlink_instances_v2(doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks, task=None):
-    deunk_toks, toks, sour_masks, targ_masks, sent_masks, mids, rels = [], [], [], [], [], [], []
+    deunk_toks, toks, sour_masks, targ_masks, sour_mids, targ_mids, sent_masks, rels = [], [], [], [], [], [], [], []
     for sour_mid, targ_mid, rel in doc_tlinks[task]:
         logger.debug('%s\t%s\t%s' % (sour_mid, targ_mid, rel))
         targ_sid = doc_mid2smask[targ_mid][0]
@@ -321,14 +321,18 @@ def make_tlink_instances_v2(doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks,
         toks.append(tok)
         sour_masks.append(sour_mask)
         targ_masks.append(targ_mask)
+        sour_mids.append(sour_mid)
+        targ_mids.append(targ_mid)
         sent_masks.append(sent_mask)
         rels.append(rel)
         assert len(deunk_tok) == len(tok) == len(sour_mask) == len(targ_mask) == len(sent_mask)
-    return deunk_toks, toks, sour_masks, targ_masks, sent_masks, rels
+    return deunk_toks, toks, sour_masks, targ_masks, sour_mids, targ_mids, sent_masks, rels
 
 
 def batch_make_tlink_instances_v2(file_list, tokenizer, task=None, lab_type=None, comp=None):
-    deunk_toks, toks, sour_masks, targ_masks, sent_masks, rels = [], [], [], [], [], []
+
+    deunk_toks, toks, sour_masks, targ_masks, sour_mids, targ_mids, sent_masks, rels = [], [], [], [], [], [], [], []
+
     for dir_file in file_list:
         logger.debug('[Done] processing %s' % dir_file)
         doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks = extract_sents_from_xml_v2(
@@ -337,23 +341,29 @@ def batch_make_tlink_instances_v2(file_list, tokenizer, task=None, lab_type=None
             lab_type=lab_type,
             comp=comp
         )
-        inst_deunk_toks, inst_toks, inst_sour_masks, inst_targ_masks, inst_sent_masks, inst_rels = make_tlink_instances_v2(
+        doc_tlink_instances = make_tlink_instances_v2(
             doc_deunk_toks,
             doc_toks,
             doc_mid2smask,
             doc_tlinks,
             task=task
         )
-        deunk_toks += inst_deunk_toks
-        toks += inst_toks
-        sour_masks += inst_sour_masks
-        targ_masks += inst_targ_masks
-        sent_masks += inst_sent_masks
-        rels += inst_rels
-    return (deunk_toks, toks, sour_masks, targ_masks, sent_masks), rels
+
+        deunk_toks += doc_tlink_instances[0]
+        toks += doc_tlink_instances[1]
+        sour_masks += doc_tlink_instances[2]
+        targ_masks += doc_tlink_instances[3]
+        sent_masks += doc_tlink_instances[6]
+        rels += doc_tlink_instances[7]
+
+        """ document-level mention id = file_name + mention_id"""
+        file_id = dir_file.split('/')[-1].strip('.xml')
+        sour_mids += [file_id + '-' + mid for mid in doc_tlink_instances[4]]
+        targ_mids += [file_id + '-' + mid for mid in doc_tlink_instances[5]]
+    return (deunk_toks, toks, sour_masks, targ_masks, sour_mids, targ_mids, sent_masks), rels
 
 
-def convert_to_np_v2(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs, tokenizer, lab2ix):
+def convert_to_np_v2(deunk_toks, toks, sour_masks, targ_masks, sour_mids, targ_mids, sent_masks, labs, tokenizer, mid2ix, lab2ix):
     max_len = max([len(t) for t in toks])
     logger.info('max seq length %i' % (max_len))
     pad_tok_ids, pad_masks, pad_sm, pad_tm, pad_sent_m = [], [], [], [], []
@@ -369,31 +379,39 @@ def convert_to_np_v2(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs,
         pad_sm.append(pad_inst_sm)
         pad_tm.append(pad_inst_tm)
         pad_sent_m.append(pad_inst_sent_m)
+    sour_mid_ids = [mid2ix[mid] for mid in sour_mids]
+    targ_mid_ids = [mid2ix[mid] for mid in targ_mids]
+
     lab_ids = [lab2ix[l] for l in labs]
-    assert len(pad_tok_ids) == len(pad_masks) == len(pad_sm) == len(pad_tm) == len(pad_sent_m) == len(lab_ids)
-    return np.array(pad_tok_ids), np.array(pad_masks), np.array(pad_sm), np.array(pad_tm), np.array(
-        pad_sent_m), np.array(lab_ids)
+    assert len(pad_tok_ids) == len(pad_masks) == len(pad_sm) == len(pad_tm) == len(pad_sent_m) == len(sour_mid_ids) == len(targ_mid_ids) == len(lab_ids)
+    return (np.array(pad_tok_ids), np.array(pad_masks), np.array(pad_sm), np.array(pad_tm), np.array(sour_mid_ids), np.array(targ_mid_ids), np.array(
+        pad_sent_m)), np.array(lab_ids)
 
 
-def instance_to_tensors(deunk_toks, toks, sour_masks, targ_masks, sent_masks, labs, tokenizer, lab2ix):
+def instance_to_tensors(deunk_toks, toks, sour_masks, targ_masks, sour_mids, targ_mids, sent_masks, labs, tokenizer, mid2ix, lab2ix):
 
-    toks_ids_np, tok_masks_np, sour_masks_np, targ_masks_np, sent_masks_np, lab_ids_np = convert_to_np_v2(
+    feat_ids_np, lab_ids_np = convert_to_np_v2(
         deunk_toks,
         toks,
         sour_masks,
         targ_masks,
+        sour_mids,
+        targ_mids,
         sent_masks,
         labs,
         tokenizer,
+        mid2ix,
         lab2ix
     )
 
     tensors = TensorDataset(
-        torch.from_numpy(toks_ids_np),
-        torch.from_numpy(tok_masks_np),
-        torch.from_numpy(sour_masks_np),
-        torch.from_numpy(targ_masks_np),
-        torch.from_numpy(sent_masks_np),
+        torch.from_numpy(feat_ids_np[0]),
+        torch.from_numpy(feat_ids_np[1]),
+        torch.from_numpy(feat_ids_np[2]),
+        torch.from_numpy(feat_ids_np[3]),
+        torch.from_numpy(feat_ids_np[4]),
+        torch.from_numpy(feat_ids_np[5]),
+        torch.from_numpy(feat_ids_np[6]),
         torch.from_numpy(lab_ids_np)
     )
 

@@ -110,7 +110,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     model = RelationClassifier.from_pretrained(BERT_URL, num_labels=len(lab2ix))
     model.to(device)
     param_optimizer = list(model.named_parameters())
-    no_decay = ['bias', 'LayerN®orm.bias', 'LayerNorm.weight']
+    no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
     optimizer_grouped_parameters = [
         {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.01},
         {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
@@ -135,9 +135,9 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         p_cv, r_cv, f1_cv, _ = precision_recall_fscore_support(gold_cv, pred_cv, average='weighted')
         acc_cv = accuracy_score(gold_cv, pred_cv)
         print('[Epoch %i] Loss %.6f | Precision %.4f, Recall %.4f, F1 %.4f | Accuracy: %.4f' % (epoch, mean(epoch_loss), p_cv, r_cv, f1_cv, acc_cv))
-
-    gold_all += (gold_cv)
-    pred_all += (pred_cv)
+        if epoch == args.NUM_EPOCHS:
+            gold_all += (gold_cv)
+            pred_all += (pred_cv)
 
 p, r, f1, _ = precision_recall_fscore_support(gold_all, pred_all, average='weighted')
 acc = accuracy_score(gold_all, pred_all)
