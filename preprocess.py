@@ -304,11 +304,11 @@ def make_tlink_instances_v2(doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks,
                 targ_mask = doc_mid2smask[targ_mid][1]
                 sent_mask = [0] * len(doc_mid2smask[targ_mid][1])
             else:
-                deunk_tok = doc_deunk_toks[sour_sid] + doc_deunk_toks[targ_sid]
-                tok = doc_toks[sour_sid] + doc_toks[targ_sid]
-                sour_mask = doc_mid2smask[sour_mid][1] + [0] * len(doc_mid2smask[targ_mid][1])
-                targ_mask = [0] * len(doc_mid2smask[sour_mid][1]) + doc_mid2smask[targ_mid][1]
-                sent_mask = [0] * len(doc_mid2smask[sour_mid][1]) + [1] * len(doc_mid2smask[targ_mid][1])
+                deunk_tok = doc_deunk_toks[sour_sid] + '[SEP]' + doc_deunk_toks[targ_sid]
+                tok = doc_toks[sour_sid] + '[SEP]' + doc_toks[targ_sid]
+                sour_mask = doc_mid2smask[sour_mid][1] + [0] + [0] * len(doc_mid2smask[targ_mid][1])
+                targ_mask = [0] * len(doc_mid2smask[sour_mid][1]) + [0] + doc_mid2smask[targ_mid][1]
+                sent_mask = [0] * len(doc_mid2smask[sour_mid][1]) + [0] + [1] * len(doc_mid2smask[targ_mid][1])
         else:
             raise Exception('[ERROR] Unknow task arg: %s ...' % task)
 
