@@ -256,16 +256,18 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
                 if not os.path.exists(CV_MODEL_DIR):
                     os.makedirs(CV_MODEL_DIR)
 
+                torch.save(model, os.path.join(CV_MODEL_DIR, 'model.bin'))
                 # utils.save_checkpoint(model, tokenizer, checkpoint_dir=CV_MODEL_DIR)
-                model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
+                # model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
+                #
+                # # If we save using the predefined names, we can load using `from_pretrained`
+                # output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
+                # output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
+                #
+                # torch.save(model_to_save.state_dict(), output_model_file)
+                # model_to_save.config.to_json_file(output_config_file)
+                # tokenizer.save_vocabulary(CV_MODEL_DIR)
 
-                # If we save using the predefined names, we can load using `from_pretrained`
-                output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
-                output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
-
-                torch.save(model_to_save.state_dict(), output_model_file)
-                model_to_save.config.to_json_file(output_config_file)
-                tokenizer.save_vocabulary(CV_MODEL_DIR)
 
     # else:
     #     """ eval mode
@@ -276,7 +278,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     #     model.to(device)
 
     """ Load the saved cv model """
-    tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
+    tokenizer = BertTokenizer.from_pretrained(PRETRAIN_BERT_DIR, do_lower_case=False, do_basic_tokenize=False)
 
     """ Evaluation at NUM_EPOCHS"""
     cv_eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
@@ -344,7 +346,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     test_dataloader_iterator = {task: iter(test_dataloader[task]) for task in task_list}
 
-    model = DocEmbMultiTaskTRC.from_pretrained(CV_MODEL_DIR)
+    model = torch.load(os.path.join(CV_MODEL_DIR, 'model.bin'))
     model.to(device)
 
     """ Inference"""
