@@ -207,7 +207,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
         """ training """
         """ model initialization """
-        model = DocEmbMultiTaskTRC.from_pretrained(PRETRAIN_BERT_DIR, num_emb=len(mid2ix), num_labels=NUM_LABEL)
+        model = DocEmbMultiTaskTRC.from_pretrained(PRETRAIN_BERT_DIR, num_emb=len(train_mid2ix), num_labels=NUM_LABEL)
         model.to(device)
         if args.multi_gpu and n_gpu > 1:
             model = torch.nn.DataParallel(model)
@@ -277,8 +277,6 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     """ Load the saved cv model """
     tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
-    model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
-    model.to(device)
 
     """ Evaluation at NUM_EPOCHS"""
     cv_eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
@@ -346,10 +344,13 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     test_dataloader_iterator = {task: iter(test_dataloader[task]) for task in task_list}
 
+    model = DocEmbMultiTaskTRC.from_pretrained(CV_MODEL_DIR)
+    model.to(device)
+
     """ Inference"""
     model.eval()
     for b_task in test_batch_seq:
-        batch = next(test_dataloader_iterator[b_task]['iter_test_dataloader'])
+        batch = next(test_dataloader_iterator[b_task])
         b_tok, b_mask, b_sour_mask, b_targ_mask, b_sour_mid, b_targ_mid, b_sent_mask, b_lab = tuple(t.to(device) for t in batch)
         with torch.no_grad():
             b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=None)
