@@ -122,8 +122,6 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     logger.info('[Cross Validation %i] train files %i, test files %i .' % (cv_id, len(train_files), len(test_files)))
 
-    full_data_dict = defaultdict(dict)
-
     mid2ix = {}
 
     CV_MODEL_DIR = '%s/%s_%s/cv%i' % (
@@ -133,11 +131,14 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         cv_id
     )
 
-    train_batch_seq = []
 
     if args.do_train:
 
         tokenizer = BertTokenizer.from_pretrained(PRETRAIN_BERT_DIR, do_lower_case=False, do_basic_tokenize=False)
+
+        train_dataloader = {}
+
+        train_batch_seq = []
 
         for task in task_list:
 
@@ -179,7 +180,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
                 lab2ix
             )
 
-            full_data_dict[task]['train_dataloader'] = DataLoader(
+            train_dataloader[task] = DataLoader(
                 train_tensors,
                 batch_size=args.BATCH_SIZE,
                 shuffle=True
@@ -187,10 +188,10 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
             logger.info('Task %s, Train batch num: %i' % (
                 task,
-                len(full_data_dict[task]['train_dataloader'])
+                len(train_dataloader[task])
             ))
 
-            train_batch_num = len(full_data_dict[task]['train_dataloader'])
+            train_batch_num = len(train_dataloader[task])
             train_batch_seq += [task] * train_batch_num
 
         logger.info("mention ids num: %i" % len(mid2ix))
@@ -230,9 +231,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         for epoch in range(1, args.NUM_EPOCHS + 1):
 
             """ build a iterator of the dataloader, pop one batch every time """
-            train_dataloader_iterator = {}
-            for task in task_list:
-                train_dataloader_iterator[task] = iter(full_data_dict[task]['train_dataloader'])
+            train_dataloader_iterator = {task: iter(train_dataloader[task]) for task in task_list}
 
             """ train steps """
             for step, b_task in enumerate(tqdm(train_batch_seq, desc="Training")):
@@ -285,6 +284,8 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     cv_eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
 
     """ Prepare test data """
+    test_dataloader = {}
+
     test_batch_seq = []
 
     for task in task_list:
@@ -301,16 +302,17 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             *test_features,
             test_labs,
             tokenizer,
+            mid2ix,
             lab2ix
         )
 
-        full_data_dict[task]['test_dataloader'] = DataLoader(
+        test_dataloader[task] = DataLoader(
             test_tensors,
             batch_size=args.BATCH_SIZE,
             shuffle=False
         )
 
-        test_batch_num = len(full_data_dict[task]['test_dataloader'])
+        test_batch_num = len(test_dataloader[task])
         test_batch_seq += [task] * test_batch_num
 
         logger.info("Task %s, test batch %i" % (
@@ -318,12 +320,12 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             test_batch_num
         ))
 
-        full_data_dict[task]['iter_test_dataloader'] = iter(full_data_dict[task]['test_dataloader'])
+    test_dataloader_iterator = {task: iter(test_dataloader[task]) for task in task_list}
 
     """ Inference"""
     model.eval()
     for b_task in test_batch_seq:
-        batch = next(full_data_dict[b_task]['iter_test_dataloader'])
+        batch = next(test_dataloader_iterator[b_task]['iter_test_dataloader'])
         b_tok, b_mask, b_sour_mask, b_targ_mask, b_sour_mid, b_targ_mid, b_sent_mask, b_lab = tuple(t.to(device) for t in batch)
         with torch.no_grad():
             b_pred_logits = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask, labels=None)
