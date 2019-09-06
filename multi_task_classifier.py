@@ -122,8 +122,6 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     logger.info('[Cross Validation %i] train files %i, test files %i .' % (cv_id, len(train_files), len(test_files)))
 
-    mid2ix = {}
-
     CV_MODEL_DIR = '%s/%s_%s/cv%i' % (
         args.model_dir,
         args.task,
@@ -140,6 +138,8 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
         train_batch_seq = []
 
+        train_mid2ix = {}
+
         for task in task_list:
 
             train_features, train_labs = preprocess.batch_make_tlink_instances_v2(
@@ -153,30 +153,30 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             # lab2ix = utils.get_label2ix(labs)
 
             """ train labels distribution """
-            lab2count, major_lab, major_ratio = preprocess.count_major(train_labs)
+            train_lab2count, train_major_lab, train_major_ratio = preprocess.count_major(train_labs)
 
-            logger.info(str(lab2count))
-            logger.info('major label: %s (%.2f%%) ' % (major_lab, major_ratio))
+            logger.info(str(train_lab2count))
+            logger.info('Train major label: %s (%.2f%%) ' % (train_major_lab, train_major_ratio))
             # full_data_dict[task]['lab2ix'] = lab2ix
 
-            sour_mids, targ_mids = train_features[4], train_features[5]
+            train_sour_mids, train_targ_mids = train_features[4], train_features[5]
 
-            logger.debug(str(sour_mids[:5]))
-            logger.debug(str(targ_mids[:5]))
+            logger.debug(str(train_sour_mids[:5]))
+            logger.debug(str(train_targ_mids[:5]))
 
-            for mid in sour_mids:
-                if mid not in mid2ix:
-                    mid2ix[mid] = len(mid2ix)
+            for mid in train_sour_mids:
+                if mid not in train_mid2ix:
+                    train_mid2ix[mid] = len(train_mid2ix)
 
-            for mid in targ_mids:
-                if mid not in mid2ix:
-                    mid2ix[mid] = len(mid2ix)
+            for mid in train_targ_mids:
+                if mid not in train_mid2ix:
+                    train_mid2ix[mid] = len(train_mid2ix)
 
             train_tensors = preprocess.instance_to_tensors(
                 *train_features,
                 train_labs,
                 tokenizer,
-                mid2ix,
+                train_mid2ix,
                 lab2ix
             )
 
@@ -194,7 +194,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             train_batch_num = len(train_dataloader[task])
             train_batch_seq += [task] * train_batch_num
 
-        logger.info("mention ids num: %i" % len(mid2ix))
+        logger.info("Train mention ids num: %i" % len(train_mid2ix))
 
         if not args.ordered:
             random.shuffle(train_batch_seq)
@@ -288,6 +288,8 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     test_batch_seq = []
 
+    test_mid2ix = {}
+
     for task in task_list:
 
         test_features, test_labs = preprocess.batch_make_tlink_instances_v2(
@@ -298,11 +300,31 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             comp=args.comp
         )
 
+        """ train labels distribution """
+        test_lab2count, test_major_lab, test_major_ratio = preprocess.count_major(test_labs)
+
+        logger.info(str(test_lab2count))
+        logger.info('test major label: %s (%.2f%%) ' % (test_major_lab, test_major_ratio))
+        # full_data_dict[task]['lab2ix'] = lab2ix
+
+        test_sour_mids, test_targ_mids = test_features[4], test_features[5]
+
+        logger.debug(str(test_sour_mids[:5]))
+        logger.debug(str(test_targ_mids[:5]))
+
+        for mid in test_sour_mids:
+            if mid not in test_mid2ix:
+                test_mid2ix[mid] = len(test_mid2ix)
+
+        for mid in test_targ_mids:
+            if mid not in test_mid2ix:
+                test_mid2ix[mid] = len(test_mid2ix)
+
         test_tensors = preprocess.instance_to_tensors(
             *test_features,
             test_labs,
             tokenizer,
-            mid2ix,
+            test_mid2ix,
             lab2ix
         )
 
@@ -319,6 +341,8 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             task,
             test_batch_num
         ))
+
+    logger.info("Test mention ids num: %i" % len(test_mid2ix))
 
     test_dataloader_iterator = {task: iter(test_dataloader[task]) for task in task_list}
 
