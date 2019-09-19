@@ -131,9 +131,6 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         cv_id
     )
 
-    output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
-    output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
-
     if args.do_train:
 
         tokenizer = BertTokenizer.from_pretrained(PRETRAIN_BERT_DIR, do_lower_case=False, do_basic_tokenize=False)
@@ -262,10 +259,12 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         if not os.path.exists(CV_MODEL_DIR):
             os.makedirs(CV_MODEL_DIR)
 
+        output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
+        output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
+
         model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
 
         # If we save using the predefined names, we can load using `from_pretrained`
-
         torch.save(model_to_save.state_dict(), output_model_file)
         model_to_save.config.to_json_file(output_config_file)
         tokenizer.save_vocabulary(CV_MODEL_DIR)
@@ -356,8 +355,6 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         num_labels=NUM_LABEL,
         task_list=task_list
     )
-    model.load_state_dict(torch.load(output_model_file))
-    # model = torch.load(os.path.join(CV_MODEL_DIR, 'model.bin'))
     model.to(device)
 
     """ Inference"""
