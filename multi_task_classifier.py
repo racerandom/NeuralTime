@@ -215,7 +215,8 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
             task_list=task_list
         )
 
-        # model = nn.DataParallel(model)
+        if args.multi_gpu:
+            model = nn.DataParallel(model)
         model.to(device)
 
         """ optimizer initialization """
@@ -249,7 +250,8 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
                 loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask,
                              labels=b_lab)
-
+                if args.multi_gpu:
+                    loss = loss.mean()
                 loss.backward()
                 optimizer.step()
                 global_step += 1
