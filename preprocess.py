@@ -235,7 +235,7 @@ def extract_sents_from_xml_v2(xml_file, tokenizer, lab_type=None, comp=None):
                 try:
                     if tag.text and tag.text.strip():
                         text_seg = [w.midasi for w in juman.analysis(
-                            mojimoji.han_to_zen(tag.text.strip().replace('\u3000', ' '))).mrph_list()]
+                            mojimoji.han_to_zen(tag.text.strip().replace('\u3000', ''))).mrph_list()]
                         if tag.tag in ['EVENT', 'event'] and 'eid' in tag.attrib:
                             tmp_mids.append(tag.attrib['eid'])
                             doc_mid2smask[tag.attrib['eid']] = [
@@ -251,7 +251,7 @@ def extract_sents_from_xml_v2(xml_file, tokenizer, lab_type=None, comp=None):
                         sent_toks += text_seg
                     if tag.tag != 'sentence' and tag.tail and tag.tail.strip():
                         tail_seg = [w.midasi for w in juman.analysis(
-                            mojimoji.han_to_zen(tag.tail.strip().replace('\u3000', ' '))).mrph_list()]
+                            mojimoji.han_to_zen(tag.tail.strip().replace('\u3000', ''))).mrph_list()]
                         sent_toks += tail_seg
                 except Exception as ex:
                     logger.error(xml_file, tag.tag, tag.text, tag.attrib)

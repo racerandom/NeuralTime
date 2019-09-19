@@ -87,8 +87,10 @@ logger.info("""[args] Task: %s, label type: %s, do_train: %s, complete agree: %s
 ))
 
 random.seed(1029)
-np.random.seed(args.seed)
-torch.manual_seed(args.seed)
+
+if args.seed:
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
 if n_gpu > 0:
     torch.cuda.manual_seed_all(args.seed)
 
