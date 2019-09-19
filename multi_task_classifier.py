@@ -9,10 +9,10 @@ from datetime import datetime
 from statistics import mean
 import numpy as np
 import torch
+import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset, RandomSampler
-from pytorch_pretrained_bert import BertTokenizer
+from pytorch_pretrained_bert import BertTokenizer, BertConfig, WEIGHTS_NAME, CONFIG_NAME
 from pytorch_pretrained_bert.optimization import BertAdam, WarmupLinearSchedule
-from pytorch_pretrained_bert import WEIGHTS_NAME, CONFIG_NAME
 from sklearn.metrics import accuracy_score
 import torch.multiprocessing as mp
 
@@ -34,47 +34,6 @@ else:
 logger = utils.init_logger('TLINK_Classifier', logging.INFO, logging.INFO)
 logger.info('device: %s, gpu num: %i' % (device, n_gpu))
 
-
-""" train method """
-def train(model, train_dataloader, train_batch_seq, task_list, num_epoch):
-
-    """ optimizer initialization """
-    param_optimizer = list(model.named_parameters())
-    no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
-    optimizer_grouped_parameters = [
-        {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.01},
-        {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
-    ]
-
-    optimizer = BertAdam(optimizer_grouped_parameters,
-                         lr=5e-5,
-                         warmup=0.1,
-                         t_total=num_train_optimization_steps)
-
-    global_step = 0
-    model.train()
-    for epoch in range(1, num_epoch):
-
-        """ build a iterator of the dataloader, pop one batch every time """
-        train_dataloader_iterator = {task: iter(train_dataloader[task]) for task in task_list}
-
-        """ train steps """
-        for step, b_task in enumerate(tqdm(train_batch_seq, desc="Training")):
-
-            optimizer.zero_grad()
-
-            batch = next(train_dataloader_iterator[b_task])
-
-            b_tok, b_mask, b_sour_mask, b_targ_mask, b_sour_mid, b_targ_mid, b_sent_mask, b_lab = tuple(
-                t.to(device) for t in batch)
-
-            loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask,
-                         labels=b_lab)
-
-            loss.backward()
-            optimizer.step()
-            global_step += 1
-    return model
 
 """
 main function
@@ -161,8 +120,6 @@ logger.info('Pretrained BERT dir: %s ' % PRETRAIN_BERT_DIR)
 eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
 
 
-
-
 for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     logger.info('[Cross Validation %i] train files %i, test files %i .' % (cv_id, len(train_files), len(test_files)))
@@ -173,6 +130,9 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         timestamp_str,
         cv_id
     )
+
+    output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
+    output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
 
     if args.do_train:
 
@@ -251,36 +211,66 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
         """ training """
         """ model initialization """
-        model = DocEmbMultiTaskTRC.from_pretrained(PRETRAIN_BERT_DIR, num_emb=len(train_mid2ix), num_labels=NUM_LABEL)
+        model = DocEmbMultiTaskTRC.from_pretrained(
+            PRETRAIN_BERT_DIR,
+            num_emb=len(train_mid2ix),
+            num_labels=NUM_LABEL,
+            task_list=task_list
+        )
+
+        # model = nn.DataParallel(model)
         model.to(device)
 
-        # model = train(model, train_dataloader, train_batch_seq, task_list, args.NUM_EPOCHS)
+        """ optimizer initialization """
+        param_optimizer = list(model.named_parameters())
+        no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
+        optimizer_grouped_parameters = [
+            {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.01},
+            {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
+        ]
 
-        model.share_memory()
-        processes = []
-        for rank in range(n_gpu):
-            p = mp.Process(target=train, args=(model, train_dataloader, train_batch_seq, task_list, args.NUM_EPOCHS))
-            p.start()
-            processes.append(p)
-        for p in processes:
-            p.join()
+        optimizer = BertAdam(optimizer_grouped_parameters,
+                             lr=5e-5,
+                             warmup=0.1,
+                             t_total=num_train_optimization_steps)
+
+        """ epoch loops for training """
+        global_step = 0
+        model.train()
+        for epoch in range(1, args.NUM_EPOCHS + 1):
+            """ build a iterator of the dataloader, pop one batch every time """
+            train_dataloader_iterator = {task: iter(train_dataloader[task]) for task in task_list}
+
+            """ train steps """
+            for step, b_task in enumerate(tqdm(train_batch_seq, desc="Training")):
+                optimizer.zero_grad()
+
+                batch = next(train_dataloader_iterator[b_task])
+
+                b_tok, b_mask, b_sour_mask, b_targ_mask, b_sour_mid, b_targ_mid, b_sent_mask, b_lab = tuple(
+                    t.to(device) for t in batch)
+
+                loss = model(b_tok, b_sour_mask, b_targ_mask, b_task, token_type_ids=b_sent_mask, attention_mask=b_mask,
+                             labels=b_lab)
+
+                loss.backward()
+                optimizer.step()
+                global_step += 1
 
         if os.path.exists(CV_MODEL_DIR):
             raise ValueError("Output directory ({}) already exists and is not empty.".format(CV_MODEL_DIR))
         if not os.path.exists(CV_MODEL_DIR):
             os.makedirs(CV_MODEL_DIR)
 
+        model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
+
+        # If we save using the predefined names, we can load using `from_pretrained`
+
+        torch.save(model_to_save.state_dict(), output_model_file)
+        model_to_save.config.to_json_file(output_config_file)
+        tokenizer.save_vocabulary(CV_MODEL_DIR)
+
         # torch.save(model, os.path.join(CV_MODEL_DIR, 'model.bin'))
-        # # utils.save_checkpoint(model, tokenizer, checkpoint_dir=CV_MODEL_DIR)
-        # # model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
-        # #
-        # # # If we save using the predefined names, we can load using `from_pretrained`
-        # # output_model_file = os.path.join(CV_MODEL_DIR, WEIGHTS_NAME)
-        # # output_config_file = os.path.join(CV_MODEL_DIR, CONFIG_NAME)
-        # #
-        # # torch.save(model_to_save.state_dict(), output_model_file)
-        # # model_to_save.config.to_json_file(output_config_file)
-        # tokenizer.save_vocabulary(CV_MODEL_DIR)
 
 
     # else:
@@ -292,7 +282,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     #     model.to(device)
 
     """ Load the saved cv model """
-    # tokenizer = BertTokenizer.from_pretrained(PRETRAIN_BERT_DIR, do_lower_case=False, do_basic_tokenize=False)
+    tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
 
     """ Evaluation at NUM_EPOCHS"""
     cv_eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
@@ -360,8 +350,15 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     test_dataloader_iterator = {task: iter(test_dataloader[task]) for task in task_list}
 
+    model = DocEmbMultiTaskTRC.from_pretrained(
+        CV_MODEL_DIR,
+        num_emb=len(train_mid2ix),
+        num_labels=NUM_LABEL,
+        task_list=task_list
+    )
+    model.load_state_dict(torch.load(output_model_file))
     # model = torch.load(os.path.join(CV_MODEL_DIR, 'model.bin'))
-    # model.to(device)
+    model.to(device)
 
     """ Inference"""
     model.eval()

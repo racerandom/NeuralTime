@@ -4,8 +4,6 @@ from torch.nn import CrossEntropyLoss
 from pytorch_pretrained_bert.modeling import BertPreTrainedModel
 from pytorch_pretrained_bert import BertModel
 
-device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
-
 class CertaintyClassifier(BertPreTrainedModel):
     
     def __init__(self, config, num_labels):
@@ -82,13 +80,14 @@ class MultiTaskRelationClassifier(BertPreTrainedModel):
 
 class DocEmbMultiTaskTRC(BertPreTrainedModel):
 
-    def __init__(self, config, num_emb, num_labels):
+    def __init__(self, config, num_emb, num_labels, task_list):
         super(DocEmbMultiTaskTRC, self).__init__(config)
         self.num_labels = num_labels
         self.bert = BertModel(config)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
         self.MentEmb = nn.Embedding(num_emb, config.hidden_size)
-        self.classifiers = {task:nn.Linear(config.hidden_size * 2, num_labels).to(device) for task in ['DCT', 'T2E', 'E2E', 'MAT']}
+        for task in task_list:
+            setattr(self, '%s_classiifer' % task, nn.Linear(config.hidden_size * 2, num_labels))
         self.apply(self.init_bert_weights)
 
     def forward(self, input_ids, sour_mask, targ_mask, task, token_type_ids=None, attention_mask=None, labels=None):
@@ -96,7 +95,7 @@ class DocEmbMultiTaskTRC(BertPreTrainedModel):
         sour_rep = torch.bmm(sour_mask.unsqueeze(1).float(), last_layer_out)
         targ_rep = torch.bmm(targ_mask.unsqueeze(1).float(), last_layer_out)
         pooled_output = self.dropout(torch.cat((sour_rep, targ_rep), dim=-1))
-        logits = self.classifiers[task](pooled_output)
+        logits = getattr(self, '%s_classiifer' % task)(pooled_output)
 
         if labels is not None:
             loss_fct = CrossEntropyLoss()
