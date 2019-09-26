@@ -285,7 +285,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
     #     model.to(device)
 
     """ Load the saved cv model """
-    tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
+    # tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
 
     """ Evaluation at NUM_EPOCHS"""
     cv_eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
@@ -353,13 +353,13 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     test_dataloader_iterator = {task: iter(test_dataloader[task]) for task in task_list}
 
-    model = DocEmbMultiTaskTRC.from_pretrained(
-        CV_MODEL_DIR,
-        num_emb=len(train_mid2ix),
-        num_labels=NUM_LABEL,
-        task_list=task_list
-    )
-    model.to(device)
+    # model = DocEmbMultiTaskTRC.from_pretrained(
+    #     CV_MODEL_DIR,
+    #     num_emb=len(train_mid2ix),
+    #     num_labels=NUM_LABEL,
+    #     task_list=task_list
+    # )
+    # model.to(device)
 
     """ Inference"""
     model.eval()
