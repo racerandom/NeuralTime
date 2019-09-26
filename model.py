@@ -85,14 +85,19 @@ class DocEmbMultiTaskTRC(BertPreTrainedModel):
         self.num_labels = num_labels
         self.bert = BertModel(config)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.MentEmb = nn.Embedding(num_emb, config.hidden_size)
+        self.ment_embedding = nn.Embedding(num_emb, config.hidden_size)
         for task in task_list:
             setattr(self, '%s_classiifer' % task, nn.Linear(config.hidden_size * 2, num_labels))
         self.apply(self.init_bert_weights)
 
     def forward(self, input_ids, sour_mask, targ_mask, task, token_type_ids=None, attention_mask=None, labels=None):
+        batch_size, _ = input_ids.shape
         last_layer_out, _ = self.bert(input_ids, token_type_ids, attention_mask, output_all_encoded_layers=False)
-        sour_rep = torch.bmm(sour_mask.unsqueeze(1).float(), last_layer_out)
+        import pdb; pdb.set_trace()
+        if task != 'DCT':
+            sour_rep = torch.bmm(sour_mask.unsqueeze(1).float(), last_layer_out)
+        else:
+            sour_rep = self.ment_embedding(torch.LongTensor([0])).repeat(batch_size, 1, 1)
         targ_rep = torch.bmm(targ_mask.unsqueeze(1).float(), last_layer_out)
         pooled_output = self.dropout(torch.cat((sour_rep, targ_rep), dim=-1))
         logits = getattr(self, '%s_classiifer' % task)(pooled_output)
