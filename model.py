@@ -4,6 +4,7 @@ from torch.nn import CrossEntropyLoss
 from pytorch_pretrained_bert.modeling import BertPreTrainedModel
 from pytorch_pretrained_bert import BertModel
 
+
 class CertaintyClassifier(BertPreTrainedModel):
     
     def __init__(self, config, num_labels):
@@ -97,10 +98,10 @@ class DocEmbMultiTaskTRC(BertPreTrainedModel):
         if task != 'DCT':
             sour_rep = torch.bmm(sour_mask.unsqueeze(1).float(), last_layer_out)
         else:
-            sour_rep = self.ment_embedding(torch.LongTensor([0])).repeat(batch_size, 1, 1)
+            sour_rep = self.ment_embedding(torch.zeros([batch_size, 1], dtype=torch.long).cuda())
         targ_rep = torch.bmm(targ_mask.unsqueeze(1).float(), last_layer_out)
         pooled_output = self.dropout(torch.cat((sour_rep, targ_rep), dim=-1))
-        logits = getattr(self, '%s_classiifer' % task)(pooled_output)
+        logits = getattr(self, '%s_classifier' % task)(pooled_output)
 
         if labels is not None:
             loss_fct = CrossEntropyLoss()

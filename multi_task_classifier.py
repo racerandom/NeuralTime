@@ -223,14 +223,22 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
         """ optimizer initialization """
         param_optimizer = list(model.named_parameters())
+        customized_layers = ['ment_embedding.weight']
         no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
         optimizer_grouped_parameters = [
-            {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay)], 'weight_decay': 0.01},
-            {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}
+            {'params': [p for n, p in param_optimizer if any(nd in n for nd in customized_layers)],
+             'lr': 1e-3,
+             'weight_decay': 0.01},
+            {'params': [p for n, p in param_optimizer if not any(nd in n for nd in no_decay + customized_layers)],
+             'lr':5e-5,
+             'weight_decay': 0.01},
+            {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)],
+             'lr':5e-5,
+             'weight_decay': 0.0}
+
         ]
 
         optimizer = BertAdam(optimizer_grouped_parameters,
-                             lr=5e-5,
                              warmup=0.1,
                              t_total=num_train_optimization_steps)
 
