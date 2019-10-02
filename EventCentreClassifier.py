@@ -183,9 +183,12 @@ def padding_event_centre_feats(tokenizer, toks, masks, labs, lab2ix, max_len, ma
 train_padded_tok, train_id_t, train_sm_t, train_m_t, train_padded_labs = padding_event_centre_feats(tokenizer, train_toks, train_masks, train_labs, lab2ix, 100)
 test_padded_tok, test_id_t, test_sm_t, test_m_t, test_padded_labs = padding_event_centre_feats(tokenizer, test_toks, test_masks, test_labs, lab2ix, 100)
 
-train_dataloader = (train_id_t, train_sm_t, train_m_t, train_tasks, train_padded_labs)
-test_dataloader = (test_id_t, test_sm_t, test_m_t, test_tasks, test_padded_labs)
-
+test_dataloader = zip(test_id_t, test_sm_t, test_m_t, test_tasks, test_padded_labs)
+c = list(zip(train_id_t, train_sm_t, train_m_t, train_tasks, train_padded_labs))
+random.seed(1029)
+random.shuffle(c)
+train_id_t, train_sm_t, train_m_t, train_tasks, train_padded_labs = zip(*c)
+train_dataloader = zip(train_id_t, train_sm_t, train_m_t, train_tasks, train_padded_labs)
 model = SeqEventTRC.from_pretrained(
             PRETRAIN_BERT_DIR,
             num_labels=NUM_LABEL,
@@ -213,40 +216,22 @@ optimizer = BertAdam(optimizer_grouped_parameters,
                      t_total=NUM_EPOCHS * len(train_padded_tok))
 
 UPDATE_STEP = 3
-step = 1
-accumulated_loss = 0.
-
-""" Evaluate each epoch """
-corr_num = defaultdict(lambda: 0)
-total_num = defaultdict(lambda: 0)
-
-model.eval()
-with torch.no_grad():
-    for b_toks, b_sm, b_em, b_tasks, b_labs in zip(test_id_t, test_sm_t, test_m_t, test_tasks, test_padded_labs):
-        logits = model(b_toks.to(device), b_em.to(device), b_tasks, attention_mask=b_sm.to(device))
-        for p, g, c in zip(logits.argmax(-1), test_labs[1:], b_tasks[1:]):
-            total_num[c] += 1
-            if p == g:
-                corr_num[c] += 1
-
-    for k in total_num.keys():
-        print('%s acc: %.4f' % (c, corr_num[k] / total_num[k]))
 
 for epoch in range(1, NUM_EPOCHS + 1):
     epoch_loss = []
+    step = 1
     model.train()
     """ build a iterator of the dataloader, pop one batch every time """
-    for b_toks, b_sm, b_em, b_tasks, b_labs in zip(train_id_t, train_sm_t, train_m_t, train_tasks, train_padded_labs):
+    for b_toks, b_sm, b_em, b_tasks, b_labs in train_dataloader:
         loss = model(b_toks.to(device), b_em.to(device), b_tasks, attention_mask=b_sm.to(device), labels=b_labs.to(device))
         epoch_loss.append(loss.item())
-        if step % 100 == 0 or step == len(train_padded_labs):
+        if step % 400 == 0 or step == len(train_padded_labs):
             print("Epoch %i, step %i, loss: %.6f" % (epoch, step, mean(epoch_loss)))
-        accumulated_loss += loss
+        loss = loss / UPDATE_STEP
+        loss.backward()
         if step % UPDATE_STEP == 0 or step == len(train_padded_labs):
-            accumulated_loss.backward()
             optimizer.step()
             optimizer.zero_grad()
-            accumulated_loss = 0.
 
         step += 1
 
@@ -256,15 +241,15 @@ for epoch in range(1, NUM_EPOCHS + 1):
 
     model.eval()
     with torch.no_grad():
-        for b_toks, b_sm, b_em, b_tasks, b_labs in zip(test_id_t, test_sm_t, test_m_t, test_tasks, test_padded_labs):
+        for b_toks, b_sm, b_em, b_tasks, b_labs in test_dataloader:
             logits = model(b_toks.to(device), b_em.to(device), b_tasks, attention_mask=b_sm.to(device))
-            for p, g, c in zip(logits.argmax(-1), test_labs[1:], b_tasks[1:]):
+            for p, g, c in zip(logits.argmax(-1), b_labs.to(device)[1:], b_tasks[1:]):
                 total_num[c] += 1
                 if p == g:
                     corr_num[c] += 1
 
         for k in total_num.keys():
-            print('%s acc: %.4f' % (c, corr_num[k] / total_num[k]))
+            print('%s acc: %.4f' % (k, corr_num[k] / total_num[k]))
 
 
 
