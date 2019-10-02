@@ -214,7 +214,24 @@ optimizer = BertAdam(optimizer_grouped_parameters,
 
 UPDATE_STEP = 3
 step = 1
-accumulated_loss_history = []
+accumulated_loss = 0.
+
+""" Evaluate each epoch """
+corr_num = defaultdict(lambda: 0)
+total_num = defaultdict(lambda: 0)
+
+model.eval()
+with torch.no_grad():
+    for b_toks, b_sm, b_em, b_tasks, b_labs in zip(test_id_t, test_sm_t, test_m_t, test_tasks, test_padded_labs):
+        logits = model(b_toks.to(device), b_em.to(device), b_tasks, attention_mask=b_sm.to(device))
+        for p, g, c in zip(logits.argmax(-1), test_labs[1:], b_tasks[1:]):
+            total_num[c] += 1
+            if p == g:
+                corr_num[c] += 1
+
+    for k in total_num.keys():
+        print('%s acc: %.4f' % (c, corr_num[k] / total_num[k]))
+
 for epoch in range(1, NUM_EPOCHS + 1):
     epoch_loss = []
     model.train()
@@ -224,13 +241,12 @@ for epoch in range(1, NUM_EPOCHS + 1):
         epoch_loss.append(loss.item())
         if step % 100 == 0 or step == len(train_padded_labs):
             print("Epoch %i, step %i, loss: %.6f" % (epoch, step, mean(epoch_loss)))
-        accumulated_loss_history.append(loss)
+        accumulated_loss += loss
         if step % UPDATE_STEP == 0 or step == len(train_padded_labs):
-            accumulated_loss = torch.cat(accumulated_loss_history, dim=0)
             accumulated_loss.backward()
             optimizer.step()
             optimizer.zero_grad()
-            accumulated_loss_history = []
+            accumulated_loss = 0.
 
         step += 1
 
