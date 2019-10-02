@@ -212,29 +212,36 @@ optimizer = BertAdam(optimizer_grouped_parameters,
                      warmup=0.1,
                      t_total=NUM_EPOCHS * len(train_padded_tok))
 
-model.train()
+step = 0
 for epoch in range(1, NUM_EPOCHS + 1):
+    epoch_loss = []
+    model.train()
     """ build a iterator of the dataloader, pop one batch every time """
     for b_toks, b_sm, b_em, b_tasks, b_labs in zip(train_id_t, train_sm_t, train_m_t, train_tasks, train_padded_labs):
-        print(type(b_toks), type(b_sm), type(b_em), type(b_tasks), type(b_labs))
-        print(b_labs)
+        step += 1
         optimizer.zero_grad()
         loss = model(b_toks.to(device), b_em.to(device), b_tasks, attention_mask=b_sm.to(device), labels=b_labs.to(device))
         loss.backward()
         optimizer.step()
+        epoch_loss.append(loss.item())
+        if step % 100 == 0 or step == len(train_padded_labs):
+            print("Epoch %i, step %i, loss: %.6f" % (epoch, step, mean(epoch_loss)))
 
-corr_num = defaultdict(lambda: 0)
-total_num = defaultdict(lambda: 0)
+    """ Evaluate each epoch """
+    corr_num = defaultdict(lambda: 0)
+    total_num = defaultdict(lambda: 0)
 
-model.eval()
-with torch.no_grad():
-    for b_toks, b_sm, b_em, b_tasks, b_labs in zip(test_id_t, test_sm_t, test_m_t, test_tasks, test_padded_labs):
-        logits = model(b_toks.to(device), b_em.to(device), b_tasks, attention_mask=b_sm.to(device))
-        for p, g, c in zip(logits.argmax(-1), test_labs[1:], b_tasks[1:]):
-            total_num[c] += 1
-            if p == g:
-                corr_num[c] += 1
+    model.eval()
+    with torch.no_grad():
+        for b_toks, b_sm, b_em, b_tasks, b_labs in zip(test_id_t, test_sm_t, test_m_t, test_tasks, test_padded_labs):
+            logits = model(b_toks.to(device), b_em.to(device), b_tasks, attention_mask=b_sm.to(device))
+            for p, g, c in zip(logits.argmax(-1), test_labs[1:], b_tasks[1:]):
+                total_num[c] += 1
+                if p == g:
+                    corr_num[c] += 1
 
-    for k in total_num.keys():
-        print('%s acc: %.4f' % (c, corr_num[k] / total_num[k]))
+        for k in total_num.keys():
+            print('%s acc: %.4f' % (c, corr_num[k] / total_num[k]))
+
+
 
