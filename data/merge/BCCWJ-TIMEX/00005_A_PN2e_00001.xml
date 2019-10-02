@@ -17,7 +17,7 @@
 </title>
 </titleBlock>
 <paragraph>
-<sentence>　【鷹栖】上川管内鷹栖町と農家約四百戸で<EVENT class="NULL" eid="e1">つくる</EVENT>同町中山間事業推進協議会（原直会長）は共同で<TIMEX3 type="DATE" valueFromSurface="XXXX-05" value="2002-05" definite="false">五月</TIMEX3>から廃タイヤ回収事業を<EVENT class="ASPECTUAL" eid="e2">始める</EVENT>。</sentence>
+<sentence>　【鷹栖】上川管内鷹栖町と農家約四百戸で<EVENT class="NULL" eid="e1">つくる</EVENT>同町中山間事業推進協議会（原直会長）は共同で<TIMEX3 type="DATE" valueFromSurface="XXXX-05" value="2002-05" tid="tnew1" definite="false">五月</TIMEX3>から廃タイヤ回収事業を<EVENT class="ASPECTUAL" eid="e2">始める</EVENT>。</sentence>
 <sentence>水田のあぜ道などに<EVENT class="STATE" eid="e3">放置された</EVENT>廃タイヤの一掃が目的。</sentence>
 <sentence>廃タイヤ処理は所有者が民間業者に<EVENT class="NULL" eid="e4">持ち込む</EVENT>のが<EVENT class="NULL" eid="e5">一般的で</EVENT>、<quote>「自治体や団体が<EVENT class="I_ACTION" eid="e6">取り組む</EVENT>のは道内初」</quote>（道環境室）と<EVENT class="NULL" eid="e7">いう</EVENT>。</sentence>
 <br type="automatic_original"/>

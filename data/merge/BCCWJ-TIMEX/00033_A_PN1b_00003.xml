@@ -17,7 +17,7 @@
 </titleBlock>
 <paragraph>
 <sentence>　美容整形にスポットを<EVENT class="OCCURRENCE" eid="e1">当て</EVENT>、どれくらいの人が<EVENT class="OCCURRENCE" eid="e2">美容整形している</EVENT>のか<EVENT class="I_ACTION" eid="e3">調査する</EVENT>。</sentence>
-<sentence>整形に１０００万円も<EVENT class="OCCURRENCE" eid="e4">かけた</EVENT>話や、<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">最近</TIMEX3>の美容整形の値段なども<EVENT class="OCCURRENCE" eid="e5">調べる</EVENT>。</sentence>
+<sentence>整形に１０００万円も<EVENT class="OCCURRENCE" eid="e4">かけた</EVENT>話や、<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF" tid="tnew1">最近</TIMEX3>の美容整形の値段なども<EVENT class="OCCURRENCE" eid="e5">調べる</EVENT>。</sentence>
 <br type="automatic_original"/>
 </paragraph>
 </cluster>

@@ -277,7 +277,7 @@
 <br type="automatic_original"/>
 </paragraph>
 <paragraph>
-<sentence>　団体戦で道尚志が３位に<EVENT eid="e124" class="OCCURRENCE">入った</EVENT><TIMEX3 type="DATE" valueFromSurfaace="XXXX-SP" value="2001-SP">春</TIMEX3>の全国選抜大会では、１勝しか<EVENT eid="e125" class="I_STATE">できなかった</EVENT>。</sentence>
+<sentence>　団体戦で道尚志が３位に<EVENT eid="e124" class="OCCURRENCE">入った</EVENT><TIMEX3 type="DATE" valueFromSurfaace="XXXX-SP" value="2001-SP" tid="tnew2">春</TIMEX3>の全国選抜大会では、１勝しか<EVENT eid="e125" class="I_STATE">できなかった</EVENT>。</sentence>
 <sentence>その悔しさをバネに、２人は<TIMEX3 valueFromSurface="P1D" tid="t22" quant="EACH" value="P1D" type="SET" definite="FALSE">毎日</TIMEX3>約５キロの走り込みで脚力とスタミナを強化、<TIMEX3 valueFromSurface="XXXX" tid="t23" value="2000" type="DATE" definite="FALSE">昨年</TIMEX3>は初戦で<EVENT eid="e126" class="OCCURRENCE">敗退した</EVENT>インターハイで４強入りを<EVENT eid="e127" class="I_ACTION">果たした</EVENT>。</sentence>
 <br type="automatic_original"/>
 </paragraph>

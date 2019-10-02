@@ -158,7 +158,7 @@
 <TLINK relTypeA="vague" relTypeB="contains" relTypeC="contains" task="T2E" timeID="t4" relatedToEventInstance="ei16"/>
 <TLINK relTypeA="vague" relTypeB="contains" relTypeC="contains" task="T2E" timeID="t4" relatedToEventInstance="ei18"/>
 <TLINK relTypeA="contains" relTypeB="contains" relTypeC="contains" task="T2E" timeID="t5" relatedToEventInstance="ei23"/>
-<TLINK relTypeA="equal" relTypeB="equal" relTypeC="equal" task="T2E" timeID="tnew1" relatedToEventInstance="ei65"/>
+<TLINK relTypeA="equal" relTypeB="equal" relTypeC="equal" task="T2E" timeID="t8" relatedToEventInstance="ei65"/>
 <TLINK relTypeA="before" relTypeB="before" relTypeC="before" task="T2E" timeID="t9" relatedToEventInstance="ei71"/>
 <TLINK relTypeA="started-by" relTypeB="contains" relTypeC="contains" task="T2E" timeID="t9" relatedToEventInstance="ei72"/>
 <TLINK relTypeA="started-by" relTypeB="contains" relTypeC="contains" task="T2E" timeID="t9" relatedToEventInstance="ei73"/>

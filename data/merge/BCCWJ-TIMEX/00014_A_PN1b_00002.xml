@@ -80,7 +80,7 @@
 <br type="automatic_original"/>
 <sentence type="quasi">反自民を<EVENT eid="e15" class="OCCURRENCE">脱し</EVENT><quote>「太陽政党」</quote>に</sentence>
 <br type="automatic_original"/>
-<sentence>　<TIMEX3 type="DATE" value="2001" valueFromSurface="XXXX">今年</TIMEX3>の国内政治での最大の焦点は<TIMEX3 type="DATE" valueFromSurface="XXXX-SU" value="2001-SU">夏</TIMEX3>の参院選だ。</sentence>
+<sentence>　<TIMEX3 type="DATE" value="2001" valueFromSurface="XXXX">今年</TIMEX3>の国内政治での最大の焦点は<TIMEX3 type="DATE" valueFromSurface="XXXX-SU" value="2001-SU" tid="tnew3">夏</TIMEX3>の参院選だ。</sentence>
 <sentence>一向に出口が<EVENT eid="e16" class="OCCURRENCE">見えない</EVENT>長期の不況、社会全体を<EVENT eid="e17" class="OCCURRENCE">おおう</EVENT><ruby rubyText="へい">閉</ruby><ruby rubyText="そく">塞</ruby>状況、<EVENT eid="e18" class="OCCURRENCE">重なる</EVENT><TIMEX3 type="DATE" value="FUTURE_REF" valueFromSurface="FUTURE_REF">将来</TIMEX3>への不安など<TIMEX3 type="DATE" value="19XX" valueFromSurface="XXXX" mod="END">前世紀終盤</TIMEX3>から<EVENT eid="e19" class="OCCURRENCE">引き継いだ</EVENT>課題への各党の対応を、国民はどう<EVENT eid="e20" class="I_ACTION">判断する</EVENT>か。</sentence>
 <sentence><TIMEX3 valueFromSurface="20XX" type="DATE" value="20XX" definite="FALSE" tid="t30">２１世紀</TIMEX3>最初の国政選挙の結果が大いに<EVENT eid="e21" class="OCCURRENCE">注目される</EVENT>。</sentence>
 <br type="automatic_original"/>

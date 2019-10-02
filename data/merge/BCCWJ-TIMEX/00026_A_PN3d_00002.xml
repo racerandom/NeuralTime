@@ -41,7 +41,7 @@
 <br type="automatic_original"/>
 </paragraph>
 <paragraph>
-<sentence>　この問題では、米メディアが<TIMEX3 type="DATE" value="2003-WXX-WE" valueFromSurface="XXXX-WXX-WE">先週末</TIMEX3>に、国防情報局（ＤＩＡ）が<EVENT eid="e29" class="OCCURRENCE">作成した</EVENT><TIMEX3 type="DATE" valueFromSurface="XXXX-09" tid="t9" value="2002-09" definite="FALSE">昨年九月</TIMEX3>の報告書に、<quote>「大量破壊兵器隠匿については、<EVENT eid="e30" class="NULL">十分な</EVENT>情報は<EVENT eid="e31" class="STATE">ない</EVENT>」</quote>と<EVENT eid="e32" class="OCCURRENCE">記載されていた</EVENT>と報道。</sentence>
+<sentence>　この問題では、米メディアが<TIMEX3 type="DATE" value="2003-WXX-WE" valueFromSurface="XXXX-WXX-WE" tid="tnew1">先週末</TIMEX3>に、国防情報局（ＤＩＡ）が<EVENT eid="e29" class="OCCURRENCE">作成した</EVENT><TIMEX3 type="DATE" valueFromSurface="XXXX-09" tid="t9" value="2002-09" definite="FALSE">昨年九月</TIMEX3>の報告書に、<quote>「大量破壊兵器隠匿については、<EVENT eid="e30" class="NULL">十分な</EVENT>情報は<EVENT eid="e31" class="STATE">ない</EVENT>」</quote>と<EVENT eid="e32" class="OCCURRENCE">記載されていた</EVENT>と報道。</sentence>
 <superSentence><sentence type="fragment">ジャコビーＤＩＡ局長が記者会見で、報告書の存在を<EVENT eid="e33" class="OCCURRENCE">認めた</EVENT>うえで</sentence>
 <quote><sentence>「一文節を<EVENT eid="e34" class="OCCURRENCE">抽出し</EVENT>て<EVENT eid="e35" class="OCCURRENCE">書いた</EVENT>報道。</sentence>
 <sentence type="quasi">フセイン政権の化学兵器の隠匿や開発は<EVENT eid="e36" class="I_STATE">確信していた</EVENT>」</sentence>
@@ -49,7 +49,7 @@
 </superSentence><br type="automatic_original"/>
 </paragraph>
 <paragraph>
-<sentence>　米紙ワシントン・ポストは、やはり<TIMEX3 type="DATE" value="XXXX-WXX" valueFromSurface="XXXX-WXX">先週</TIMEX3>、チェイニー副大統領がイラク戦争前に、ＣＩＡを<EVENT eid="e38" class="NULL">頻繁に</EVENT>訪問、イラクの大量破壊兵器や国際テロ組織、アルカーイダの情報を<EVENT eid="e39" class="OCCURRENCE">収集していた</EVENT>と<EVENT eid="e40" class="REPORTING">報じ</EVENT><quote>「開戦と大量破壊兵器開発情報に整合性を<EVENT eid="e41" class="OCCURRENCE">持たせる</EVENT>ようにという無言の圧力を<EVENT eid="e42" class="I_STATE">感じた</EVENT>」</quote>と<EVENT eid="e43" class="I_STATE">する</EVENT>ＣＩＡ担当官の証言を<EVENT eid="e44" class="I_ACTION">伝えている</EVENT>。</sentence>
+<sentence>　米紙ワシントン・ポストは、やはり<TIMEX3 type="DATE" value="XXXX-WXX" valueFromSurface="XXXX-WXX" tid="tnew2">先週</TIMEX3>、チェイニー副大統領がイラク戦争前に、ＣＩＡを<EVENT eid="e38" class="NULL">頻繁に</EVENT>訪問、イラクの大量破壊兵器や国際テロ組織、アルカーイダの情報を<EVENT eid="e39" class="OCCURRENCE">収集していた</EVENT>と<EVENT eid="e40" class="REPORTING">報じ</EVENT><quote>「開戦と大量破壊兵器開発情報に整合性を<EVENT eid="e41" class="OCCURRENCE">持たせる</EVENT>ようにという無言の圧力を<EVENT eid="e42" class="I_STATE">感じた</EVENT>」</quote>と<EVENT eid="e43" class="I_STATE">する</EVENT>ＣＩＡ担当官の証言を<EVENT eid="e44" class="I_ACTION">伝えている</EVENT>。</sentence>
 <br type="automatic_original"/>
 </paragraph>
 <paragraph>
@@ -65,7 +65,7 @@
 <br type="automatic_original"/>
 </paragraph>
 <paragraph>
-    <superSentence><sentence type="fragment">　こう<EVENT eid="e62" class="NULL">した</EVENT>米国内の動きに対し、<TIMEX3 type="DATE" value="2003-WXX-WE" valueFromSurface="XXXX-WXX-WE">先週末</TIMEX3>に<EVENT eid="e63" class="OCCURRENCE">訪米した</EVENT>ポルトガルのバロゾ首相は、ブッシュ大統領との会談後の記者会見で、</sentence>
+    <superSentence><sentence type="fragment">　こう<EVENT eid="e62" class="NULL">した</EVENT>米国内の動きに対し、<TIMEX3 type="DATE" value="2003-WXX-WE" valueFromSurface="XXXX-WXX-WE" tid="tnew3">先週末</TIMEX3>に<EVENT eid="e63" class="OCCURRENCE">訪米した</EVENT>ポルトガルのバロゾ首相は、ブッシュ大統領との会談後の記者会見で、</sentence>
 <quote><sentence>「イラク戦争の根拠は道義上の問題。</sentence>
 <sentence type="quasi">フセイン政権が<EVENT eid="e64" class="OCCURRENCE">崩壊した</EVENT>ことが<EVENT eid="e65" class="NULL">重要で</EVENT>、大量破壊兵器開発の有無の確認も<EVENT eid="e66" class="NULL">重要だ</EVENT>が、<EVENT eid="e67" class="NULL">根本的な</EVENT>問題ではない」</sentence>
 </quote><sentence type="fragment">との見解を<EVENT eid="e68" class="I_ACTION">示している</EVENT>。</sentence>

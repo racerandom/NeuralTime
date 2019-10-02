@@ -127,7 +127,7 @@
 <br type="automatic_original"/>
 </paragraph>
 <paragraph>
-<sentence>　<quote>「<TIMEX3 type="DURATION" value="P3XY" valueFromSurface="P3XY">３０</TIMEX3>、<TIMEX3 type="DURATION" value="P4XY" valueFromSurface="P4XY">４０代</TIMEX3>の女性など、この機能を決め手に<EVENT class="OCCURRENCE" eid="e93">選ぶ</EVENT>お客さんも」</quote>（東京のヨドバシカメラ新宿西口本店）など店頭でも<EVENT class="NULL" eid="e94">好評だ</EVENT>。</sentence>
+<sentence>　<quote>「<TIMEX3 type="DURATION" value="P3XY" valueFromSurface="P3XY" tid="tnew2">３０</TIMEX3>、<TIMEX3 type="DURATION" value="P4XY" valueFromSurface="P4XY" tid="tnew3">４０代</TIMEX3>の女性など、この機能を決め手に<EVENT class="OCCURRENCE" eid="e93">選ぶ</EVENT>お客さんも」</quote>（東京のヨドバシカメラ新宿西口本店）など店頭でも<EVENT class="NULL" eid="e94">好評だ</EVENT>。</sentence>
 <br type="automatic_original"/>
 </paragraph>
 <paragraph>
@@ -174,7 +174,7 @@
 <br type="automatic_original"/>
 </listItem>
 <listItem>
-<sentence><enclosedCharacter description="○">５</enclosedCharacter><EVENT class="OCCURRENCE" eid="e133">炊けたら</EVENT>野菜を竹ぐしで<EVENT class="OCCURRENCE" eid="e134">刺してみ</EVENT>て、<EVENT class="NULL" eid="e135">硬けれ</EVENT>ば<TIMEX3 type="DURATION" value="PTXM" valueFromSurface="PTXM">数分</TIMEX3><EVENT class="OCCURRENCE" eid="e136">保温する</EVENT>。</sentence>
+<sentence><enclosedCharacter description="○">５</enclosedCharacter><EVENT class="OCCURRENCE" eid="e133">炊けたら</EVENT>野菜を竹ぐしで<EVENT class="OCCURRENCE" eid="e134">刺してみ</EVENT>て、<EVENT class="NULL" eid="e135">硬けれ</EVENT>ば<TIMEX3 type="DURATION" value="PTXM" valueFromSurface="PTXM" tid="tnew4">数分</TIMEX3><EVENT class="OCCURRENCE" eid="e136">保温する</EVENT>。</sentence>
 <sentence>具を<EVENT class="OCCURRENCE" eid="e137">取り出し</EVENT>て<EVENT class="OCCURRENCE" eid="e138">切り</EVENT>、ご飯と<EVENT class="OCCURRENCE" eid="e139">盛りつける</EVENT>。</sentence>
 <sentence>好みで塩コショウを。</sentence>
 <br type="automatic_original"/>

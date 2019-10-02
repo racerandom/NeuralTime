@@ -64,7 +64,7 @@
 </paragraph>
 <paragraph>
 <sentence>　空売り規制を<EVENT eid="e30" class="OCCURRENCE">受け</EVENT>、株式市場は<TIMEX3 type="DATE" value="2002-02-W4" valueFromSurface="XXXX-WXX" tid="t11" definite="FALSE">前週</TIMEX3>の後半、<TIMEX3 type="DURATION" value="P3D" valueFromSurface="P3D" tid="t12" definite="FALSE">三日</TIMEX3><EVENT eid="e31" class="OCCURRENCE">続伸していた</EVENT>ことが買いに拍車を<EVENT eid="e32" class="OCCURRENCE">かける</EVENT>。</sentence>
-<sentence><quote>「<EVENT eid="e33" class="OCCURRENCE">静観していた</EVENT>生命保険などの機関投資家も、<TIMEX3 type="DATE" value="FUTURE_REF" valueFromSurface="FUTURE_REF">今後</TIMEX3>株高が<EVENT eid="e34" class="ASPECTUAL">続いた</EVENT>ときに差益を<EVENT eid="e35" class="OCCURRENCE">出せない</EVENT>『<EVENT eid="e36" class="OCCURRENCE">持たざる</EVENT>リスク』を<EVENT eid="e37" class="I_STATE">感じ始めた</EVENT>」</quote>（大手証券）。</sentence>
+<sentence><quote>「<EVENT eid="e33" class="OCCURRENCE">静観していた</EVENT>生命保険などの機関投資家も、<TIMEX3 type="DATE" value="FUTURE_REF" valueFromSurface="FUTURE_REF" tid="tnew1">今後</TIMEX3>株高が<EVENT eid="e34" class="ASPECTUAL">続いた</EVENT>ときに差益を<EVENT eid="e35" class="OCCURRENCE">出せない</EVENT>『<EVENT eid="e36" class="OCCURRENCE">持たざる</EVENT>リスク』を<EVENT eid="e37" class="I_STATE">感じ始めた</EVENT>」</quote>（大手証券）。</sentence>
 <sentence><quote>「潮目の変化」</quote>は<EVENT eid="e38" class="NULL">明らかだった</EVENT>。</sentence>
 <br type="automatic_original"/>
 </paragraph>

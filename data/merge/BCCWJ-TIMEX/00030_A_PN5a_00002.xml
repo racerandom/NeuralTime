@@ -68,7 +68,7 @@
 <paragraph>
 <sentence>　国立演芸場は毎年、大衆芸能の脚本の新作を<EVENT eid="e8" class="OCCURRENCE">募集している</EVENT>。</sentence>
 <sentence>優秀作は同演芸場の公演で<EVENT eid="e9" class="OCCURRENCE">上演する</EVENT>。</sentence>
-<sentence><TIMEX3 type="DATE" value="FY2005" valueFromSurface="FYXXXX">今年度</TIMEX3>の募集は浪曲。</sentence>
+<sentence><TIMEX3 type="DATE" value="FY2005" valueFromSurface="FYXXXX" tid="tnew1">今年度</TIMEX3>の募集は浪曲。</sentence>
 <sentence>題材は<EVENT eid="e10" class="NULL">自由で</EVENT>未発表の創作作品に<EVENT eid="e11" class="OCCURRENCE">限る</EVENT>。</sentence>
 <sentence>４００字詰め原稿用紙で１５〜２０枚程度。</sentence>
 <sentence>応募には所定の応募用紙が必要。</sentence>
@@ -103,7 +103,7 @@
 <br type="automatic_original"/>
 <sentence>　中小企業対策という言葉には、一種、正義感の響きが<EVENT eid="e15" class="STATE">あった</EVENT>。</sentence>
 <sentence>しかし<TIMEX3 value="PRESENT_REF" definite="TRUE" tid="t17" type="DATE" valueFromSurface="PRESENT_REF">今日</TIMEX3>では政治家でさえ口に<EVENT eid="e16" class="OCCURRENCE">する</EVENT>ことが<EVENT eid="e17" class="NULL">少なく</EVENT><EVENT eid="e18" class="OCCURRENCE">なってきた</EVENT>。</sentence>
-<sentence><TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">最近</TIMEX3>の中小企業対策はベンチャービジネスや新規開業支援が中心と<EVENT eid="e19" class="OCCURRENCE">なってい</EVENT>て、既存の中小企業対策は後回しに<EVENT eid="e20" class="OCCURRENCE">なっている</EVENT>ように<EVENT eid="e21" class="OCCURRENCE">見える</EVENT>。</sentence>
+<sentence><TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF" tid="tnew3">最近</TIMEX3>の中小企業対策はベンチャービジネスや新規開業支援が中心と<EVENT eid="e19" class="OCCURRENCE">なってい</EVENT>て、既存の中小企業対策は後回しに<EVENT eid="e20" class="OCCURRENCE">なっている</EVENT>ように<EVENT eid="e21" class="OCCURRENCE">見える</EVENT>。</sentence>
 <br type="automatic_original"/>
 <sentence>　中小企業の宝庫である東大阪市の工場に<EVENT eid="e22" class="NONE">囲まれた</EVENT>一角に、使命感に<EVENT eid="e23" class="OCCURRENCE">あふれた</EVENT>、<EVENT eid="e24" class="NULL">普通に</EVENT>は<EVENT eid="e25" class="OCCURRENCE">見過ごしてしまう</EVENT>中小の紙器・印刷専門のＳ社（資本金１８００万円、従業員約２０人）が<EVENT eid="e26" class="OCCURRENCE">活動している</EVENT>。</sentence>
 <sentence>中心業務は化粧品、菓子用などの化粧箱製作であるが、<TIMEX3 value="2000" definite="FALSE" tid="t18" type="DATE" valueFromSurface="2000">２０００年</TIMEX3>からテークアウト用弁当などのリサイクル容器の製造販売に<EVENT eid="e27" class="OCCURRENCE">乗り出している</EVENT>。</sentence>
@@ -112,7 +112,7 @@
 <sentence>　これを<EVENT eid="e32" class="OCCURRENCE">開発する</EVENT>きっかけは、同社社長が湾岸戦争の映像を<EVENT eid="e33" class="PERCEPTION">見</EVENT>て地球環境の大切さを<EVENT eid="e34" class="I_STATE">痛感した</EVENT>からである。</sentence>
 <sentence><TIMEX3 value="PRESENT_REF" definite="TRUE" tid="t19" type="DATE" valueFromSurface="PRESENT_REF">現在</TIMEX3>、大学生協と<EVENT eid="e35" class="OCCURRENCE">組んだ</EVENT>全国各地の大学のほか、テークアウト店や野球場で<EVENT eid="e36" class="OCCURRENCE">利用されている</EVENT>とのこと。</sentence>
 <sentence>販売額は総売上高の１割程度ながら学生の環境問題への関心の高さに<EVENT eid="e37" class="OCCURRENCE">励まされ</EVENT>、この事業に誇りを<EVENT eid="e38" class="OCCURRENCE">持っ</EVENT>て<EVENT eid="e39" class="OCCURRENCE">取り組んでいる</EVENT>。</sentence>
-<sentence>こう<EVENT eid="e40" class="NULL">した</EVENT>ことは、<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">従来</TIMEX3>から<EVENT eid="e41" class="OCCURRENCE">積み重ねてきた</EVENT>技術、ノウハウをベースに<EVENT eid="e42" class="OCCURRENCE">し</EVENT>てはじめて<EVENT eid="e43" class="NULL">可能であった</EVENT>と<EVENT eid="e44" class="REPORTING">いう</EVENT>。</sentence>
+<sentence>こう<EVENT eid="e40" class="NULL">した</EVENT>ことは、<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF" tid="tnew4">従来</TIMEX3>から<EVENT eid="e41" class="OCCURRENCE">積み重ねてきた</EVENT>技術、ノウハウをベースに<EVENT eid="e42" class="OCCURRENCE">し</EVENT>てはじめて<EVENT eid="e43" class="NULL">可能であった</EVENT>と<EVENT eid="e44" class="REPORTING">いう</EVENT>。</sentence>
 <sentence>とはいえ、おそらく採算の<EVENT eid="e45" class="NULL">取りにくい</EVENT>分野であろう。</sentence>
 <br type="automatic_original"/>
 <sentence>　このような既存の中小企業を<EVENT eid="e46" class="NULL">積極的に</EVENT><EVENT eid="e47" class="OCCURRENCE">支援する</EVENT>ことは<EVENT eid="e48" class="NULL">重要である</EVENT>。</sentence>

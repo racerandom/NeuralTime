@@ -153,7 +153,7 @@
 </titleBlock>
 <paragraph>
 <sentence>　新制度は、<EVENT class="NULL" eid="e122">不都合な</EVENT>点が<EVENT class="OCCURRENCE" eid="e123">あれ</EVENT>ば<TIMEX3 valueFromSurface="P1Y" tid="t17" value="P1Y" type="DURATION" mod="EQUAL_OR_LESS" definite="FALSE">１年以内</TIMEX3>にも<EVENT class="OCCURRENCE" eid="e124">見直すことになっている</EVENT>。</sentence>
-<sentence>差額ベッドや予約診療の要件緩和など保険外負担の徴収拡大は、今回は<EVENT class="I_ACTION" eid="e125">見送られた</EVENT>ものの、<EVENT class="NULL" eid="e126">引き続き</EVENT>検討課題と<EVENT class="OCCURRENCE" eid="e127">され</EVENT>、<TIMEX3 type="DATE" value="FUTURE_REF" valueFromSurface="FUTURE_REF">将来</TIMEX3><EVENT class="I_ACTION" eid="e128">認められる</EVENT>可能性も<EVENT class="STATE" eid="e129">ある</EVENT>。</sentence>
+<sentence>差額ベッドや予約診療の要件緩和など保険外負担の徴収拡大は、今回は<EVENT class="I_ACTION" eid="e125">見送られた</EVENT>ものの、<EVENT class="NULL" eid="e126">引き続き</EVENT>検討課題と<EVENT class="OCCURRENCE" eid="e127">され</EVENT>、<TIMEX3 type="DATE" value="FUTURE_REF" valueFromSurface="FUTURE_REF" tid="tnew1">将来</TIMEX3><EVENT class="I_ACTION" eid="e128">認められる</EVENT>可能性も<EVENT class="STATE" eid="e129">ある</EVENT>。</sentence>
 <sentence>新方式の対象と<EVENT class="OCCURRENCE" eid="e130">なる</EVENT>病院を大学病院以外にも<EVENT class="OCCURRENCE" eid="e131">広げる</EVENT>かどうか、という課題も<EVENT class="OCCURRENCE" eid="e132">残っている</EVENT>。</sentence>
 <br type="automatic_original"/>
 </paragraph>
@@ -186,7 +186,7 @@
 <br type="automatic_original"/>
 </paragraph>
 <paragraph>
-<sentence>　包括払い方式は、<TIMEX3 type="DATE" value="PRESENT_REF" valueFromSurface="PRESENT_REF">現在</TIMEX3>は老人医療など一部で<EVENT class="OCCURRENCE" eid="e163">実施されている</EVENT>だけだ。</sentence>
+<sentence>　包括払い方式は、<TIMEX3 type="DATE" value="PRESENT_REF" valueFromSurface="PRESENT_REF" tid="tnew2">現在</TIMEX3>は老人医療など一部で<EVENT class="OCCURRENCE" eid="e163">実施されている</EVENT>だけだ。</sentence>
 <sentence>保険診療の中心と<EVENT class="NULL" eid="e164">なる</EVENT>出来高払いは、医師が必要と<EVENT class="I_ACTION" eid="e165">判断した</EVENT>治療を十分<EVENT class="STATE" eid="e166">施せる</EVENT>半面、医療費が青天井で<EVENT class="OCCURRENCE" eid="e167">伸びる</EVENT>可能性が<EVENT class="STATE" eid="e168">ある</EVENT>。</sentence>
 <sentence>包括払いは医療費を<EVENT class="NULL" eid="e169">抑制しやすい</EVENT>が、医師の裁量がコストに<EVENT class="NULL" eid="e170">左右されやすい</EVENT>。</sentence>
 <sentence><quote>「粗診粗療のおそれ」</quote>も<EVENT class="OCCURRENCE" eid="e171">指摘される</EVENT>。</sentence>

@@ -25,7 +25,7 @@
 </paragraph>
 <paragraph>
 <sentence>　世界初演は<TIMEX3 valueFromSurface="1971" value="1971" type="DATE" definite="FALSE" tid="t1">１９７１年</TIMEX3>のニューヨーク。</sentence>
-<sentence><TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">当時</TIMEX3>はベトナム戦争が<EVENT eid="e9" class="OCCURRENCE">泥沼化し</EVENT>、心のよりどころを<EVENT eid="e10" class="I_ACTION">求める</EVENT>若者たちが<EVENT eid="e11" class="NULL">熱狂的に</EVENT><EVENT eid="e12" class="I_ACTION">支持した</EVENT>と<EVENT eid="e13" class="REPORTING">いう</EVENT>。</sentence>
+<sentence><TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF" tid="tnew1">当時</TIMEX3>はベトナム戦争が<EVENT eid="e9" class="OCCURRENCE">泥沼化し</EVENT>、心のよりどころを<EVENT eid="e10" class="I_ACTION">求める</EVENT>若者たちが<EVENT eid="e11" class="NULL">熱狂的に</EVENT><EVENT eid="e12" class="I_ACTION">支持した</EVENT>と<EVENT eid="e13" class="REPORTING">いう</EVENT>。</sentence>
 <sentence>今回は<TIMEX3 valueFromSurface="P4Y" value="2001" type="DATE" definite="FALSE" tid="t2">４年前</TIMEX3>に青井陽治が<EVENT eid="e14" class="OCCURRENCE">演出した</EVENT>日本語版の再演。</sentence>
 <sentence>ヒッピー文化といった<TIMEX3 valueFromSurface="XX7X" value="197X" type="DATE" definite="FALSE" tid="t3">７０年代</TIMEX3>のにおいを<EVENT eid="e15" class="OCCURRENCE">抜き去り</EVENT>、登場人物の生き生きと<EVENT eid="e16" class="NULL">した</EVENT>やりとりを<EVENT eid="e17" class="NULL">通し</EVENT>て、作品に<EVENT eid="e18" class="OCCURRENCE">込められ</EVENT><sampling type="start"/>た<EVENT eid="e19" class="NULL">普遍的な</EVENT>テーマを<EVENT eid="e20" class="OCCURRENCE">浮き立たせた</EVENT>。</sentence>
 <br type="automatic_original"/>

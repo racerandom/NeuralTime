@@ -80,7 +80,7 @@
 <br type="automatic_original"/>
 <sentence>　農水省は<TIMEX3 definite="FALSE" value="2001-10" valueFromSurface="2001-10" type="DATE" tid="t17">二〇〇一年十月</TIMEX3>から、すべての牛でＢＳＥ感染の有無を<EVENT class="I_ACTION" eid="e64">調べる</EVENT><quote>「全頭検査」</quote>を実施。</sentence>
 <sentence><TIMEX3 definite="FALSE" value="2004-05" mod="END" valueFromSurface="XXXX-XX" type="DATE" tid="t18">同月末</TIMEX3>に<EVENT class="REPORTING" eid="e65">発表された</EVENT>対策事業では<quote>「シロ」</quote>と<EVENT class="OCCURRENCE" eid="e66">された</EVENT>牛肉は助成制度の対象外だった。</sentence>
-<sentence><EVENT class="NULL" eid="e67">安全な</EVENT>国産牛まで市場に<EVENT class="OCCURRENCE" eid="e68">出さず</EVENT>、不正受給に<EVENT class="I_ACTION" eid="e69">利用した</EVENT>背景には<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">当時</TIMEX3>、ＢＳＥ騒動で牛肉が<EVENT class="OCCURRENCE" eid="e70">だぶついていたことがあった</EVENT>と<EVENT class="I_STATE" eid="e71">みられる</EVENT>。</sentence>
+<sentence><EVENT class="NULL" eid="e67">安全な</EVENT>国産牛まで市場に<EVENT class="OCCURRENCE" eid="e68">出さず</EVENT>、不正受給に<EVENT class="I_ACTION" eid="e69">利用した</EVENT>背景には<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF" tid="tnew1">当時</TIMEX3>、ＢＳＥ騒動で牛肉が<EVENT class="OCCURRENCE" eid="e70">だぶついていたことがあった</EVENT>と<EVENT class="I_STATE" eid="e71">みられる</EVENT>。</sentence>
 <br type="automatic_original"/>
 <sentence>　調べなどによると、全同食は<TIMEX3 definite="FALSE" value="2004-FA" valueFromSurface="XXXX-FA" type="DATE" tid="t19">同年秋</TIMEX3>、全頭検査後の国産牛肉約八・二トンを買い上げ対象と<EVENT class="I_ACTION" eid="e72">偽っ</EVENT>て<EVENT class="OCCURRENCE" eid="e73">申請し</EVENT>、農畜産業振興事業団（現農畜産業振興機構）から、助成金を<EVENT class="NULL" eid="e74">不正に</EVENT><EVENT class="OCCURRENCE" eid="e75">受けた</EVENT>疑いが<EVENT class="I_ACTION" eid="e76">持たれている</EVENT>。</sentence>
 <br type="automatic_original"/>

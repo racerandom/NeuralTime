@@ -18,6 +18,7 @@ juman = Juman()
 import logging
 logger = utils.init_logger('Data__Preprocess', logging.INFO, logging.INFO)
 
+
 merge_map_6c = {
     'after': 'AFTER',
     'met-by': 'AFTER',
@@ -132,6 +133,12 @@ def flatten_tlink_instance(deunk_toks, toks, sour_masks, targ_masks, labs):
     return f_deunk_toks, f_toks, f_sour_masks, f_targ_masks, f_labs
 
 
+def convert_tlink_to_event_centre(doc_tlinks):
+    for sour_mid, targ_mid, rel in doc_tlinks:
+        print(sour_mid, targ_mid, rel)
+
+
+
 def merge_word_mention_boundaries(flat_word_ids, flat_doc_toks, mention_offsets):
     merge_num = 0
 
@@ -200,9 +207,6 @@ def extract_sents_from_xml_v2(xml_file, tokenizer, lab_type=None, comp=None):
     doc_tlinks = defaultdict(lambda: list())
     root = ET.parse(xml_file).getroot()
     for text_node in root.findall('TEXT'):
-
-        for dct_node in text_node.find('TIMEX3'):
-            pass
 
         for event_node in text_node.iter('MAKEINSTANCE'):
             eiid2eid[event_node.attrib['eiid']] = event_node.attrib['eventID']
@@ -283,6 +287,53 @@ def extract_sents_from_xml_v2(xml_file, tokenizer, lab_type=None, comp=None):
 
 
 def make_tlink_instances_v2(doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks, task=None):
+    deunk_toks, toks, sour_masks, targ_masks, sour_mids, targ_mids, sent_masks, rels = [], [], [], [], [], [], [], []
+    for sour_mid, targ_mid, rel in doc_tlinks[task]:
+        logger.debug('%s\t%s\t%s' % (sour_mid, targ_mid, rel))
+        targ_sid = doc_mid2smask[targ_mid][0]
+        if task in ['DCT']:
+            deunk_tok = doc_deunk_toks[targ_sid]
+            tok = doc_toks[targ_sid]
+            sour_mask = [0] * len(doc_mid2smask[targ_mid][1])
+            targ_mask = doc_mid2smask[targ_mid][1]
+            sent_mask = [0] * len(doc_mid2smask[targ_mid][1])
+        elif task in ['T2E', 'E2E', 'MAT']:
+            if sour_mid not in doc_mid2smask:
+                continue
+            sour_sid = doc_mid2smask[sour_mid][0]
+            if targ_sid - sour_sid == 0:
+                deunk_tok = doc_deunk_toks[targ_sid]
+                tok = doc_toks[targ_sid]
+                sour_mask = doc_mid2smask[sour_mid][1]
+                targ_mask = doc_mid2smask[targ_mid][1]
+                sent_mask = [0] * len(doc_mid2smask[targ_mid][1])
+            else:
+                deunk_tok = doc_deunk_toks[sour_sid] + ['[SEP]'] + doc_deunk_toks[targ_sid]
+                tok = doc_toks[sour_sid] + ['[SEP]'] + doc_toks[targ_sid]
+                sour_mask = doc_mid2smask[sour_mid][1] + [0] + [0] * len(doc_mid2smask[targ_mid][1])
+                targ_mask = [0] * len(doc_mid2smask[sour_mid][1]) + [0] + doc_mid2smask[targ_mid][1]
+                sent_mask = [0] * len(doc_mid2smask[sour_mid][1]) + [0] + [1] * len(doc_mid2smask[targ_mid][1])
+        else:
+            raise Exception('[ERROR] Unknow task arg: %s ...' % task)
+
+        logger.debug(' '.join(deunk_tok))
+        logger.debug(' '.join(tok))
+        logger.debug(' '.join([str(i) for i in sour_mask]))
+        logger.debug(' '.join([str(i) for i in targ_mask]))
+        logger.debug(' '.join([str(i) for i in sent_mask]))
+        deunk_toks.append(deunk_tok)
+        toks.append(tok)
+        sour_masks.append(sour_mask)
+        targ_masks.append(targ_mask)
+        sour_mids.append(sour_mid)
+        targ_mids.append(targ_mid)
+        sent_masks.append(sent_mask)
+        rels.append(rel)
+        assert len(deunk_tok) == len(tok) == len(sour_mask) == len(targ_mask) == len(sent_mask)
+    return deunk_toks, toks, sour_masks, targ_masks, sour_mids, targ_mids, sent_masks, rels
+
+
+def make_event_centre_instances(doc_deunk_toks, doc_toks, doc_mid2smask, doc_tlinks, task=None):
     deunk_toks, toks, sour_masks, targ_masks, sour_mids, targ_mids, sent_masks, rels = [], [], [], [], [], [], [], []
     for sour_mid, targ_mid, rel in doc_tlinks[task]:
         logger.debug('%s\t%s\t%s' % (sour_mid, targ_mid, rel))

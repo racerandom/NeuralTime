@@ -143,7 +143,7 @@
 </title>
 </titleBlock>
 <paragraph>
-<sentence>　<TIMEX3 type="DATE" value="XXXX" valueFromSurface="Q-XXXX">数年前</TIMEX3>、<quote>「１から９」</quote>の数字が<EVENT eid="e80" class="OCCURRENCE">点滅する</EVENT>宮島作品に、京都の美術館で<EVENT eid="e81" class="OCCURRENCE">出合った</EVENT>。</sentence>
+<sentence>　<TIMEX3 type="DATE" value="XXXX" valueFromSurface="Q-XXXX" tid="tnew1">数年前</TIMEX3>、<quote>「１から９」</quote>の数字が<EVENT eid="e80" class="OCCURRENCE">点滅する</EVENT>宮島作品に、京都の美術館で<EVENT eid="e81" class="OCCURRENCE">出合った</EVENT>。</sentence>
 <sentence>人がやっと<EVENT eid="e82" class="OCCURRENCE">すれ違える</EVENT>程度の、<EVENT eid="e83" class="NULL">細く</EVENT>て<EVENT eid="e84" class="NULL">暗く</EVENT><EVENT eid="e85" class="NULL">長い</EVENT>トンネル。</sentence>
 <sentence>その中を観客が<EVENT eid="e86" class="OCCURRENCE">通り抜ける</EVENT>作品だった。</sentence>
 <sentence><EVENT eid="e87" class="NULL">赤い</EVENT>数字のシャワーを<EVENT eid="e88" class="OCCURRENCE">浴び</EVENT>ながら。</sentence>

@@ -162,8 +162,8 @@
 <sentence>　だが、札幌市の子が<EVENT eid="e133" class="OCCURRENCE">あびた</EVENT>１平方メートルあたりの紫外線量は<TIMEX3 tid="t15" value="P1Y" valueFromSurface="P1Y" definite="FALSE" type="DURATION">年</TIMEX3>３万９１１７ジュールだったのに、那覇市は<TIMEX3 tid="t16" value="P1Y" valueFromSurface="P1Y" definite="FALSE" type="DURATION">年</TIMEX3>３万４５６８ジュールと<EVENT eid="e134" class="NULL">少なかった</EVENT>。</sentence>
 <br type="automatic_original"/>
 <sentence>　調査は子どもの紫外線対策に<EVENT eid="e135" class="I_ACTION">役立てよう</EVENT>と札幌市、つくば市、東京都杉並区、宮崎県国富町、那覇市で実施。</sentence>
-<sentence>那覇市の子は<TIMEX3 type="DATE" value="XXXX-SU" valueFromSurface="XXXX-SU">夏</TIMEX3>に外で<EVENT eid="e136" class="OCCURRENCE">過ごす</EVENT>時間が５カ所の中で最短だった。</sentence>
-<sentence><TIMEX3 tid="t17" value="XXXX-XX-XXT09:00" valueFromSurface="XXXX-XX-XXT09:00" definite="TRUE" type="TIME">午前９時</TIMEX3>〜<TIMEX3 tid="t18" value="XXXX-XX-XXT15:00" valueFromSurface="XXXX-XX-XXT15:00" definite="TRUE" type="TIME">午後３時</TIMEX3>に外に<EVENT eid="e137" class="STATE">いる</EVENT>のも<TIMEX3 type="DURATION" value="P1Y" valueFromSurface="P1Y">年</TIMEX3>平均で２番目に<EVENT eid="e138" class="NULL">短かった</EVENT>。</sentence>
+<sentence>那覇市の子は<TIMEX3 type="DATE" value="XXXX-SU" valueFromSurface="XXXX-SU" tid="tnew1">夏</TIMEX3>に外で<EVENT eid="e136" class="OCCURRENCE">過ごす</EVENT>時間が５カ所の中で最短だった。</sentence>
+<sentence><TIMEX3 tid="t17" value="XXXX-XX-XXT09:00" valueFromSurface="XXXX-XX-XXT09:00" definite="TRUE" type="TIME">午前９時</TIMEX3>〜<TIMEX3 tid="t18" value="XXXX-XX-XXT15:00" valueFromSurface="XXXX-XX-XXT15:00" definite="TRUE" type="TIME">午後３時</TIMEX3>に外に<EVENT eid="e137" class="STATE">いる</EVENT>のも<TIMEX3 type="DURATION" value="P1Y" valueFromSurface="P1Y" tid="tnew2">年</TIMEX3>平均で２番目に<EVENT eid="e138" class="NULL">短かった</EVENT>。</sentence>
 <sentence>札幌市の子は同じ時間帯に外に<EVENT eid="e139" class="STATE">いる</EVENT>のが最長だった。</sentence>
 <br type="automatic_original"/>
 <sentence>　それぞれ小学生４０人に、紫外線の強さによって<EVENT eid="e140" class="NULL">変色する</EVENT>バッジを<TIMEX3 tid="t19" value="P1D" valueFromSurface="P1D" definite="FALSE" type="DURATION">一日</TIMEX3>中<EVENT eid="e141" class="OCCURRENCE">つけてもらい</EVENT>、変色の程度と外で<EVENT eid="e142" class="OCCURRENCE">過ごした</EVENT>時間を記録。</sentence>

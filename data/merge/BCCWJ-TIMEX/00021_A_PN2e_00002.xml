@@ -67,7 +67,7 @@
 <blockEnd/>
 <sentence>　道内の地方議員にも、<EVENT eid="e48" class="NULL">まめに</EVENT>カネを<EVENT eid="e49" class="OCCURRENCE">配った</EVENT>。</sentence>
 <sentence>資金提供を<EVENT eid="e50" class="I_ACTION">受けた</EVENT>道議は<TIMEX3 tid="t19" valueFromSurface="1998" type="DATE" definite="FALSE" value="1998">一九九八年</TIMEX3>に八人だったが、統一地方選の<EVENT eid="e51" class="STATE">あった</EVENT><TIMEX3 tid="t20" valueFromSurface="XX99" type="DATE" definite="FALSE" value="1999">九九年</TIMEX3>には十三人に<EVENT eid="e52" class="OCCURRENCE">増え</EVENT>、<TIMEX3 tid="t21" valueFromSurface="2000" type="DATE" definite="FALSE" value="2000">二〇〇〇年</TIMEX3>も十三人。</sentence>
-    <sentence>一人当たりの提供額も<TIMEX3 type="DATE" value="1998" valueFromSurface="1998">一九九八年</TIMEX3>の五十万円から<TIMEX3 type="DATE" value="1999" valueFromSurface="1999">九九年</TIMEX3>は百七十三万円に<EVENT eid="e53" class="OCCURRENCE">増えた</EVENT>。</sentence>
+    <sentence>一人当たりの提供額も<TIMEX3 type="DATE" value="1998" valueFromSurface="1998" tid="tnew1">一九九八年</TIMEX3>の五十万円から<TIMEX3 type="DATE" value="1999" valueFromSurface="1999" tid="tnew2">九九年</TIMEX3>は百七十三万円に<EVENT eid="e53" class="OCCURRENCE">増えた</EVENT>。</sentence>
 <sentence>最多は鈴木の秘書だった道東の道議で市議時代を<EVENT eid="e54" class="NULL">含め</EVENT>て総額二千百六十六万円を<EVENT eid="e55" class="OCCURRENCE">提供した</EVENT>。</sentence>
 <br type="automatic_original"/>
 <sentence>　<TIMEX3 tid="t22" valueFromSurface="XX99" type="DATE" definite="FALSE" value="1999">九九年</TIMEX3>は選挙区の釧路管内阿寒、音別、浜中各町などの町議にも一人五万円または十万円の<quote>「陣中見舞い」</quote>を<EVENT eid="e56" class="NULL">広く</EVENT><EVENT eid="e57" class="NULL">薄く</EVENT><EVENT eid="e58" class="OCCURRENCE">配った</EVENT>。</sentence>

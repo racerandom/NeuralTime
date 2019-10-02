@@ -85,7 +85,7 @@
 <paragraph>
 <superSentence><sentence type="fragment">　別メニューの調整に</sentence>
 <quote><sentence>「Ｗ杯まであと<TIMEX3 type="DURATION" definite="FALSE" tid="t10" valueFromSurface="P1M" value="P1M">１カ月</TIMEX3>。</sentence>
-<sentence type="quasi">自分では<EVENT eid="e41" class="STATE">できる</EVENT>と<EVENT eid="e42" class="I_STATE">思っていた</EVENT>が、前日の全体練習に<EVENT eid="e43" class="I_ACTION">参加していない</EVENT>ということは、試合には<EVENT eid="e44" class="I_ACTION">出られない</EVENT>ということ」</sentence>
+<sentence type="quasi">自分では<EVENT eid="e41" class="STATE">できる</EVENT>と<EVENT eid="e42" class="I_STATE">思っていた</EVENT>が、<TIMEX3 type="date" tid="tnew1">前日</TIMEX3>の全体練習に<EVENT eid="e43" class="I_ACTION">参加していない</EVENT>ということは、試合には<EVENT eid="e44" class="I_ACTION">出られない</EVENT>ということ」</sentence>
 </quote><sentence type="fragment">と戸田。</sentence>
 </superSentence><br type="automatic_original"/>
 </paragraph>

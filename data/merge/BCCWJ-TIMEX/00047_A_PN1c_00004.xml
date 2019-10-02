@@ -49,7 +49,7 @@
 </paragraph>
 <paragraph>
 <sentence>　<TIMEX3 definite="FALSE" tid="t5" type="DATE" value="1986" valueFromSurface="XX86">八六年</TIMEX3>の設立以来、ＭＩＴのＴＬＯはロケット工学、ソフトウエア、バイオなど<EVENT class="NULL" eid="e35">多彩な</EVENT>分野で<TIMEX3 quant="EACH" definite="FALSE" tid="t6" type="SET" value="P1Y" valueFromSurface="P1Y">毎年</TIMEX3>百件を<EVENT class="OCCURRENCE" eid="e36">超す</EVENT>特許を<EVENT class="OCCURRENCE" eid="e37">獲得する</EVENT>特許の<quote>「量産工場」</quote>だ。</sentence>
-<sentence>学内の発明<sampling type="start"/>を企業に<EVENT class="OCCURRENCE" eid="e38">売り込む</EVENT>ライセンス契約は<TIMEX3 type="SET" value="P1Y" valueFromSurface="P1Y" quant="EACH">毎年</TIMEX3>五十―七十五件、ベンチャー企業の設立は二十社程度に<EVENT class="OCCURRENCE" eid="e39">達する</EVENT>。</sentence>
+<sentence>学内の発明<sampling type="start"/>を企業に<EVENT class="OCCURRENCE" eid="e38">売り込む</EVENT>ライセンス契約は<TIMEX3 type="SET" value="P1Y" valueFromSurface="P1Y" tid="tnew2" quant="EACH">毎年</TIMEX3>五十―七十五件、ベンチャー企業の設立は二十社程度に<EVENT class="OCCURRENCE" eid="e39">達する</EVENT>。</sentence>
     <sentence>特許ビジネスの急成長ぶりは、設立<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">当時</TIMEX3>は三百万ドル程度だった特許使用料が<TIMEX3 definite="FALSE" tid="t7" type="DATE" value="FY2000" valueFromSurface="FY2000">二〇〇〇年度</TIMEX3>には千六百八十万ドル（約二十億円）へ<EVENT class="OCCURRENCE" eid="e40">膨らんだ</EVENT>ことを<EVENT class="I_STATE" eid="e41">見</EVENT>ても<EVENT class="NULL" eid="e42">明白だ</EVENT>。</sentence>
 <br type="automatic_original"/>
 </paragraph>

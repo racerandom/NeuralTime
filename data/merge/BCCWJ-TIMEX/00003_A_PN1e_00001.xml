@@ -16,7 +16,7 @@
           </title>
         </titleBlock>
         <paragraph>
-          <sentence>　冷戦時代に<EVENT eid="e2" class="NULL">激しい</EVENT>スパイ合戦を<EVENT eid="e3" class="I_ACTION">演じた</EVENT>米中央情報局（ＣＩＡ）と旧ソ連・国家保安委員会（ＫＧＢ）の元エージェントたちと<TIMEX3 type="DURATION" value="P1W" valueFromSurface="P1W">一週間</TIMEX3>のクルーズを<EVENT eid="e4" class="I_STATE">楽しむ</EVENT>ツアーを、スパイ活動の訓練や分析を業務と<EVENT eid="e5" class="NULL">する</EVENT>米民間会社「ＣＩセンター」が<EVENT eid="e6" class="I_ACTION">企画した</EVENT>。</sentence>
+          <sentence>　冷戦時代に<EVENT eid="e2" class="NULL">激しい</EVENT>スパイ合戦を<EVENT eid="e3" class="I_ACTION">演じた</EVENT>米中央情報局（ＣＩＡ）と旧ソ連・国家保安委員会（ＫＧＢ）の元エージェントたちと<TIMEX3 type="DURATION" value="P1W" valueFromSurface="P1W" tid="tnew1">一週間</TIMEX3>のクルーズを<EVENT eid="e4" class="I_STATE">楽しむ</EVENT>ツアーを、スパイ活動の訓練や分析を業務と<EVENT eid="e5" class="NULL">する</EVENT>米民間会社「ＣＩセンター」が<EVENT eid="e6" class="I_ACTION">企画した</EVENT>。</sentence>
           <br type="automatic_original" />
         </paragraph>
         <paragraph>
@@ -71,7 +71,7 @@
         <br type="automatic_original" />
         <sentence>　<TIMEX3 valueFromSurface="XXXX" value="2000" tid="t8" definite="FALSE" type="DATE">昨年</TIMEX3>一位だったＮＴＴは、純粋持ち株会社に<EVENT eid="e30" class="OCCURRENCE">なり</EVENT>百二十一位に<EVENT eid="e31" class="OCCURRENCE">大幅後退した</EVENT>が、グループ企業のＮＴＴドコモが携帯電話のインターネット接続サービス「ｉモード」の普及で五位、長距離・国際通信事業を<EVENT eid="e32" class="NULL">展開する</EVENT>ＮＴＴコミュニケーションズが十位と<EVENT eid="e33" class="OCCURRENCE">健闘した</EVENT>。</sentence>
         <br type="automatic_original" />
-        <sentence>　公示対象と<EVENT eid="e34" class="NULL">なる</EVENT>四千万円以上の所得を<EVENT eid="e35" class="OCCURRENCE">申告した</EVENT>企業は、<TIMEX3 type="DATE" value="2000" valueFromSurface="XXXX">前年</TIMEX3>比六・四％増の七万八千六百三十二社で<TIMEX3 valueFromSurface="P3Y" value="P3Y" tid="t9" definite="FALSE" type="DURATION">三年ぶり</TIMEX3>の増加。</sentence>
+        <sentence>　公示対象と<EVENT eid="e34" class="NULL">なる</EVENT>四千万円以上の所得を<EVENT eid="e35" class="OCCURRENCE">申告した</EVENT>企業は、<TIMEX3 type="DATE" value="2000" valueFromSurface="XXXX" tid="tnew2">前年</TIMEX3>比六・四％増の七万八千六百三十二社で<TIMEX3 valueFromSurface="P3Y" value="P3Y" tid="t9" definite="FALSE" type="DURATION">三年ぶり</TIMEX3>の増加。</sentence>
         <sentence>所得金額合計も同一七・五％増の三十五兆六千百十九億円と<TIMEX3 valueFromSurface="P4Y" value="P4Y" tid="t10" definite="FALSE" type="DURATION">四年ぶり</TIMEX3>に<EVENT eid="e36" class="OCCURRENCE">増加した</EVENT>。</sentence>
         <br type="automatic_original" />
         <sentence>　この背景には金融機関を中心に、不良債権処理の推進など財務体質の改善に<EVENT eid="e37" class="I_ACTION">取り組んだことがある</EVENT>。</sentence>

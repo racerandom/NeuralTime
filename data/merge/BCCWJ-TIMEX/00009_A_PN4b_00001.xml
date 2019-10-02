@@ -30,7 +30,7 @@
 <sentence>　７州のうち５州を<EVENT class="OCCURRENCE" eid="e5">制した</EVENT>ケリー上院議員は<TIMEX3 value="2004-XX-03TNI" valueFromSurface="XXXX-XX-03TNI" definite="TRUE" type="TIME" tid="t2">３日夜</TIMEX3>、次の党員集会（<TIMEX3 value="2004-02-07" valueFromSurface="XXXX-XX-07" definite="FALSE" type="DATE" tid="t3">今月７日</TIMEX3>）の舞台と<EVENT class="OCCURRENCE" eid="e6">なる</EVENT>ワシントン州シアトルで勝利宣言を<EVENT class="I_ACTION" eid="e7">行った</EVENT>。</sentence>
 <br type="automatic_original"/>
 <sentence>　<quote>「<TIMEX3 value="2004-11" valueFromSurface="XXXX-11" definite="FALSE" type="DATE" tid="t4">１１月</TIMEX3>にはジョージ・ブッシュを<EVENT class="OCCURRENCE" eid="e8">倒す</EVENT>ぞ」</quote>。</sentence>
-<sentence><TIMEX3 type="DURATION" value="PXW" valueFromSurface="PXW">数週間</TIMEX3>のうちに<EVENT class="NULL" eid="e9">太く</EVENT><EVENT class="OCCURRENCE" eid="e10">なり</EVENT>、貫禄すら<EVENT class="OCCURRENCE" eid="e11">漂わせ</EVENT><EVENT class="ASPECTUAL" eid="e12">始めた</EVENT>ケリー氏の声に、<EVENT class="OCCURRENCE" eid="e13">集まった</EVENT>支持者は歓声を<EVENT class="OCCURRENCE" eid="e14">上げた</EVENT>。</sentence>
+<sentence><TIMEX3 type="DURATION" value="PXW" valueFromSurface="PXW" tid="tnew1">数週間</TIMEX3>のうちに<EVENT class="NULL" eid="e9">太く</EVENT><EVENT class="OCCURRENCE" eid="e10">なり</EVENT>、貫禄すら<EVENT class="OCCURRENCE" eid="e11">漂わせ</EVENT><EVENT class="ASPECTUAL" eid="e12">始めた</EVENT>ケリー氏の声に、<EVENT class="OCCURRENCE" eid="e13">集まった</EVENT>支持者は歓声を<EVENT class="OCCURRENCE" eid="e14">上げた</EVENT>。</sentence>
 <br type="automatic_original"/>
 <superSentence><sentence type="fragment">　ケリー氏は</sentence>
 <quote><sentence>「（ブッシュ大統領は）国を<EVENT class="OCCURRENCE" eid="e15">まとめる</EVENT>どころか、<EVENT class="OCCURRENCE" eid="e16">分裂させた</EVENT>。</sentence>

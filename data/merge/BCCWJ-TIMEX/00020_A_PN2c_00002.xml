@@ -14,7 +14,7 @@
         </titleBlock>
         <list>
           <listItem>
-            <sentence>大沢悠里のゆうゆうワイド（ＴＢＳ＝<TIMEX3 type="TIME" value="2002-04-17T08:30" definite="FALSE" tid="t1" valueFromSurface="XXXX-XX-XXT08:30">前８・３０</TIMEX3>）　竹下景子をゲストに<EVENT class="OCCURRENCE" eid="e1">迎え</EVENT>、<TIMEX3 type="DATE" value="2002-SU" valueFromSurface="XXXX-SU">夏</TIMEX3>に<EVENT class="I_STATE" eid="e2">予定している</EVENT>舞台や家庭生活について話を<EVENT class="ASPECTUAL" eid="e3">聞く</EVENT>。</sentence>
+            <sentence>大沢悠里のゆうゆうワイド（ＴＢＳ＝<TIMEX3 type="TIME" value="2002-04-17T08:30" definite="FALSE" tid="t1" valueFromSurface="XXXX-XX-XXT08:30">前８・３０</TIMEX3>）　竹下景子をゲストに<EVENT class="OCCURRENCE" eid="e1">迎え</EVENT>、<TIMEX3 type="DATE" value="2002-SU" valueFromSurface="XXXX-SU" tid="tnew1">夏</TIMEX3>に<EVENT class="I_STATE" eid="e2">予定している</EVENT>舞台や家庭生活について話を<EVENT class="ASPECTUAL" eid="e3">聞く</EVENT>。</sentence>
             <br type="automatic_original" />
           </listItem>
           <listItem>

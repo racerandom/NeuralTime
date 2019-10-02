@@ -63,7 +63,7 @@
 <br type="automatic_original"/>
 <superSentence><sentence type="fragment">　声明は、同大統領の法案署名へ歓迎と感謝を<EVENT class="I_ACTION" eid="e44">表明し</EVENT></sentence>
 <quote><sentence>「米国の支持は、台湾の（ＷＨＯ参加への）努力が既に友邦の理解を<EVENT class="I_ACTION" eid="e45">得た</EVENT>ことを<EVENT class="STATE" eid="e46">意味する</EVENT>。</sentence>
-<sentence type="quasi"><TIMEX3 type="DATE" value="FUTURE_REF" valueFromSurface="FUTURE_REF">今後</TIMEX3>、全力を<EVENT class="OCCURRENCE" eid="e47">挙げ</EVENT>て国際社会の<EVENT class="NULL" eid="e48">全面的な</EVENT>賛同を<EVENT class="I_ACTION" eid="e49">得られる</EVENT>よう<EVENT class="I_ACTION" eid="e50">努力する</EVENT>」</sentence>
+<sentence type="quasi"><TIMEX3 type="DATE" value="FUTURE_REF" valueFromSurface="FUTURE_REF" tid="tnew1">今後</TIMEX3>、全力を<EVENT class="OCCURRENCE" eid="e47">挙げ</EVENT>て国際社会の<EVENT class="NULL" eid="e48">全面的な</EVENT>賛同を<EVENT class="I_ACTION" eid="e49">得られる</EVENT>よう<EVENT class="I_ACTION" eid="e50">努力する</EVENT>」</sentence>
 </quote><sentence type="fragment">と<EVENT class="REPORTING" eid="e51">述べている</EVENT>。</sentence>
 </superSentence><br type="automatic_original"/>
 <sentence type="quasi">シャロン首相不起訴処分に</sentence>

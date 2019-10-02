@@ -20,7 +20,7 @@
           <paragraph>
             <sentence>　新学期に<EVENT class="OCCURRENCE" eid="e1">なっ</EVENT>て<TIMEX3 valueFromSurface="P1M" value="P1M" tid="t2" type="DURATION" definite="FALSE">１カ月</TIMEX3>。</sentence>
             <sentence>この時期、恒例なのが<quote>「家庭訪問」</quote>だ。</sentence>
-            <sentence><TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">昔</TIMEX3>は一律に<EVENT class="OCCURRENCE" eid="e2">行われてきた</EVENT>が、<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">最近</TIMEX3>は、学校<TIMEX3 valueFromSurface="P5D" value="P5D" tid="t3" type="DURATION" definite="FALSE">５日</TIMEX3>制や共働きが<EVENT class="OCCURRENCE" eid="e3">増えた</EVENT>ことで、<EVENT class="OCCURRENCE" eid="e4">廃止し</EVENT>たり面談や懇談会に<EVENT class="I_ACTION" eid="e5">切り替え</EVENT>たり<EVENT class="I_ACTION" eid="e6">する</EVENT>ケースも<EVENT class="STATE" eid="e7">ある</EVENT>。</sentence>
+            <sentence><TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF" tid="tnew1">昔</TIMEX3>は一律に<EVENT class="OCCURRENCE" eid="e2">行われてきた</EVENT>が、<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF" tid="tnew2">最近</TIMEX3>は、学校<TIMEX3 valueFromSurface="P5D" value="P5D" tid="t3" type="DURATION" definite="FALSE">５日</TIMEX3>制や共働きが<EVENT class="OCCURRENCE" eid="e3">増えた</EVENT>ことで、<EVENT class="OCCURRENCE" eid="e4">廃止し</EVENT>たり面談や懇談会に<EVENT class="I_ACTION" eid="e5">切り替え</EVENT>たり<EVENT class="I_ACTION" eid="e6">する</EVENT>ケースも<EVENT class="STATE" eid="e7">ある</EVENT>。</sentence>
             <sentence>
               <EVENT class="NULL" eid="e8">逆に</EVENT>
               <EVENT class="OCCURRENCE" eid="e9">復活させる</EVENT>学校も。</sentence>
@@ -173,7 +173,7 @@
             <sentence>明治の学校の様子を<EVENT class="NULL" eid="e102">まとめた</EVENT>
               <quote>「小学校<ruby rubyText="じ">事</ruby>
                 <ruby rubyText="い">彙</ruby>」</quote>（<TIMEX3 valueFromSurface="M37" value="1904" tid="t21" type="DATE" definite="FALSE">明治３７年</TIMEX3>刊行）の中には、広島や三重県の小学校の事例で、家庭訪問の<quote>「規定」</quote>が<EVENT class="OCCURRENCE" eid="e103">紹介されている</EVENT>。</sentence>
-            <sentence>このころには、<TIMEX3 type="DATE" value="PRESENT_REF" valueFromSurface="PRESENT_REF">今</TIMEX3>と同じように、子どもの家庭環境を<EVENT class="OCCURRENCE" eid="e104">把握する</EVENT>のが目的と<EVENT class="OCCURRENCE" eid="e105">なっている</EVENT>。</sentence>
+            <sentence>このころには、<TIMEX3 type="DATE" value="PRESENT_REF" valueFromSurface="PRESENT_REF" tid="tnew4">今</TIMEX3>と同じように、子どもの家庭環境を<EVENT class="OCCURRENCE" eid="e104">把握する</EVENT>のが目的と<EVENT class="OCCURRENCE" eid="e105">なっている</EVENT>。</sentence>
             <sentence>
               <quote>「師範学校付属校のような中核校からじわじわと周辺に<EVENT class="OCCURRENCE" eid="e106">広がっていったので</EVENT>は」</quote>と佐藤教授は<EVENT class="I_STATE" eid="e107">みている</EVENT>。</sentence>
             <sentence>また、家庭と学校の不干渉が<EVENT class="I_ACTION" eid="e108">徹底している</EVENT>欧米では、家庭訪問は<EVENT class="NULL" eid="e109">基本的に</EVENT>
@@ -300,7 +300,7 @@
               <sentence>　短時間の訪問で、勉強部屋を<EVENT class="OCCURRENCE" eid="e160">見るで</EVENT>も<EVENT class="NULL" eid="e161">なく</EVENT>、心を<EVENT class="OCCURRENCE" eid="e162">うち解けず</EVENT>
                 <EVENT class="OCCURRENCE" eid="e163">終わる</EVENT>ことも<EVENT class="NULL" eid="e164">多い</EVENT>。</sentence>
               <sentence>収穫が<EVENT class="I_ACTION" eid="e165">あった</EVENT>、と<EVENT class="I_STATE" eid="e166">思える</EVENT>のは半数弱。</sentence>
-              <sentence>半面、<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">最近</TIMEX3>は調査票もプライバシー保護で<EVENT class="NULL" eid="e167">詳しい</EVENT>記入が<EVENT class="STATE" eid="e168">なく</EVENT>、親の顔が<EVENT class="OCCURRENCE" eid="e169">見えてこない</EVENT>。</sentence>
+              <sentence>半面、<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF" tid="tnew5">最近</TIMEX3>は調査票もプライバシー保護で<EVENT class="NULL" eid="e167">詳しい</EVENT>記入が<EVENT class="STATE" eid="e168">なく</EVENT>、親の顔が<EVENT class="OCCURRENCE" eid="e169">見えてこない</EVENT>。</sentence>
               <sentence>親を<EVENT class="OCCURRENCE" eid="e170">知る</EVENT>
                 <EVENT class="NULL" eid="e171">いい</EVENT>機会だし、虐待発見のきっかけに<EVENT class="OCCURRENCE" eid="e172">なることもある</EVENT>と<EVENT class="I_STATE" eid="e173">思う</EVENT>。</sentence>
               <br type="automatic_original" />
@@ -548,7 +548,6 @@
     <TLINK relTypeA="contains" relTypeB="contains" relTypeC="contains" timeID="t20" task="T2E" relatedToEventInstance="ei99" />
     <TLINK relTypeA="contains" relTypeB="overlaps" relTypeC="contains" timeID="t20" task="T2E" relatedToEventInstance="ei100" />
     <TLINK relTypeA="before" relTypeB="before" relTypeC="before" timeID="t20" task="T2E" relatedToEventInstance="ei101" />
-    <TLINK relTypeA="overlaps" relTypeB="contains" relTypeC="overlaps" timeID="tnew3" task="T2E" relatedToEventInstance="ei103" />
     <TLINK relTypeA="overlaps" relTypeB="contains" relTypeC="overlaps" timeID="t21" task="T2E" relatedToEventInstance="ei103" />
     <TLINK relTypeA="after" relTypeB="after" relTypeC="after" timeID="tnew4" task="T2E" relatedToEventInstance="ei104" />
     <TLINK relTypeA="after" relTypeB="after" relTypeC="after" timeID="tnew4" task="T2E" relatedToEventInstance="ei105" />

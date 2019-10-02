@@ -22,7 +22,7 @@
 </authorsData>
 <paragraph>
 <sentence>　イスラエルとパレスチナ自治政府の停戦に<EVENT eid="e3" class="I_ACTION">向けた</EVENT>最高治安当局者協議が<TIMEX3 value="2002-03-22" type="DATE" definite="FALSE" valueFromSurface="XXXX-XX-22" tid="t1">２２日</TIMEX3>、米国のジニ特使の仲介で<EVENT eid="e4" class="I_ACTION">開かれた</EVENT>が、停戦条件をめぐる両者の対立は<EVENT eid="e5" class="I_ACTION">解けず</EVENT>、再び合意に<EVENT eid="e6" class="I_ACTION">達しない</EVENT>まま<EVENT eid="e7" class="I_ACTION">閉幕した</EVENT>。</sentence>
-<sentence>イスラエル当局者によると協議は<TIMEX3 type="DATE" value="FUTURE_REF" valueFromSurface="FUTURE_REF">今後</TIMEX3>も<EVENT eid="e8" class="ASPECTUAL">続行される</EVENT>見込みだ。</sentence>
+<sentence>イスラエル当局者によると協議は<TIMEX3 type="DATE" value="FUTURE_REF" valueFromSurface="FUTURE_REF" tid="tnew1">今後</TIMEX3>も<EVENT eid="e8" class="ASPECTUAL">続行される</EVENT>見込みだ。</sentence>
 <br type="automatic_original"/>
 </paragraph>
 <paragraph>

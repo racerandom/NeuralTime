@@ -50,7 +50,7 @@
 <sentence>　原田さんは手宮線会場のスノートンネルを撮影。</sentence>
 <sentence>人の流れの<EVENT class="NULL" eid="e35">少なく</EVENT><EVENT class="OCCURRENCE" eid="e36">なった</EVENT>一瞬、トンネル内でキャンドルを手にそっと<EVENT class="OCCURRENCE" eid="e37">たたずむ</EVENT>女性の姿を<EVENT class="OCCURRENCE" eid="e38">とらえ</EVENT>、雪とキャンドルの明かりに<EVENT class="OCCURRENCE" eid="e39">包まれた</EVENT><EVENT class="NULL" eid="e40">静かな</EVENT>情景が<EVENT class="NULL" eid="e41">印象的</EVENT>。</sentence>
 <br type="automatic_original"/>
-<sentence>　実行委は<quote>「<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF">以前</TIMEX3>は運河の写真が<EVENT class="OCCURRENCE" eid="e42">目立った</EVENT>が視点が<EVENT class="OCCURRENCE" eid="e43">変わり</EVENT>、レベルも<EVENT class="OCCURRENCE" eid="e44">上がった</EVENT>」</quote>と、原田さんらの作品を<EVENT class="NULL" eid="e45">高く</EVENT><EVENT class="I_ACTION" eid="e46">評価している</EVENT>。</sentence>
+<sentence>　実行委は<quote>「<TIMEX3 type="DATE" value="PAST_REF" valueFromSurface="PAST_REF" tid="tnew1">以前</TIMEX3>は運河の写真が<EVENT class="OCCURRENCE" eid="e42">目立った</EVENT>が視点が<EVENT class="OCCURRENCE" eid="e43">変わり</EVENT>、レベルも<EVENT class="OCCURRENCE" eid="e44">上がった</EVENT>」</quote>と、原田さんらの作品を<EVENT class="NULL" eid="e45">高く</EVENT><EVENT class="I_ACTION" eid="e46">評価している</EVENT>。</sentence>
 <br type="automatic_original"/>
 <sentence type="quasi"><EVENT class="NULL" eid="e47">未知</EVENT>の子育てに援軍</sentence>
 <br type="automatic_original"/>
@@ -63,7 +63,7 @@
 <br type="automatic_original"/>
 <sentence>　保健センターや児童会館などの窓口案内、子供と一緒に<EVENT class="OCCURRENCE" eid="e59">楽しめる</EVENT>公園紹介などのほか、子育てについてのＱ＆Ａも<EVENT class="OCCURRENCE" eid="e60">掲載され</EVENT>、<EVENT class="NULL" eid="e61">盛りだくさん</EVENT>の内容だ。</sentence>
 <br type="automatic_original"/>
-<sentence>　東区役所や東保健センターで六百部を先着順で<EVENT class="OCCURRENCE" eid="e62">配布する</EVENT>ほか、<TIMEX3 type="DURATION" value="P4M" valueFromSurface="P4M">四カ月</TIMEX3>健診の受診者にも<sampling type="end"/><EVENT class="OCCURRENCE" eid="e63">配る</EVENT>。</sentence>
+<sentence>　東区役所や東保健センターで六百部を先着順で<EVENT class="OCCURRENCE" eid="e62">配布する</EVENT>ほか、<TIMEX3 type="DURATION" value="P4M" valueFromSurface="P4M" tid="tnew2">四カ月</TIMEX3>健診の受診者にも<sampling type="end"/><EVENT class="OCCURRENCE" eid="e63">配る</EVENT>。</sentence>
 </div></mergedSample>
 <TLINK relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" task="DCT" relatedToEventInstance="ei1"/>
 <TLINK relTypeA="after" relTypeB="after" relTypeC="after" timeID="t0" task="DCT" relatedToEventInstance="ei2"/>
