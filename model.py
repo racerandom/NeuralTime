@@ -88,8 +88,15 @@ class DocEmbMultiTaskTRC(BertPreTrainedModel):
         self.bert = BertModel(config)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
         self.ment_embedding = nn.Embedding(num_emb, config.hidden_size)
+        self.common_lab_rep = nn.Parameter(torch.Tensor(num_labels, config.hidden_size * 2).uniform_())
+        for task in task_list:
+            setattr(self, '%s_mapper' % task, nn.Linear(config.hidden_size * 2, config.hidden_size * 2))
         for task in task_list:
             setattr(self, '%s_classifier' % task, nn.Linear(config.hidden_size * 2, num_labels))
+            getattr(self, '%s_classifier' % task).weight.data = getattr(self, '%s_mapper' % task)(self.common_lab_rep)
+            # print(getattr(self, '%s_classifier' % task).weight.data.shape)
+        # for task in task_list:
+        #     setattr(self, '%s_classifier' % task, nn.Linear(config.hidden_size * 2, num_labels))
         self.apply(self.init_bert_weights)
 
     def forward(self, input_ids, sour_mask, targ_mask, task, token_type_ids=None, attention_mask=None, labels=None):
@@ -120,9 +127,19 @@ class DocMultiTaskTRC(BertPreTrainedModel):
         self.bert = BertModel(config)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
         self.ment_embedding = nn.Embedding(num_emb, config.hidden_size)
-        for task in task_list:
-            setattr(self, '%s_classifier' % task, nn.Linear(config.hidden_size * 2, num_labels))
+        self.common_lab_rep = nn.Parameter(torch.tensor(num_labels, config.hidden_size * 2))
+        
+#        for task in task_list:
+#            setattr(self, '%s_classifier' % task, nn.Linear(config.hidden_size * 2, num_labels))
+#        for task in task_list:
+#            setattr(self, '%s_mapper' % task, nn.Linear(config.hidden_size * 2, config.hidden_size * 2))
+#        for task in task_list:
+#            setattr(self, '%s_classifier' % task, nn.Linear(config.hidden_size * 2, num_labels))
+#            getattr(self, '%s_classifier' % task).weight = getattr(self, '%s_classifier' % task)(self.common_lab_rep)
+#
+
         self.apply(self.init_bert_weights)
+
 
     def forward(self, input_ids, sour_mask, targ_mask, task, token_type_ids=None, attention_mask=None, labels=None):
         batch_size, _ = input_ids.shape
@@ -165,8 +182,7 @@ class SeqEventTRC(BertPreTrainedModel):
         # import pdb; pdb.set_trace()
         batch_size, _ = seq_tok_ids.shape
         last_layer_out, _ = self.bert(seq_tok_ids, token_type_ids, attention_mask, output_all_encoded_layers=False)
-
-        event_rnn_in = torch.bmm(seq_e_m.unsqueeze(1).float(), last_layer_out).transpose(0, 1)
+        event_rnn_in = self.dropout(torch.bmm(seq_e_m.unsqueeze(1).float(), last_layer_out).transpose(0, 1))
         hidden = self.init_rnn_hidden(2, 1)
         event_rnn_out, _ = self.event_rnn(event_rnn_in, hidden)
 
