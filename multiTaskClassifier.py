@@ -26,10 +26,6 @@ from typing import Dict
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
 n_gpu = torch.cuda.device_count()
 
-if str(device) == 'cuda':
-    PRETRAIN_BERT_DIR='/larch/share/bert/Japanese_models/Wikipedia/L-12_H-768_A-12_E-30_BPE'
-else:
-    PRETRAIN_BERT_DIR = '/Users/fei-c/Resources/embed/L-12_H-768_A-12_E-30_BPE'
 
 logger = utils.init_logger('TLINK_Classifier', logging.INFO, logging.INFO)
 logger.info('device: %s, gpu num: %i' % (device, n_gpu))
@@ -47,6 +43,10 @@ parser.add_argument("-l", "--lab", dest="lab_type", default='6c', type=str,
                     help="lab_type, i.g. 4c, 6c or None")
 parser.add_argument("-b", "--batch", dest="BATCH_SIZE", default=16, type=int,
                     help="BATCH SIZE")
+parser.add_argument("-p", "--pre", dest="PRE_MODEL",
+                    default="/larch/share/bert/Japanese_models/Wikipedia/L-12_H-768_A-12_E-30_BPE",
+                    type=str,
+                    help="Pre-trained BERT model")
 parser.add_argument("-e", "--epoch", dest="NUM_EPOCHS", default=7, type=int,
                     help="fine-tuning epoch number")
 parser.add_argument("--do_train",
@@ -65,12 +65,8 @@ parser.add_argument('--multi_gpu',
                     help="wheter to use multiple gpus")
 parser.add_argument('--seed',
                     type=int,
-                    default=1029,
+                    default=0,
                     help="random seed for initialization")
-parser.add_argument("--cache_dir",
-                    default="cache",
-                    type=str,
-                    help="Where do you want to store the pre-trained models downloaded from s3")
 
 args = parser.parse_args()
 
@@ -105,6 +101,7 @@ elif args.task == 'REV':
 else:
     task_list = [args.task]
 
+""" document-level 5-fold data split """
 data_splits = preprocess.doc_kfold(data_dir)
 
 cv_acc = defaultdict(lambda: [])
@@ -117,7 +114,7 @@ timestamp_str = datetime.now().strftime('%Y%m%d%H%M%S')
 
 logger.info(str(lab2ix))
 
-logger.info('Pretrained BERT dir: %s ' % PRETRAIN_BERT_DIR)
+logger.info('Pretrained BERT dir: %s ' % args.PRE_MODEL)
 
 eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
 
@@ -135,7 +132,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     if args.do_train:
 
-        tokenizer = BertTokenizer.from_pretrained(PRETRAIN_BERT_DIR, do_lower_case=False, do_basic_tokenize=False)
+        tokenizer = BertTokenizer.from_pretrained(args.PRE_MODEL, do_lower_case=False, do_basic_tokenize=False)
 
         train_dataloader = {}
 
@@ -211,7 +208,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         """ training """
         """ model initialization """
         model = DocEmbMultiTaskTRC.from_pretrained(
-            PRETRAIN_BERT_DIR,
+            args.PRE_MODEL,
             num_emb=len(train_mid2ix),
             num_labels=NUM_LABEL,
             task_list=task_list
@@ -281,19 +278,20 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         model_to_save.config.to_json_file(output_config_file)
         tokenizer.save_vocabulary(CV_MODEL_DIR)
 
-        # torch.save(model, os.path.join(CV_MODEL_DIR, 'model.bin'))
+        config = BertConfig.from_json_file(os.path.join(args.MODEL_DIR, 'config.json'))
+        model = MultiTaskRelationClassifier(config, num_labels=NUM_LABEL)
+        state_dict = torch.load(os.path.join(args.MODEL_DIR, 'pytorch_model.bin'))
+        model.load_state_dict(state_dict)
+        model.to(device)
 
+    """ Load the saved tokenizer and model """
+    tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
 
-    # else:
-    #     """ eval mode
-    #     reload the saved model
-    #     """
-    #     tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
-    #     model = MultiTaskRelationClassifier.from_pretrained(CV_MODEL_DIR, num_labels=NUM_LABEL)
-    #     model.to(device)
-
-    """ Load the saved cv model """
-    # tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
+    config = BertConfig.from_json_file(os.path.join(args.MODEL_DIR, 'config.json'))
+    model = MultiTaskRelationClassifier(config, num_labels=NUM_LABEL)
+    state_dict = torch.load(os.path.join(args.MODEL_DIR, 'pytorch_model.bin'))
+    model.load_state_dict(state_dict)
+    model.to(device)
 
     """ Evaluation at NUM_EPOCHS"""
     cv_eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
@@ -361,14 +359,6 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
 
     test_dataloader_iterator = {task: iter(test_dataloader[task]) for task in task_list}
 
-    # model = DocEmbMultiTaskTRC.from_pretrained(
-    #     CV_MODEL_DIR,
-    #     num_emb=len(train_mid2ix),
-    #     num_labels=NUM_LABEL,
-    #     task_list=task_list
-    # )
-    # model.to(device)
-
     """ Inference"""
     model.eval()
     for b_task in test_batch_seq:
@@ -390,6 +380,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         eval_dict[task]['pred'] = np.append(eval_dict[task]['pred'], cv_eval_dict[task]['pred'], axis=0)
         eval_dict[task]['gold'] = np.append(eval_dict[task]['gold'], cv_eval_dict[task]['gold'], axis=0)
 
+""" Print final scores """
 for task in task_list:
     logger.info('Final Cross Validation Evaluation, Task: %s,  instance num: %i, ACC : %.4f' % (
         task,

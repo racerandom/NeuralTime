@@ -246,6 +246,7 @@ for epoch in range(1, NUM_EPOCHS + 1):
 #        loss.backward()
         accumulated_loss += loss    
 
+        """ accumulated updating """
         if step % UPDATE_STEP == 0 or step == len(train_padded_labs):
 #            if random.random() < 0.5:
 #                for param in model.bert.parameters():

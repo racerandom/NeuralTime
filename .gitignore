@@ -2,7 +2,9 @@ dataformat.md
 proposals.md
 preprocess_bccwjtb.ipynb
 .idea/*
+cache/
 .ipynb_checkpoints/*
 __pycache__/*
 checkpoints/*
 !checkpoints/
+

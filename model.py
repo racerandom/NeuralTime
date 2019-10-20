@@ -141,6 +141,10 @@ class DocMultiTaskTRC(BertPreTrainedModel):
         self.apply(self.init_bert_weights)
 
 
+def save_bert_model(model, model_dir):
+    pass
+
+
     def forward(self, input_ids, sour_mask, targ_mask, task, token_type_ids=None, attention_mask=None, labels=None):
         batch_size, _ = input_ids.shape
         last_layer_out, _ = self.bert(input_ids, token_type_ids, attention_mask, output_all_encoded_layers=False)
