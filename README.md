@@ -9,6 +9,14 @@ This project includes several BERT-Based Temporal relation classifiers for BCCWJ
 
 I've placed corpus in the data folder.
 
+## temp_prediction.ipynb
+
+1. Please install Jupyter notebook first.
+2. Replace MODEL_URL and excel_file with the real paths in `temp_prediction.ipynb`
+> MODEL_URL = "checkpoints/ALL_20200830171210/cv0/"
+> excel_file = "行動データ3言語54subs (002).xlsx"
+
+After finishing running all the cells, a `\*_tagged.xlsx` will be generated.
 
 ## Pair-wise model 
 Pair-wise models perform 'DCT', 'T2E', 'E2E', 'MAT' as independent classifiers.
@@ -23,7 +31,7 @@ Train:
 > --batch 16 \  
 > --epoch 5 \ # fine-tuning epochs e.g. 3~7  
 > --do\_train # training model
- 
+
 ~ print(test) ~
 
 Test:
