@@ -13,7 +13,7 @@ I've placed corpus in the data folder.
 
 1. Please install Jupyter notebook first.
 2. Replace MODEL_URL and excel_file with the real paths in `temp_prediction.ipynb`
-> MODEL_URL = "checkpoints/ALL_20200830171210/cv0/"
+> MODEL_URL = "checkpoints/ALL_20200830171210/cv0/"  
 > excel_file = "行動データ3言語54subs (002).xlsx"
 
 After finishing running all the cells, a `\*_tagged.xlsx` will be generated.
