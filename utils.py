@@ -11,6 +11,7 @@ import torch
 from torch.utils.data import TensorDataset
 from pytorch_pretrained_bert import BertTokenizer
 from pytorch_pretrained_bert import WEIGHTS_NAME, CONFIG_NAME
+import copy
 
 juman = Juman()
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device("cpu")
@@ -28,7 +29,9 @@ def get_label2ix(y_data):
     return label2ix
 
 
-def padding_1d(seq_1d, max_len, pad_tok=0, direct='right'):
+def padding_1d(seq_1d_orig, max_len, pad_tok=0, direct='right'):
+    seq_1d = copy.deepcopy(seq_1d_orig)
+
     for i in range(0, max_len - len(seq_1d)):
         if direct in ['right']:
             seq_1d.append(pad_tok)
@@ -36,8 +39,9 @@ def padding_1d(seq_1d, max_len, pad_tok=0, direct='right'):
             seq_1d.insert(0, pad_tok)
     return seq_1d
 
-def padding_2d(seq_2d, max_len, pad_tok=0, direct='right'):
 
+def padding_2d(seq_2d_orig, max_len, pad_tok=0, direct='right'):
+    seq_2d = copy.deepcopy(seq_2d_orig)
     for seq_1d in seq_2d:
         for i in range(0, max_len - len(seq_1d)):
             if direct in ['right']:
@@ -45,6 +49,7 @@ def padding_2d(seq_2d, max_len, pad_tok=0, direct='right'):
             else:
                 seq_1d.insert(0, pad_tok)
     return seq_2d
+
 
 def match_sbp_label(bpe_x, y):
     bpe_y = y.copy()
@@ -57,6 +62,7 @@ def match_sbp_label(bpe_x, y):
     assert len(bpe_x) == len(bpe_y)
     return bpe_y
 
+
 def match_sbp_mask(bpe_x, y):
     bpe_y = y.copy()
     for i in range(len(bpe_x)):
@@ -64,6 +70,7 @@ def match_sbp_mask(bpe_x, y):
             bpe_y.insert(i, bpe_y[i-1])
     assert len(bpe_x) == len(bpe_y)
     return bpe_y
+
 
 def match_sbp_cert_labs(bpe_x, y):
     bpe_y = y.copy()

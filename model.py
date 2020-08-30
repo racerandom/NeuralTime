@@ -62,7 +62,8 @@ class MultiTaskRelationClassifier(BertPreTrainedModel):
         self.num_labels = num_labels
         self.bert = BertModel(config)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
-        self.classifiers = {task:nn.Linear(config.hidden_size * 2, num_labels).to(device) for task in ['DCT', 'T2E', 'E2E', 'MAT']}
+        self.classifiers = {task: nn.Linear(config.hidden_size * 2, num_labels).to(device)
+                            for task in ['DCT', 'T2E', 'E2E', 'MAT']}
         self.apply(self.init_bert_weights)
 
     def forward(self, input_ids, sour_mask, targ_mask, task, token_type_ids=None, attention_mask=None, labels=None):

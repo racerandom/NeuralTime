@@ -7,4 +7,5 @@ cache/
 __pycache__/*
 checkpoints/*
 !checkpoints/
-
+*.swp
+*.xlsx

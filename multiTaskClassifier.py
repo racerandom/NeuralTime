@@ -110,6 +110,9 @@ lab2ix = preprocess.get_lab2ix_from_type(args.lab_type)
 
 NUM_LABEL = len(lab2ix)
 
+print(lab2ix)
+print(NUM_LABEL)
+
 timestamp_str = datetime.now().strftime('%Y%m%d%H%M%S')
 
 logger.info(str(lab2ix))
@@ -209,7 +212,7 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         """ model initialization """
         model = DocEmbMultiTaskTRC.from_pretrained(
             args.PRE_MODEL,
-            num_emb=len(train_mid2ix),
+            num_emb=2,
             num_labels=NUM_LABEL,
             task_list=task_list
         )
@@ -276,22 +279,34 @@ for cv_id, (train_files, test_files) in enumerate(data_splits):
         # If we save using the predefined names, we can load using `from_pretrained`
         torch.save(model_to_save.state_dict(), output_model_file)
         model_to_save.config.to_json_file(output_config_file)
-        tokenizer.save_vocabulary(CV_MODEL_DIR)
+        # tokenizer.save_vocabulary(CV_MODEL_DIR)
+        import shutil
+        shutil.copy2(f"{args.PRE_MODEL}/vocab.txt", CV_MODEL_DIR)
 
-        config = BertConfig.from_json_file(os.path.join(args.MODEL_DIR, 'config.json'))
-        model = MultiTaskRelationClassifier(config, num_labels=NUM_LABEL)
-        state_dict = torch.load(os.path.join(args.MODEL_DIR, 'pytorch_model.bin'))
+        config = BertConfig.from_json_file(os.path.join(CV_MODEL_DIR, 'config.json'))
+        model = DocEmbMultiTaskTRC(
+            config,
+            num_emb=2,
+            task_list=task_list,
+            num_labels=NUM_LABEL
+        )
+        state_dict = torch.load(os.path.join(CV_MODEL_DIR, 'pytorch_model.bin'))
         model.load_state_dict(state_dict)
         model.to(device)
+    else:
+        """ Load the saved tokenizer and model """
+        tokenizer = BertTokenizer.from_pretrained(args.model_dir, do_lower_case=False, do_basic_tokenize=False)
 
-    """ Load the saved tokenizer and model """
-    tokenizer = BertTokenizer.from_pretrained(CV_MODEL_DIR, do_lower_case=False, do_basic_tokenize=False)
-
-    config = BertConfig.from_json_file(os.path.join(args.MODEL_DIR, 'config.json'))
-    model = MultiTaskRelationClassifier(config, num_labels=NUM_LABEL)
-    state_dict = torch.load(os.path.join(args.MODEL_DIR, 'pytorch_model.bin'))
-    model.load_state_dict(state_dict)
-    model.to(device)
+        config = BertConfig.from_json_file(os.path.join(args.model_dir, 'config.json'))
+        model = DocEmbMultiTaskTRC(
+            config,
+            num_emb=2,
+            task_list=task_list,
+            num_labels=NUM_LABEL
+        )
+        state_dict = torch.load(os.path.join(args.model_dir, 'pytorch_model.bin'))
+        model.load_state_dict(state_dict)
+        model.to(device)
 
     """ Evaluation at NUM_EPOCHS"""
     cv_eval_dict = defaultdict(lambda: defaultdict(lambda: np.empty((0), int)))
